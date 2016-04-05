@@ -1,0 +1,47 @@
+.landing-container {
+  font-family: helvetica, sans-serif; }
+
+.landing-title {
+  color: orange;
+  font-size: 48px;
+  text-align: center; }
+
+.landing-jumbotron {
+  background: url("http://cdn1.theodysseyonline.com/files/2015/06/08/635693880042525992-518822648_couple-hiking-valley.jpg") bottom center no-repeat;
+  width: 100%;
+  height: 80%;
+  background-size: cover;
+  background-position: 70% 0; }
+
+.landing-login-container {
+  width: 70%;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+  border: 1px solid orange;
+  margin-left: 5%;
+  margin-right: 5% px; }
+  .landing-login-container .landing-sign-up {
+    border: 1px solid white;
+    font-size: 4em;
+    margin-top: 150px;
+    width: 50%;
+    text-align: center; }
+  .landing-login-container .landing-log-in {
+    border: 1px solid white;
+    font-size: 4em;
+    width: 50%;
+    text-align: center; }
+
+input {
+  line-height: 55px;
+  text-align: center;
+  margin-left: 55px;
+  margin-top: 20px;
+  font-size: 5em;
+  border: 1px solid #555; }
+
+/*# sourceMappingURL=app.css.map */
