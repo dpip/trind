@@ -10,7 +10,26 @@ trind.config(function($routeProvider) {
       templateUrl: 'home.html',
       controller: 'HomeController'
     })
-
+    .when('/Me', {
+      templateUrl: 'me.html',
+      controller: 'HomeController'
+    })
+            .when('/memories', {
+              templateUrl: 'memories.html',
+              controller: 'HomeController'
+            })
+            .when('/messages', {
+              templateUrl: 'messages.html',
+              controller: 'HomeController'
+            })
+            .when('/message', {
+              templateUrl: 'message.html',
+              controller: 'HomeController'
+            })
+    .when('/create', {
+      templateUrl: 'create.html',
+      controller: 'HomeController'
+    })
     .otherwise({
       redirectTo: '/home'
     });
