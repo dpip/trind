@@ -12,23 +12,23 @@ trind.config(function($routeProvider) {
     })
     .when('/Me', {
       templateUrl: 'me.html',
-      controller: 'HomeController'
+      controller: 'MeController'
     })
             .when('/memories', {
               templateUrl: 'memories.html',
-              controller: 'HomeController'
+              controller: 'MemoriesController'
             })
             .when('/messages', {
               templateUrl: 'messages.html',
-              controller: 'HomeController'
+              controller: 'MessagesController'
             })
             .when('/message', {
               templateUrl: 'message.html',
-              controller: 'HomeController'
+              controller: 'MessageController'
             })
     .when('/create', {
       templateUrl: 'create.html',
-      controller: 'HomeController'
+      controller: 'CreateController'
     })
     .otherwise({
       redirectTo: '/home'
