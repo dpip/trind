@@ -3,12 +3,20 @@
 <div class="landing-container">
     <div class="landing-title"> TRIND</div>
         <div class="landing-jumbotron">
-        <div class="landing-login-container">
+        <div class="landing-call-container">
+            <div class="landing-button-container">
             <div class="landing-sign-up"> Sign Up </div>
             <div class="landing-log-in"> Log In</div>
         </div>
         </div>
+        </div>
     </div>
-
-<input type="text" class="landing-search" ng-model="search" />
+    </div>
+<div class="login-modal">
+<label class="label-landing-email"> Email </label>
+<input type="text" class="landing-email" ng-model="userEmail" />
+<label type="text" class="label-landing-password" > Password </label>
+<input type="text" class="landing-password" ng-model="userPassword">
+<br>
+<button class="login-button"> Sign In </button>
 </div>
