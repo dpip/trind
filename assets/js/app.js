@@ -34,3 +34,17 @@ trind.config(function($routeProvider) {
       redirectTo: '/home'
     });
 });
+
+// $(document).ready(function() {
+//     $('.trind-main-header-search-icon').click(function() {
+//      top.$('.home-drop-search-bar').toggle(function() {
+//        $(this).animate({
+//          // style change
+//        }, 500);
+//        },
+//        function() {
+//        $(this).animate({
+//          // style change back
+//        }, 500);
+//      });
+//    });

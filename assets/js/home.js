@@ -5,12 +5,13 @@ trind.controller('HomeController', [ '$http', '$scope', function($http, $scope){
     console.log(data);
     $scope.data = data;
 
-
-  // $scope.message = "get was got"
-  // $scope.products = data.items
-  //
-  // $scope.reviews = products.reviews
-
 });
 
+$(document).ready(function () {
+    $("#home-drop-search-input-box").hide();
+    $('.trind-main-header-search-icon').click(function () {
+        $("#home-drop-search-input-box").toggle();
+    });
+
+});
   }]);
