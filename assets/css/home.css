@@ -4,8 +4,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: #d83338;
-  background-color: rgba(75, 35, 126, 0.9); }
+  color: #ff6d5e;
+  background-color: rgba(48, 74, 188, 0.9); }
   .trind-main-header .trind-main-header-create-icon {
     position: relative;
     float: left;
@@ -23,7 +23,8 @@
     float: right;
     top: 15px;
     font-size: 45px;
-    margin-right: 20px; }
+    margin-right: 20px;
+    cursor: inherit; }
 
 #home-drop-search-input-box {
   margin-top: 70px;
@@ -39,8 +40,8 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  color: #d83338;
-  background-color: rgba(75, 35, 126, 0.9); }
+  color: #ff6d5e;
+  background-color: rgba(48, 74, 188, 0.9); }
   .trind-main-footer .trind-main-footer-me-icon {
     position: relative;
     float: left;

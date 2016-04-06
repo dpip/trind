@@ -10,7 +10,7 @@ trind.config(function($routeProvider) {
       templateUrl: 'home.html',
       controller: 'HomeController'
     })
-    .when('/Me', {
+    .when('/me', {
       templateUrl: 'me.html',
       controller: 'MeController'
     })
@@ -34,17 +34,3 @@ trind.config(function($routeProvider) {
       redirectTo: '/home'
     });
 });
-
-// $(document).ready(function() {
-//     $('.trind-main-header-search-icon').click(function() {
-//      top.$('.home-drop-search-bar').toggle(function() {
-//        $(this).animate({
-//          // style change
-//        }, 500);
-//        },
-//        function() {
-//        $(this).animate({
-//          // style change back
-//        }, 500);
-//      });
-//    });
