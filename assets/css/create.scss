@@ -1,1 +1,28 @@
-
+.create-input-field {
+  border: 2px solid red;
+  height: 600px;
+  margin-top: 6em;
+    .user-creator-description {
+      margin-top: 2em;
+    }
+    .user-creator-description-field {
+      padding-bottom: 300px;
+      width: 100%;
+      font-size: 14px;
+    }
+    .create-trind-submit-button {
+      height: 50px;
+      width: 100%;
+      font-size: 40px;
+      color: white;
+      background-color: rgb(255, 109, 94);
+      font-family: 'Sniglet', cursive;
+      margin-top: 2em;
+      border-radius: 1em;
+      cursor: pointer;
+    }
+    .create-trind-submit-button-text {
+      margin-left: 32%;
+      margin-top: 5px !important;
+    }
+}
