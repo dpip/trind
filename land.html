@@ -1,22 +1,35 @@
 
 <div>
-<div class="landing-container">
-    <div class="landing-title"> TRIND</div>
-        <div class="landing-jumbotron">
-        <div class="landing-call-container">
-            <div class="landing-button-container">
-            <div class="landing-sign-up"> Sign Up </div>
-            <div class="landing-log-in"> Log In</div>
-        </div>
-        </div>
-        </div>
+    <div class="landing-container">
+        <div class="landing-title"> TRIND</div>
+            <div class="landing-jumbotron">
+                <div class="landing-call-container">
+                    <div class="landing-button-container">
+
+                        <div class="landing-log-in"> <a href="" ng-click="showme=true"> Log In </a></div>
+
+                            <div class="login-modal" ng-show="showme">
+                            <div class="modal-container">
+                            <div class="modal-close">  <a href="" ng-click="showme=false"> X </a></div>
+
+                            <div class="modal-column">
+                            <label class="label-landing-email"> Email </label>
+                            <input type="text" class="landing-email" ng-model="userEmail" />
+
+                            <label type="text" class="label-landing-password" > Password </label>
+                            <input type="text" class="landing-password" ng-model="userPassword">
+                            <br>
+                            <button class="login-button"> Sign In </button>
+                            </div>
+                            </div>
+                            </div>
+
+                        <!-- <div class="landing-sign-up"> <a href="#">  Log in with Facebook </a></div> -->
+
+                        <div class="landing-sign-up"> <a href="#"> Sign Up for Free </a> </div>
+
+                    </div>
+                 </div>
     </div>
-    </div>
-<div class="login-modal">
-<label class="label-landing-email"> Email </label>
-<input type="text" class="landing-email" ng-model="userEmail" />
-<label type="text" class="label-landing-password" > Password </label>
-<input type="text" class="landing-password" ng-model="userPassword">
-<br>
-<button class="login-button"> Sign In </button>
 </div>
+<br>

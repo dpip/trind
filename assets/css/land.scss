@@ -11,21 +11,21 @@
 .landing-jumbotron {
     background: url('http://cdn1.theodysseyonline.com/files/2015/06/08/635693880042525992-518822648_couple-hiking-valley.jpg') bottom center no-repeat;
   	width: 100%;
-  	height: 72%;
+  	height: 78%;
   	background-size: cover;
   	background-position: 70% 0;
 }
 
 .landing-call-container {
     width: 80%;
-    height: 200px;
-    margin-top: 25px;
-    padding-top:1050px;
+    height: 30%;
+    margin-top: 15px;
+    padding-top:355px;
     padding-bottom: 5px;
     padding-left: 5%;
     padding-right: 5%;
     color: white;
-    border: 1px solid orange;
+    // border: 1px solid orange;
     margin-left: 5%;
     margin-right:5%;
 
@@ -33,49 +33,77 @@
         font-size: 4em;
         padding: 1em;
         bottom: 5px;
+
+    a {
+        display: inline-block;
+        width: 550px;
+        margin-top: 25px;
+        margin-left: 5%;
+    }
     }
 
 
-    .landing-sign-up {
-        border: 1px solid white;
+    .landing-sign-up a{
+        border: 2px solid orange;
+        border-radius: 5px;
         text-align: center;
+        color: orange;
+        text-decoration: none;
+        padding: .2em;
     }
-    .landing-log-in {
-        border: 1px solid white;
+    .landing-log-in a{
+        border: 2px solid orange;
+        border-radius: 5px;
         text-align: center;
+        color: orange;
+        text-decoration: none;
+        padding: .2em;
     }
-
 }
 
 .login-modal {
-    padding: 2em;
-    label{
-        font-size: 25px;
-        margin-left: 55px;
-        margin-top: 45px;
-        margin-bottom: 55px;
-        font-color: blue;
-    }
-    input {
+    width: 99%;
+
+    .modal-container {
+        border: 2px solid white;
+        background: orange;
+        height: 550px;
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+    .modal-close {
+        margin-top: 5px;
+        margin-right: 25px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+        float: right;
+        text-align: right;
         line-height: 25px;
+        }
+
+    .modal-column label{
+        color: white;
+        display: block;
+        font-size: 45px;
+    }
+    .modal-column input {
+        font-size: .8em;
+        width: 90%;
         text-align: left;
-        margin-left: 55px;
-        margin-top: 20px;
-        font-size: 5em;
-        border: 1px solid #555;
+        padding: .3em;
 
     }
-}
+    .login-button {
+        margin-top: 15px;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: .5em;
+        width: 300px;
+        height: 110px;
+        border: 1px solid black;
+    }
 
-.login-button {
-    padding-bottom: 45px;
-    margin-top: 15px;
-    bottom: auto;
-    margin-left: 35%;
-    margin-right: 20%;
-    float: left;
-    font-size: 2em;
-    width: 300px;
-    height: 50px;
-    border: 1px solid black;
+
+  }
 }
