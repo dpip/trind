@@ -4,32 +4,60 @@
 
 .landing-title {
     color: orange;
-    font-size: 48px;
+    font-size: 80px;
     text-align: center;
+}
+.landing-subtitle {
+    text-align: center;
+    font-size: 35px;
+    color: white;
 }
 
 .landing-jumbotron {
     background: url('http://cdn1.theodysseyonline.com/files/2015/06/08/635693880042525992-518822648_couple-hiking-valley.jpg') bottom center no-repeat;
   	width: 100%;
-  	height: 78%;
+  	height: 100%;
   	background-size: cover;
   	background-position: 70% 0;
 }
 
+.landing-sign-up {
+a{
+        border: 2px solid orange;
+        border-radius: 5px;
+        text-align: center;
+        color: orange;
+        text-decoration: none;
+        padding: .2em;
+        font-size: 4em;
+        margin-left: 15%;
+    }
+}
+
+    .landing-log-in {
+        a{
+        border: 2px solid orange;
+        border-radius: 5px;
+        text-align: center;
+        color: orange;
+        text-decoration: none;
+        padding: .2em;
+    }
+}
+
 .landing-call-container {
+    color: white;
     width: 80%;
     height: 30%;
-    margin-top: 15px;
-    padding-top:355px;
+    padding-top:55px;
     padding-bottom: 5px;
     padding-left: 5%;
     padding-right: 5%;
-    color: white;
-    // border: 1px solid orange;
     margin-left: 5%;
     margin-right:5%;
 
-    .landing-button-container {
+
+    .landing-login-container {
         font-size: 4em;
         padding: 1em;
         bottom: 5px;
@@ -41,25 +69,8 @@
         margin-left: 5%;
     }
     }
-
-
-    .landing-sign-up a{
-        border: 2px solid orange;
-        border-radius: 5px;
-        text-align: center;
-        color: orange;
-        text-decoration: none;
-        padding: .2em;
-    }
-    .landing-log-in a{
-        border: 2px solid orange;
-        border-radius: 5px;
-        text-align: center;
-        color: orange;
-        text-decoration: none;
-        padding: .2em;
-    }
 }
+
 
 .login-modal {
     width: 99%;
@@ -103,7 +114,62 @@
         height: 110px;
         border: 1px solid black;
     }
+  }
+}
 
+.landing-call-container {
 
+.signup-form {
+    font-size: 1em;
+    line-height: 2em;
+    background-color: #fff;
+    width: 80%;
+    border: #555;
+    margin-left: 9%;
+    background: #fff;
+    z-index: 10;
+    opacity:1;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+
+    .modal-close {
+        font-size: 3em;
+        float: right;
+        text-decoration: none;
+    }
+}
+
+.form-column {
+    border: 1px solid white;
+    height: 500px;
+    width: 600px;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 50px;
+
+    label {
+    display: block;
+    padding: .2em;
+    font-size: 1.2em;
+    color: orange;
+    }
+    input {
+        border: 2px solid #555;
+        padding: .2em;
+        width: 50%;
+        font-size: 1.2em;
+    }
+    #signup-now {
+        padding: .5em;
+        background: green;
+        color: white;
+    }
+    #signup-facebook {
+        margin: .2em;
+        padding: .5em;
+        background: blue;
+        color: white;
+    }
   }
 }
