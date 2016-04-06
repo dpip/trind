@@ -1,0 +1,66 @@
+.trind-main-header {
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ff6d5e;
+  background-color: rgba(48, 74, 188, 0.9); }
+  .trind-main-header .trind-main-header-create-icon {
+    position: relative;
+    float: left;
+    top: 15px;
+    font-size: 45px;
+    margin-left: 20px; }
+  .trind-main-header .trind-main-header-image {
+    position: relative;
+    float: left;
+    top: 15px;
+    font-size: 45px;
+    left: 30%; }
+  .trind-main-header .trind-main-header-search-icon {
+    position: relative;
+    float: right;
+    top: 15px;
+    font-size: 45px;
+    margin-right: 20px;
+    cursor: inherit; }
+
+#home-drop-search-input-box {
+  margin-top: 70px;
+  height: 50px;
+  width: 100%;
+  font-size: 24px;
+  color: gray;
+  text-align: center; }
+
+.trind-main-footer {
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #ff6d5e;
+  background-color: rgba(48, 74, 188, 0.9); }
+  .trind-main-footer .trind-main-footer-me-icon {
+    position: relative;
+    float: left;
+    top: 15px;
+    font-size: 45px;
+    margin-left: 20px; }
+  .trind-main-footer .trind-main-footer-trind-icon {
+    position: relative;
+    float: left;
+    top: 15px;
+    font-size: 60px;
+    left: 32.5%;
+    font-family: 'Sniglet', cursive;
+    transform: rotate(-45deg); }
+  .trind-main-footer .trind-main-footer-message-icon {
+    position: relative;
+    float: right;
+    top: 15px;
+    font-size: 45px;
+    margin-right: 20px; }
+
+/*# sourceMappingURL=home.css.map */
