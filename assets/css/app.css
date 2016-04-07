@@ -4,7 +4,8 @@
 .landing-title {
   color: orange;
   font-size: 80px;
-  text-align: center; }
+  text-align: center;
+  padding-top: 1em; }
 
 .landing-subtitle {
   text-align: center;
@@ -34,7 +35,8 @@
   text-align: center;
   color: orange;
   text-decoration: none;
-  padding: .2em; }
+  padding: .2em;
+  margin-left: 15%; }
 
 .landing-call-container {
   color: white;
@@ -59,11 +61,10 @@
       z-index: 10; }
 
 .login-modal {
-  width: 99%;
-  z-index: 40; }
+  width: 99%; }
   .login-modal .modal-container {
     border: 2px solid white;
-    background: orange;
+    background: white;
     height: 550px;
     text-align: center;
     margin-top: 1em;
@@ -77,14 +78,15 @@
       text-align: right;
       line-height: 25px; }
     .login-modal .modal-container .modal-column label {
-      color: white;
+      color: #555;
       display: block;
       font-size: 45px; }
     .login-modal .modal-container .modal-column input {
       font-size: .8em;
       width: 90%;
       text-align: left;
-      padding: .3em; }
+      padding: .3em;
+      border: 2px solid #555; }
     .login-modal .modal-container .login-button {
       margin-top: 15px;
       margin-left: 5%;
@@ -138,115 +140,5 @@
     padding: .5em;
     background: blue;
     color: white; }
-
-.create-input-field {
-  height: 200px;
-  margin-top: 6em; }
-  .create-input-field .create-enter-interests-input {
-    width: 100%;
-    height: 40px;
-    font-size: 14px;
-    position: relative; }
-  .create-input-field .user-creator-description {
-    padding-top: 1em; }
-  .create-input-field .user-creator-description {
-    font-size: 14px;
-    position: relative; }
-  .create-input-field .user-creator-description-field {
-    padding-bottom: 80px;
-    width: 100%;
-    font-size: 14px;
-    position: relative; }
-  .create-input-field .create-enter-location-input {
-    width: 100%;
-    height: 40px;
-    font-size: 14px; }
-  .create-input-field .create-trind-submit-button-text {
-    border: none;
-    height: 50px;
-    width: 100%;
-    font-size: 40px;
-    color: white;
-    background-color: #ff6d5e;
-    font-family: 'Sniglet', cursive;
-    bottom: 2.5em;
-    border-radius: 1em;
-    cursor: pointer;
-    position: absolute; }
-
-.trind-main-header {
-  height: 70px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #ff6d5e;
-  background-color: rgba(48, 74, 188, 0.9); }
-  .trind-main-header .trind-main-header-create-icon {
-    position: relative;
-    float: left;
-    top: 15px;
-    font-size: 45px;
-    margin-left: 20px; }
-  .trind-main-header .trind-main-header-image {
-    position: relative;
-    float: left;
-    top: 15px;
-    font-size: 45px;
-    left: 30%; }
-  .trind-main-header .trind-main-header-search-icon {
-    position: relative;
-    float: right;
-    top: 15px;
-    font-size: 45px;
-    margin-right: 20px;
-    cursor: inherit; }
-
-#home-drop-search-input-box {
-  margin-top: 70px;
-  height: 50px;
-  width: 100%;
-  font-size: 24px;
-  color: gray;
-  text-align: center; }
-
-.home-events-display {
-  margin-top: 6em; }
-
-.trind-main-footer {
-  height: 70px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: #ff6d5e;
-  background-color: rgba(48, 74, 188, 0.9); }
-  .trind-main-footer .trind-main-footer-me-icon {
-    position: relative;
-    float: left;
-    top: 15px;
-    font-size: 45px;
-    margin-left: 20px; }
-  .trind-main-footer .trind-main-footer-trind-icon {
-    position: relative;
-    float: left;
-    top: 15px;
-    font-size: 60px;
-    left: 32.5%;
-    font-family: 'Sniglet', cursive;
-    transform: rotate(-45deg); }
-  .trind-main-footer .trind-main-footer-message-icon {
-    position: relative;
-    float: right;
-    top: 15px;
-    font-size: 45px;
-    margin-right: 20px; }
-
-a {
-  color: inherit;
-  text-decoration: none; }
-
-.trind-default-background {
-  background-color: rgba(49, 54, 63, 0.7); }
 
 /*# sourceMappingURL=app.css.map */

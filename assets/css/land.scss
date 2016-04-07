@@ -6,6 +6,7 @@
     color: orange;
     font-size: 80px;
     text-align: center;
+    padding-top: 1em;
 }
 .landing-subtitle {
     text-align: center;
@@ -42,6 +43,7 @@ a{
         color: orange;
         text-decoration: none;
         padding: .2em;
+        margin-left: 15%;
     }
 }
 
@@ -76,15 +78,15 @@ a{
 
 .login-modal {
     width: 99%;
-    z-index: 40;
 
     .modal-container {
         border: 2px solid white;
-        background: orange;
+        background: white;
         height: 550px;
         text-align: center;
         margin-top: 1em;
         margin-bottom: 1em;
+
 
     .modal-close {
         margin-top: 5px;
@@ -97,7 +99,7 @@ a{
         }
 
     .modal-column label{
-        color: white;
+        color: #555;
         display: block;
         font-size: 45px;
     }
@@ -106,6 +108,7 @@ a{
         width: 90%;
         text-align: left;
         padding: .3em;
+        border: 2px solid #555;
 
     }
     .login-button {
