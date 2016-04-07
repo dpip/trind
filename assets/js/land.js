@@ -1,3 +1,5 @@
+// angular.module('ngClickExample', ['ngTouch']);
+
 trind.controller('LandController', [ '$http', '$scope', function($http, $scope){
 
   console.log("cool beans");
