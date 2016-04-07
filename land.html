@@ -1,22 +1,63 @@
 
 <div>
-<div class="landing-container">
-    <div class="landing-title"> TRIND</div>
-        <div class="landing-jumbotron">
-        <div class="landing-call-container">
-            <div class="landing-button-container">
-            <div class="landing-sign-up"> Sign Up </div>
-            <div class="landing-log-in"> Log In</div>
-        </div>
-        </div>
-        </div>
-    </div>
-    </div>
-<div class="login-modal">
-<label class="label-landing-email"> Email </label>
-<input type="text" class="landing-email" ng-model="userEmail" />
-<label type="text" class="label-landing-password" > Password </label>
-<input type="text" class="landing-password" ng-model="userPassword">
-<br>
-<button class="login-button"> Sign In </button>
-</div>
+    <div class="landing-container">
+
+            <div class="landing-jumbotron">
+                <div class="landing-title"> TRIND</div>
+                    <h3 class="landing-subtitle"> Making Social Networks Social Again </h3>
+
+                    <div class="landing-call-container">
+                        <div class="landing-signup-container">
+                            <div class="landing-sign-up"> <a href="" ng-click="showmodal=true"> Sign Up for Free </a> </div>
+
+                            <div id="signup-modal" class="signup-form" ng-show="showmodal">
+                                <div class="modal-close"> <a href="" ng-click="showmodal=false">X </a></div>
+                                        <div class="form-column">
+                                          <label for="first-name">Name</label>
+                                          <input type="text" id="first-name" name="first-name" placeholder="Larry" />
+                                          <label for="email-address">Email Address</label>
+                                          <input type="text" id="email-address" name="email-address" placeholder="larry@atlien.com" />
+                                          <label for="new-password">Password</label>
+                                          <input type="text" id="new-password" name="new-password" placeholder="******" />
+                                          <label for="confirm-password"> Confirm Password</label>
+                                          <input type="text" id="confirm-password" name="confirm-password" placeholder="******" />
+                                          <br>
+                                        <button id="signup-now"> <a href="#"> Create Account </a> </button>
+                                        <br> <h3> OR </h3> <br>
+                                        <button id="signup-facebook"> <a href="#"> Sign Up with Facebook </a> </button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- This closes the second modal container -->
+
+                <div class="landing-call-container">
+                    <div class="landing-login-container">
+                        <div class="landing-log-in"> <a href="" ng-click="showme=true"> Log In </a></div>
+
+                            <div class="login-modal" ng-show="showme">
+                            <div class="modal-container">
+                            <div class="modal-close">  <a href="" ng-click="showme=false"> X </a></div>
+
+                            <div class="modal-column">
+                            <label class="label-landing-email"> Email </label>
+                            <input type="text" class="landing-email" ng-model="userEmail" />
+
+                            <label type="text" class="label-landing-password" > Password </label>
+                            <input type="text" class="landing-password" ng-model="userPassword">
+                            <br>
+                            <button class="login-button"> Sign In </button>
+                            </div>
+
+                            </div>
+                            </div>
+                    </div>
+                             <!-- This ends the button container -->
+                </div>
+
+
+
+                </div>
+                        <!-- This end the Jumbotron  -->
+            </div>
+        <!-- This closes the container -->
