@@ -33,6 +33,8 @@
 
                 <div class="landing-call-container">
                     <div class="landing-login-container">
+                      <form ng-submit="submitLogin()" method="post">
+
                         <div class="landing-log-in"> <a href="" ng-click="showme=true"> Log In </a></div>
 
                             <div class="login-modal" ng-show="showme">
@@ -41,16 +43,17 @@
 
                             <div class="modal-column">
                             <label class="label-landing-email"> Email </label>
-                            <input type="text" class="landing-email" ng-model="userEmail" />
+                            <input type="text" class="landing-email" ng-model="landPage.email" />
 
                             <label type="text" class="label-landing-password" > Password </label>
-                            <input type="text" class="landing-password" ng-model="userPassword">
+                            <input type="text" class="landing-password" ng-model="landPage.password">
                             <br>
                             <button class="login-button"> Sign In </button>
                             </div>
 
                             </div>
                             </div>
+                          </form>
                     </div>
                              <!-- This ends the button container -->
                 </div>

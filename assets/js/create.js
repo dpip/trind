@@ -1,14 +1,32 @@
-trind.controller('CreateController', [ '$http', '$scope', function($http, $scope){
+trind.controller('CreateController', ['$scope', '$location', '$http', function($scope, $http){
 
-    $scope.message = "get was got"
+  console.log("WHY");
+
+  $scope.testTrind = {
+      "event": {
+      "interests": "",
+      "description": "",
+      "location": ""
+    }
+  };
+
+  $scope.submitTrind = function() {
+    console.log("Hello, little Hobbit!");
+    console.log($scope.testTrind)
+    $http.post('https://still-waters-14036.herokuapp.com/events', $scope.testTrind)
+    .success(function (data) {
+      $location.path('#/home');
+  });
+    // .then(function(response){
+    //   console.log("yay");
+    // })
+  };
 
     $(document).ready(function () {
         $("#home-drop-search-input-box").hide();
         $('.trind-main-header-search-icon').click(function () {
             $("#home-drop-search-input-box").toggle();
         });
-
     });
-
 
   }]);

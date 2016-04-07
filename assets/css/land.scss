@@ -8,6 +8,7 @@
     text-align: center;
     font-weight: bold;
     padding-top: 25px;
+    padding-top: 1em;
 }
 
 .landing-subtitle {
@@ -45,6 +46,7 @@ a{
         color: orange;
         text-decoration: none;
         padding: .2em;
+        margin-left: 15%;
     }
 }
 
@@ -64,12 +66,14 @@ a{
         font-size: 4em;
         padding: 1em;
         bottom: 5px;
+        z-index: 10;
 
     a {
         display: inline-block;
         width: 550px;
         margin-top: 25px;
         margin-left: 5%;
+        z-index: 10;
     }
   }
 }
@@ -86,6 +90,7 @@ a{
         margin-top: 1em;
         margin-bottom: 1em;
 
+
     .modal-close {
         margin-top: 5px;
         margin-right: 25px;
@@ -97,7 +102,9 @@ a{
         }
 
     .modal-column label{
+
         color: orange;
+        color: #555;
         display: block;
         font-size: 45px;
         padding:.5em;
@@ -107,9 +114,10 @@ a{
         width: 90%;
         text-align: left;
         padding: .3em;
-        border: 1px solid #555;
+        border: 2px solid #555;
 
     }
+    
     .login-button {
         margin-top: 15px;
         margin-left: 5%;
@@ -141,6 +149,7 @@ a{
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
+    z-index: 50;
 
     .modal-close {
         font-size: 3em;
