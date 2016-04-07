@@ -1,4 +1,3 @@
-
 <div class= "trind-main-header">
   <div class= "trind-main-header-create-icon"><a href="#/create"><i class="fa fa-plus"></i></a></div>
   <div class= "trind-main-header-search-icon"><i class="fa fa-search"></i></div>
@@ -10,22 +9,24 @@
     </div>
 
 
-        <div class = "create-input-field" ng-controller = "CreateController">
+        <div class = "create-input-field">
           <form ng-submit="submitTrind()" method="post">
+            <div class= "user-creator-description-interests">
+              <input type="text" ng-model="testTrind.event.interests"placeholder="Interests" class ="create-enter-interests-input">
+            </div>
             <div class= "user-creator-description-name"></div>
             <div class = "user-creator-description">
-              <input type="text" ng-model="testTrind.description" placeholder="Description" class="user-creator-description-field">
+              <input type="text" ng-model="testTrind.event.description" placeholder="Description" class="user-creator-description-field">
               </div>
             <div class "create-enable-gps-location">
-              Enable gps filter: <input type="radio" name="enableGps">
+              Enable Radius <input type="radio" name="enableGps">
               </div>
             <div class = "create-enter-location">
-              Enter a location: <input type="text" name="enterLocation">
+              <input type="text" ng-model="testTrind.event.location" placeholder="Anywhere in particular?" class ="create-enter-location-input">
               </div>
             <div class= "create-trind-submit-button">
-              <!-- <button type="submit" class= "create-trind-submit-button-text">Trind</button> -->
+              <button type="submit" class= "create-trind-submit-button-text"><a href="#/home">Trind</a></button>
             </div>
-            <button type="submit" class= "create-trind-submit-button-text">Trind</button>
           </form>
 
         </div>
