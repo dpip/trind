@@ -4,7 +4,8 @@
 .landing-title {
   color: orange;
   font-size: 80px;
-  text-align: center; }
+  text-align: center;
+  padding-top: 1em; }
 
 .landing-subtitle {
   text-align: center;
@@ -34,7 +35,8 @@
   text-align: center;
   color: orange;
   text-decoration: none;
-  padding: .2em; }
+  padding: .2em;
+  margin-left: 15%; }
 
 .landing-call-container {
   color: white;
@@ -59,11 +61,10 @@
       z-index: 10; }
 
 .login-modal {
-  width: 99%;
-  z-index: 40; }
+  width: 99%; }
   .login-modal .modal-container {
     border: 2px solid white;
-    background: orange;
+    background: white;
     height: 550px;
     text-align: center;
     margin-top: 1em;
@@ -75,16 +76,18 @@
       padding-right: 15px;
       float: right;
       text-align: right;
-      line-height: 25px; }
+      line-height: 25px;
+      color: black; }
     .login-modal .modal-container .modal-column label {
-      color: white;
+      color: #555;
       display: block;
       font-size: 45px; }
     .login-modal .modal-container .modal-column input {
       font-size: .8em;
       width: 90%;
       text-align: left;
-      padding: .3em; }
+      padding: .3em;
+      border: 2px solid #555; }
     .login-modal .modal-container .login-button {
       margin-top: 15px;
       margin-left: 5%;
@@ -108,10 +111,14 @@
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
   z-index: 50; }
+  .landing-call-container .signup-form h3 {
+    color: black;
+    font-size: 2em; }
   .landing-call-container .signup-form .modal-close {
     font-size: 3em;
     float: right;
-    text-decoration: none; }
+    text-decoration: none;
+    color: black; }
 .landing-call-container .form-column {
   border: 1px solid white;
   height: 500px;

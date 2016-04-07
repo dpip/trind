@@ -10,6 +10,16 @@ trind.controller('LandController', [ '$http', '$scope', function($http, $scope){
       "password": ""
   };
 
+  $scope.newAccount = {
+      "user": {
+      "name": "",
+      "email": "",
+      "password": "",
+      "password_confirmation": "",
+  }
+
+  };
+
   $scope.submitLogin = function() {
     console.log("Hello, little Hobbit!");
     console.log($scope.landPage)
@@ -21,12 +31,18 @@ trind.controller('LandController', [ '$http', '$scope', function($http, $scope){
           alert("Incorrect Login");
           return status;
         });
-    // .then(function(response){
-    //   console.log("yay");
-    // })
-
   };
 
+$scope.submitSignup = function() {
+    console.log("Time to get Trinding");
+    console.log($scope.newAccount)
+    $http.post('https://still-waters-14036.herokuapp.com/users', $scope.newAccount)
+    .success(function(data) {
+        console.log("new account created");
+        // window.location.replace('#/home')
+    })
+
+};
 
 
   }]);

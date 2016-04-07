@@ -6,14 +6,12 @@
     color: orange;
     font-size: 80px;
     text-align: center;
-    font-weight: bold;
-    padding-top: 25px;
     padding-top: 1em;
 }
 
 .landing-subtitle {
     text-align: center;
-    font-size: 55px;
+    font-size: 35px;
     color: white;
 }
 
@@ -75,7 +73,7 @@ a{
         margin-left: 5%;
         z-index: 10;
     }
-  }
+    }
 }
 
 
@@ -84,7 +82,7 @@ a{
 
     .modal-container {
         border: 2px solid white;
-        background: #fff;
+        background: white;
         height: 550px;
         text-align: center;
         margin-top: 1em;
@@ -97,18 +95,15 @@ a{
         padding-bottom: 15px;
         padding-right: 15px;
         float: right;
-        color: black;
         text-align: right;
         line-height: 25px;
+        color: black;
         }
 
     .modal-column label{
-
-        color: orange;
         color: #555;
         display: block;
         font-size: 45px;
-        padding:.5em;
     }
     .modal-column input {
         font-size: .8em;
@@ -118,7 +113,6 @@ a{
         border: 2px solid #555;
 
     }
-
     .login-button {
         margin-top: 15px;
         margin-left: 5%;
@@ -133,17 +127,13 @@ a{
 
 .landing-call-container {
 
-
-//Sign Up Modal
-
 .signup-form {
     font-size: 1em;
     line-height: 2em;
-    // background-color: #fff;
+    background-color: #fff;
     width: 80%;
-    border:1px solid #555;
+    border: #555;
     margin-left: 9%;
-    margin-top: 35px;
     background: #fff;
     z-index: 10;
     opacity:1;
@@ -152,35 +142,38 @@ a{
     transition: opacity 400ms ease-in;
     z-index: 50;
 
+    h3 {
+        color: black;
+        font-size: 2em;
+    }
+
     .modal-close {
         font-size: 3em;
         float: right;
         text-decoration: none;
+        color: black;
     }
 }
 
 .form-column {
     border: 1px solid white;
-    height: 700px;
+    height: 500px;
     width: 600px;
     text-align: center;
     line-height: 35px;
     margin-top: 50px;
-    z-index: 11;
-    opacity: 1;
 
     label {
     display: block;
     padding: .2em;
-    font-size: 40px;
+    font-size: 1.2em;
     color: orange;
-
     }
     input {
         border: 2px solid #555;
-        padding: .3em;
-        width: 90%;
-        font-size: 40px;
+        padding: .2em;
+        width: 50%;
+        font-size: 1.2em;
     }
     #signup-now {
         padding: .5em;
