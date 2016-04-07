@@ -5,11 +5,12 @@
   color: orange;
   font-size: 80px;
   text-align: center;
-  padding-top: 1em; }
+  font-weight: bold;
+  padding-top: 25px; }
 
 .landing-subtitle {
   text-align: center;
-  font-size: 35px;
+  font-size: 55px;
   color: white; }
 
 .landing-jumbotron {
@@ -61,7 +62,7 @@
   width: 99%; }
   .login-modal .modal-container {
     border: 2px solid white;
-    background: orange;
+    background: #fff;
     height: 550px;
     text-align: center;
     margin-top: 1em;
@@ -75,14 +76,16 @@
       text-align: right;
       line-height: 25px; }
     .login-modal .modal-container .modal-column label {
-      color: white;
+      color: orange;
       display: block;
-      font-size: 45px; }
+      font-size: 45px;
+      padding: .5em; }
     .login-modal .modal-container .modal-column input {
       font-size: .8em;
       width: 90%;
       text-align: left;
-      padding: .3em; }
+      padding: .3em;
+      border: 1px solid #555; }
     .login-modal .modal-container .login-button {
       margin-top: 15px;
       margin-left: 5%;
@@ -95,10 +98,10 @@
 .landing-call-container .signup-form {
   font-size: 1em;
   line-height: 2em;
-  background-color: #fff;
   width: 80%;
-  border: #555;
+  border: 1px solid #555;
   margin-left: 9%;
+  margin-top: 35px;
   background: #fff;
   z-index: 10;
   opacity: 1;
@@ -111,21 +114,23 @@
     text-decoration: none; }
 .landing-call-container .form-column {
   border: 1px solid white;
-  height: 500px;
+  height: 700px;
   width: 600px;
   text-align: center;
   line-height: 35px;
-  margin-top: 50px; }
+  margin-top: 50px;
+  z-index: 11;
+  opacity: 1; }
   .landing-call-container .form-column label {
     display: block;
     padding: .2em;
-    font-size: 1.2em;
+    font-size: 40px;
     color: orange; }
   .landing-call-container .form-column input {
     border: 2px solid #555;
-    padding: .2em;
-    width: 50%;
-    font-size: 1.2em; }
+    padding: .3em;
+    width: 90%;
+    font-size: 40px; }
   .landing-call-container .form-column #signup-now {
     padding: .5em;
     background: green;
