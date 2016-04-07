@@ -39,7 +39,7 @@ $scope.submitSignup = function() {
     $http.post('https://still-waters-14036.herokuapp.com/users', $scope.newAccount)
     .success(function(data) {
         console.log("new account created");
-        // window.location.replace('#/home')
+        window.location.replace('#/home');
     })
 
 };
