@@ -61,12 +61,14 @@ a{
         font-size: 4em;
         padding: 1em;
         bottom: 5px;
+        z-index: 10;
 
     a {
         display: inline-block;
         width: 550px;
         margin-top: 25px;
         margin-left: 5%;
+        z-index: 10;
     }
     }
 }
@@ -74,6 +76,7 @@ a{
 
 .login-modal {
     width: 99%;
+    z-index: 40;
 
     .modal-container {
         border: 2px solid white;
@@ -132,6 +135,7 @@ a{
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
+    z-index: 50;
 
     .modal-close {
         font-size: 3em;

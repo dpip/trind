@@ -49,15 +49,18 @@
   .landing-call-container .landing-login-container {
     font-size: 4em;
     padding: 1em;
-    bottom: 5px; }
+    bottom: 5px;
+    z-index: 10; }
     .landing-call-container .landing-login-container a {
       display: inline-block;
       width: 550px;
       margin-top: 25px;
-      margin-left: 5%; }
+      margin-left: 5%;
+      z-index: 10; }
 
 .login-modal {
-  width: 99%; }
+  width: 99%;
+  z-index: 40; }
   .login-modal .modal-container {
     border: 2px solid white;
     background: orange;
@@ -103,7 +106,8 @@
   opacity: 1;
   -webkit-transition: opacity 400ms ease-in;
   -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in; }
+  transition: opacity 400ms ease-in;
+  z-index: 50; }
   .landing-call-container .signup-form .modal-close {
     font-size: 3em;
     float: right;
