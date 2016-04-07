@@ -91,7 +91,6 @@
       height: 110px;
       border: 1px solid black; }
 
-
 .landing-call-container .signup-form {
   font-size: 1em;
   line-height: 2em;
@@ -107,18 +106,34 @@
   transition: opacity 400ms ease-in; }
   .landing-call-container .signup-form .modal-close {
     font-size: 3em;
-
-.login-button {
-  padding-bottom: 45px;
-  margin-top: 15px;
-  bottom: auto;
-  margin-left: 35%;
-  margin-right: 20%;
-  float: left;
-  font-size: 2em;
-  width: 300px;
-  height: 50px;
-  border: 1px solid black; }
+    float: right;
+    text-decoration: none; }
+.landing-call-container .form-column {
+  border: 1px solid white;
+  height: 500px;
+  width: 600px;
+  text-align: center;
+  line-height: 35px;
+  margin-top: 50px; }
+  .landing-call-container .form-column label {
+    display: block;
+    padding: .2em;
+    font-size: 1.2em;
+    color: orange; }
+  .landing-call-container .form-column input {
+    border: 2px solid #555;
+    padding: .2em;
+    width: 50%;
+    font-size: 1.2em; }
+  .landing-call-container .form-column #signup-now {
+    padding: .5em;
+    background: green;
+    color: white; }
+  .landing-call-container .form-column #signup-facebook {
+    margin: .2em;
+    padding: .5em;
+    background: blue;
+    color: white; }
 
 .create-input-field {
   height: 200px;
@@ -216,33 +231,13 @@
   .trind-main-footer .trind-main-footer-message-icon {
     position: relative;
     float: right;
-    text-decoration: none; }
-.landing-call-container .form-column {
-  border: 1px solid white;
-  height: 500px;
-  width: 600px;
-  text-align: center;
-  line-height: 35px;
-  margin-top: 50px; }
-  .landing-call-container .form-column label {
-    display: block;
-    padding: .2em;
-    font-size: 1.2em;
-    color: orange; }
-  .landing-call-container .form-column input {
-    border: 2px solid #555;
-    padding: .2em;
-    width: 50%;
-    font-size: 1.2em; }
-  .landing-call-container .form-column #signup-now {
-    padding: .5em;
-    background: green;
-    color: white; }
-  .landing-call-container .form-column #signup-facebook {
-    margin: .2em;
-    padding: .5em;
-    background: blue;
-    color: white; }
+    top: 15px;
+    font-size: 45px;
+    margin-right: 20px; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
 
 .trind-default-background {
   background-color: rgba(49, 54, 63, 0.7); }
