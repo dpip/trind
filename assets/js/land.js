@@ -1,3 +1,5 @@
+// angular.module('ngClickExample', ['ngTouch']);
+
 trind.controller('LandController', [ '$http', '$scope', function($http, $scope){
 
   console.log("cool beans");
@@ -6,6 +8,16 @@ trind.controller('LandController', [ '$http', '$scope', function($http, $scope){
 
       "email": "",
       "password": ""
+  };
+
+  $scope.newAccount = {
+      "user": {
+      "name": "",
+      "email": "",
+      "password": "",
+      "password_confirmation": "",
+  }
+
   };
 
   $scope.submitLogin = function() {
@@ -19,12 +31,18 @@ trind.controller('LandController', [ '$http', '$scope', function($http, $scope){
           alert("Incorrect Login");
           return status;
         });
-    // .then(function(response){
-    //   console.log("yay");
-    // })
-
   };
 
+$scope.submitSignup = function() {
+    console.log("Time to get Trinding");
+    console.log($scope.newAccount)
+    $http.post('https://still-waters-14036.herokuapp.com/users', $scope.newAccount)
+    .success(function(data) {
+        console.log("new account created");
+        // window.location.replace('#/home')
+    })
+
+};
 
 
   }]);

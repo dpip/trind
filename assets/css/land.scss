@@ -8,6 +8,7 @@
     text-align: center;
     padding-top: 1em;
 }
+
 .landing-subtitle {
     text-align: center;
     font-size: 35px;
@@ -96,6 +97,7 @@ a{
         float: right;
         text-align: right;
         line-height: 25px;
+        color: black;
         }
 
     .modal-column label{
@@ -140,10 +142,16 @@ a{
     transition: opacity 400ms ease-in;
     z-index: 50;
 
+    h3 {
+        color: black;
+        font-size: 2em;
+    }
+
     .modal-close {
         font-size: 3em;
         float: right;
         text-decoration: none;
+        color: black;
     }
 }
 
@@ -180,3 +188,26 @@ a{
     }
   }
 }
+
+// @media (min-width: 800px) {
+//
+//     .landing-title {
+//         font-size: 3em;
+//     }
+//
+//
+//
+//     .landing-call-container {
+//         width: 55%;
+//         text-align: center;
+//         margin-left: 12%;
+//
+//         .landing-log-in {
+//             margin-left: 6%;
+//         }
+//     }
+//
+//
+//
+//
+// }

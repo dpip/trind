@@ -12,17 +12,19 @@
 
                             <div id="signup-modal" class="signup-form" ng-show="showmodal">
                                 <div class="modal-close"> <a href="" ng-click="showmodal=false">X </a></div>
+                                    <form ng-submit="submitSignup()" method="post">
                                         <div class="form-column">
                                           <label for="first-name">Name</label>
-                                          <input type="text" id="first-name" name="first-name" placeholder="Larry" />
+                                          <input type="text" id="signup-name" placeholder="True" ng-model="newAccount.user.name" />
                                           <label for="email-address">Email Address</label>
-                                          <input type="text" id="email-address" name="email-address" placeholder="larry@atlien.com" />
+                                          <input type="text" id="email-address" name="email-address" placeholder="friends@trind.com" ng-model="newAccount.user.email"/>
                                           <label for="new-password">Password</label>
-                                          <input type="text" id="new-password" name="new-password" placeholder="******" />
+                                          <input type="text" id="new-password" name="new-password" placeholder="******" ng-model="newAccount.user.password"/>
                                           <label for="confirm-password"> Confirm Password</label>
-                                          <input type="text" id="confirm-password" name="confirm-password" placeholder="******" />
+                                          <input type="text" id="confirm-password" name="confirm-password" placeholder="******" ng-model="newAccount.user.password_confirmation"/>
                                           <br>
-                                        <button id="signup-now"> <a href="#"> Create Account </a> </button>
+                                        <button id="signup-now"> Create Account </button>
+                                    </form>
                                         <br> <h3> OR </h3> <br>
                                         <button id="signup-facebook"> <a href="#"> Sign Up with Facebook </a> </button>
                                         </div>
@@ -48,7 +50,7 @@
                             <label type="text" class="label-landing-password" > Password </label>
                             <input type="text" class="landing-password" ng-model="landPage.password">
                             <br>
-                            <button class="login-button"> Sign In </button>
+                            <button class="login-button"> Log In </button>
                             </div>
 
                             </div>
