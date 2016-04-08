@@ -1,6 +1,6 @@
 trind.controller('LandController', [ '$http', '$scope', function($http, $scope){
 
-  console.log("WHY");
+  console.log("cool beans");
 
   $scope.landPage = {
 
@@ -19,11 +19,10 @@ trind.controller('LandController', [ '$http', '$scope', function($http, $scope){
           alert("Incorrect Login");
           return status;
         });
-
-
     // .then(function(response){
     //   console.log("yay");
     // })
+
   };
 
 
