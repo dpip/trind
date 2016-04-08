@@ -1,252 +1,57 @@
-.landing-container {
-  font-family: helvetica, sans-serif; }
+/*
+Error: File to import not found or unreadable: home.
+       Load path: /Users/macbook/Desktop/TRIND
+        on line 3 of ./assets/css/app.scss
 
-.landing-title {
-  color: orange;
-  font-size: 80px;
-  text-align: center; }
+1: @import 'land';
+2: @import 'create';
+3: @import 'home';
+4: 
+5: // ==========keep this.....eliminates href highlight==============
+6: a {
+7:   color: inherit;
+8:   text-decoration: none;
 
-.landing-subtitle {
-  text-align: center;
-  font-size: 35px;
-  color: white; }
-
-.landing-jumbotron {
-  background: url("http://cdn1.theodysseyonline.com/files/2015/06/08/635693880042525992-518822648_couple-hiking-valley.jpg") bottom center no-repeat;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: 70% 0; }
-
-.landing-sign-up a {
-  border: 2px solid orange;
-  border-radius: 5px;
-  text-align: center;
-  color: orange;
-  text-decoration: none;
-  padding: .2em;
-  font-size: 4em;
-  margin-left: 15%; }
-
-.landing-log-in a {
-  border: 2px solid orange;
-  border-radius: 5px;
-  text-align: center;
-  color: orange;
-  text-decoration: none;
-  padding: .2em; }
-
-.landing-call-container {
-  color: white;
-  width: 80%;
-  height: 30%;
-  padding-top: 55px;
-  padding-bottom: 5px;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin-left: 5%;
-  margin-right: 5%; }
-  .landing-call-container .landing-login-container {
-    font-size: 4em;
-    padding: 1em;
-    bottom: 5px;
-    z-index: 10; }
-    .landing-call-container .landing-login-container a {
-      display: inline-block;
-      width: 550px;
-      margin-top: 25px;
-      margin-left: 5%;
-      z-index: 10; }
-
-.login-modal {
-  width: 99%;
-  z-index: 40; }
-  .login-modal .modal-container {
-    border: 2px solid white;
-    background: orange;
-    height: 550px;
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em; }
-    .login-modal .modal-container .modal-close {
-      margin-top: 5px;
-      margin-right: 25px;
-      padding-bottom: 15px;
-      padding-right: 15px;
-      float: right;
-      text-align: right;
-      line-height: 25px; }
-    .login-modal .modal-container .modal-column label {
-      color: white;
-      display: block;
-      font-size: 45px; }
-    .login-modal .modal-container .modal-column input {
-      font-size: .8em;
-      width: 90%;
-      text-align: left;
-      padding: .3em; }
-    .login-modal .modal-container .login-button {
-      margin-top: 15px;
-      margin-left: 5%;
-      margin-right: 5%;
-      font-size: .5em;
-      width: 300px;
-      height: 110px;
-      border: 1px solid black; }
-
-.landing-call-container .signup-form {
-  font-size: 1em;
-  line-height: 2em;
-  background-color: #fff;
-  width: 80%;
-  border: #555;
-  margin-left: 9%;
-  background: #fff;
-  z-index: 10;
-  opacity: 1;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  z-index: 50; }
-  .landing-call-container .signup-form .modal-close {
-    font-size: 3em;
-    float: right;
-    text-decoration: none; }
-.landing-call-container .form-column {
-  border: 1px solid white;
-  height: 500px;
-  width: 600px;
-  text-align: center;
-  line-height: 35px;
-  margin-top: 50px; }
-  .landing-call-container .form-column label {
-    display: block;
-    padding: .2em;
-    font-size: 1.2em;
-    color: orange; }
-  .landing-call-container .form-column input {
-    border: 2px solid #555;
-    padding: .2em;
-    width: 50%;
-    font-size: 1.2em; }
-  .landing-call-container .form-column #signup-now {
-    padding: .5em;
-    background: green;
-    color: white; }
-  .landing-call-container .form-column #signup-facebook {
-    margin: .2em;
-    padding: .5em;
-    background: blue;
-    color: white; }
-
-.create-input-field {
-  height: 200px;
-  margin-top: 6em; }
-  .create-input-field .create-enter-interests-input {
-    width: 100%;
-    height: 40px;
-    font-size: 14px;
-    position: relative; }
-  .create-input-field .user-creator-description {
-    padding-top: 1em; }
-  .create-input-field .user-creator-description {
-    font-size: 14px;
-    position: relative; }
-  .create-input-field .user-creator-description-field {
-    padding-bottom: 80px;
-    width: 100%;
-    font-size: 14px;
-    position: relative; }
-  .create-input-field .create-enter-location-input {
-    width: 100%;
-    height: 40px;
-    font-size: 14px; }
-  .create-input-field .create-trind-submit-button-text {
-    border: none;
-    height: 50px;
-    width: 100%;
-    font-size: 40px;
-    color: white;
-    background-color: #ff6d5e;
-    font-family: 'Sniglet', cursive;
-    bottom: 2.5em;
-    border-radius: 1em;
-    cursor: pointer;
-    position: absolute; }
-
-.trind-main-header {
-  height: 70px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #ff6d5e;
-  background-color: rgba(48, 74, 188, 0.9); }
-  .trind-main-header .trind-main-header-create-icon {
-    position: relative;
-    float: left;
-    top: 15px;
-    font-size: 45px;
-    margin-left: 20px; }
-  .trind-main-header .trind-main-header-image {
-    position: relative;
-    float: left;
-    top: 15px;
-    font-size: 45px;
-    left: 30%; }
-  .trind-main-header .trind-main-header-search-icon {
-    position: relative;
-    float: right;
-    top: 15px;
-    font-size: 45px;
-    margin-right: 20px;
-    cursor: inherit; }
-
-#home-drop-search-input-box {
-  margin-top: 70px;
-  height: 50px;
-  width: 100%;
-  font-size: 24px;
-  color: gray;
-  text-align: center; }
-
-.home-events-display {
-  margin-top: 6em; }
-
-.trind-main-footer {
-  height: 70px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: #ff6d5e;
-  background-color: rgba(48, 74, 188, 0.9); }
-  .trind-main-footer .trind-main-footer-me-icon {
-    position: relative;
-    float: left;
-    top: 15px;
-    font-size: 45px;
-    margin-left: 20px; }
-  .trind-main-footer .trind-main-footer-trind-icon {
-    position: relative;
-    float: left;
-    top: 15px;
-    font-size: 60px;
-    left: 32.5%;
-    font-family: 'Sniglet', cursive;
-    transform: rotate(-45deg); }
-  .trind-main-footer .trind-main-footer-message-icon {
-    position: relative;
-    float: right;
-    top: 15px;
-    font-size: 45px;
-    margin-right: 20px; }
-
-a {
-  color: inherit;
-  text-decoration: none; }
-
-.trind-default-background {
-  background-color: rgba(49, 54, 63, 0.7); }
-
-/*# sourceMappingURL=app.css.map */
+Backtrace:
+./assets/css/app.scss:3
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:45:in `import'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:28:in `imported_file'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:37:in `css_import?'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:471:in `on_file_changed'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: home.\A        Load path: /Users/macbook/Desktop/TRIND\A         on line 3 of ./assets/css/app.scss\A \A 1: @import 'land';\A 2: @import 'create';\A 3: @import 'home';\A 4: \A 5: // ==========keep this.....eliminates href highlight==============\A 6: a {\A 7:   color: inherit;\A 8:   text-decoration: none;"; }
