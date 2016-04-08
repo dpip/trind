@@ -1,151 +1,140 @@
-.landing-container {
-  font-family: helvetica, sans-serif; }
+@media (min-width: 800px) {
+  .landing-container {
+    font-family: helvetica, sans-serif;
+    border: 1px solid red; }
 
-.landing-title {
-  color: orange;
-  font-size: 80px;
-  text-align: center;
-  padding-top: 1em; }
-
-.landing-subtitle {
-  text-align: center;
-  font-size: 35px;
-  color: white; }
-
-.landing-jumbotron {
-  background: url("http://cdn1.theodysseyonline.com/files/2015/06/08/635693880042525992-518822648_couple-hiking-valley.jpg") bottom center no-repeat;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: 70% 0; }
-
-.landing-sign-up a {
-  border: 2px solid orange;
-  border-radius: 5px;
-  text-align: center;
-  color: orange;
-  text-decoration: none;
-  padding: .2em;
-  font-size: 4em;
-  margin-left: 15%; }
-
-.landing-log-in a {
-  border: 2px solid orange;
-  border-radius: 5px;
-  text-align: center;
-  color: orange;
-  text-decoration: none;
-  padding: .2em;
-  margin-left: 15%; }
-
-.landing-call-container {
-  color: white;
-  width: 80%;
-  height: 30%;
-  padding-top: 55px;
-  padding-bottom: 5px;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin-left: 5%;
-  margin-right: 5%; }
-  .landing-call-container .landing-login-container {
-    font-size: 4em;
-    padding: 1em;
-    bottom: 5px;
-    z-index: 10; }
-    .landing-call-container .landing-login-container a {
-      display: inline-block;
-      width: 550px;
-      margin-top: 25px;
-      margin-left: 5%;
-      z-index: 10; }
-
-.login-modal {
-  width: 99%; }
-  .login-modal .modal-container {
-    border: 2px solid white;
-    background: white;
-    height: 550px;
+  .landing-title {
+    color: red;
+    font-size: 60px;
     text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em; }
-    .login-modal .modal-container .modal-close {
-      margin-top: 5px;
-      margin-right: 25px;
-      padding-bottom: 15px;
-      padding-right: 15px;
-      float: right;
-      text-align: right;
-      line-height: 25px;
-      color: black; }
-    .login-modal .modal-container .modal-column label {
-      color: #555;
-      display: block;
-      font-size: 45px; }
-    .login-modal .modal-container .modal-column input {
-      font-size: .8em;
-      width: 90%;
-      text-align: left;
-      padding: .3em;
-      border: 2px solid #555; }
-    .login-modal .modal-container .login-button {
-      margin-top: 15px;
-      margin-left: 5%;
-      margin-right: 5%;
-      font-size: .5em;
-      width: 300px;
-      height: 110px;
-      border: 1px solid black; }
+    padding-top: .5em; }
 
-.landing-call-container .signup-form {
-  font-size: 1em;
-  line-height: 2em;
-  background-color: #fff;
-  width: 80%;
-  border: #555;
-  margin-left: 9%;
-  background: #fff;
-  z-index: 10;
-  opacity: 1;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  z-index: 50; }
-  .landing-call-container .signup-form h3 {
-    color: black;
-    font-size: 2em; }
-  .landing-call-container .signup-form .modal-close {
-    font-size: 3em;
-    float: right;
-    text-decoration: none;
-    color: black; }
-.landing-call-container .form-column {
-  border: 1px solid white;
-  height: 500px;
-  width: 600px;
-  text-align: center;
-  line-height: 35px;
-  margin-top: 50px; }
-  .landing-call-container .form-column label {
-    display: block;
-    padding: .2em;
-    font-size: 1.2em;
-    color: orange; }
-  .landing-call-container .form-column input {
-    border: 2px solid #555;
-    padding: .2em;
+  .landing-subtitle {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding-bottom: 15px; }
+
+  .landing-jumbotron {
+    background: url("http://cdn1.theodysseyonline.com/files/2015/06/08/635693880042525992-518822648_couple-hiking-valley.jpg") bottom center no-repeat;
+    max-width: 1500px;
+    height: 100%;
+    background-size: cover;
+    background-position: 70% 0; }
+
+  .landing-call-container {
+    color: white;
     width: 50%;
-    font-size: 1.2em; }
-  .landing-call-container .form-column #signup-now {
-    padding: .5em;
-    background: green;
-    color: white; }
-  .landing-call-container .form-column #signup-facebook {
-    margin: .2em;
-    padding: .5em;
-    background: blue;
-    color: white; }
+    height: 20%;
+    padding-top: 4em;
+    padding-bottom: .2em;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 20%;
+    margin-right: 5%;
+    border: 1px solid white;
+    display: inline-block;
+    text-align: center; }
+    .landing-call-container .landing-sign-up a {
+      border: 2px solid orange;
+      border-radius: 5px;
+      text-align: center;
+      color: orange;
+      text-decoration: none;
+      padding: .2em;
+      font-size: 50px; }
+    .landing-call-container .landing-log-in a {
+      border: 2px solid orange;
+      border-radius: 5px;
+      text-align: center;
+      color: orange;
+      text-decoration: none;
+      padding: .2em;
+      font-size: 50px;
+      z-index: 0; }
 
+  .login-modal {
+    width: 99%; }
+    .login-modal .modal-container {
+      border: 2px solid white;
+      background: white;
+      height: 550px;
+      text-align: center;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      z-index: 1;
+      opacity: 1; }
+      .login-modal .modal-container .modal-close {
+        margin-top: 5px;
+        margin-right: 25px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+        float: right;
+        text-align: right;
+        line-height: 25px;
+        color: black; }
+      .login-modal .modal-container .modal-column label {
+        color: #555;
+        display: block;
+        font-size: 45px; }
+      .login-modal .modal-container .modal-column input {
+        font-size: .8em;
+        width: 90%;
+        text-align: left;
+        padding: .3em;
+        border: 2px solid #555; }
+      .login-modal .modal-container .login-button {
+        margin-top: 15px;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: .5em;
+        width: 300px;
+        height: 110px;
+        border: 1px solid black; }
+
+  .signup-form {
+    font-size: 1em;
+    line-height: 2em;
+    background-color: #fff;
+    border: #555;
+    background: #fff;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in; }
+    .signup-form h3 {
+      color: black;
+      font-size: 2em; }
+    .signup-form .modal-close {
+      font-size: 3em;
+      float: right;
+      text-decoration: none;
+      color: black; }
+    .signup-form .form-column {
+      border: 1px solid white;
+      height: 500px;
+      width: 600px;
+      text-align: center;
+      line-height: 35px;
+      margin-top: 50px; }
+      .signup-form .form-column label {
+        display: block;
+        padding: .2em;
+        font-size: 1.2em;
+        color: orange; }
+      .signup-form .form-column input {
+        border: 2px solid #555;
+        padding: .2em;
+        width: 50%;
+        font-size: 1.2em; }
+      .signup-form .form-column #signup-now {
+        padding: .5em;
+        background: green;
+        color: white; }
+      .signup-form .form-column #signup-facebook {
+        margin: .2em;
+        padding: .5em;
+        background: blue;
+        color: white; } }
 .create-input-field {
   height: 200px;
   margin-top: 6em; }

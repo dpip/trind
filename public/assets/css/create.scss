@@ -1,0 +1,42 @@
+.create-input-field {
+  height: 200px;
+  margin-top: 6em;
+    .create-enter-interests-input {
+      width: 100%;
+      height: 40px;
+      font-size: 14px;
+      position: relative;
+    }
+    .user-creator-description {
+      padding-top: 1em;
+    }
+    .user-creator-description {
+      font-size: 14px;
+      position: relative;
+    }
+    .user-creator-description-field {
+      padding-bottom: 80px;
+      width: 100%;
+      font-size: 14px;
+      position: relative;
+    }
+    .create-enter-location-input {
+      width: 100%;
+      height: 40px;
+      font-size: 14px;
+    }
+    .create-trind-submit-button-text {
+      border: none;
+      height: 50px;
+      width: 100%;
+      font-size: 40px;
+      color: white;
+      background-color: rgb(255, 109, 94);
+      font-family: 'Sniglet', cursive;
+      bottom: 2.5em;
+      border-radius: 1em;
+      cursor: pointer;
+      position: absolute;
+
+    }
+}

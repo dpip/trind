@@ -1,0 +1,13 @@
+@import 'land';
+@import 'create';
+@import 'home';
+
+// ==========keep this.....eliminates href highlight==============
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.trind-default-background {
+background-color: rgba(49, 54, 63, 0.7);
+}
