@@ -1,4 +1,4 @@
-trind.controller('CreateController', ['$scope', '$location', '$http', function($scope, $http){
+trind.controller('CreateController', ['$scope', '$http', function($scope, $http){
 
   console.log("WHY");
 
@@ -15,11 +15,9 @@ trind.controller('CreateController', ['$scope', '$location', '$http', function($
     console.log($scope.testTrind)
     $http.post('https://still-waters-14036.herokuapp.com/events', $scope.testTrind)
     .success(function (data) {
-      $location.path('#/home');
-  });
-    // .then(function(response){
-    //   console.log("yay");
-    // })
+      window.location.replace('#/home')
+    })
+
   };
 
     $(document).ready(function () {

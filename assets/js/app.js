@@ -10,6 +10,10 @@ trind.config(function($routeProvider) {
       templateUrl: 'home.html',
       controller: 'HomeController'
     })
+    .when('/details', {
+      templateUrl: 'details.html',
+      controller: 'DetailsController'
+    })
     .when('/me', {
       templateUrl: 'me.html',
       controller: 'MeController'
