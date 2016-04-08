@@ -39,7 +39,7 @@
 
                         <div class="landing-log-in"> <a href="" ng-click="showme=true"> Log In </a></div>
 
-                            <div class="login-modal" ng-show="showme">
+                            <div id="login-modal" class="login-modal" ng-show="showme">
                             <div class="modal-container">
                             <div class="modal-close">  <a href="" ng-click="showme=false"> X </a></div>
 
@@ -50,7 +50,7 @@
                             <label type="text" class="label-landing-password" > Password </label>
                             <input type="text" class="landing-password" ng-model="landPage.password">
                             <br>
-                            <button class="login-button"> Log In </button>
+                            <button class="login-button" ng-click="hideme" > Log In </button>
                             </div>
 
                             </div>
@@ -65,3 +65,16 @@
                         <!-- This end the Jumbotron  -->
             </div>
         <!-- This closes the container -->
+
+        <!-- The begins the section below the fold -->
+
+        <section class="about-trind" >
+            <h2 class="about-title"> About Trind </h2>
+            <div class="about-team">
+                <ul class="team-list">
+                    <li>Daniel </li>
+                    <li> Damian </li>
+                    <li> Evan </li>
+                </ul>
+
+        </section>

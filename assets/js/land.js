@@ -1,8 +1,12 @@
-// angular.module('ngClickExample', ['ngTouch']);
+// angular.module('ngClickhideme', ['ngTouch']);
 
 trind.controller('LandController', [ '$http', '$scope', function($http, $scope){
 
-  console.log("cool beans");
+  console.log("Components Coming");
+
+
+
+
 
   $scope.landPage = {
 
