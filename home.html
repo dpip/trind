@@ -6,11 +6,21 @@
 </div>
 
   <div class= "home-drop-search-bar">
-    <input type="text" placeholder="What's Trinding?" class = "expand" id= "home-drop-search-input-box">
+    <input type="text" placeholder="What's Trinding?" class = "expand" id= "home-drop-search-input-box" ng-model="search">
   </div>
 
   <div class= "home-events-display">
-    {{data}} 
+
+    <div class= "home-trind-event-container" ng-repeat="things in stuff | filter:search ">
+
+        <div class= "home-trind-event-information-image" id="event-dilb" ><input type="button"  ng-include="'#/details'"></div>
+        <div class= "home-trind-event-information-container" id="event-dilb" >
+          <div class= "home-trind-event-information" id= "interests"> {{things.interests}} </div>
+          <div class= "home-trind-event-information" id= "description"> {{things.description}} </div>
+          <div class= "home-trind-event-information" id= "location"> {{things.location}} </div>
+        </div>
+    </div>
+
   </div>
 
 

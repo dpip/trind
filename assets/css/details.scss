@@ -46,44 +46,10 @@
   z-index: 90;
 }
 
-
 // ================Top header ends=============
-.home-events-display {
-  position: relative;
-  box-sizing: border-box;
-  margin-top: 70px;
-  width: 100%;
-    .home-trind-event-information-image {
-      background-color: rgba(234, 234, 234, 1);
-      height: 100px;
-      width: 100px;
-      float: left;
-    }
-    .home-trind-event-container {
-      height: 100px;
-      width: 100%;
-      background-color: white;
-    }
-    #event-dilb {
-      display: inline-block;
-    }
-    .home-trind-event-information {
-      background-color: yellow;
-      width:300px;
-    }
-    #interests {
-      height: 20px;
-      // border: 1px solid black;
-    }
-    #description {
-      height: 60px;
-      // border: 1px solid black;
-    }
-    #location {
-      height: 20px;
-      // border: 1px solid black;
-    }
-}
+
+
+
 
 // ==================== footer begins ==================
 

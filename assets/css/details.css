@@ -36,32 +36,6 @@
   text-align: center;
   z-index: 90; }
 
-.home-events-display {
-  position: relative;
-  box-sizing: border-box;
-  margin-top: 70px;
-  width: 100%; }
-  .home-events-display .home-trind-event-information-image {
-    background-color: #eaeaea;
-    height: 100px;
-    width: 100px;
-    float: left; }
-  .home-events-display .home-trind-event-container {
-    height: 100px;
-    width: 100%;
-    background-color: white; }
-  .home-events-display #event-dilb {
-    display: inline-block; }
-  .home-events-display .home-trind-event-information {
-    background-color: yellow;
-    width: 300px; }
-  .home-events-display #interests {
-    height: 20px; }
-  .home-events-display #description {
-    height: 60px; }
-  .home-events-display #location {
-    height: 20px; }
-
 .trind-main-footer {
   height: 70px;
   width: 100%;
@@ -92,4 +66,4 @@
     font-size: 45px;
     margin-right: 20px; }
 
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=details.css.map */
