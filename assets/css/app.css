@@ -318,6 +318,9 @@
   text-align: center;
   z-index: 90; }
 
+.event-details-container {
+  margin-top: 70px; }
+
 .trind-main-footer {
   height: 70px;
   width: 100%;
@@ -351,8 +354,5 @@
 a {
   color: inherit;
   text-decoration: none; }
-
-.trind-default-background {
-  background-color: rgba(49, 54, 63, 0.7); }
 
 /*# sourceMappingURL=app.css.map */

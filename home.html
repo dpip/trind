@@ -12,8 +12,8 @@
   <div class= "home-events-display">
 
     <div class= "home-trind-event-container" ng-repeat="things in stuff" >
-      <div ng-repeat= "thing in things">
-        <div class= "home-trind-event-information-image" id="event-dilb" ><input type="button" ng-click="details($index)"></div>
+      <div ng-repeat= "thing in things | filter:search">
+        <div class= "home-trind-event-information-image" id="event-dilb" ng-click="details($index)"><img src="{{thing.user.photo_url}}"></div>
         <div class= "home-trind-event-information-container" id="event-dilb">
           <div class= "home-trind-event-information" id= "interests"> {{thing.interests}} </div>
           <div class= "home-trind-event-information" id= "description"> {{thing.description}} </div>
@@ -30,5 +30,7 @@
   <div class= "trind-main-footer-message-icon"><a href="#/messages"><i class="fa fa-comment"></i></a></div>
 
 
-
 </div>
+
+
+<!-- <input type="button" ng-click="details($index)"> -->

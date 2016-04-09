@@ -36,6 +36,9 @@
   text-align: center;
   z-index: 90; }
 
+.event-details-container {
+  margin-top: 70px; }
+
 .trind-main-footer {
   height: 70px;
   width: 100%;
