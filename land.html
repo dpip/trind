@@ -9,7 +9,7 @@
                     <div class="landing-call-container">
                         <div class="landing-signup-container">
                             <div class="landing-sign-up"> <a href="" ng-click="showmodal=true"> Sign Up for Free </a> </div>
-
+                            <input type="submit" ng-controller="LoginCtrl" ng-click="auth.signin()" />
                             <div id="signup-modal" class="signup-form" ng-show="showmodal">
                                 <div class="modal-close"> <a href="" ng-click="showmodal=false">X </a></div>
                                     <form ng-submit="submitSignup()" method="post">
