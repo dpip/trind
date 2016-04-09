@@ -8,7 +8,8 @@
   // color: rgb(216, 51, 56);
   // background-color: rgba(75, 35, 126, 0.9);
   color: white;
-  background-color: rgba(48, 74, 188, 1);
+  background-color: rgba(164, 219, 216, 1);
+  // background-color: rgba(48, 74, 188, 1);
 
       .trind-main-header-create-icon {
         position: relative;
@@ -23,7 +24,7 @@
         float: left;
         top: 15px;
         font-size: 45px;
-        left: 30%;
+        left: 40.5%;
       }
 
       .trind-main-header-search-icon {
@@ -48,6 +49,13 @@
 
 // ================Top header ends=============
 
+.event-details-container {
+  margin-top: 70px;
+}
+
+
+
+
 
 
 
@@ -62,7 +70,8 @@
   // color: rgb(216, 51, 56);
   // background-color: rgba(75, 35, 126, 0.9);
   color: white;
-  background-color: rgba(48, 74, 188, 1);
+  background-color: rgba(164, 219, 216, 1);
+  // background-color: rgba(44, 50, 60, 1);
       .trind-main-footer-me-icon {
         position: relative;
         float: left;
@@ -77,7 +86,7 @@
         float: left;
         top: 15px;
         font-size: 60px;
-        left: 32.5%;
+        left: 40.5%;
         font-family: 'Sniglet', cursive;
         transform: rotate(-45deg);
       }

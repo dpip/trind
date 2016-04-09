@@ -11,16 +11,16 @@
 
   <div class= "home-events-display">
 
-    <div class= "home-trind-event-container" ng-repeat="things in stuff | filter:search ">
-
-        <div class= "home-trind-event-information-image" id="event-dilb" ><input type="button"  ng-include="'#/details'"></div>
-        <div class= "home-trind-event-information-container" id="event-dilb" >
-          <div class= "home-trind-event-information" id= "interests"> {{things.interests}} </div>
-          <div class= "home-trind-event-information" id= "description"> {{things.description}} </div>
-          <div class= "home-trind-event-information" id= "location"> {{things.location}} </div>
+    <div class= "home-trind-event-container" ng-repeat="things in stuff" >
+      <div ng-repeat= "thing in things | filter:search">
+        <div class= "home-trind-event-information-image" id="event-dilb" ng-click="details($index)"><img src="{{thing.user.photo_url}}"></div>
+        <div class= "home-trind-event-information-container" id="event-dilb">
+          <div class= "home-trind-event-information" id= "interests"> {{thing.interests}} </div>
+          <div class= "home-trind-event-information" id= "description"> {{thing.description}} </div>
+          <div class= "home-trind-event-information" id= "location"> {{thing.location}} </div>
+        </div>
         </div>
     </div>
-
   </div>
 
 
@@ -30,5 +30,7 @@
   <div class= "trind-main-footer-message-icon"><a href="#/messages"><i class="fa fa-comment"></i></a></div>
 
 
-
 </div>
+
+
+<!-- <input type="button" ng-click="details($index)"> -->
