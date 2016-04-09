@@ -26,7 +26,12 @@
     position: absolute;
 }
 
-
+.fb-container {
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+}
 
 .landing-call-container {
     color: white;
@@ -39,6 +44,8 @@
     margin-top: 55px;
     margin-left: 5%;
     margin-right:5%;
+
+
 }
 
     #landing-sign-up {
@@ -48,9 +55,10 @@
             text-align: center;
             color: orange;
             text-decoration: none;
-            padding: .2em;
+            padding: .5em;
             font-size: 4em;
             margin-left: 15%;
+            margin-top: 10%;
             z-index: auto;
         }
     }
