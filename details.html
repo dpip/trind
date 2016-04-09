@@ -10,7 +10,11 @@
 
       <div class= "event-details-container">
       <div ng-controller= "HomeController">
-        {{eventDetail}}
+        <img src="{{eventDetail[0].user.photo_url}}">
+        {{eventDetail[0].title}}
+        {{eventDetail[0].interests}}
+        {{eventDetail[0].description}}
+        {{eventDetail[0].location}}
       </div>
       </div>
 

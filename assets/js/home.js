@@ -1,6 +1,6 @@
 var showDetails;
 
-trind.controller('HomeController',  [ '$http', '$scope', function($http, $scope){
+trind.controller('HomeController',  [ '$http', '$location', '$scope', function($http, $location, $scope){
 
       // Gets the event json from Damian and repeats through home page
       $http.get('https://still-waters-14036.herokuapp.com/events').success(function(data){
@@ -14,7 +14,10 @@ trind.controller('HomeController',  [ '$http', '$scope', function($http, $scope)
       $scope.details = function(index) {
         console.log("ya there?");
         showDetails = index
+        $location.path('/details');
       };
+
+
 
       $scope.eventDetail = data.events;
 
