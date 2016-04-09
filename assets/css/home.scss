@@ -1,125 +1,47 @@
-.trind-main-header {
-  height: 150px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  color: white;
-  background-color: rgba(48, 74, 188, 1);
-
-      .trind-main-header-create-icon {
-        position: relative;
-        float: left;
-        top: 15px;
-        font-size: 45px;
-        margin-left: 20px;
-      }
-
-      .trind-main-header-image {
-        position: relative;
-        float: left;
-        top: 15px;
-        font-size: 45px;
-        left: 30%;
-      }
-
-      .trind-main-header-search-icon {
-        position: relative;
-        float: right;
-        top: 15px;
-        font-size: 45px;
-        margin-right: 20px;
-        cursor: inherit;
-      }
-}
-
-#home-drop-search-input-box {
-  position: fixed;
-  height: 50px;
-  width: 100%;
-  font-size: 24px;
-  color: gray;
-  text-align: center;
-  z-index: 90;
-}
-
-
-// ================Top header ends=============
 
 .home-events-display {
   position: relative;
   box-sizing: border-box;
-  margin-top: 70px;
+  margin-top: 120px;
   width: 100%;
+  font-family: 'Open Sans', sans-serif;
     .home-trind-event-information-image {
       background-color: rgba(234, 234, 234, 1);
-      height: 100px;
-      width: 100px;
+      height: 200px;
+      width: 200px;
       float: left;
     }
     .home-trind-event-container {
-      height: 100px;
+      height: 200px;
       width: 100%;
       background-color: white;
     }
     #event-dilb {
       display: inline-block;
     }
+    .home-trind-event-information-container {
+      width: 100%;
+      border: 1px solid rgba(171, 178, 186, 0.5);
+    }
     .home-trind-event-information {
-      background-color: yellow;
-      width:300px;
+      background-color: white;
     }
     #interests {
-      height: 20px;
-      // border: 1px solid black;
+      font-size: 40px;
+      padding-bottom: 15px;
+      height: 40px;
     }
     #description {
-      height: 60px;
+      height: 40px;
+      font-size: 30px;
+      padding-bottom: 15px;
+
       // border: 1px solid black;
     }
     #location {
       height: 20px;
+      font-size: 30px;
+      text-align: right;
       // border: 1px solid black;
     }
-}
-
-// ==================== footer begins ==================
-
-.trind-main-footer {
-  height: 70px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  // color: rgb(216, 51, 56);
-  // background-color: rgba(75, 35, 126, 0.9);
-  color: white;
-  background-color: rgba(44, 50, 60, 1);
-      .trind-main-footer-me-icon {
-        position: relative;
-        float: left;
-        top: 15px;
-        font-size: 45px;
-        margin-left: 20px;
-      }
-
-      .trind-main-footer-trind-icon {
-        color: rgb(255, 109, 94);
-        position: relative;
-        float: left;
-        top: 15px;
-        font-size: 60px;
-        left: 32.5%;
-        font-family: 'Sniglet', cursive;
-        transform: rotate(-45deg);
-      }
-
-      .trind-main-footer-message-icon {
-        position: relative;
-        float: right;
-        top: 15px;
-        font-size: 45px;
-        margin-right: 20px;
-      }
 }

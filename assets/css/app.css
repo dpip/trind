@@ -186,102 +186,54 @@
     cursor: pointer;
     position: absolute; }
 
-.trind-main-header {
-  height: 150px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  color: white;
-  background-color: #304abc; }
-  .trind-main-header .trind-main-header-create-icon {
-    position: relative;
-    float: left;
-    top: 15px;
-    font-size: 45px;
-    margin-left: 20px; }
-  .trind-main-header .trind-main-header-image {
-    position: relative;
-    float: left;
-    top: 15px;
-    font-size: 45px;
-    left: 30%; }
-  .trind-main-header .trind-main-header-search-icon {
-    position: relative;
-    float: right;
-    top: 15px;
-    font-size: 45px;
-    margin-right: 20px;
-    cursor: inherit; }
-
-#home-drop-search-input-box {
-  position: fixed;
-  height: 50px;
-  width: 100%;
-  font-size: 24px;
-  color: gray;
-  text-align: center;
-  z-index: 90; }
 
 .home-events-display {
   position: relative;
   box-sizing: border-box;
-  margin-top: 70px;
-  width: 100%; }
+  margin-top: 120px;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif; }
   .home-events-display .home-trind-event-information-image {
     background-color: #eaeaea;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     float: left; }
   .home-events-display .home-trind-event-container {
-    height: 100px;
+    height: 200px;
     width: 100%;
     background-color: white; }
   .home-events-display #event-dilb {
     display: inline-block; }
+  .home-events-display .home-trind-event-information-container {
+    width: 100%;
+    border: 1px solid rgba(171, 178, 186, 0.5); }
   .home-events-display .home-trind-event-information {
-    background-color: yellow;
-    width: 300px; }
+    background-color: white; }
   .home-events-display #interests {
-    height: 20px; }
+    font-size: 40px;
+    padding-bottom: 15px;
+    height: 40px; }
   .home-events-display #description {
-    height: 60px; }
+    height: 40px;
+    font-size: 30px;
+    padding-bottom: 15px; }
   .home-events-display #location {
-    height: 20px; }
+    height: 20px;
+    font-size: 30px;
+    text-align: right; }
 
-.trind-main-footer {
-  height: 70px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  color: white;
-  background-color: #2c323c; }
-  .trind-main-footer .trind-main-footer-me-icon {
-    position: relative;
-    float: left;
-    top: 15px;
-    font-size: 45px;
-    margin-left: 20px; }
-  .trind-main-footer .trind-main-footer-trind-icon {
-    color: #ff6d5e;
-    position: relative;
-    float: left;
-    top: 15px;
-    font-size: 60px;
-    left: 32.5%;
-    font-family: 'Sniglet', cursive;
-    transform: rotate(-45deg); }
-  .trind-main-footer .trind-main-footer-message-icon {
-    position: relative;
-    float: right;
-    top: 15px;
-    font-size: 45px;
-    margin-right: 20px; }
+.event-details-container {
+  font-size: 60px;
+  margin-top: 120px;
+  position: relative;
+  z-index: 1; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
 
 .trind-main-header {
-  height: 70px;
+  height: 120px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -292,20 +244,20 @@
   .trind-main-header .trind-main-header-create-icon {
     position: relative;
     float: left;
-    top: 15px;
-    font-size: 45px;
+    top: 25px;
+    font-size: 80px;
     margin-left: 20px; }
   .trind-main-header .trind-main-header-image {
     position: relative;
     float: left;
-    top: 15px;
-    font-size: 45px;
-    left: 40.5%; }
+    top: 25px;
+    font-size: 80px;
+    left: 35%; }
   .trind-main-header .trind-main-header-search-icon {
     position: relative;
     float: right;
-    top: 15px;
-    font-size: 45px;
+    top: 25px;
+    font-size: 80px;
     margin-right: 20px;
     cursor: inherit; }
 
@@ -318,41 +270,42 @@
   text-align: center;
   z-index: 90; }
 
-.event-details-container {
-  margin-top: 70px; }
-
 .trind-main-footer {
-  height: 70px;
+  height: 120px;
   width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
   color: white;
-  background-color: #a4dbd8; }
+  background-color: #a4dbd8;
+  z-index: 100; }
   .trind-main-footer .trind-main-footer-me-icon {
     position: relative;
     float: left;
-    top: 15px;
-    font-size: 45px;
-    margin-left: 20px; }
+    top: 25px;
+    font-size: 80px;
+    left: 20px; }
   .trind-main-footer .trind-main-footer-trind-icon {
     color: #ff6d5e;
     position: relative;
     float: left;
-    top: 15px;
-    font-size: 60px;
-    left: 40.5%;
+    top: 5px;
+    font-size: 130px;
+    left: 35%;
     font-family: 'Sniglet', cursive;
     transform: rotate(-45deg); }
+  .trind-main-footer .dot-dot-dot {
+    color: rgba(255, 109, 94, 0.6);
+    z-index: 10;
+    position: absolute;
+    top: -6px;
+    right: 19px;
+    font-size: 60px; }
   .trind-main-footer .trind-main-footer-message-icon {
     position: relative;
     float: right;
-    top: 15px;
-    font-size: 45px;
-    margin-right: 20px; }
-
-a {
-  color: inherit;
-  text-decoration: none; }
+    top: 20px;
+    font-size: 80px;
+    right: 20px; }
 
 /*# sourceMappingURL=app.css.map */

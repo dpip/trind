@@ -12,7 +12,7 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
 
   $scope.submitTrind = function() {
     console.log("Hello, little Hobbit!");
-    console.log($scope.testTrind)
+    console.log($scope.testTrind);
     $http.post('https://still-waters-14036.herokuapp.com/events', $scope.testTrind)
     .success(function (data) {
       window.location.replace('#/home')
