@@ -9,7 +9,106 @@ a {
   text-decoration: none;
 }
 
-// .trind-default-background {
-// background-color: rgba(49, 54, 63, 0.7);
-// position: absolute;
-// }
+.trind-main-header {
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  // color: rgb(216, 51, 56);
+  // background-color: rgba(75, 35, 126, 0.9);
+  color: white;
+  background-color: rgba(164, 219, 216, 1);
+  // background-color: rgba(48, 74, 188, 1);
+
+      .trind-main-header-create-icon {
+        position: relative;
+        float: left;
+        top: 25px;
+        font-size: 80px;
+        margin-left: 20px;
+      }
+
+      .trind-main-header-image {
+        position: relative;
+        float: left;
+        top: 25px;
+        font-size: 80px;
+        left: 35%;
+      }
+
+      .trind-main-header-search-icon {
+        position: relative;
+        float: right;
+        top: 25px;
+        font-size: 80px;
+        margin-right: 20px;
+        cursor: inherit;
+      }
+}
+
+#home-drop-search-input-box {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  font-size: 24px;
+  color: gray;
+  text-align: center;
+  z-index: 90;
+}
+
+// ================Top header ends=============
+
+
+
+
+// ==================== footer begins ==================
+
+
+.trind-main-footer {
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background-color: rgba(164, 219, 216, 1);
+  z-index: 100;
+
+      .trind-main-footer-me-icon {
+        position: relative;
+        float: left;
+        top: 25px;
+        font-size: 80px;
+        left: 20px;
+      }
+
+      .trind-main-footer-trind-icon {
+        color: rgb(255, 109, 94);
+        position: relative;
+        float: left;
+        top: 5px;
+        font-size: 130px;
+        left: 35%;
+        font-family: 'Sniglet', cursive;
+        transform: rotate(-45deg);
+      }
+
+      .dot-dot-dot {
+        color: rgba(255, 109, 94, 0.6);
+        z-index: 10;
+        position: absolute;
+        top: -6px;
+        right: 19px;
+        font-size: 60px;
+      }
+
+      .trind-main-footer-message-icon {
+        position: relative;
+        float: right;
+        top: 20px;
+        font-size: 80px;
+        right: 20px;
+      }
+}

@@ -1,72 +1,7 @@
-.trind-main-header {
-  height: 70px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  color: white;
-  background-color: #a4dbd8; }
-  .trind-main-header .trind-main-header-create-icon {
-    position: relative;
-    float: left;
-    top: 15px;
-    font-size: 45px;
-    margin-left: 20px; }
-  .trind-main-header .trind-main-header-image {
-    position: relative;
-    float: left;
-    top: 15px;
-    font-size: 45px;
-    left: 40.5%; }
-  .trind-main-header .trind-main-header-search-icon {
-    position: relative;
-    float: right;
-    top: 15px;
-    font-size: 45px;
-    margin-right: 20px;
-    cursor: inherit; }
-
-#home-drop-search-input-box {
-  position: fixed;
-  height: 50px;
-  width: 100%;
-  font-size: 24px;
-  color: gray;
-  text-align: center;
-  z-index: 90; }
-
 .event-details-container {
-  margin-top: 70px; }
-
-.trind-main-footer {
-  height: 70px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  color: white;
-  background-color: #a4dbd8; }
-  .trind-main-footer .trind-main-footer-me-icon {
-    position: relative;
-    float: left;
-    top: 15px;
-    font-size: 45px;
-    margin-left: 20px; }
-  .trind-main-footer .trind-main-footer-trind-icon {
-    color: #ff6d5e;
-    position: relative;
-    float: left;
-    top: 15px;
-    font-size: 60px;
-    left: 40.5%;
-    font-family: 'Sniglet', cursive;
-    transform: rotate(-45deg); }
-  .trind-main-footer .trind-main-footer-message-icon {
-    position: relative;
-    float: right;
-    top: 15px;
-    font-size: 45px;
-    margin-right: 20px; }
+  font-size: 60px;
+  margin-top: 120px;
+  position: relative;
+  z-index: 1; }
 
 /*# sourceMappingURL=details.css.map */
