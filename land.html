@@ -9,6 +9,12 @@
                     <div class="landing-call-container">
                         <!-- <div class="landing-signup-container"> -->
                             <div class="landing-sign-up"> <a href="" ng-click="showmodal=true"> Sign Up for Free </a> </div>
+                            <fb:login-button id="fb-login-button" scope="public_profile,email" onlogin="checkLoginState();">
+                            </fb:login-button>
+
+                            <div id="status">
+                            </div>
+
 
                             <div id="signup-modal" class="signup-form" ng-show="showmodal">
                                 <div class="modal-close"> <a href="" ng-click="showmodal=false">X </a></div>

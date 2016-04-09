@@ -34,6 +34,8 @@
     margin-right: 5%;
     display: inline-block;
     text-align: center; }
+    .landing-call-container #fb-login-button {
+      margin-top: 20px; }
     .landing-call-container .landing-sign-up a {
       border: 2px solid orange;
       border-radius: 5px;
