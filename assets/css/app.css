@@ -245,7 +245,7 @@
   bottom: 0;
   left: 0;
   color: white;
-  background-color: #304abc; }
+  background-color: #2c323c; }
   .trind-main-footer .trind-main-footer-me-icon {
     position: relative;
     float: left;
@@ -276,7 +276,7 @@
   left: 0;
   z-index: 100;
   color: white;
-  background-color: #304abc; }
+  background-color: #a4dbd8; }
   .trind-main-header .trind-main-header-create-icon {
     position: relative;
     float: left;
@@ -288,7 +288,7 @@
     float: left;
     top: 15px;
     font-size: 45px;
-    left: 30%; }
+    left: 40.5%; }
   .trind-main-header .trind-main-header-search-icon {
     position: relative;
     float: right;
@@ -313,7 +313,7 @@
   bottom: 0;
   left: 0;
   color: white;
-  background-color: #304abc; }
+  background-color: #a4dbd8; }
   .trind-main-footer .trind-main-footer-me-icon {
     position: relative;
     float: left;
@@ -326,7 +326,7 @@
     float: left;
     top: 15px;
     font-size: 60px;
-    left: 32.5%;
+    left: 40.5%;
     font-family: 'Sniglet', cursive;
     transform: rotate(-45deg); }
   .trind-main-footer .trind-main-footer-message-icon {
