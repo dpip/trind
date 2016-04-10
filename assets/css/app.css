@@ -1,9 +1,10 @@
 .landing-container {
-  font-family: helvetica, sans-serif; }
+  font-family: helvetica, sans-serif;
+  width: 100%; }
 
 .landing-title {
-  color: orange;
-  font-size: 80px;
+  color: #ff6c59;
+  font-size: 60px;
   text-align: center;
   padding-top: 1em; }
 
@@ -22,60 +23,49 @@
   position: absolute; }
 
 .fb-container {
-  margin-top: 100px;
-  margin-left: 200px;
-  margin-bottom: 200px;
-  text-align: center; }
+  text-align: center;
+  padding-left: 10%;
+  margin-top: 2em; }
 
-.landing-call-container {
-  color: white;
-  width: 80%;
-  height: 40%;
-  padding-top: 5px;
-  padding-bottom: 55px;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin-top: 55px;
-  margin-left: 5%;
-  margin-right: 5%; }
-
-#landing-sign-up a {
-  border: 2px solid orange;
+#landing-sign-up {
   border-radius: 5px;
   text-align: center;
-  color: orange;
+  font-size: 2em;
+  color: white;
+  border: 1px solid #a4dbd8;
   text-decoration: none;
-  padding: .5em;
-  font-size: 4em;
-  margin-left: 15%;
-  margin-top: 10%;
-  z-index: auto; }
+  padding: .2em;
+  z-index: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-shadow: 0 0 3px #555; }
 
-#landing-log-in {
-  margin-top: -350px;
-  width: 80%; }
-  #landing-log-in a {
-    border-radius: 5px;
-    text-align: center;
-    color: orange;
-    font-size: 4em;
-    margin-left: 45%;
-    z-index: auto; }
+.landing-login-container {
+  border-radius: 5px;
+  text-align: center;
+  color: #a4dbd8;
+  text-decoration: none;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .5em;
+  font-size: 2em;
+  z-index: auto;
+  text-shadow: 0 0 3px #555; }
 
 .login-modal {
-  width: 80%; }
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto; }
   .login-modal .modal-container {
-    border: 2px solid #555;
-    height: 380px;
+    border: 1px solid #555;
+    height: 320px;
     background: white;
-    text-align: center;
-    margin-top: -1em;
-    margin-bottom: 1em;
-    z-index: auto;
-    padding: 1em; }
+    z-index: auto; }
     .login-modal .modal-container .modal-close {
       float: right;
-      font-size: 2em;
+      font-size: 1em;
       text-align: right;
       line-height: 25px;
       color: black;
@@ -83,29 +73,25 @@
     .login-modal .modal-container .modal-column label {
       color: #555;
       display: block;
-      font-size: 50px;
+      font-size: 1em;
       padding: .2em; }
     .login-modal .modal-container .modal-column input {
-      font-size: 1.2em;
+      font-size: .5em;
       width: 80%;
       text-align: left;
       padding: .5em;
       border: 2px solid #555; }
     .login-modal .modal-container .login-button {
       margin-top: 10px;
-      margin-left: 5%;
-      margin-right: 5%;
-      font-size: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1em;
       width: 80%;
-      height: 100px;
+      height: 20%;
       border: 1px solid black; }
 
 #signup-modal {
   margin-top: 30px; }
-
-#login-modal {
-  margin-top: 150px;
-  margin-left: 5%; }
 
 .signup-form {
   font-size: 1em;
@@ -158,6 +144,182 @@
       color: white;
       font-size: 1em; }
 
+@media (min-width: 800px) {
+  .landing-header {
+    background-color: #a4dbd8;
+    color: #ff6c59;
+    height: 70px;
+    border-bottom: 1px solid #fff; }
+    .landing-header .land-header-left {
+      padding-top: .5em;
+      width: 30px;
+      text-align: center;
+      position: relative;
+      font-size: 2em;
+      text-shadow: 0 0 5px #fff; }
+    .landing-header .land-header-right {
+      width: 20%;
+      margin-right: auto;
+      float: right; }
+      .landing-header .land-header-right li {
+        float: right;
+        padding: .3em;
+        display: block;
+        margin-top: -20px; }
+
+  .landing-container {
+    font-family: helvetica, sans-serif;
+    width: 100%; }
+
+  .landing-title {
+    color: #ff6c59;
+    font-size: 60px;
+    text-align: center;
+    padding-top: .5em;
+    padding-bottom: .5em; }
+
+  .landing-subtitle {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding-bottom: 15px;
+    text-shadow: 0 0 3px #555; }
+
+  .landing-jumbotron {
+    background: url("http://cdn1.theodysseyonline.com/files/2015/06/08/635693880042525992-518822648_couple-hiking-valley.jpg") bottom center no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 20% 0;
+    position: absolute; }
+
+  .landing-signup-container {
+    height: 20%;
+    padding-top: 4em;
+    padding-bottom: .2em;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center; }
+    .landing-signup-container .fb-container {
+      text-align: center;
+      padding-left: 10%;
+      margin-top: 2em; }
+
+  #landing-sign-up {
+    border-radius: 5px;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    border: 1px solid #a4dbd8;
+    text-decoration: none;
+    padding: .2em;
+    z-index: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-shadow: 0 0 3px #555; }
+
+  .landing-login-container {
+    border-radius: 5px;
+    text-align: center;
+    color: #a4dbd8;
+    text-decoration: none;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .2em;
+    font-size: 2em;
+    z-index: auto;
+    text-shadow: 0 0 3px #555; }
+
+  .login-modal {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+    .login-modal .modal-container {
+      border: 2px solid #555;
+      height: 300px;
+      background: white;
+      z-index: auto; }
+      .login-modal .modal-container .modal-close {
+        float: right;
+        line-height: 15px;
+        color: black;
+        border: 1px solid black;
+        font-size: .5em;
+        padding: .5em; }
+      .login-modal .modal-container .modal-column label {
+        color: #555;
+        display: block;
+        font-size: 30px; }
+      .login-modal .modal-container .modal-column input {
+        font-size: .8em;
+        width: 90%;
+        text-align: left;
+        padding: .2em;
+        border: 2px solid #555; }
+      .login-modal .modal-container .login-button {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: .5em;
+        width: 80%;
+        height: 50px;
+        border: 1px solid black;
+        padding-bottom: 1em; }
+
+  #signup-modal {
+    margin-top: 30px; }
+
+  #login-modal {
+    margin-top: 100px; }
+
+  .signup-form {
+    font-size: 1em;
+    line-height: 1.5em;
+    background-color: #fff;
+    border: 2px solid #555;
+    position: relative;
+    z-index: auto; }
+    .signup-form h3 {
+      color: black;
+      font-size: 2em; }
+    .signup-form .modal-close {
+      font-size: 2em;
+      border: 1px solid #555;
+      float: right;
+      text-decoration: none;
+      color: black; }
+    .signup-form .form-column {
+      border: 1px solid white;
+      height: 420px;
+      line-height: 35px; }
+      .signup-form .form-column label {
+        display: block;
+        font-size: 1.2em;
+        color: #ff6c59; }
+      .signup-form .form-column input {
+        border: 2px solid #555;
+        font-size: 1.2em; }
+      .signup-form .form-column #signup-now {
+        padding: .5em;
+        background: green;
+        color: white; }
+      .signup-form .form-column #signup-facebook {
+        margin: .2em;
+        padding: .5em;
+        background: blue;
+        color: white; }
+
+  .about-trind {
+    height: 500px;
+    width: 100%;
+    font-size: 5em;
+    margin-left: auto;
+    margin-right: auto; } }
 .create-input-field {
   height: 200px;
   margin-top: 6em; }

@@ -39,11 +39,11 @@
   margin-left: 5%;
   margin-right: 5%; }
 
-#landing-sign-up a {
-  border: 2px solid orange;
+.landing-sign-up {
+  border: 2px solid white;
   border-radius: 5px;
-  text-align: center;
-  color: orange;
+  text-align: left;
+  color: white;
   text-decoration: none;
   padding: .5em;
   font-size: 4em;

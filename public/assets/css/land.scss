@@ -14,7 +14,6 @@
     font-size: 35px;
     color: white;
     text-shadow: 0 0 3px #555;
-
 }
 
 .landing-jumbotron {
@@ -58,22 +57,23 @@
             padding: .5em;
             font-size: 4em;
             margin-left: 15%;
-            margin-top: 10%;
+            margin-top: 0%;
             z-index: auto;
         }
     }
 
         #landing-log-in {
-                margin-top:-350px;
-                width: 80%;
+
             a {
             // border: 2px solid orange;
             border-radius: 5px;
             text-align: center;
-            color: orange;
+            color: #0db50d;
             font-size: 4em;
             margin-left: 45%;
             z-index: auto;
+            margin-top:45%;
+            width: 80%;
         }
     }
 
