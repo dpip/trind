@@ -1,16 +1,28 @@
 
 <div class= "trind-main-header">
-  <div class= "trind-main-header-create-icon"><a href="#/create"><i class="fa fa-plus"></i></a></div>
-  <div class= "trind-main-header-search-icon"><i class="fa fa-search"></i></div>
-  <div class= "trind-main-header-image"><a href="#/me"><i class="fa fa-camera"></i></a></div>
+  <div class= "memories-header-icons" id= "memories-back-button"><a href="#/me"><i class="fa fa-arrow-left"></i></a></div>
+  <div class= "memories-header-icons" id= "memories-header-text">Memories</div>
 </div>
 
 <div class= "home-drop-search-bar">
   <input type="text" placeholder="What's Trinding?" class = "expand" id= "home-drop-search-input-box">
 </div>
 
-<!-- {{data}} -->
-
+<div class= "memories-container" ng-controller= "HomeController">
+  <div class= "home-events-display">
+        <div class= "home-trind-event-information-container" id="event-dilb">
+        <div class= "home-trind-event-information-image" id="event-dilb" ng-click="details($index)"><img src="{{eventDetail[0].user.photo_url}}" height="200" width="200"></div>
+        <div class= "home-trind-event-information" id= "memories-name">{{eventDetail[0].user.name}}</div>
+        <div class= "home-trind-event-information" id= "interests">{{eventDetail[0].interests}}
+        <div ng-controller= 'MemoriesController'>
+          <i ng-click="likeClick()"class="fa fa-thumbs-up" id="#reliabilty-rating-button"></i>
+          <a ng-init="liked='Like'; likeCount=0">{{liked}} +{{likeCount}}</a>
+        </div>
+        <div class= "home-trind-event-information" id= "location">{{eventDetail[0].location}}</div>
+        </div>
+        </div>
+  </div>
+</div>
 
 <div class= "trind-main-footer">
   <div class= "trind-main-footer-me-icon"><a href="#/me"><i class="fa fa-user"></i></a></div>

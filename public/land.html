@@ -1,15 +1,59 @@
-
-<div>
     <div class="landing-container">
 
             <div class="landing-jumbotron">
+
+                <nav class="landing-header navbar-fixed-top" >
+                    <div class="land-header-left">
+                        <div class="landing-logo"> T </div>
+                    </div>
+                    <div class="land-header-right">
+
+                    <ul class="land-header-icons">
+                        <li> FB </li>
+                        <li> GH </li>
+                    </ul>
+                    </div>
+                </nav>
+
                 <div class="landing-title"> TRIND</div>
                     <h3 class="landing-subtitle"> Making Social Networks Social Again </h3>
 
-                    <div class="landing-call-container">
 
-                        <div class="landing-signup-container">
+
+
+                    <div class="landing-login-container">
+
+                      <form ng-submit="submitLogin()" method="post">
+                        <div id="landing-log-in"> <a href="" ng-click="showme=true"> Log In </a></div>
+
+                            <div id="login-modal" class="login-modal" ng-show="showme">
+                            <div class="modal-container">
+                            <div class="modal-close">  <a href="" ng-click="showme=false"> X </a></div>
+
+                            <div class="modal-column">
+                            <label class="label-landing-email"> Email </label>
+                            <input type="text" class="landing-email" ng-model="landPage.email" />
+
+                            <label type="text" class="label-landing-password" > Password </label>
+                            <input type="text" class="landing-password" ng-model="landPage.password">
+                            <br>
+                            <button class="login-button"> Log In </button>
+                            </div>
+
+                            </div>
+                            </div>
+                          </form>
+                    </div>
+
+                    <div class="landing-signup-container">
                             <div id="landing-sign-up"> <a href="" ng-click="showmodal=true"> Sign Up for Free </a> </div>
+                            <div class="fb-container">
+                                <div class="fb-like"
+                                  data-share="true"
+                                  data-width="450"
+                                  data-show-faces="true">
+                               </div>
+                            </div>
 
                             <div id="signup-modal" class="signup-form" ng-show="showmodal">
                                 <div class="modal-close"> <a href="" ng-click="showmodal=false">X </a></div>
@@ -31,40 +75,16 @@
                                         </div>
                                 </div>
                             </div>
-                       
+
                     <!-- This closes the second modal container -->
-
-                
-                    <div class="landing-login-container">
-                      <form ng-submit="submitLogin()" method="post">
-
-                        <div id="landing-log-in"> <a href="" ng-click="showme=true"> Log In </a></div>
-
-                            <div id="login-modal" class="login-modal" ng-show="showme">
-                            <div class="modal-container">
-                            <div class="modal-close">  <a href="" ng-click="showme=false"> X </a></div>
-
-                            <div class="modal-column">
-                            <label class="label-landing-email"> Email </label>
-                            <input type="text" class="landing-email" ng-model="landPage.email" />
-
-                            <label type="text" class="label-landing-password" > Password </label>
-                            <input type="text" class="landing-password" ng-model="landPage.password">
-                            <br>
-                            <button class="login-button"> Log In </button>
-                            </div>
-
-                            </div>
-                            </div>
-                          </form>
-                    </div>
-                             <!-- This ends the button container -->
                 </div>
-                
-            </div>
-
-
-        </div>
+                <!-- This closes the container -->
+                </div>
                         <!-- This end the Jumbotron  -->
+            </div>
+            <section class="about-trind">
+                <div class="about-trind-title"> About Trind </div> 
+
+            </section>
+
     </div>
-        <!-- This closes the container -->
