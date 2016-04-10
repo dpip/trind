@@ -219,7 +219,10 @@
   .home-events-display #location {
     height: 20px;
     font-size: 30px;
-    text-align: right; }
+    text-align: right;
+    position: absolute;
+    right: 5;
+    bottom: 14; }
 
 .event-details-container {
   font-size: 60px;
@@ -258,6 +261,40 @@
     margin-top: 40px;
     margin-left: 40px; }
 
+.memories-header-icons {
+  display: inline-block; }
+
+#memories-header-text {
+  color: #ff6d5e;
+  position: relative;
+  float: left;
+  top: 5px;
+  font-size: 120px;
+  left: 10%;
+  font-family: 'Sniglet', cursive; }
+
+#memories-back-button {
+  color: white;
+  position: relative;
+  float: left;
+  top: 25px;
+  font-size: 80px;
+  margin-left: 20px; }
+
+.memories-container {
+  margin-top: 120px; }
+
+#memories-name {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 20px;
+  font-size: 40px; }
+
+.fa-thumbs-up {
+  color: #ff6d5e;
+  float: right;
+  padding-left: 1em;
+  margin-right: 1em; }
+
 a {
   color: inherit;
   text-decoration: none; }
@@ -276,19 +313,19 @@ a {
     float: left;
     top: 25px;
     font-size: 80px;
-    margin-left: 20px; }
+    margin-left: 30px; }
   .trind-main-header .trind-main-header-image {
     position: relative;
     float: left;
     top: 25px;
     font-size: 80px;
-    left: 35%; }
+    left: 36%; }
   .trind-main-header .trind-main-header-search-icon {
     position: relative;
     float: right;
     top: 25px;
     font-size: 80px;
-    margin-right: 20px;
+    margin-right: 30px;
     cursor: inherit; }
 
 #home-drop-search-input-box {
@@ -314,14 +351,14 @@ a {
     float: left;
     top: 25px;
     font-size: 80px;
-    left: 20px; }
+    left: 30px; }
   .trind-main-footer .trind-main-footer-trind-icon {
     color: #ff6d5e;
     position: relative;
     float: left;
     top: 5px;
     font-size: 130px;
-    left: 40%;
+    left: 38.5%;
     font-family: 'Sniglet', cursive;
     transform: rotate(-45deg); }
   .trind-main-footer .dot-dot-dot {
@@ -336,6 +373,6 @@ a {
     float: right;
     top: 20px;
     font-size: 80px;
-    right: 20px; }
+    right: 30px; }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,10 +1,24 @@
+.me-main-header-edit-icon {
+  position: relative;
+  float: right;
+  top: 25px;
+  font-size: 80px;
+  right: 30px;
+  color: #ff6d5e; }
+
 .me-container {
   padding: 2em;
   font-size: 3em;
-  margin-top: 0px;
+  margin-top: 2em;
   margin-bottom: 150px;
   color: #555;
   text-align: center; }
+  .me-container #me-name {
+    margin-top: 2em; }
+  .me-container #me-email {
+    margin-top: 1em;
+    font-style: italic;
+    color: #ff6d5e; }
   .me-container ul li {
     margin: 1em;
     border: 1px solid #555;

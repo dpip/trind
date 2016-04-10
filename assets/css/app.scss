@@ -2,6 +2,7 @@
 @import 'create';
 @import 'home';
 @import 'details';
+@import 'memories';
 
 // ==========keep this.....eliminates href highlight==============
 a {
@@ -16,18 +17,15 @@ a {
   top: 0;
   left: 0;
   z-index: 100;
-  // color: rgb(216, 51, 56);
-  // background-color: rgba(75, 35, 126, 0.9);
   color: white;
   background-color: rgba(164, 219, 216, 1);
-  // background-color: rgba(48, 74, 188, 1);
 
       .trind-main-header-create-icon {
         position: relative;
         float: left;
         top: 25px;
         font-size: 80px;
-        margin-left: 20px;
+        margin-left: 30px;
       }
 
       .trind-main-header-image {
@@ -35,7 +33,7 @@ a {
         float: left;
         top: 25px;
         font-size: 80px;
-        left: 35%;
+        left: 36%;
       }
 
       .trind-main-header-search-icon {
@@ -43,7 +41,7 @@ a {
         float: right;
         top: 25px;
         font-size: 80px;
-        margin-right: 20px;
+        margin-right: 30px;
         cursor: inherit;
       }
 }
@@ -81,7 +79,7 @@ a {
         float: left;
         top: 25px;
         font-size: 80px;
-        left: 20px;
+        left: 30px;
       }
 
       .trind-main-footer-trind-icon {
@@ -90,7 +88,7 @@ a {
         float: left;
         top: 5px;
         font-size: 130px;
-        left: 40%;
+        left: 38.5%;
         font-family: 'Sniglet', cursive;
         transform: rotate(-45deg);
       }
@@ -109,6 +107,6 @@ a {
         float: right;
         top: 20px;
         font-size: 80px;
-        right: 20px;
+        right: 30px;
       }
 }
