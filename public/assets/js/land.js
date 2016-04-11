@@ -52,7 +52,7 @@ $scope.FBlogin = function() {
   if (response.authResponse) {
    console.log('Welcome!  Fetching your information.... ');
    FB.api('/me', function(response) {
-     console.log('Good to see you, ' + response.name + response.token + response.email'.');
+     console.log('Good to see you, ' + response.name '.');
    });
   //  GET https://graph.facebook.com/oauth/access_token?
   //           client_id=YOUR_APP_ID
