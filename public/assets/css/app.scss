@@ -1,11 +1,10 @@
 @import 'land';
-@import 'create';
-@import 'home';
-@import 'details';
-@import 'memories';
+// @import 'create';
+// @import 'home';
+// @import 'details';
+// @import 'memories';
 
-// ==========keep this.....eliminates href highlight==============
-a {
+a{
   color: inherit;
   text-decoration: none;
 }

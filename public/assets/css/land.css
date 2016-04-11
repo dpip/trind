@@ -15,7 +15,7 @@
   text-shadow: 0 0 3px #555; }
 
 .landing-jumbotron {
-  background: url("http://cdn1.theodysseyonline.com/files/2015/06/08/635693880042525992-518822648_couple-hiking-valley.jpg") bottom center no-repeat;
+  background: url("img/trindhero.jpg") bottom center no-repeat;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -148,7 +148,7 @@
   .landing-header {
     background-color: #a4dbd8;
     color: #ff6c59;
-    height: 70px;
+    height: 60px;
     border-bottom: 1px solid #fff; }
     .landing-header .land-header-left {
       padding-top: .5em;
@@ -191,7 +191,8 @@
     height: 100%;
     background-size: cover;
     background-position: 20% 0;
-    position: absolute; }
+    position: absolute;
+    z-index: auto; }
 
   .landing-signup-container {
     height: 20%;
@@ -206,21 +207,21 @@
     .landing-signup-container .fb-container {
       text-align: center;
       padding-left: 10%;
-      margin-top: 2em; }
-
-  #landing-sign-up {
-    border-radius: 5px;
-    text-align: center;
-    font-size: 3em;
-    color: white;
-    border: 1px solid #a4dbd8;
-    text-decoration: none;
-    padding: .2em;
-    z-index: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    text-shadow: 0 0 3px #555; }
+      margin-top: 10em; }
+    .landing-signup-container #landing-sign-up {
+      border-radius: 5px;
+      text-align: center;
+      font-size: 3em;
+      color: white;
+      border: 1px solid #a4dbd8;
+      text-decoration: none;
+      padding: .2em;
+      z-index: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 8em;
+      width: 50%;
+      text-shadow: 0 0 3px #555; }
 
   .landing-login-container {
     border-radius: 5px;
@@ -232,18 +233,21 @@
     margin-right: auto;
     padding: .2em;
     font-size: 2em;
-    z-index: auto;
-    text-shadow: 0 0 3px #555; }
+    z-index: auto; }
+    .landing-login-container .fb-container-login {
+      text-align: center;
+      margin-top: 2em; }
 
   .login-modal {
-    width: 80%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto; }
     .login-modal .modal-container {
       border: 2px solid #555;
       height: 300px;
       background: white;
-      z-index: auto; }
+      z-index: auto;
+      text-align: center; }
       .login-modal .modal-container .modal-close {
         float: right;
         line-height: 15px;

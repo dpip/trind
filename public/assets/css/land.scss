@@ -21,7 +21,7 @@ $trind-green: rgb(164, 219, 216);
 }
 
 .landing-jumbotron {
-    background: url('https://cdn1.theodysseyonline.com/files/2015/06/08/635693880042525992-518822648_couple-hiking-valley.jpg') bottom center no-repeat;
+    background: url('img/trindhero.jpg') bottom center no-repeat;
   	width: 100%;
   	height: 100%;
   	background-size: cover;
@@ -118,10 +118,6 @@ $trind-green: rgb(164, 219, 216);
 #signup-modal {
     margin-top: 30px;
 }
-// #login-modal {
-//     margin-top: 150px;
-//     margin-left: 5%;
-// }
 
 
 .signup-form {
@@ -196,7 +192,7 @@ $trind-green: rgb(164, 219, 216);
 .landing-header {
     background-color: $trind-green;
     color: $trind-red;
-    height: 70px;
+    height: 60px;
     border-bottom: 1px solid #fff;
 
     .land-header-left {
@@ -246,16 +242,14 @@ $trind-green: rgb(164, 219, 216);
 }
 
 
-
-
 .landing-jumbotron {
-    background: url('https://cdn1.theodysseyonline.com/files/2015/06/08/635693880042525992-518822648_couple-hiking-valley.jpg') bottom center no-repeat;
+    background: url('http://cdn1.theodysseyonline.com/files/2015/06/08/635693880042525992-518822648_couple-hiking-valley.jpg') bottom center no-repeat;
     width: 100%;
   	height: 100%;
   	background-size: cover;
   	background-position: 20% 0;
     position: absolute;
-
+    z-index: auto;
 }
 
 .landing-signup-container {
@@ -273,9 +267,9 @@ $trind-green: rgb(164, 219, 216);
     .fb-container {
         text-align: center;
         padding-left: 10%;
-        margin-top: 2em;
+        margin-top: 10em;
     }
-}
+
 
 #landing-sign-up {
         border-radius: 5px;
@@ -288,10 +282,11 @@ $trind-green: rgb(164, 219, 216);
         z-index: auto;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 8em;
         width: 50%;
         text-shadow: 0 0 3px #555;
     }
-
+}
 
 .landing-login-container {
         border-radius: 5px;
@@ -304,11 +299,15 @@ $trind-green: rgb(164, 219, 216);
         padding: .2em;
         font-size: 2em;
         z-index:auto;
-        text-shadow: 0 0 3px #555;
 
+        .fb-container-login {
+            text-align: center;
+            margin-top: 2em;
+            }
 }
+
 .login-modal {
-    width: 80%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 
@@ -317,6 +316,7 @@ $trind-green: rgb(164, 219, 216);
         height: 300px;
         background: white;
         z-index: auto;
+        text-align: center;
 
         .modal-close {
                 float: right;
