@@ -26,8 +26,6 @@
                     </div>
                     </div>
 
-
-
                             <div id="signup-modal" class="signup-form" ng-show="showmodal">
                                 <div class="modal-close"> <a href="" ng-click="showmodal=false">X </a></div>
                                     <form ng-submit="submitSignup()" method="post">
@@ -77,9 +75,7 @@
                     </div>
 
                              <!-- This ends the button container -->
-                             <div ng-controller= "LandController">
-                             <button ng-click="FBlogin()">Login with facebook</button>
-                             </div>
+
                 </div>
 
 
@@ -91,6 +87,9 @@
                                   data-width="450"
                                   data-show-faces="true">
                                </div>
+                                    <div ng-controller= "LandController">
+                                    <button ng-click="FBlogin()">Login with facebook</button>
+                                    </div>
                             </div>
 
                             <div id="signup-modal" class="signup-form" ng-show="showmodal">
