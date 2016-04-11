@@ -64,7 +64,6 @@ $trind-green: rgb(164, 219, 216);
             padding: .5em;
             font-size: 2em;
             z-index: auto;
-            text-shadow: 0 0 3px #555;
 
         }
 
@@ -294,9 +293,14 @@ $trind-green: rgb(164, 219, 216);
 
 
 .landing-login-container {
-        border-radius: 5px;
-        text-align: center;
-        color: $trind-green;
+
+#landing-log-in{
+            text-shadow: 0 0 3px #555;
+    }
+
+    border-radius: 5px;
+    text-align: center;
+    color: $trind-green;
         text-decoration: none;
         width: 50%;
         margin-left: auto;
@@ -304,9 +308,8 @@ $trind-green: rgb(164, 219, 216);
         padding: .2em;
         font-size: 2em;
         z-index:auto;
-        text-shadow: 0 0 3px #555;
-
 }
+
 .login-modal {
     width: 80%;
     margin-left: auto;

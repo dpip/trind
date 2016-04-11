@@ -51,8 +51,7 @@
   margin-right: auto;
   padding: .5em;
   font-size: 2em;
-  z-index: auto;
-  text-shadow: 0 0 3px #555; }
+  z-index: auto; }
 
 .login-modal {
   width: 100%;
@@ -232,8 +231,9 @@
     margin-right: auto;
     padding: .2em;
     font-size: 2em;
-    z-index: auto;
-    text-shadow: 0 0 3px #555; }
+    z-index: auto; }
+    .landing-login-container #landing-log-in {
+      text-shadow: 0 0 3px #555; }
 
   .login-modal {
     width: 80%;
