@@ -2,7 +2,7 @@ var trind = angular.module('trind', ['ngRoute']);
 
 window.fbAsyncInit = function() {
     FB.init({
-      appId      : 'your-app-id',
+      appId      : '485587434980626',
       xfbml      : true,
       version    : 'v2.5'
     });
