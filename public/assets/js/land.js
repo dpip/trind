@@ -60,6 +60,4 @@ $scope.FBlogin = function() {
 });
 };
 
-
-
   }]);
