@@ -1,8 +1,10 @@
 var trind = angular.module('trind', ['ngRoute']);
 
+var myDataRef = new Firebase('https://u7afdjtbcs6.firebaseio-demo.com/');
+
 window.fbAsyncInit = function() {
     FB.init({
-      appId      : 'your-app-id',
+      appId      : '485587434980626',
       xfbml      : true,
       version    : 'v2.5'
     });
@@ -61,4 +63,5 @@ trind.config(function($routeProvider) {
     .otherwise({
       redirectTo: '/home'
     });
+
 });
