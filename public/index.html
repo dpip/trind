@@ -11,36 +11,30 @@
 
   <body ng-app="trind" class= "trind-default-background">
 
-
-
     <div>
       <ng-view></ng-view>
     </div>
 
-<!-- Facebook Script for login -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1680878238833172',
+          xfbml      : true,
+          version    : 'v2.5'
+        });
+      };
 
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1680878238833172',
-      xfbml      : true,
-      version    : 'v2.5'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-route.js"></script>
-    <!-- <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/land.js"></script>

@@ -1,5 +1,5 @@
 var showDetails;
-
+var toMemories;
 trind.controller('HomeController',  [ '$http', '$location', '$scope', function($http, $location, $scope){
 
       // Gets the event json from Damian and repeats through home page
@@ -7,19 +7,21 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
         console.log(data);
         $scope.stuff = data;
 
+          $scope.details = function(index) {
+            console.log("ya there?");
+            showDetails = index
+            $location.path('/details');
+          };
 
-    // var eventDetail = "events"
+          $scope.eventDetail = data.events;
 
+          $scope.makingMemories = function(index) {
+            console.log("memories");
+            toMemories = index
+            $location.path('/memories');
+          };
 
-      $scope.details = function(index) {
-        console.log("ya there?");
-        showDetails = index
-        $location.path('/details');
-      };
-
-
-
-      $scope.eventDetail = data.events;
+          $scope.toMemories = $scope.eventDetail;
 
 });
 

@@ -1,4 +1,4 @@
-var trind = angular.module("trind", ['ngRoute']);
+var trind = angular.module('trind', ['ngRoute']);
 
 trind.config(function($routeProvider) {
   $routeProvider
