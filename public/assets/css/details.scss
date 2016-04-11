@@ -1,7 +1,48 @@
-
 .event-details-container {
   font-size: 60px;
   margin-top: 120px;
   position: relative;
   z-index: 1;
+  font-family: 'Open Sans', sans-serif;
+    .details-text-wrapper {
+      width: 95%;
+      margin-top: 50px;
+    }
+    #details-name {
+      margin-top: 10px;
+      color:rgba(255, 109, 94, 0.8);
+      margin-top: 10px;
+      color:rgba(255, 109, 94, 0.8);
+      margin-left: 40px;
+    }
+    #details-interested-button {
+      float: right;
+      background-color: rgba(164, 219, 216, 1);
+      border-radius: .3em;
+      height: 65px;
+      margin-top: 10px;
+      margin-left: 40px;
+      color: white;
+      font-size: 45px;
+    }
+    #details-eventDetail-title {
+      margin-top: 40px;
+      margin-left: 40px;
+
+    }
+    #details-eventDetail-interest {
+      margin-top: 40px;
+      margin-left: 40px;
+
+    }
+    #details-eventDetail-description {
+      margin-top: 40px;
+      margin-left: 40px;
+
+    }
+    #details-eventDetail-location {
+      margin-top: 40px;
+      margin-left: 40px;
+
+    }
 }

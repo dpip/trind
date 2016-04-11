@@ -1,11 +1,11 @@
 trind.controller('MeController', [ '$http', '$scope', function($http, $scope){
 
-  $(document).ready(function () {
-      $("#home-drop-search-input-box").hide();
-      $('.trind-main-header-search-icon').click(function () {
-          $("#home-drop-search-input-box").toggle();
-      });
-
+  $http.get('https://still-waters-14036.herokuapp.com/users').success(function(user){
+    console.log(user);
+    $scope.userInfo = user;
   });
+
+  // =========two gets will screw with things! be careful=========
+
 
   }]);
