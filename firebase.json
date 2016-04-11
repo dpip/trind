@@ -1,9 +1,9 @@
 {
-  "firebase": "trindapp",
-  "public": "public",
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ]
+ "firebase": "vivid-fire-1635",
+ "public": "public",
+ "ignore": [
+   "firebase.json",
+   "**/.*",
+   "**/node_modules/**"
+ ]
 }
