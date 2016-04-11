@@ -52,8 +52,12 @@ $scope.FBlogin = function() {
   if (response.authResponse) {
    console.log('Welcome!  Fetching your information.... ');
    FB.api('/me', function(response) {
-     console.log('Good to see you, ' + response.name + '.');
+     console.log('Good to see you, ' + response.name + response.token + response.email'.');
    });
+  //  GET https://graph.facebook.com/oauth/access_token?
+  //           client_id=YOUR_APP_ID
+  //          &client_secret=YOUR_APP_SECRET
+  //          &grant_type=client_credentials
   } else {
    console.log('User cancelled login or did not fully authorize.');
   }
