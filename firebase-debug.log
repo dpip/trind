@@ -1,0 +1,45 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /Users/macbook/.nvm/versions/node/v5.6.0/bin/node /Users/macbook/.nvm/versions/node/v5.6.0/bin/firebase deploy
+[debug] Platform:     darwin
+[debug] Node Version: v5.6.0
+[debug] Time:         Mon Apr 11 2016 22:15:37 GMT-0400 (EDT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/vivid-fire-1635/token?token=XXX 
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /Users/macbook/.nvm/versions/node/v5.6.0/bin/node /Users/macbook/.nvm/versions/node/v5.6.0/bin/firebase deploy
+[debug] Platform:     darwin
+[debug] Node Version: v5.6.0
+[debug] Time:         Mon Apr 11 2016 22:16:36 GMT-0400 (EDT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/vivid-fire-1635/token?token=XXX 
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /Users/macbook/.nvm/versions/node/v5.6.0/bin/node /Users/macbook/.nvm/versions/node/v5.6.0/bin/firebase deploy
+[debug] Platform:     darwin
+[debug] Node Version: v5.6.0
+[debug] Time:         Mon Apr 11 2016 22:17:59 GMT-0400 (EDT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/vivid-fire-1635/token?token=XXX 
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /Users/macbook/.nvm/versions/node/v5.6.0/bin/node /Users/macbook/.nvm/versions/node/v5.6.0/bin/firebase deploy
+[debug] Platform:     darwin
+[debug] Node Version: v5.6.0
+[debug] Time:         Mon Apr 11 2016 22:22:09 GMT-0400 (EDT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/vivid-fire-1635/token?token=XXX 
+[debug] Error: connect ETIMEDOUT 104.197.85.31:443
+    at Object.exports._errnoException (util.js:856:11)
+    at exports._exceptionWithHostPort (util.js:879:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1053:14)
+[error] 
+[error] Error: Server Error. Please try again in a few minutes.
+[debug] Error Context: {
+  "requestOptions": {
+    "method": "GET",
+    "json": true,
+    "url": "https://admin.firebase.com/firebase/vivid-fire-1635/token?token=-KEC4MBNHKsaKzj9MgDW%7C04332921bee25ca0cd1e671143fe03a6"
+  }
+}
