@@ -30,15 +30,39 @@
                     <div id="status" >
                     </div>
 
+                    <form ng-submit="submitLogin()" method="post">
+                    <label class="label-landing-email"> Email </label>
+                          <input type="text" class="landing-email" ng-model="landPage.email" />
+                          <label type="text" class="label-landing-password" > Password </label>
+                          <input type="text" class="landing-password" ng-model="landPage.password">
+                          <button class="login-button"> Log In </button>
+                          </form>
 
 
+
+
+
+
+                          <form ng-submit="submitSignup()" method="post">
+                              <div class="form-column">
+                                <label for="first-name">Name</label>
+                                <input type="text" id="signup-name" placeholder="True" ng-model="newAccount.user.name" />
+                                <label for="email-address">Email Address</label>
+                                <input type="text" id="email-address" name="email-address" placeholder="friends@trind.com" ng-model="newAccount.user.email"/>
+                                <label for="new-password">Password</label>
+                                <input type="text" id="new-password" name="new-password" placeholder="******" ng-model="newAccount.user.password"/>
+                                <label for="confirm-password"> Confirm Password</label>
+                                <input type="text" id="confirm-password" name="confirm-password" placeholder="******" ng-model="newAccount.user.password_confirmation"/>
+                                <br>
+                              <button id="signup-now"> Create Account </button>
+                          </form>
 
 
                             </div>
                         </div>
                     <!-- This closes the second modal container -->
 
-                    <div class="landing-login-container">
+                    <!-- <div class="landing-login-container">
 
                       <form ng-submit="submitLogin()" method="post">
                         <div id="landing-log-in"> <a href="" ng-click="showme=true"> Log In </a></div>
@@ -60,14 +84,14 @@
                             </div>
                             </div>
                           </form>
-                    </div>
+                    </div> -->
 
                              <!-- This ends the button container -->
 
-                </div>
+                <!-- </div> -->
 
 
-                    <div class="landing-signup-container">
+                    <!-- <div class="landing-signup-container"> -->
                               <!-- <div id="landing-sign-up"> <a href="" ng-click="showmodal=true"> Sign Up for Free </a> </div>
                               <div class="fb-container">
                                   <div class="fb-like"
@@ -77,7 +101,7 @@
                                  </div>
                               </div> -->
 
-                            <div id="signup-modal" class="signup-form" ng-show="showmodal">
+                            <!-- <div id="signup-modal" class="signup-form" ng-show="showmodal">
                                 <div class="modal-close"> <a href="" ng-click="showmodal=false">X </a></div>
                                     <form ng-submit="submitSignup()" method="post">
                                         <div class="form-column">
@@ -96,15 +120,15 @@
                                         <button id="signup-facebook"> <a href="#"> Sign Up with Facebook </a> </button>
                                         </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                     <!-- This closes the second modal container -->
-                </div>
+                <!-- </div> -->
                 <!-- This closes the container -->
-                </div>
+                <!-- </div> -->
 
                         <!-- This end the Jumbotron  -->
-            </div>
+            <!-- </div>
                           </div>
 
-    </div>
+    </div> -->
