@@ -1,0 +1,43 @@
+.memories-header-icons {
+  display: inline-block;
+}
+
+#memories-header-text {
+  color: rgb(255, 109, 94);
+  position: relative;
+  float: left;
+  top: 5px;
+  font-size: 120px;
+  left: 10%;
+  font-family: 'Sniglet', cursive;
+}
+
+#memories-back-button {
+  color: white;
+  position: relative;
+  float: left;
+  top: 25px;
+  font-size: 80px;
+  margin-left: 20px;
+}
+
+.memories-container {
+  margin-top: 120px;
+}
+
+#memories-name {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+.fa-thumbs-up {
+color: rgb(255, 109, 94);
+float: right;
+padding-left: 1em;
+margin-right: 1em;
+}
+
+#reliabilty-rating-button {
+
+}
