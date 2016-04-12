@@ -4,6 +4,7 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
 
   var currentToken = localStorage.getItem('loginToken');
   var userID = localStorage.getItem('userID');
+
   $scope.testTrind = {
       "event": {
       "user_id": userID,
