@@ -1,12 +1,15 @@
 trind.controller('CreateController', ['$scope', '$http', function($scope, $http){
 
-  console.log("WHY");
+  console.log("Great");
+
+  var currentToken = localStorage.getItem('loginToken');
 
   $scope.testTrind = {
       "event": {
       "interests": "",
       "description": "",
-      "location": ""
+      "location": "",
+      "token": currentToken
     }
   };
 
