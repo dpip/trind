@@ -26,7 +26,7 @@ trind.controller('LandController', [ '$http', '$location', '$scope', function($h
 
   var currentToken = localStorage.getItem('loginToken');
   var newToken = localStorage.getItem('signInToken');
-  var facebookToken = localStorage.getItem('facebookToken');
+  var facebookToken =  localStorage.getItem('facebookToken');
 
   $scope.submitLogin = function() {
     console.log("Hello, little Hobbit!");
@@ -73,9 +73,6 @@ function statusChangeCallback(response) {
 console.log('statusChangeCallback');
 console.log(response);
 console.log(response.authResponse.accessToken);
-.success(function(data) {
-localStorage.setItem('facebookToken', response.authResponse.accessToken);
-})
 
 
 // The response object is returned with a status field that lets the
@@ -100,10 +97,13 @@ if (response.status === 'connected') {
 
   $scope.FBlogin = function() {
     FB.login(function(response) {
+
+      console.log(response);
     if (response.authResponse) {
-     console.log('Welcome!  Fetching your information.... ');
-     FB.api('/me', function(response) {
-       console.log(response);
+      localStorage.setItem('facebookToken', response.authResponse.accessToken);
+      console.log('Welcome!  Fetching your information.... ');
+      FB.api('/me', function(response) {
+      console.log(response);
      });
     } else {
      console.log('User cancelled login or did not fully authorize.');
