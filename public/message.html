@@ -1,3 +1,4 @@
+<link rel-"stylesheet" href="assets/css/message.css">
 
 <div class= "trind-main-header">
   <div class= "trind-main-header-create-icon"><a href="#/create"><i class="fa fa-plus"></i></a></div>
@@ -9,6 +10,39 @@
   <input type="text" placeholder="What's Trinding?" class = "expand" id= "home-drop-search-input-box">
 </div>
 
+  <div class="chat-container">
+    <div class="panel-body">
+                  <div class="chat-column">
+
+                    <div class="chat-users">
+                        <div id="YOU" class="user-name">YOU</div>
+                        <div id="THEY" class="user-name"> THEY </div>
+                    </div>
+
+                    <div class="chat-body">
+                        <ul id="YM" > USER1 MESSAGES</ul>
+
+                        <ul id="IM">USER2 MESSAGES</ul>
+
+                    </div> <!-- This closes the chat body -->
+                </div> <!-- This closes the chat column -->
+              </div> <!-- This closes the panel body -->
+          </div> <!-- //This closes the chat container-->
+
+        </div>
+
+        <div class="message-footer">
+            <form ng-controller="MessageController">
+                <div class="input-group">
+                    <label class="you-momma"> YOU:</label>
+                    <input id="chatter" type="text" name="chatter" class="form-control chatter" />
+                    <span class="input-group-btn">
+                          <button class="btn-submit" type="submit">Send</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+
 <!-- {{data}} -->
 
 
@@ -16,7 +50,4 @@
   <div class= "trind-main-footer-me-icon"><a href="#/me"><i class="fa fa-user"></i></a></div>
   <div class= "trind-main-footer-trind-icon"><a href="#/home">T</a></div>
   <div class= "trind-main-footer-message-icon"><a href="#/messages"><i class="fa fa-comment"></i></a></div>
-
-
-
 </div>

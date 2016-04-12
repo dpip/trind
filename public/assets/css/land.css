@@ -51,8 +51,9 @@
   margin-right: auto;
   padding: .5em;
   font-size: 2em;
-  z-index: auto;
-  text-shadow: 0 0 3px #555; }
+  z-index: auto; }
+  .landing-login-container #landing-sign-up a {
+    text-shadow: 0 0 3px #555; }
 
 .login-modal {
   width: 100%;
@@ -148,7 +149,7 @@
   .landing-header {
     background-color: #a4dbd8;
     color: #ff6c59;
-    height: 60px;
+    height: 80px;
     border-bottom: 1px solid #fff; }
     .landing-header .land-header-left {
       padding-top: .5em;
@@ -237,6 +238,8 @@
     .landing-login-container .fb-container-login {
       text-align: center;
       margin-top: 2em; }
+    .landing-login-container #landing-sign-up a {
+      text-shadow: 0 0 3px #555; }
 
   .login-modal {
     width: 50%;

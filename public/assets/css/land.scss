@@ -64,7 +64,10 @@ $trind-green: rgb(164, 219, 216);
             padding: .5em;
             font-size: 2em;
             z-index: auto;
+
+            #landing-sign-up a{
             text-shadow: 0 0 3px #555;
+            }
 
         }
 
@@ -192,7 +195,7 @@ $trind-green: rgb(164, 219, 216);
 .landing-header {
     background-color: $trind-green;
     color: $trind-red;
-    height: 60px;
+    height: 80px;
     border-bottom: 1px solid #fff;
 
     .land-header-left {
@@ -304,6 +307,10 @@ $trind-green: rgb(164, 219, 216);
             text-align: center;
             margin-top: 2em;
             }
+
+        #landing-sign-up a{
+        text-shadow: 0 0 3px #555;
+        }
 }
 
 .login-modal {

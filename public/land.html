@@ -1,3 +1,4 @@
+<section class="#home">
 <div class="landing-container">
     <div class="landing-jumbotron">
         <nav class="landing-header navbar-fixed-top" >
@@ -25,8 +26,7 @@
 
                         <div id="status">
                             </div>
-                            </div>
-                         </div>
+                        </div>
 
                             <div id="login-modal" class="login-modal" ng-show="showme">
                             <div class="modal-container">
@@ -45,6 +45,7 @@
                             </div>
                          </div>
                     </form>
+                </div>    
                              <!-- This ends the login container -->
 
                 <div class="landing-signup-container">
@@ -57,24 +58,6 @@
                                   data-show-faces="true">
                                </div> -->
 
-                            <div id="signup-modal" class="signup-form" ng-show="showmodal">
-                                <div class="modal-close"> <a href="" ng-click="showmodal=false">X </a></div>
-                                    <div class="form-column">
-                                        <form ng-submit="submitSignup()" method="post">
-
-                                          <label for="first-name">Name</label>
-                                          <input type="text" id="signup-name" placeholder="True" ng-model="newAccount.user.name" />
-                                          <label for="email-address">Email Address</label>
-                                          <input type="text" id="email-address" name="email-address" placeholder="friends@trind.com" ng-model="newAccount.user.email"/>
-                                          <label for="new-password">Password</label>
-                                          <input type="text" id="new-password" name="new-password" placeholder="******" ng-model="newAccount.user.password"/>
-                                          <label for="confirm-password"> Confirm Password</label>
-                                          <input type="text" id="confirm-password" name="confirm-password" placeholder="******" ng-model="newAccount.user.password_confirmation"/>
-                                          <br>
-                                        <button id="signup-now"> Create Account </button>
-                                    </form>
-                                </div>
-                            </div>
 
             <!-- this closes the signup container -->
             </div>
@@ -83,3 +66,26 @@
         </div>
         <!-- This closes the landing container -->
     </div>
+</section>
+
+<section class="#signup">
+            <div id="signup-modal" class="signup-form" ng-show="showmodal">
+                <div class="modal-close"> <a href="" ng-click="showmodal=false">X </a></div>
+                    <div class="form-column">
+                        <form ng-submit="submitSignup()" method="post">
+
+                          <label for="first-name">Name</label>
+                          <input type="text" id="signup-name" placeholder="True" ng-model="newAccount.user.name" />
+                          <label for="email-address">Email Address</label>
+                          <input type="text" id="email-address" name="email-address" placeholder="friends@trind.com" ng-model="newAccount.user.email"/>
+                          <label for="new-password">Password</label>
+                          <input type="text" id="new-password" name="new-password" placeholder="******" ng-model="newAccount.user.password"/>
+                          <label for="confirm-password"> Confirm Password</label>
+                          <input type="text" id="confirm-password" name="confirm-password" placeholder="******" ng-model="newAccount.user.password_confirmation"/>
+                          <br>
+                        <button id="signup-now"> Create Account </button>
+                    </form>
+                </div>
+            </div>
+
+</section>
