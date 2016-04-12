@@ -25,7 +25,8 @@ trind.controller('LandController', [ '$http', '$location', '$scope', function($h
 // ++++++++++++++++++email login ++++++++++++++++++++++
 
   var currentToken = localStorage.getItem('loginToken');
-  var newToken = localStorage.getItem('loginToken');
+  var newToken = localStorage.getItem('signInToken');
+  var facebookToken = localStorage.getItem('facebookToken');
 
   $scope.submitLogin = function() {
     console.log("Hello, little Hobbit!");
@@ -71,6 +72,12 @@ trind.controller('LandController', [ '$http', '$location', '$scope', function($h
 function statusChangeCallback(response) {
 console.log('statusChangeCallback');
 console.log(response);
+console.log(response.authResponse.accessToken);
+.success(function(data) {
+localStorage.setItem('facebookToken', response.authResponse.accessToken);
+})
+
+
 // The response object is returned with a status field that lets the
 // app know the current login status of the person.
 // Full docs on the response object can be found in the documentation
