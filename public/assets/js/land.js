@@ -24,12 +24,17 @@ trind.controller('LandController', [ '$http', '$location', '$scope', function($h
 
 // ++++++++++++++++++email login ++++++++++++++++++++++
 
+  var currentToken = localStorage.getItem('loginToken');
+  var newToken = localStorage.getItem('loginToken');
+
   $scope.submitLogin = function() {
     console.log("Hello, little Hobbit!");
     console.log($scope.landPage)
     $http.post('https://still-waters-14036.herokuapp.com/login', $scope.landPage)
     .success(function (data) {
+      localStorage.setItem('loginToken', data.token);
       window.location.replace('#/home')
+      console.log(data.token);
     })
     .error(function (data, status, headers, config) {
           alert("Incorrect Login");
@@ -44,8 +49,10 @@ trind.controller('LandController', [ '$http', '$location', '$scope', function($h
       console.log($scope.newAccount)
       $http.post('https://still-waters-14036.herokuapp.com/users', $scope.newAccount)
       .success(function(data) {
+      localStorage.setItem('signInToken', data.token);
           console.log("new account created");
           window.location.replace('#/home');
+          console.log(data);
       })
   };
 
@@ -54,6 +61,10 @@ trind.controller('LandController', [ '$http', '$location', '$scope', function($h
       console.log(go);
       $location.url('#/home')
     };
+
+
+
+
 
 
 // +++++++++++++++++initial communication with facebook+++++++++++++++++++++++
