@@ -1,42 +1,40 @@
-.home-events-display-wrap {
-  margin-bottom: 120px; }
-  .home-events-display-wrap .home-events-display {
-    position: relative;
-    box-sizing: border-box;
-    margin-top: 120px;
+.home-events-display-wrap .home-events-display {
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 120px;
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif; }
+  .home-events-display-wrap .home-events-display .home-trind-event-information-image {
+    background-color: #eaeaea;
+    height: 200px;
+    width: 200px;
+    float: left; }
+  .home-events-display-wrap .home-events-display .home-trind-event-container {
+    height: 200px;
     width: 100%;
-    height: 100%;
-    font-family: 'Open Sans', sans-serif; }
-    .home-events-display-wrap .home-events-display .home-trind-event-information-image {
-      background-color: #eaeaea;
-      height: 200px;
-      width: 200px;
-      float: left; }
-    .home-events-display-wrap .home-events-display .home-trind-event-container {
-      height: 200px;
-      width: 100%;
-      background-color: white; }
-    .home-events-display-wrap .home-events-display #event-dilb {
-      display: inline-block; }
-    .home-events-display-wrap .home-events-display .home-trind-event-information-container {
-      width: 100%;
-      border: 1px solid rgba(171, 178, 186, 0.5); }
-    .home-events-display-wrap .home-events-display .home-trind-event-information {
-      background-color: white; }
-    .home-events-display-wrap .home-events-display #interests {
-      font-size: 40px;
-      padding-bottom: 15px;
-      height: 40px; }
-    .home-events-display-wrap .home-events-display #description {
-      height: 40px;
-      font-size: 30px;
-      padding-bottom: 15px; }
-    .home-events-display-wrap .home-events-display #location {
-      height: 20px;
-      font-size: 30px;
-      text-align: right;
-      position: absolute;
-      right: 5;
-      bottom: 14; }
+    background-color: white; }
+  .home-events-display-wrap .home-events-display #event-dilb {
+    display: inline-block; }
+  .home-events-display-wrap .home-events-display .home-trind-event-information-container {
+    width: 100%;
+    border: 1px solid rgba(171, 178, 186, 0.5); }
+  .home-events-display-wrap .home-events-display .home-trind-event-information {
+    background-color: white; }
+  .home-events-display-wrap .home-events-display #interests {
+    font-size: 40px;
+    padding-bottom: 15px;
+    height: 40px; }
+  .home-events-display-wrap .home-events-display #description {
+    height: 40px;
+    font-size: 30px;
+    padding-bottom: 15px; }
+  .home-events-display-wrap .home-events-display #location {
+    height: 20px;
+    font-size: 30px;
+    text-align: right;
+    position: absolute;
+    right: 5;
+    bottom: 14; }
 
 /*# sourceMappingURL=home.css.map */
