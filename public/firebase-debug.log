@@ -1,8 +1,0 @@
-[debug] ----------------------------------------------------------------------
-[debug] Command:      /Users/macbook/.nvm/versions/node/v5.6.0/bin/node /Users/macbook/.nvm/versions/node/v5.6.0/bin/firebase deploy
-[debug] Platform:     darwin
-[debug] Node Version: v5.6.0
-[debug] Time:         Mon Apr 11 2016 22:14:04 GMT-0400 (EDT)
-[debug] ----------------------------------------------------------------------
-[debug] 
-[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/vivid-fire-1635/token?token=XXX 
