@@ -6,10 +6,12 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
 
   $scope.testTrind = {
       "event": {
+      "user_id": userID,
       "interests": "",
       "description": "",
       "location": "",
       "token": currentToken
+
     }
   };
 

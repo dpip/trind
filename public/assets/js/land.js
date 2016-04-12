@@ -16,24 +16,32 @@ trind.controller('LandController', [ '$http', '$location', '$scope', function($h
       "name": "",
       "email": "",
       "password": "",
-      "password_confirmation": "",
+      "password_confirmation": ""
+
   }
 
   };
 
+// +++++++++++ token in localStorage ++++++++++
 
-// ++++++++++++++++++email login ++++++++++++++++++++++
-
-  var currentToken = localStorage.getItem('loginToken');
-  var newToken = localStorage.getItem('signInToken');
+  var currentToken = localStorage.getItem('tokenToken');
   var facebookToken =  localStorage.getItem('facebookToken');
+
+// +++++++++++ id in local storage +++++++
+
+  var userID = localStorage.getItem('userID');
+
+
+// ++++++++++++++++++ login ++++++++++++++++++++++
+
 
   $scope.submitLogin = function() {
     console.log("Hello, little Hobbit!");
     console.log($scope.landPage)
     $http.post('https://still-waters-14036.herokuapp.com/login', $scope.landPage)
     .success(function (data) {
-      localStorage.setItem('loginToken', data.token);
+      localStorage.setItem('tokenToken', data.token);
+      localStorage.setItem('userID', data.id);
       window.location.replace('#/home')
       console.log(data.token);
     })
@@ -43,14 +51,16 @@ trind.controller('LandController', [ '$http', '$location', '$scope', function($h
         });
   };
 
-// +++++++++++++++++++sign in email+++++++++++++++++++++
+// +++++++++++++++++++ sign in +++++++++++++++++++++
+  // submits request to server then stores them in local storage - variables are declared above
 
   $scope.submitSignup = function() {
       console.log("Time to get Trinding");
       console.log($scope.newAccount)
       $http.post('https://still-waters-14036.herokuapp.com/users', $scope.newAccount)
       .success(function(data) {
-      localStorage.setItem('signInToken', data.token);
+      localStorage.setItem('tokenToken', data.token);
+      localStorage.setItem('userID', data.id);
           console.log("new account created");
           window.location.replace('#/home');
           console.log(data);
@@ -64,11 +74,7 @@ trind.controller('LandController', [ '$http', '$location', '$scope', function($h
     };
 
 
-
-
-
-
-// +++++++++++++++++initial communication with facebook+++++++++++++++++++++++
+// +++++++++++initial communication with facebook+++++++++++++++
 function statusChangeCallback(response) {
 console.log('statusChangeCallback');
 console.log(response);
