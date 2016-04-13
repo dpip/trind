@@ -1,19 +1,15 @@
 var trind = angular.module('trind', ['ngRoute']);
 
 window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '485587434980626',
-      xfbml      : true,
-      version    : 'v2.5'
-    });
-  };
-
   FB.init({
     appId  : '485587434980626',
     status : true, // check login status
     cookie : true, // enable cookies to allow the server to access the session
-    xfbml  : true  // parse XFBML
+    xfbml  : true,  // parse XFBML
+    version : 'v2.4'
   });
+  };
+
 
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
@@ -22,6 +18,21 @@ window.fbAsyncInit = function() {
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
+
+   function testAPI() {
+       console.log('Welcome!  Fetching your information.... ');
+       FB.api('/me', function(response) {
+         console.log('Successful login for: ' + response.name);
+         document.getElementById('status').innerHTML =
+           'Thanks for logging in, ' + response.name + '!';
+       });
+     }
+
+
+
+
+
+
 
 
 trind.config(function($routeProvider) {

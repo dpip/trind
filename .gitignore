@@ -5,3 +5,24 @@
 /assets/css/.sass-cache
 
 /node_modules
+
+
+var trind = angular.module('trind', ['ngRoute'])
+.run(['$rootScope', '$window', 'srvAuth',
+  function($rootScope, $window, sAuth) {
+
+  $rootScope.user = {};
+
+$window.fbAsyncInit = function() {
+  FB.init({
+    appId  : '485587434980626',
+    status : true, // check login status
+    cookie : true, // enable cookies to allow the server to access the session
+    xfbml  : true,  // parse XFBML
+    version : 'v2.4'
+  });
+
+  sAuth.watchAuthenticationStatusChange();
+
+    };
+  }]);
