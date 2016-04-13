@@ -1,4 +1,4 @@
-TRIND is Daniel Pipkin, Damian House, Evan Bonertz
+TRIND App team is Daniel Pipkin, Damian House, and Evan Bonertz
 
 Team Lead - Daniel <br>
 Back End - Damian <br>
