@@ -72,8 +72,11 @@ FB.getLoginStatus(function(response) {
         if (response.authResponse) {
           $http.post('https://still-waters-14036.herokuapp.com/oauth', $scope.facebookAccount)
             .success(function(data) {
+              //THE BELOW CODE SHOULD GET DAMIANS RETURN DATA AND STORE IT
+              // localStorage.setItem('tokenToken', data.token);
+              // localStorage.setItem('userID', data.id);
               console.log(data);
-              console.log("new facebook user created");
+              console.log("Trind facebook user created");
               window.location.replace('#/home');
           })
           console.log('Welcome!  Fetching your information.... ');
