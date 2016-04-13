@@ -26,6 +26,9 @@ trind.controller('LandController', [ '$http', '$location', '$scope', function($h
 // +++++++++++ id in local storage +++++++
   var userID = localStorage.getItem('userID');
 // ++++++++++++++++++ login ++++++++++++++++++++++
+
+
+
   $scope.submitLogin = function() {
     console.log("Hello, little Hobbit!");
     console.log($scope.landPage)
@@ -59,57 +62,5 @@ trind.controller('LandController', [ '$http', '$location', '$scope', function($h
       console.log(go);
       $location.url('#/home')
     };
-// +++++++++++initial communication with facebook+++++++++++++++
-function statusChangeCallback(response) {
-console.log('statusChangeCallback');
-console.log(response);
-console.log(response.authResponse.accessToken);
-// The response object is returned with a status field that lets the
-// app know the current login status of the person.
-// Full docs on the response object can be found in the documentation
-// for FB.getLoginStatus().
-if (response.status === 'connected') {
-  // Logged into your app and Facebook.
-  testAPI();
-} else if (response.status === 'not_authorized') {
-  // The person is logged into Facebook, but not your app.
-  document.getElementById('status').innerHTML = 'Please log ' +
-    'into this app.';
-} else {
-  // The person is not logged into Facebook, so we're not sure if
-  // they are logged into this app or not.
-  document.getElementById('status').innerHTML = 'Please log ' +
-    'into Facebook.';
-}
-}
-  $scope.FBlogin = function() {
-    FB.login(function(response) {
-      console.log(response);
-      localStorage.setItem('facebookToken', response.authResponse.accessToken);
-      localStorage.setItem('facebookUserID', response.authResponse.userID);
-    if (response.authResponse) {
-      $http.post('https://still-waters-14036.herokuapp.com/oauth', $scope.facebookAccount)
-        .success(function(data) {
-          console.log("new facebook user created");
-          window.location.replace('#/home');
-      })
-      console.log('Welcome!  Fetching your information.... ');
-      FB.api('/me', function(response) {
-      console.log(response);
-     });
-    } else {
-     console.log('User cancelled login or did not fully authorize.');
-    }
-  });
-  };
-    FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  });
-  // FB.logout(function(response) {
-  //
-  // });
-// FB.api('/me', function(response) {
-//     console.log(JSON.stringify(response));
-// });
-// +++++++++++++++get user token aka post to damian / login ++++++++++++++++++
+
 }]);
