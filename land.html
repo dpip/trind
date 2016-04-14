@@ -8,63 +8,49 @@
                         <div class="landing-logo"> T </div>
                     </div>
                     <div class="land-header-right">
-                        <ul class="land-header-icons">
+
+                    <ul class="land-header-icons">
                         <li> FB </li>
                         <li> GH </li>
-                        </ul>
+                    </ul>
                     </div>
                 </nav>
 
+
+
+
                 <div class="landing-title"> TRIND</div>
                     <h3 class="landing-subtitle"> Making Social Networks Social Again </h3>
-
-                    <!-- <div ng-controller= "FacebookController">
+                    <div ng-controller= "LandController">
                         <button ng-click="FBlogin()">Login with facebook</button>
-                    </div> -->
-
-                    <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-                    </fb:login-button> -->
-                    <!-- <div>
-                        <button ng-click="FBlogin(); showSeeWhatsTrinding=true" >Login with facebook</button>
-                        <button ng-click="goHome()" ng-show="showSeeWhatsTrinding">See What's Trinding</button>
-                    </div> -->
-                    <div id="status" >
-
+                    </div>
                     </div>
 
-                    <form ng-submit="submitLogin()" method="post">
-                    <label class="label-landing-email"> Email </label>
-                          <input type="text" class="landing-email" ng-model="landPage.email" />
-                          <label type="text" class="label-landing-password" > Password </label>
-                          <input type="text" class="landing-password" ng-model="landPage.password">
-                          <button class="login-button"> Log In </button>
-                          </form>
+                            <div id="signup-modal" class="signup-form" ng-show="showmodal">
+                                <div class="modal-close"> <a href="" ng-click="showmodal=false">X </a></div>
+                                    <form ng-submit="submitSignup()" method="post">
+                                        <div class="form-column">
+                                          <label for="first-name">Name</label>
+                                          <input type="text" id="signup-name" placeholder="True" ng-model="newAccount.user.name" />
+                                          <label for="email-address">Email Address</label>
+                                          <input type="text" id="email-address" name="email-address" placeholder="friends@trind.com" ng-model="newAccount.user.email"/>
+                                          <label for="new-password">Password</label>
+                                          <input type="text" id="new-password" name="new-password" placeholder="******" ng-model="newAccount.user.password"/>
+                                          <label for="confirm-password"> Confirm Password</label>
+                                          <input type="text" id="confirm-password" name="confirm-password" placeholder="******" ng-model="newAccount.user.password_confirmation"/>
+                                          <br>
+                                        <button id="signup-now"> Create Account </button>
+                                    </form>
+                                        <br> <h3> OR </h3> <br>
+                                        <button id="signup-facebook"> <a href="#"> Sign Up with Facebook </a> </button>
+                                        </div>
 
-
-
-
-
-
-                          <form ng-submit="submitSignup()" method="post">
-                              <div class="form-column">
-                                <label for="first-name">Name</label>
-                                <input type="text" id="signup-name" placeholder="True" ng-model="newAccount.user.name" />
-                                <label for="email-address">Email Address</label>
-                                <input type="text" id="email-address" name="email-address" placeholder="friends@trind.com" ng-model="newAccount.user.email"/>
-                                <label for="new-password">Password</label>
-                                <input type="text" id="new-password" name="new-password" placeholder="******" ng-model="newAccount.user.password"/>
-                                <label for="confirm-password"> Confirm Password</label>
-                                <input type="text" id="confirm-password" name="confirm-password" placeholder="******" ng-model="newAccount.user.password_confirmation"/>
-                                <br>
-                              <button id="signup-now"> Create Account </button>
-                          </form>
-
-
+                                </div>
                             </div>
                         </div>
                     <!-- This closes the second modal container -->
 
-                    <!-- <div class="landing-login-container">
+                    <div class="landing-login-container">
 
                       <form ng-submit="submitLogin()" method="post">
                         <div id="landing-log-in"> <a href="" ng-click="showme=true"> Log In </a></div>
@@ -86,13 +72,10 @@
                             </div>
                             </div>
                           </form>
-                    </div> -->
+                    </div>
 
                              <!-- This ends the button container -->
 
-                             <!-- <div ng-controller= "LandController">
-                             <button ng-click="FBlogin()">Login with facebook</button>
-                             </div> -->
                 </div>
 
 
@@ -104,22 +87,12 @@
                                   data-width="450"
                                   data-show-faces="true">
                                </div>
+                                    <div ng-controller= "LandController">
+                                    <button ng-click="FBlogin()">Login with facebook</button>
+                                    </div>
                             </div>
 
-                <!-- </div> -->
-
-
-                    <!-- <div class="landing-signup-container"> -->
-                              <!-- <div id="landing-sign-up"> <a href="" ng-click="showmodal=true"> Sign Up for Free </a> </div>
-                              <div class="fb-container">
-                                  <div class="fb-like"
-                                    data-share="true"
-                                    data-width="450"
-                                    data-show-faces="true">
-                                 </div>
-                              </div> -->
-
-                            <!-- <div id="signup-modal" class="signup-form" ng-show="showmodal">
+                            <div id="signup-modal" class="signup-form" ng-show="showmodal">
                                 <div class="modal-close"> <a href="" ng-click="showmodal=false">X </a></div>
                                     <form ng-submit="submitSignup()" method="post">
                                         <div class="form-column">
@@ -138,15 +111,19 @@
                                         <button id="signup-facebook"> <a href="#"> Sign Up with Facebook </a> </button>
                                         </div>
                                 </div>
-                            </div> -->
+                            </div>
 
                     <!-- This closes the second modal container -->
-                <!-- </div> -->
+                </div>
                 <!-- This closes the container -->
-                <!-- </div> -->
+                </div>
 
                         <!-- This end the Jumbotron  -->
-            <!-- </div>
-                          </div>
+            </div>
 
-    </div> -->
+            <section class="about-trind">
+                <div class="about-trind-title"> About Trind </div>
+
+            </section>
+
+    </div>

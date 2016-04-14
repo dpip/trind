@@ -12,8 +12,8 @@ trind.controller('LandController', [ '$http', '$location', '$scope', function($h
       "email": "",
       "password": "",
       "password_confirmation": ""
-  }
-};
+    }
+  };
   $scope.facebookAccount = {
       "uid": facebookUserID,
       "name": "",
