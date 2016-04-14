@@ -5,18 +5,14 @@
   <div class= "trind-main-header-image"><a href="#/me"><i class="fa fa-camera"></i></a></div>
 </div>
 
-<div class="me-container"  ng-controller= "MeController" >
+<div class="me-container" >
     <img class="me-avatar" src="https://avatars1.githubusercontent.com/u/583231?v=3&s=460" >  </img>
-    <div id="me-name">{{ userName }}  </div>
-    <div id="me-email">{{ userEmail}}</div>
-    <div id="me-interests">{{ userInterests}}  </div>
-    <div id="me-summary">{{ userSummary}}</div>
+    <div id="me-name"><input type="text" class="editFields edit-user-user-name" ng-model='userName'></input></div>
+    <div id="me-email"><input type="text" class="editFields  edit-user-user-email" ng-model='userEmail'></input></div>
+    <div id="me-interests"><input type="text" class="editFields  edit-user-user-interests"ng-model='userInterests'></input> </div>
+    <div id="me-summary"><input type="body" class="editFields  edit-user-user-summary" ng-model='userSummary'></input></div>
     <div class="me-things">
-        <ul>
-            <li><a href="#/memories"> Memories</li>
-            <li><a href="#/messages"> Messages </li>
-            <li><a href="#/editUser"> Edit Profile </li>
-        </ul>
+      <button ng-click="editUserInfo()">Save</button>
     </div>
 </div>
 
