@@ -9,6 +9,24 @@
   <input type="text" placeholder="What's Trinding?" class = "expand" id= "home-drop-search-input-box">
 </div>
 
+<div class="open-messages-container" ng-repeat="conversations in messages">
+      <div ng-repeat= "thing in things | limitTo:60 | filter:search">
+          <div class="conversation-information-container">
+        <div class= "conversation-image" id="event-dilb" ng-click="message($index)">
+            <img src="{{thing.user.photo_url}}" height="200" width="200">
+        </div>
+          <div class= "conversation-user" id= "interests"> {{conversation.user}} </div>
+          <div class= "conversation-details" id= "description"> {{conversation.message}} </div>
+          <div class= "conversation-time-stamp" id= "location"> {{conversation.time}} </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
 <!-- {{data}} -->
 
 
