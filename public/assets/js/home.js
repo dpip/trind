@@ -9,6 +9,7 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
   // +++++++++++ id in local storage +++++++
     var userID = localStorage.getItem('userID');
     var userPhoto = localStorage.getItem('userPhoto');
+    var theEventID = localStorage.getItem('theEventID');
   // ++++++++++++++++++ login ++++++++++++++++++++++
 
       // Gets the event json from Damian and repeats through home page
@@ -18,13 +19,24 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
 
           $scope.details = function(index) {
             console.log("ya there?");
-            showDetails = index
+            showID = index
+            console.log(showID);
+
+            localStorage.setItem('theEventID', showID);
+
             $location.path('/details');
           };
 
+          $scope.getEvents = function(event) {
+            console.log("we got there");
+            // localStorage.setItem('theEventID', .id );
+          };
+
+
+          // scope displayind details of user!!!!!!
           $scope.eventDetail = data.events;
 
-
+          // pushes events to memories
           // $scope.makingMemories = function(index) {
           //   console.log("memories");
           //   toMemories = index
