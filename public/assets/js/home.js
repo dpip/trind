@@ -33,7 +33,7 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
           };
 
 
-          // scope displayind details of user!!!!!!
+          // scope displayind details of user!
           $scope.eventDetail = data.events;
 
           // pushes events to memories

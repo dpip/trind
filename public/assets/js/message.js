@@ -1,7 +1,7 @@
 trind.controller('MessageController', [ '$http', '$scope', function($http, $scope){
 
   $(document).ready(function () {
-    $http.get('https://still-waters-14036.herokuapp.com/message')
+    $http.get('https://still-waters-14036.herokuapp.com/message'  )
         .success(function(data)  {
             console.log("Load Messages");
         });
