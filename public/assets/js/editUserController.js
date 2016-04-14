@@ -31,10 +31,18 @@ trind.controller('editUserController', [ '$http', '$scope', function($http, $sco
 
     $http.put('https://still-waters-14036.herokuapp.com/users/' + userID + "?token=" + currentToken, param).then(function successCallback(response){
     console.log('put', response);
-  }, function errorCallback(response){
+    }, function errorCallback(response){
     console.log('not put', response);
-  });
-};
+    });
+  };
+
+  $scope.deleteUser = function(){
+    $http.delete('https://still-waters-14036.herokuapp.com/users/' + userID + "?token=" + currentToken).then(function successCallback(response){
+    console.log('deleted', response);
+    }, function errorCallback(response){
+    console.log('not deleted', response);
+    });
+  };
 
 
 }]);
