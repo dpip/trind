@@ -22,17 +22,17 @@ trind.config(function($routeProvider) {
       templateUrl: 'me.html',
       controller: 'MeController'
     })
-            .when('/memories', {
-              templateUrl: 'memories.html',
-              controller: 'MemoriesController'
+     .when('/memories', {
+     templateUrl: 'memories.html',
+     controller: 'MemoriesController'
             })
-            .when('/messages', {
-              templateUrl: 'messages.html',
-              controller: 'MessagesController'
+    .when('/messages', {
+     templateUrl: 'messages.html',
+     controller: 'MessagesController'
             })
-            .when('/message', {
-              templateUrl: 'message.html',
-              controller: 'MessageController'
+    .when('/message', {
+     templateUrl: 'message.html',
+     controller: 'MessageController'
             })
             .when('/editUser', {
               templateUrl: 'editUser.html',

@@ -50,8 +50,9 @@
   margin-right: auto;
   padding: .5em;
   font-size: 2em;
-  z-index: auto;
-  text-shadow: 0 0 3px #555; }
+  z-index: auto; }
+  .landing-login-container #landing-sign-up a {
+    text-shadow: 0 0 3px #555; }
 
 .login-modal {
   width: 100%;
@@ -147,18 +148,20 @@
   .landing-header {
     background-color: #a4dbd8;
     color: #ff6c59;
-    height: 70px;
+    height: 100px;
     border-bottom: 1px solid #fff; }
     .landing-header .land-header-left {
       padding-top: .5em;
+      padding-left: .5em;
       width: 30px;
       text-align: center;
       position: relative;
-      font-size: 2em;
+      font-size: 3em;
       text-shadow: 0 0 5px #fff; }
     .landing-header .land-header-right {
       width: 20%;
       margin-right: auto;
+      padding-right: .5em;
       float: right; }
       .landing-header .land-header-right li {
         float: right;
@@ -168,7 +171,11 @@
 
   .landing-container {
     font-family: helvetica, sans-serif;
-    width: 100%; }
+    width: 60%;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 800px; }
 
   .landing-title {
     color: #ff6c59;
@@ -185,11 +192,22 @@
     text-shadow: 0 0 3px #555; }
 
   .landing-jumbotron {
-    width: 100%;
     height: 100%;
     background-size: cover;
     background-position: 20% 0;
-    position: absolute; }
+    position: absolute;
+    z-index: auto; }
+
+  .landing-login-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+    .landing-login-container label {
+      text-align: left;
+      margin-right: 1em; }
+    .landing-login-container input {
+      margin: .1em;
+      font-size: 1.5em; }
 
   .landing-signup-container {
     height: 20%;
@@ -201,24 +219,12 @@
     margin-right: auto;
     width: 50%;
     text-align: center; }
-    .landing-signup-container .fb-container {
-      text-align: center;
-      padding-left: 10%;
-      margin-top: 2em; }
-
-  #landing-sign-up {
-    border-radius: 5px;
-    text-align: center;
-    font-size: 3em;
-    color: white;
-    border: 1px solid #a4dbd8;
-    text-decoration: none;
-    padding: .2em;
-    z-index: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    text-shadow: 0 0 3px #555; }
+    .landing-signup-container label {
+      color: #a4dbd8;
+      display: inline-block; }
+    .landing-signup-container .form-column {
+      display: inline-block;
+      float: left; }
 
   .landing-login-container {
     border-radius: 5px;
@@ -230,18 +236,23 @@
     margin-right: auto;
     padding: .2em;
     font-size: 2em;
-    z-index: auto;
-    text-shadow: 0 0 3px #555; }
+    z-index: auto; }
+    .landing-login-container .fb-container-login {
+      text-align: center;
+      margin-top: 2em; }
+    .landing-login-container #landing-sign-up a {
+      text-shadow: 0 0 3px #555; }
 
   .login-modal {
-    width: 80%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto; }
     .login-modal .modal-container {
       border: 2px solid #555;
       height: 300px;
       background: white;
-      z-index: auto; }
+      z-index: auto;
+      text-align: center; }
       .login-modal .modal-container .modal-close {
         float: right;
         line-height: 15px;
@@ -282,42 +293,54 @@
     border: 2px solid #555;
     position: relative;
     z-index: auto; }
-    .signup-form h3 {
-      color: black;
-      font-size: 2em; }
     .signup-form .modal-close {
       font-size: 2em;
       border: 1px solid #555;
       float: right;
       text-decoration: none;
-      color: black; }
-    .signup-form .form-column {
-      border: 1px solid white;
-      height: 420px;
-      line-height: 35px; }
-      .signup-form .form-column label {
-        display: block;
-        font-size: 1.2em;
-        color: #ff6c59; }
-      .signup-form .form-column input {
-        border: 2px solid #555;
-        font-size: 1.2em; }
-      .signup-form .form-column #signup-now {
-        padding: .5em;
-        background: green;
-        color: white; }
-      .signup-form .form-column #signup-facebook {
-        margin: .2em;
-        padding: .5em;
-        background: blue;
-        color: white; }
+      color: black; } }
+.chat-container {
+  margin-top: 120px;
+  height: 555px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #555;
+  border-radius: 3px;
+  font-family: helvetica, sans-serif; }
 
-  .about-trind {
-    height: 500px;
-    width: 100%;
-    font-size: 5em;
-    margin-left: auto;
-    margin-right: auto; } }
+.message-footer {
+  border: 2px solid #555;
+  font-size: 2em;
+  margin-top: 5px;
+  border-radius: 3px; }
+
+.chat-users {
+  border: 1px solid black;
+  padding: 1em;
+  font-size: 3em; }
+
+.chat-body {
+  font-size: 2.5em; }
+
+#THEY {
+  float: right; }
+
+#YM {
+  float: left; }
+
+#IM {
+  color: green;
+  float: right; }
+
+input {
+  width: 60%;
+  font-size: 2.5em; }
+
+.btn-submit {
+  font-size: 1em;
+  padding: .2em; }
+
 .mutate-interests {
   color: red; }
 
@@ -373,7 +396,8 @@
   .home-events-display-wrap .home-events-display .home-trind-event-container {
     height: 200px;
     width: 100%;
-    background-color: white; }
+    background-color: white;
+    border: 1px solid black; }
   .home-events-display-wrap .home-events-display #event-dilb {
     display: inline-block; }
   .home-events-display-wrap .home-events-display .home-trind-event-information-container {
