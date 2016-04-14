@@ -7,13 +7,13 @@
 
 <div class="me-container"  ng-controller= "MeController" >
     <img class="me-avatar" src="https://avatars1.githubusercontent.com/u/583231?v=3&s=460" >  </img>
-    <div id="me-name">{{userInfo[2].name}}</div>
-    <div id="me-email">{{userInfo[2].email}}</div>
+    <div id="me-name">{{ userName }}  </div>
+    <div id="me-email">{{ userEmail}}</div>
     <div class="me-things">
         <ul>
             <li><a href="#/memories"> Memories</li>
-            <li><a href="#"> Friends </li>
-            <li><a href="#"> Interests </li>
+            <li><a href="#/messages"> Messages </li>
+            <li><a href="#"> Edit Profile </li>
         </ul>
     </div>
 </div>

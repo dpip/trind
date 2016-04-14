@@ -2,8 +2,17 @@ var showDetails;
 var toMemories;
 trind.controller('HomeController',  [ '$http', '$location', '$scope', function($http, $location, $scope){
 
+  // +++++++++++ token in localStorage ++++++++++
+    var currentToken = localStorage.getItem('tokenToken');
+    var facebookToken =  localStorage.getItem('facebookToken');
+    var facebookUserID = localStorage.getItem('facebookUserID');
+  // +++++++++++ id in local storage +++++++
+    var userID = localStorage.getItem('userID');
+    var userPhoto = localStorage.getItem('userPhoto');
+  // ++++++++++++++++++ login ++++++++++++++++++++++
+
       // Gets the event json from Damian and repeats through home page
-      $http.get('https://still-waters-14036.herokuapp.com/events').success(function(data){
+      $http.get('https://still-waters-14036.herokuapp.com/events?token=' + currentToken ).success(function(data){
         console.log(data);
         $scope.stuff = data;
 

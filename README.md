@@ -1,18 +1,16 @@
-TRIND is Daniel Pipkin, Damian House, Evan Bonertz
+TRIND App team is Daniel Pipkin, Damian House, and Evan Bonertz
 
 Team Lead - Daniel <br>
 Back End - Damian <br>
 Front End - Evan <br>
 
-Monday 3/4/16
-+ User stories are complete.
-+ Sprint one has been declared.
-+ Damian has ruby spitting json.
-+ Damian pushed to heroku.
-+ Evan is researching angular.
-+ Daniel created a local angular app with working routes.
-+ UNC lost, group moment of silence.
 
-Tuesday 3/5/16
-+ Evan built out basic structure of landing page
-+ Evan added login modal using ng-click and ng-show
++ User stories are complete
++ Sprint one has been declared. Spring two is in the works 
++ Damian has a rails API running and deployed to Heroku
++ Daniel and Evan created an angular app and have deployed using Firebase
++ Evan built out basic structure for a mobile and dekstop landing page
++ All team members have researched and implemented Facebook Authentication and Access Tokens
++ 
+
+
