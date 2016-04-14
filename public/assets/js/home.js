@@ -29,21 +29,13 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
 
           $scope.getEvents = function(event) {
             console.log("we got there");
-            // localStorage.setItem('theEventID', .id );
+            
           };
 
 
           // scope displayind details of user!!!!!!
           $scope.eventDetail = data.events;
 
-          // pushes events to memories
-          // $scope.makingMemories = function(index) {
-          //   console.log("memories");
-          //   toMemories = index
-          //   $location.path('/memories');
-          // };
-          //
-          // $scope.toMemories = $scope.eventDetail;
 
 });
 
