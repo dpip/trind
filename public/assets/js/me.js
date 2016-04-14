@@ -1,5 +1,6 @@
 trind.controller('MeController', [ '$http', '$scope', function($http, $scope){
 
+
     var userID = localStorage.getItem('userID');
     var currentToken = localStorage.getItem('tokenToken');
 
@@ -8,6 +9,7 @@ trind.controller('MeController', [ '$http', '$scope', function($http, $scope){
     $scope.userEmail = " ";
     $scope.userInterests = " ";
     $scope.userSummary = " ";
+
 
 
   $http.get('https://still-waters-14036.herokuapp.com/users/' + userID + "?token=" + currentToken).success(function(userInfo){
