@@ -9,28 +9,41 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
   // +++++++++++ id in local storage +++++++
     var userID = localStorage.getItem('userID');
     var userPhoto = localStorage.getItem('userPhoto');
+    var theEventID = localStorage.getItem('theEventID');
   // ++++++++++++++++++ login ++++++++++++++++++++++
 
       // Gets the event json from Damian and repeats through home page
       $http.get('https://still-waters-14036.herokuapp.com/events?token=' + currentToken ).success(function(data){
         console.log(data);
         $scope.stuff = data;
-
-          $scope.details = function(index) {
+          // $scope.eventIDGrab = data.id
+          $scope.details = function(thingId) {
             console.log("ya there?");
-            showDetails = index
+            showID = thingId;
+            console.log(showID);
+
+            localStorage.setItem('theEventID', showID);
+
             $location.path('/details');
           };
 
-          $scope.eventDetail = data.events;
-
-          $scope.makingMemories = function(index) {
-            console.log("memories");
-            toMemories = index
-            $location.path('/memories');
+          $scope.getEvents = function(event) {
+            console.log("we got there");
+            // localStorage.setItem('theEventID', .id );
           };
 
-          $scope.toMemories = $scope.eventDetail;
+
+          // scope displayind details of user!!!!!!
+          $scope.eventDetail = data.events;
+
+          // pushes events to memories
+          // $scope.makingMemories = function(index) {
+          //   console.log("memories");
+          //   toMemories = index
+          //   $location.path('/memories');
+          // };
+          //
+          // $scope.toMemories = $scope.eventDetail;
 
 });
 
