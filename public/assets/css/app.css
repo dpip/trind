@@ -1,4 +1,4 @@
-/*.landing-container {
+.landing-container {
   font-family: helvetica, sans-serif;
   width: 100%; }
 
@@ -142,9 +142,7 @@
       padding: 1em;
       background: blue;
       color: white;
-      font-size: 1em; }*/
-
-
+      font-size: 1em; }
 
 @media (min-width: 800px) {
   .landing-header {
@@ -301,7 +299,6 @@
       float: right;
       text-decoration: none;
       color: black; } }
-
 .chat-container {
   margin-top: 120px;
   height: 555px;
@@ -343,6 +340,157 @@ input {
 .btn-submit {
   font-size: 1em;
   padding: .2em; }
+
+.mutate-interests {
+  color: red; }
+
+.create-input-field {
+  height: 200px;
+  margin-top: 120px; }
+  .create-input-field .create-enter-interests-input {
+    width: 100%;
+    height: 60px;
+    font-size: 35px;
+    position: relative; }
+  .create-input-field .user-creator-description {
+    padding-top: 1em; }
+  .create-input-field .user-creator-description {
+    font-size: 35px;
+    height: 60px;
+    position: relative; }
+  .create-input-field .user-creator-description-field {
+    padding-bottom: 80px;
+    width: 100%;
+    height: 60px;
+    font-size: 35px;
+    position: relative; }
+  .create-input-field .create-enter-location-input {
+    width: 100%;
+    height: 60px;
+    font-size: 35px; }
+  .create-input-field .create-trind-submit-button-text {
+    border: none;
+    height: 50px;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    background-color: #ff6d5e;
+    font-family: 'Sniglet', cursive;
+    bottom: 6em;
+    border-radius: 1em;
+    cursor: pointer;
+    position: absolute; }
+
+.home-events-display-wrap .home-events-display {
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 120px;
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif; }
+  .home-events-display-wrap .home-events-display .home-trind-event-information-image {
+    background-color: #eaeaea;
+    height: 200px;
+    width: 200px;
+    float: left; }
+  .home-events-display-wrap .home-events-display .home-trind-event-container {
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black; }
+  .home-events-display-wrap .home-events-display #event-dilb {
+    display: inline-block; }
+  .home-events-display-wrap .home-events-display .home-trind-event-information-container {
+    width: 100%;
+    border: 1px solid rgba(171, 178, 186, 0.5); }
+  .home-events-display-wrap .home-events-display .home-trind-event-information {
+    background-color: white; }
+  .home-events-display-wrap .home-events-display #interests {
+    font-size: 40px;
+    padding-bottom: 15px;
+    height: 40px; }
+  .home-events-display-wrap .home-events-display #description {
+    height: 40px;
+    font-size: 30px;
+    padding-bottom: 15px; }
+  .home-events-display-wrap .home-events-display #location {
+    height: 20px;
+    font-size: 30px;
+    text-align: right;
+    position: absolute;
+    right: 5;
+    bottom: 14; }
+
+.event-details-container {
+  font-size: 60px;
+  margin-top: 120px;
+  position: relative;
+  z-index: 1;
+  font-family: 'Open Sans', sans-serif; }
+  .event-details-container .details-text-wrapper {
+    width: 95%;
+    margin-top: 50px; }
+  .event-details-container #details-name {
+    margin-top: 10px;
+    color: rgba(255, 109, 94, 0.8);
+    margin-top: 10px;
+    color: rgba(255, 109, 94, 0.8);
+    margin-left: 40px; }
+  .event-details-container #details-interested-button {
+    float: right;
+    background-color: #a4dbd8;
+    border-radius: .3em;
+    height: 65px;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: white;
+    font-size: 45px; }
+  .event-details-container #details-eventDetail-title {
+    margin-top: 40px;
+    margin-left: 40px; }
+  .event-details-container #details-eventDetail-interest {
+    margin-top: 40px;
+    margin-left: 40px; }
+  .event-details-container #details-eventDetail-description {
+    margin-top: 40px;
+    margin-left: 40px; }
+  .event-details-container #details-eventDetail-location {
+    margin-top: 40px;
+    margin-left: 40px; }
+
+.memories-header-icons {
+  display: inline-block; }
+
+#memories-header-text {
+  color: #ff6d5e;
+  position: relative;
+  float: left;
+  top: 5px;
+  font-size: 120px;
+  left: 10%;
+  font-family: 'Sniglet', cursive; }
+
+#memories-back-button {
+  color: white;
+  position: relative;
+  float: left;
+  top: 25px;
+  font-size: 80px;
+  margin-left: 20px; }
+
+.memories-container {
+  margin-top: 120px; }
+
+#memories-name {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 20px;
+  font-size: 40px; }
+
+.fa-thumbs-up {
+  color: #ff6d5e;
+  float: right;
+  padding-left: 1em;
+  margin-right: 1em; }
 
 a {
   color: inherit;
