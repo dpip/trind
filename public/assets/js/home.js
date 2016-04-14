@@ -16,10 +16,10 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
       $http.get('https://still-waters-14036.herokuapp.com/events?token=' + currentToken ).success(function(data){
         console.log(data);
         $scope.stuff = data;
-
-          $scope.details = function(index) {
+          // $scope.eventIDGrab = data.id
+          $scope.details = function(thingId) {
             console.log("ya there?");
-            showID = index
+            showID = thingId;
             console.log(showID);
 
             localStorage.setItem('theEventID', showID);
