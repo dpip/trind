@@ -11,9 +11,10 @@ trind.controller('MessagesController', [ '$http', '$scope', function($http, $sco
   var currentToken = localStorage.getItem('tokenToken');
 
   $http.get('https://still-waters-14036.herokuapp.com/conversations?token=' + currentToken ).success(function(data){
-    console.log(data);
 
-        $scope.conversations = data;
+    console.log(data);
+    $scope.conversations = data;
+
 
  });
  }]);

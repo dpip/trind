@@ -10,19 +10,24 @@
 </div>
 
 <div class="open-messages-container">
-      <div ng-repeat= "conversation in conversations">
-          <div class="conversation-information-container">
 
-        <div class= "conversation-image" id="event-dilb" ng-click="message($index)">
-            <img src="{{conversation.photo_url}}" height="200" width="200">
-        </div>
-          <div class= "conversation-user">{{conversations}}</div>
+      <div ng-repeat= "conversation in conversations.conversations">
+         <div class="conversation-information-container">
+             <a href="#message">
+                <div class= "conversation-image" id="event-dilb">
+                    <img src="{{conversation.sender_photo_url}} " height="200" width="200">
+                </div>
+          <!-- <div class= "conversation-user">{{conversation}}</div> -->
+          <div class= "conversation-sender">{{conversation.sender_name}}</div>
+          <!-- <div class="all-data">{{conversation}}</div> -->
+
           <!-- <div class= "conversation-details" id= "description"> {{conversation.message}} </div>
           <div class= "conversation-time-stamp" id= "location"> {{conversation.}} </div> -->
+        </a>
         </div>
-        </div>
+     </div>
     </div>
-</div>
+
 
 <!-- {{data}} -->
 
