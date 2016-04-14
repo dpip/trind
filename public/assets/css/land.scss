@@ -21,11 +21,7 @@ $trind-green: rgb(164, 219, 216);
 }
 
 .landing-jumbotron {
-<<<<<<< HEAD
-    background: url('img/trindhero.jpg') bottom center no-repeat;
-=======
-    // background: url('https://cdn1.theodysseyonline.com/files/2015/06/08/635693880042525992-518822648_couple-hiking-valley.jpg') bottom center no-repeat;
->>>>>>> 716868b08a363939b09bec07dfc990f09e77ff04
+    // background: url('img/trindhero.jpg') bottom center no-repeat;
   	width: 100%;
   	height: 100%;
   	background-size: cover;
@@ -199,23 +195,26 @@ $trind-green: rgb(164, 219, 216);
 .landing-header {
     background-color: $trind-green;
     color: $trind-red;
-    height: 80px;
+    height: 100px;
     border-bottom: 1px solid #fff;
 
     .land-header-left {
         padding-top: .5em;
+        padding-left: .5em;
         width: 30px;
         text-align: center;
         position: relative;
-        font-size: 2em;
+        font-size: 3em;
         text-shadow: 0 0 5px #fff;
-
     }
 
     .land-header-right{
         width: 20%;
         margin-right: auto;
+        padding-right: .5em;
         float: right;
+
+
 
      li{
         float: right;
@@ -228,7 +227,11 @@ $trind-green: rgb(164, 219, 216);
 
 .landing-container{
     font-family: helvetica, sans-serif;
-    width: 100%;
+    width:60%;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 800px;
 
 }
 
@@ -250,17 +253,29 @@ $trind-green: rgb(164, 219, 216);
 
 
 .landing-jumbotron {
-<<<<<<< HEAD
-    background: url('http://cdn1.theodysseyonline.com/files/2015/06/08/635693880042525992-518822648_couple-hiking-valley.jpg') bottom center no-repeat;
-=======
-    // background: url('https://cdn1.theodysseyonline.com/files/2015/06/08/635693880042525992-518822648_couple-hiking-valley.jpg') bottom center no-repeat;
->>>>>>> 716868b08a363939b09bec07dfc990f09e77ff04
-    width: 100%;
+
+    // background: url('http://cdn1.theodysseyonline.com/files/2015/06/08/635693880042525992-518822648_couple-hiking-valley.jpg') bottom center no-repeat;
+    // width: 100%;
   	height: 100%;
   	background-size: cover;
   	background-position: 20% 0;
     position: absolute;
     z-index: auto;
+}
+
+.landing-login-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    label {
+        text-align: left;
+        margin-right: 1em;
+    }
+    input {
+    margin: .1em;
+    font-size: 1.5em;
+    }
+
 }
 
 .landing-signup-container {
@@ -275,27 +290,13 @@ $trind-green: rgb(164, 219, 216);
     text-align: center;
 
 
-    .fb-container {
-        text-align: center;
-        padding-left: 10%;
-        margin-top: 10em;
+    label {
+        color: $trind-green;
+        display: inline-block;
     }
-
-
-#landing-sign-up {
-        border-radius: 5px;
-        text-align: center;
-        font-size: 3em;
-        color: white;
-        border: 1px solid $trind-green;
-        text-decoration: none;
-        padding: .2em;
-        z-index: auto;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 8em;
-        width: 50%;
-        text-shadow: 0 0 3px #555;
+    .form-column {
+        display: inline-block;
+        float: left;
     }
 }
 
@@ -386,10 +387,6 @@ $trind-green: rgb(164, 219, 216);
     position: relative;
     z-index: auto;
 
-    h3 {
-        color: black;
-        font-size: 2em;
-    }
 
     .modal-close {
         font-size: 2em;
@@ -398,44 +395,5 @@ $trind-green: rgb(164, 219, 216);
         text-decoration: none;
         color: black;
     }
-
-
-.form-column {
-    border: 1px solid white;
-    height: 420px;
-    line-height: 35px;
-
-    label {
-    display: block;
-    // padding: .2em;
-    font-size: 1.2em;
-    color: $trind-red;
-    }
-    input {
-        border: 2px solid #555;
-        // padding: .2em;
-        // width: 50%;
-        font-size: 1.2em;
-    }
-    #signup-now {
-        padding: .5em;
-        background: green;
-        color: white;
-    }
-    #signup-facebook {
-        margin: .2em;
-        padding: .5em;
-        background: blue;
-        color: white;
-    }
   }
-}
-
-.about-trind {
-    height: 500px;
-    width: 100%;
-    font-size: 5em;
-    margin-left: auto;
-    margin-right: auto;
-}
 }
