@@ -38,6 +38,10 @@ trind.config(function($routeProvider) {
               templateUrl: 'editUser.html',
               controller: 'editUserController'
             })
+            .when('/editEvents', {
+              templateUrl: 'editEvents.html',
+              controller: 'editEventsController'
+            })
     .when('/create', {
       templateUrl: 'create.html',
       controller: 'CreateController'

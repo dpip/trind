@@ -24,13 +24,14 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
 
           $scope.eventDetail = data.events;
 
-          $scope.makingMemories = function(index) {
-            console.log("memories");
-            toMemories = index
-            $location.path('/memories');
-          };
 
-          $scope.toMemories = $scope.eventDetail;
+          // $scope.makingMemories = function(index) {
+          //   console.log("memories");
+          //   toMemories = index
+          //   $location.path('/memories');
+          // };
+          //
+          // $scope.toMemories = $scope.eventDetail;
 
 });
 

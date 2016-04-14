@@ -34,13 +34,33 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
         $('.trind-main-header-search-icon').click(function () {
             $("#home-drop-search-input-box").toggle();
         });
+
+        // ON spacebar, events bubble. 3 max
+          // var emptyString = "";
+
+        $('.create-enter-interests-input').keyup(function(e){
+            // var emptyString;
+            var interests = $(this).val();
+            if(e.keyCode == 32){
+           // user has pressed space
+           $(interests).addClass("mutate-interests");
+           console.log("spacebar");
+           console.log(interests);
+
+         }
+        });
+
+
+        // $("#test").keyup(function() {
+        //                 var input = $(this);
+        //
+        //                 if( input.val() == "" ) {
+        //                   input.css( "border", "1px solid #000" );
+        //                 }
+        //             });
+
+
     });
 
-  //     $('user-creator-description-interests').keyup(function(e){
-  //    if(e.keyCode == 32){
-  //        // user has pressed space
-  //        console.log("spacebar");
-  //    }
-  //  });
 
   }]);

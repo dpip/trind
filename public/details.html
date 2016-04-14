@@ -13,7 +13,7 @@
 
             <img class="me-avatar" src="{{eventDetail[0].user.photo_url}}" height="600" width="100%"></img>
             <div class= "details-text-wrapper">
-              <div id="details-name">{{eventDetail[0].user.name}}<input type="button" value="Interested" id= "details-interested-button" ng-click="makingMemories($index)"></div>
+              <div id="details-name">{{eventDetail[0].user.name}}<input type="button" value="Interested" id= "details-interested-button"  ng-controller="DetailsController" ng-click="makingMemories($index)"></div>
               <div id="details-eventDetail-title">{{eventDetail[0].title}}</div>
               <div id="details-eventDetail-interest">{{eventDetail[0].interests}}</div>
               <div id="details-eventDetail-description">{{eventDetail[0].description}}</div>
