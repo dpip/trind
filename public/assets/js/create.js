@@ -36,4 +36,11 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
         });
     });
 
+  //     $('user-creator-description-interests').keyup(function(e){
+  //    if(e.keyCode == 32){
+  //        // user has pressed space
+  //        console.log("spacebar");
+  //    }
+  //  });
+
   }]);
