@@ -11,7 +11,7 @@
 
 <div class="open-messages-container">
 
-      <div ng-repeat= "conversation in conversations.conversations">
+      <div ng-repeat= "conversation in conversations.conversations track by $index">
          <div class="conversation-information-container">
              <a href="#message">
                 <div class= "conversation-image" id="event-dilb">
