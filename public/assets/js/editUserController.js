@@ -13,7 +13,7 @@ trind.controller('editUserController', [ '$http', '$scope', function($http, $sco
   // };
   $http.get('https://still-waters-14036.herokuapp.com/users/' + userID + "?token=" + currentToken).then(function successCallback(response){
     console.log(response.data);
-
+    $scope.editUserImage = response.data.photo_url;
     $('.edit-user-user-name').val(response.data.name);
     $('.edit-user-user-email').val(response.data.email);
     $('.edit-user-user-interests').val(response.data.interests);

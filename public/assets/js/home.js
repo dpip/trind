@@ -34,6 +34,7 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
 
           // scope displaying details of user!
           $scope.eventDetail = data.events;
+          
           // pushes events to memories
           // $scope.makingMemories = function(index) {
           //   console.log("memories");
