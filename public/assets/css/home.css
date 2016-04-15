@@ -34,17 +34,14 @@
   .home-events-display-wrap .home-events-display #interests {
     font-size: 40px;
     padding-bottom: 15px;
-    height: 40px; }
-  .home-events-display-wrap .home-events-display #description {
     height: 40px;
+    color: #ff6d5e; }
+  .home-events-display-wrap .home-events-display #description {
+    height: 80px;
     font-size: 30px;
     padding-bottom: 15px; }
   .home-events-display-wrap .home-events-display #location {
     height: 20px;
-    font-size: 30px;
-    text-align: right;
-    position: absolute;
-    right: 5;
-    bottom: 14; }
+    font-size: 30px; }
 
 /*# sourceMappingURL=home.css.map */

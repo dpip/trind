@@ -1,3 +1,31 @@
+.edit-event-container {
+  margin-top: 160px; }
 
+.editFields {
+  margin-top: 40px; }
+
+#edit-event-title {
+  height: 100px;
+  width: 80%;
+  font-size: 50px;
+  border: 4px solid red; }
+
+#edit-event-interests {
+  height: 100px;
+  width: 80%;
+  font-size: 50px;
+  border: 4px solid red; }
+
+#edit-event-description {
+  height: 100px;
+  width: 80%;
+  font-size: 50px;
+  border: 4px solid red; }
+
+#edit-event-interests {
+  height: 100px;
+  width: 80%;
+  font-size: 50px;
+  border: 4px solid red; }
 
 /*# sourceMappingURL=editevents.css.map */

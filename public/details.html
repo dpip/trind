@@ -11,7 +11,7 @@
       <div class= "event-details-container">
 <!--  -->
 
-            <img class="me-avatar" src="{{event.photo_url}}" height="600" width="100%"></img>
+            <img class="me-avatar" src="{{event.user.photo_url}}" height="600" width="100%"></img>
             <div class= "details-text-wrapper">
               <div id="details-name">{{event.name}}<input type="button" value="Interested" id= "details-interested-button"  ng-controller="DetailsController" ng-click="interested()"></div>
               <div id="details-eventDetail-title">{{event.title}}</div>

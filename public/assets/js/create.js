@@ -12,6 +12,7 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
       "interests": "",
       "description": "",
       "location": "",
+      "title": "",
       "token": currentToken
 
     }

@@ -425,18 +425,15 @@ input {
   .home-events-display-wrap .home-events-display #interests {
     font-size: 40px;
     padding-bottom: 15px;
-    height: 40px; }
-  .home-events-display-wrap .home-events-display #description {
     height: 40px;
+    color: #ff6d5e; }
+  .home-events-display-wrap .home-events-display #description {
+    height: 80px;
     font-size: 30px;
     padding-bottom: 15px; }
   .home-events-display-wrap .home-events-display #location {
     height: 20px;
-    font-size: 30px;
-    text-align: right;
-    position: absolute;
-    right: 5;
-    bottom: 14; }
+    font-size: 30px; }
 
 .event-details-container {
   font-size: 60px;
@@ -508,6 +505,36 @@ input {
   float: right;
   padding-left: 1em;
   margin-right: 1em; }
+
+.edit-event-container {
+  margin-top: 160px; }
+
+.editFields {
+  margin-top: 40px; }
+
+#edit-event-title {
+  height: 100px;
+  width: 80%;
+  font-size: 50px;
+  border: 4px solid red; }
+
+#edit-event-interests {
+  height: 100px;
+  width: 80%;
+  font-size: 50px;
+  border: 4px solid red; }
+
+#edit-event-description {
+  height: 100px;
+  width: 80%;
+  font-size: 50px;
+  border: 4px solid red; }
+
+#edit-event-interests {
+  height: 100px;
+  width: 80%;
+  font-size: 50px;
+  border: 4px solid red; }
 
 .editUser-main-header-edit {
   position: relative;

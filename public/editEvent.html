@@ -1,13 +1,16 @@
 <div class= "trind-main-header">
   <div class= "trind-main-header-create-icon"><a href="#/create"><i class="fa fa-plus"></i></a></div>
+  <div class= "trind-main-header-text">Edit Event</div>
   <div class= "me-main-header-edit-icon"><i class="fa fa-pencil"></i></div>
-  <div class= "trind-main-header-image"><a href="#/me"><i class="fa fa-camera"></i></a></div>
+
 </div>
 
 <div class="edit-event-container" >
-    <div id="edit-event-interests"><input type="text" class="editFields edit-interests" ng-model='interests'></input></div>
-    <div id="edit-event-description"><input type="text" class="editFields  edit-description" ng-model='description'></input></div>
-    <div id="edit-event-interests"><input type="text" class="editFields  edit-location"ng-model='location'></input> </div>
+    <div id="edit-event-interests"><input type="text" placeholder="interests" class="editFields edit-interests" ng-model='interests'></input></div>
+    <div id="edit-event-title"><input type="text" placeholder="short description" class="editFields  edit-title"ng-model='title'></input> </div>
+    <div id="edit-event-description"><input type="text" placeholder="elaborate" class="editFields  edit-description" ng-model='description'></input></div>
+    <div id="edit-event-interests"><input type="text" placeholder="location" class="editFields  edit-location"ng-model='location'></input> </div>
+
     <div class="edit-event-save-delete-wrap">
       <!-- <button ng-click="editEventInfo()">Save</button>
       <button ng-click="deleteEvent()">Delete</button> -->

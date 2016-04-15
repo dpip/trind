@@ -49,9 +49,11 @@
       font-size: 40px;
       padding-bottom: 15px;
       height: 40px;
+      color: rgb(255, 109, 94);
+
     }
     #description {
-      height: 40px;
+      height: 80px;
       font-size: 30px;
       padding-bottom: 15px;
 
@@ -59,10 +61,11 @@
     #location {
       height: 20px;
       font-size: 30px;
-      text-align: right;
-      position: absolute;
-      right: 5;
-      bottom: 14;
+      // margin-bottom: -10px;
+      // text-align: right;
+      // position: absolute;
+      // left: 5;
+      // bottom: 14;
       // border: 1px solid black;
 
     }
