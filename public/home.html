@@ -2,11 +2,11 @@
 <div class= "trind-main-header">
   <div class= "trind-main-header-create-icon"><a href="#/create"><i class="fa fa-plus"></i></a></div>
   <div class= "trind-main-header-search-icon"><i class="fa fa-search"></i></div>
-  <div class= "trind-main-header-image"><a href="#/me"><i class="fa fa-camera"></i></a></div>
+  <div class= "trind-main-header-text">trinding</div>
 </div>
 
   <div class= "home-drop-search-bar">
-    <input type="text" placeholder="What's Trinding?" class = "expand" id= "home-drop-search-input-box" ng-model="search">
+    <input type="text" placeholder="See What's Trinding" class = "expand" id= "home-drop-search-input-box" ng-model="search">
   </div>
 
   <div class="home-events-display-wrap">
@@ -16,7 +16,7 @@
       <div ng-repeat= "thing in things | limitTo:60 | filter:search">
         <div class= "home-trind-event-information-container" id="event-dilb">
         <div class= "home-trind-event-information-image" id="event-dilb" ng-click="details(thing.id)"><img src="{{thing.user.photo_url}}" height="200" width="200"></div>
-          <div class= "home-trind-event-information" id= "interests"> {{thing.id}} </div>
+          <div class= "home-trind-event-information" id= "interests"> {{thing.interests}} </div>
           <div class= "home-trind-event-information" id= "description"> {{thing.description}} </div>
           <div class= "home-trind-event-information" id= "location"> {{thing.location}} </div>
 
