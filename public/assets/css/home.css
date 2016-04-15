@@ -1,3 +1,12 @@
+.trind-main-header-text {
+  position: relative;
+  float: left;
+  top: 25px;
+  font-size: 80px;
+  left: 21%;
+  color: #ff6d5e;
+  font-family: 'Sniglet', cursive; }
+
 .home-events-display-wrap .home-events-display {
   position: relative;
   box-sizing: border-box;

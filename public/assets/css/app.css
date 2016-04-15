@@ -342,8 +342,6 @@ input {
   padding: .2em; }
 
 .open-messages-container {
-
-  width: 99%; }
   width: 99%;
   font-size: 60px;
   margin-top: 100px; }
@@ -390,6 +388,15 @@ input {
     border-radius: 1em;
     cursor: pointer;
     position: absolute; }
+
+.trind-main-header-text {
+  position: relative;
+  float: left;
+  top: 25px;
+  font-size: 80px;
+  left: 21%;
+  color: #ff6d5e;
+  font-family: 'Sniglet', cursive; }
 
 .home-events-display-wrap .home-events-display {
   position: relative;
