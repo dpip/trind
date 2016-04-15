@@ -341,6 +341,9 @@ input {
   font-size: 1em;
   padding: .2em; }
 
+.open-messages-container {
+  width: 99%; }
+
 .mutate-interests {
   color: red; }
 
@@ -466,7 +469,7 @@ input {
   position: relative;
   float: left;
   top: 5px;
-  font-size: 120px;
+  font-size: 100px;
   left: 10%;
   font-family: 'Sniglet', cursive; }
 

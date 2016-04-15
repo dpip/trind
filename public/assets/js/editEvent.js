@@ -1,5 +1,5 @@
-// trind.controller('editEventsController', [ '$http', '$scope', function($http, $scope){
-
+trind.controller('EditEventController', [ '$http', '$scope', function($http, $scope){
+// 
 //   var userID = localStorage.getItem('userID');
 //   var currentToken = localStorage.getItem('tokenToken');
 //
@@ -28,6 +28,6 @@
 //     console.log('not put', response);
 //   });
 // };
+//
 
-
-// }]);
+}]);
