@@ -29,16 +29,21 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
 
           $scope.getEvents = function(event) {
             console.log("we got there");
-            
+
           };
 
-
-          // scope displayind details of user!!!!!!
+          // scope displaying details of user!
           $scope.eventDetail = data.events;
-
+          // pushes events to memories
+          // $scope.makingMemories = function(index) {
+          //   console.log("memories");
+          //   toMemories = index
+          //   $location.path('/memories');
+          // };
+          //
+          // $scope.toMemories = $scope.eventDetail;
 
 });
-
 
       // Drops search bar on click.... would love this functionality to happen on scroll
     $(document).ready(function () {
