@@ -7,6 +7,7 @@
 
 <div class="me-container" >
     <img class="me-avatar" src="{{editUserImage}}" height="800px" width="700px">  </img>
+    <div id="me-photo-upload"><input type="file" ng-file-model="image" name="image" /></input></div>
     <div id="me-name"><input type="text" class="editFields edit-user-user-name" ng-model='userName'></input></div>
     <div id="me-email"><input type="text" class="editFields  edit-user-user-email" ng-model='userEmail'></input></div>
     <div id="me-interests"><input type="text" class="editFields  edit-user-user-interests"ng-model='userInterests'></input> </div>
@@ -14,7 +15,6 @@
     <div class="me-things">
       <button class="user-edit-buttons" ng-click="editUserInfo()">Save</button>
       <button class="user-edit-buttons" ng-click="deleteUser()">Delete</button>
-
     </div>
 </div>
 
@@ -27,7 +27,4 @@
   <div class= "trind-main-footer-me-icon"><a href="#/me"><i class="fa fa-user"></i></a></div>
   <div class= "trind-main-footer-trind-icon"><a href="#/home">T</a></div>
   <div class= "trind-main-footer-message-icon"><a href="#/messages"><div class= "dot-dot-dot">...</div><i class="fa fa-comment"></i></a></div>
-
-
-
 </div>

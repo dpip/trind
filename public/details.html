@@ -13,11 +13,11 @@
 
             <img class="me-avatar" src="{{event.user.photo_url}}" height="600" width="100%"></img>
             <div class= "details-text-wrapper">
-              <div id="details-name">{{event.name}}<input type="button" value="Interested" id= "details-interested-button"  ng-controller="DetailsController" ng-click="interested()"></div>
-              <div id="details-eventDetail-title">{{event.title}}</div>
-              <div id="details-eventDetail-interest">{{event.interests}}</div>
-              <div id="details-eventDetail-description">{{event.description}}</div>
-              <div id="details-eventDetail-location">{{event.location}}</div>
+              <div id="details-name">{{event.user.name}}<input type="button" value="Interested" id= "details-interested-button"  ng-controller="DetailsController" ng-click="interested()"></div>
+              <div id="details-eventDetail-title">{{event.event.title}}</div>
+              <div id="details-eventDetail-interest">{{event.event.interests}}</div>
+              <div id="details-eventDetail-description">{{event.event.description}}</div>
+              <div id="details-eventDetail-location">{{event.event.location}}</div>
             </div>
             </div>
 
