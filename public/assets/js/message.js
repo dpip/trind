@@ -18,18 +18,17 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
  $(".btn-submit").click(function() {
      $("input").each(function(){
 
+    $http.post('https://still-waters-14036.herokuapp.com/conversations/' + conversationID+ “?token=“ + currentToken)
+            .success(function (data) {
+            console.log("message sent")
+        });
+
      $("#YM").append("<li>" + $(this).val() + "</li>" );
      $http.post('https://still-waters-14036.herokuapp.com/message'  )
+     $http.get('https://still-waters-14036.herokuapp.com/conversations/' + conversationID+ “?token=“ + currentToken)​
      event.preventDefault();
-      });
-
-
-    $http.post('https://still-waters-14036.herokuapp.com/message')
-        .success(function (data) {
-            console.log("message sent")
-        })
- });
-
+        });
+    });
   }]);
 
   // Different variation for User Matchinng
