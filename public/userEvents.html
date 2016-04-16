@@ -4,21 +4,16 @@
   <!-- <div class= "me-main-header-edit-icon"><a href="#/editEvent"><i class="fa fa-pencil"></i></div> -->
 </div>
 
-<!-- <div class= "home-drop-search-bar">
-  <input type="text" placeholder="What's Trinding?" class = "expand" id= "home-drop-search-input-box">
-</div>
-
-<div class= "memories-container" ng-controller= "" ng-repeat= "">
+<div class= "memories-container" ng-repeat= "events in userEvents">
   <div class= "home-events-display">
     <div class= "home-trind-event-information-container" id="event-dilb">
-      <div class= "home-trind-event-information-image" id="event-dilb" ng-click="details($index)"><img src="" height="200" width="200"></div>
-        <div class= "home-trind-event-information" id= "memories-name">{{}}</div>
-          <div class= "home-trind-event-information" id= "interests">{{}}</div>
-
-      <div class= "home-trind-event-information" id= "location">{{}}</div>
+      <div class= "home-trind-event-information-image" id="event-dilb" ng-click="details($index)"><img src="{{events.photo_url}}" height="200" width="200"></div>
+        <div class= "home-trind-event-information" id= "memories-name">{{events.name}}</div>
+        <div class= "home-trind-event-information" id= "interests">{{events.interests}}</div>
+        <div class= "home-trind-event-information" id= "location">{{events.location}}</div>
     </div>
   </div>
-</div> -->
+</div>
 
 <div class= "trind-main-footer">
   <div class= "trind-main-footer-me-icon"><a href="#/me"><i class="fa fa-user"></i></a></div>

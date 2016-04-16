@@ -1,5 +1,5 @@
 
-
+<!--
             <div class="landing-jumbotron">
                 <nav class="landing-header navbar-fixed-top" >
                     <div class="land-header-left">
@@ -15,7 +15,7 @@
                 <div class="landing-container">
 
                 <div class="landing-title"> TRIND</div>
-                    <h3 class="landing-subtitle"> Making Social Networks Social Again </h3>
+                    <h3 class="landing-subtitle"> Making Social Networks Social Again </h3> -->
 
                     <!-- <div ng-controller= "LandController">
                         <button ng-click="FBlogin()">Login with facebook</button>
@@ -26,14 +26,17 @@
 
 
 
+
+
+
+<div class= "login-page-container">
+  <div class = "login-page-main-font" > <div id="login-page-main-font-text">Trind</div> </div>
                     <div class="landing-login-container">
                     <form ng-submit="submitLogin()" method="post">
-                            <label class="label-landing-email"> Email </label>
-                              <input type="text" class="landing-email" ng-model="landPage.email" /> <br>
-                            <label type="text" class="label-landing-password" > Password </label>
-                              <input type="text" class="landing-password" ng-model="landPage.password">
+                              <input type="text" placeholder="email" class="input-email" ng-model="landPage.email" /> <br>
+                              <input type="text" placeholder="password" class="input-password" ng-model="landPage.password">
                               <div class="button-container">
-                            <button class="login-button"> Log In </button>
+                              <button class="login-button"> Log In </button>
                               <div ng-controller= "LandController">
                                   <button ng-click="FBlogin(); showSeeWhatsTrinding=true" >Login with facebook</button>
                                   <button ng-click="goHome()" ng-show="showSeeWhatsTrinding">See What's Trinding</button>
@@ -44,7 +47,7 @@
 
                     </form>
                     </div>
-
+<!--
                     <div class="landing-signup-container">
                           <form ng-submit="submitSignup()" method="post">
                               <div class="form-column">
@@ -69,7 +72,7 @@
                           data-width="450"
                           data-show-faces="true">
                        </div>
-                    </div>
+                    </div> -->
 
             <!-- <div class="landing-signup-container"> -->
                 <!-- <div id="landing-sign-up"> <a href="" ng-click="showmodal=true"> Sign Up for Free </a> </div> -->
@@ -91,7 +94,7 @@
                           </form>
                     </div> -->
 
-                    <div class="signup-form" ng-show="showmodal">
+                    <!-- <div class="signup-form" ng-show="showmodal">
                         <div id="landing-sign-up"> <a href="" ng-click="showmodal=true"> Sign Up for Free </a> </div>
                                 <div class="modal-close"> <a href="" ng-click="showmodal=false">X </a></div>
 
@@ -110,7 +113,7 @@
                                 </form>
                                 </div>
                             </div>
-                    </div>
+                    </div> -->
 
                     <!-- This closes the second modal container -->
                 <!-- </div> -->
@@ -122,3 +125,4 @@
                           </div>
 
     </div> -->
+</div>

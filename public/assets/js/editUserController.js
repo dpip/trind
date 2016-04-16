@@ -23,15 +23,26 @@ trind.controller('editUserController', [ '$http', '$scope', function($http, $sco
     console.log('hate', response)
   });
 
-
-
-  $scope.editUserInfo = function(){
+  $scope.editUserInfo = function(file){
     var param = {user:{email:$('.edit-user-user-email').val(), name:$('.edit-user-user-name').val(), summary:$('.edit-user-user-summary').val()}}
     console.log(param);
 
     $http.put('https://still-waters-14036.herokuapp.com/users/' + userID + "?token=" + currentToken, param).then(function successCallback(response){
     console.log('put', response);
-    }, function errorCallback(response){
+    },
+    // Upload.upload({
+    //       url: '/projects',
+    //       data: {file: file, 'project[name]': $scope.name, 'project[description]': $scope.description},
+    //   }).then(function (resp) {
+    //       console.log('Success ' + resp.config.data.file.name + 'uploaded. Response: ' + resp.data);
+    //
+    //   }, function (resp) {
+    //       console.log('Error status: ' + resp.status);
+    //   }, function (evt) {
+    //       var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+    //       console.log('progress: ' + progressPercentage + '% ' + evt.config.data.file.name);
+    // });
+    function errorCallback(response){
     console.log('not put', response);
     });
   };
