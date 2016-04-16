@@ -19,6 +19,7 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
      $("input").each(function(){
 
      $("#YM").append("<li>" + $(this).val() + "</li>" );
+     $http.post('https://still-waters-14036.herokuapp.com/message'  )
      event.preventDefault();
       });
 
