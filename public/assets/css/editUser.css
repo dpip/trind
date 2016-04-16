@@ -1,0 +1,20 @@
+.editUser-main-header-edit {
+  position: relative;
+  float: left;
+  top: 25px;
+  font-size: 80px;
+  left: 13%;
+  color: #ff6d5e;
+  font-family: 'Sniglet', cursive; }
+
+.editFields {
+  font-size: 50px;
+  width: 80%;
+  text-align: center; }
+
+.user-edit-buttons {
+  width: 300px;
+  height: 100px;
+  font-size: 30px; }
+
+/*# sourceMappingURL=editUser.css.map */

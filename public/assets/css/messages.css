@@ -1,0 +1,30 @@
+.open-messages-container {
+  width: 100%;
+  font-size: 3em;
+  margin-top: 100px; }
+
+.trind-main-header-title {
+  color: #ff6d5e;
+  font-size: 4em;
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: .5em;
+  font-family: 'Sniglet', cursive; }
+
+.conversation-information-container {
+  border: 1px solid #555; }
+  .conversation-information-container .conversation-sender {
+    width: 40%;
+    margin-top: -150px;
+    float: right;
+    text-align: right;
+    padding-right: 1em;
+    color: #ff6d5e; }
+  .conversation-information-container .conversation-last-message {
+    float: right;
+    margin-top: -100px;
+    font-size: .8em;
+    padding-right: 1em; }
+
+/*# sourceMappingURL=messages.css.map */

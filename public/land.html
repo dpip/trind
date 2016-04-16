@@ -1,8 +1,6 @@
 
-    <div class="landing-container">
-
+<!--
             <div class="landing-jumbotron">
-
                 <nav class="landing-header navbar-fixed-top" >
                     <div class="land-header-left">
                         <div class="landing-logo"> T </div>
@@ -14,9 +12,10 @@
                         </ul>
                     </div>
                 </nav>
+                <div class="landing-container">
 
                 <div class="landing-title"> TRIND</div>
-                    <h3 class="landing-subtitle"> Making Social Networks Social Again </h3>
+                    <h3 class="landing-subtitle"> Making Social Networks Social Again </h3> -->
 
                     <!-- <div ng-controller= "LandController">
                         <button ng-click="FBlogin()">Login with facebook</button>
@@ -24,121 +23,143 @@
 
                     <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
                     </fb:login-button> -->
-                    <div ng-controller= "LandController">
-                        <button ng-click="FBlogin(); showSeeWhatsTrinding=true" >Login with facebook</button>
-                        <button ng-click="goHome()" ng-show="showSeeWhatsTrinding">See What's Trinding</button>
-                    </div>
-                    <div id="status" >
-
-                    </div>
-
-                    <form ng-submit="submitLogin()" method="post">
-                    <label class="label-landing-email"> Email </label>
-                          <input type="text" class="landing-email" ng-model="landPage.email" />
-                          <label type="text" class="label-landing-password" > Password </label>
-                          <input type="text" class="landing-password" ng-model="landPage.password">
-                          <button class="login-button"> Log In </button>
-                          </form>
 
 
 
 
 
 
-                          <form ng-submit="submitSignup()" method="post">
-                              <div class="form-column">
-                                <label for="first-name">Name</label>
-                                <input type="text" id="signup-name" placeholder="True" ng-model="newAccount.user.name" />
-                                <label for="email-address">Email Address</label>
-                                <input type="text" id="email-address" name="email-address" placeholder="friends@trind.com" ng-model="newAccount.user.email"/>
-                                <label for="new-password">Password</label>
-                                <input type="text" id="new-password" name="new-password" placeholder="******" ng-model="newAccount.user.password"/>
-                                <label for="confirm-password"> Confirm Password</label>
-                                <input type="text" id="confirm-password" name="confirm-password" placeholder="******" ng-model="newAccount.user.password_confirmation"/>
-                                <br>
-                              <button id="signup-now"> Create Account </button>
-                          </form>
+<div class= "login-page-container">
+  <!-- <div class = "login-page-main-font" > <div id="login-page-main-font-text">Trind</div> </div> -->
 
+                  <div class="landing-login-wrap">
+                    <div class="landing-login-container">
+                      <div class = "login-page-main-font" > <div id="login-page-main-font-text">Trind</div> </div>
+                      <div class = "land-call-to-action">
+                        Meet someone new, </br></br>
+                        do something new,  </br></br>
+                        when and where you choose.
+                      </div>
+                    <form ng-submit="submitLogin()" autocomplete="off" method="post">
+                              <div class="land-input-container">
+                              <input type="text" placeholder="trind@gmail.com" class="input-email" ng-model="landPage.email" style="border:1px solid white"> <br>
+                              <span class=" unit unit-email">Email</span>
+                              </div>
+                              <div class="land-input-container">
+                              <input type="password" placeholder="required" class="input-password" ng-model="landPage.password" style="border:1px solid white">
+                              <span class=" unit unit-password">Password</span>
+                              </div>
+                              <div class="button-container">
+                              <button class="login-button"> sign in </button>
+                              <div class="havent-created-an-account-yet"> Not a member yet? </div>
+                    </form>
 
+                              <div ng-init="showModal=false">
+                              <div class="havent-created-an-account-yet create-account" ng-click="showModal = !showModal"> Create a free account </div>
+                              <div ng-show="showModal">
+                                <div class="landing-signup-container">
+                                  <div class="modal-footer">
+                                  <button type="button" class="btn-signup-close" ng-click="showModal=false"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                  </div>
+                                      <form ng-submit="submitSignup()" autocomplete="off" method="post">
+                                          <div class="form-column">
+                                            <label for="first-name"></label>
+                                            <input type="text" class="sign-up-modal-input" id="signup-name" placeholder="name" ng-model="newAccount.user.name" /> <br>
+                                            <span class="modal-perm-input-text">Name</span>
+                                            <label for="email-address"></label>
+                                            <input type="text" class="sign-up-modal-input" id="email-address" name="email-address" placeholder="friends@trind.com" ng-model="newAccount.user.email"/> <br>
+                                            <span class="modal-perm-input-text">Email</span>
+                                            <label for="new-password"></label>
+                                            <input type="password" class="sign-up-modal-input" id="new-password" name="new-password" placeholder="******" ng-model="newAccount.user.password"/> <br>
+                                            <span class="modal-perm-input-text">Password</span>
+                                            <label for="confirm-password"></label>
+                                            <input type="password" class="sign-up-modal-input" id="confirm-password" name="confirm-password" placeholder="******" ng-model="newAccount.user.password_confirmation"/>
+                                            <span class="modal-perm-input-text">Confirm</span>
+                                            <br>
+                                            <div class="sign-up-pressure">Explore new experiences...</div>
+                                          <button id="signup-now"> Create Account </button>
+
+                                      </form>
+                                  </div>
+                                </div>
                             </div>
-                        </div>
-                    <!-- This closes the second modal container -->
 
+
+
+
+
+
+
+
+
+                              </div>
+
+
+
+
+                              <!-- <div ng-controller= "LandController"> -->
+                                  <!-- <button ng-click="FBlogin(); showSeeWhatsTrinding=true" >Login with facebook</button> -->
+                                  <!-- <button ng-click="goHome()" ng-show="showSeeWhatsTrinding">See What's Trinding</button> -->
+
+                              </div>
+                              </div>
+                              </div>
+                              <div id="status" >
+                              </div>
+                              </div>
+
+                    <!-- </div> -->
+
+
+
+                    <!-- <div class="fb-container">
+                        <div class="fb-like"
+                          data-share="true"
+                          data-width="450"
+                          data-show-faces="true">
+                       </div>
+                    </div>  -->
+
+            <!-- <div class="landing-signup-container"> -->
+                <!-- <div id="landing-sign-up"> <a href="" ng-click="showmodal=true"> Sign Up for Free </a> </div> -->
                     <!-- <div class="landing-login-container">
-
                       <form ng-submit="submitLogin()" method="post">
                         <div id="landing-log-in"> <a href="" ng-click="showme=true"> Log In </a></div>
-
                             <div id="login-modal" class="login-modal" ng-show="showme">
                             <div class="modal-container">
                             <div class="modal-close">  <a href="" ng-click="showme=false"> X </a></div>
-
                             <div class="modal-column">
                             <label class="label-landing-email"> Email </label>
                             <input type="text" class="landing-email" ng-model="landPage.email" />
-
                             <label type="text" class="label-landing-password" > Password </label>
                             <input type="text" class="landing-password" ng-model="landPage.password">
-                            <br>
                             <button class="login-button"> Log In </button>
                             </div>
-
                             </div>
                             </div>
                           </form>
                     </div> -->
 
-                             <!-- This ends the button container -->
-
-                             <!-- <div ng-controller= "LandController">
-                             <button ng-click="FBlogin()">Login with facebook</button>
-                             </div> -->
-                </div>
-
-
-                    <div class="landing-signup-container">
-                            <div id="landing-sign-up"> <a href="" ng-click="showmodal=true"> Sign Up for Free </a> </div>
-                            <div class="fb-container">
-                                <div class="fb-like"
-                                  data-share="true"
-                                  data-width="450"
-                                  data-show-faces="true">
-                               </div>
-                            </div>
-
-                <!-- </div> -->
-
-
-                    <!-- <div class="landing-signup-container"> -->
-                              <!-- <div id="landing-sign-up"> <a href="" ng-click="showmodal=true"> Sign Up for Free </a> </div>
-                              <div class="fb-container">
-                                  <div class="fb-like"
-                                    data-share="true"
-                                    data-width="450"
-                                    data-show-faces="true">
-                                 </div>
-                              </div> -->
-
-                            <!-- <div id="signup-modal" class="signup-form" ng-show="showmodal">
+                    <!-- <div class="signup-form" ng-show="showmodal">
+                        <div id="landing-sign-up"> <a href="" ng-click="showmodal=true"> Sign Up for Free </a> </div>
                                 <div class="modal-close"> <a href="" ng-click="showmodal=false">X </a></div>
-                                    <form ng-submit="submitSignup()" method="post">
-                                        <div class="form-column">
-                                          <label for="first-name">Name</label>
-                                          <input type="text" id="signup-name" placeholder="True" ng-model="newAccount.user.name" />
-                                          <label for="email-address">Email Address</label>
-                                          <input type="text" id="email-address" name="email-address" placeholder="friends@trind.com" ng-model="newAccount.user.email"/>
-                                          <label for="new-password">Password</label>
-                                          <input type="text" id="new-password" name="new-password" placeholder="******" ng-model="newAccount.user.password"/>
-                                          <label for="confirm-password"> Confirm Password</label>
-                                          <input type="text" id="confirm-password" name="confirm-password" placeholder="******" ng-model="newAccount.user.password_confirmation"/>
-                                          <br>
-                                        <button id="signup-now"> Create Account </button>
-                                    </form>
-                                        <br> <h3> OR </h3> <br>
-                                        <button id="signup-facebook"> <a href="#"> Sign Up with Facebook </a> </button>
-                                        </div>
+
+                                <form ng-submit="submitSignup()" method="post">
+                                    <div class="form-column">
+                                      <label for="first-name">Name</label>
+                                      <input type="text" id="signup-name" placeholder="True" ng-model="newAccount.user.name" />
+                                      <label for="email-address">Email Address</label>
+                                      <input type="text" id="email-address" name="email-address" placeholder="friends@trind.com" ng-model="newAccount.user.email"/>
+                                      <label for="new-password">Password</label>
+                                      <input type="text" id="new-password" name="new-password" placeholder="******" ng-model="newAccount.user.password"/>
+                                      <label for="confirm-password"> Confirm Password</label>
+                                      <input type="text" id="confirm-password" name="confirm-password" placeholder="******" ng-model="newAccount.user.password_confirmation"/>
+                                      <br>
+                                    <button id="signup-now"> Create Account </button>
+                                </form>
                                 </div>
-                            </div> -->
+                            </div>
+                    </div> -->
 
                     <!-- This closes the second modal container -->
                 <!-- </div> -->
@@ -150,3 +171,4 @@
                           </div>
 
     </div> -->
+<!-- </div> -->

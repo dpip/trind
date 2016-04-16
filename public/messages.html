@@ -1,13 +1,31 @@
 
 <div class= "trind-main-header">
   <div class= "trind-main-header-create-icon"><a href="#/create"><i class="fa fa-plus"></a></i></div>
-  <div class= "trind-main-header-search-icon"><i class="fa fa-search"></i></div>
-  <div class= "trind-main-header-image"><a href="#/me"><i class="fa fa-camera"></i></a></div>
+  <div class= "trind-main-header-title"><a href="#/messages">Conversations</a></div>
 </div>
 
 <div class= "home-drop-search-bar">
   <input type="text" placeholder="What's Trinding?" class = "expand" id= "home-drop-search-input-box">
 </div>
+
+<div class="open-messages-container">
+
+      <div ng-repeat= "conversation in conversations.conversations">
+         <div class="conversation-information-container" ng-click="message(conversation.conversation_id)">
+                <div class= "conversation-image" id="event-dilb">
+                    <img src="{{conversation.sender_photo_url}} " height="200" width="200">
+                </div>
+          <!-- <div class= "conversation-user">{{conversation}}</div> -->
+          <div class= "conversation-sender">{{conversation.sender_name}}</div>
+          <div class="conversation-last-message">{{conversation.last_message}}</div>
+          <!-- <div class="all-data">{{conversation}}</div> -->
+
+          <!-- <div class= "conversation-details" id= "description"> {{conversation.message}} </div>
+          <div class= "conversation-time-stamp" id= "location"> {{conversation.}} </div> -->
+        </div>
+     </div>
+    </div>
+
 
 <!-- {{data}} -->
 

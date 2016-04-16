@@ -1,21 +1,17 @@
 trind.controller('MeController', [ '$http', '$scope', function($http, $scope){
 
+
     var userID = localStorage.getItem('userID');
     var currentToken = localStorage.getItem('tokenToken');
+    var userPhoto = localStorage.getItem('userPhoto');
 
     $scope.userID = userID;
-    $scope.userName = " "
+    $scope.userName = " ";
     $scope.userEmail = " ";
+    $scope.userInterests = " ";
+    $scope.userSummary = " ";
+    $scope.userPhoto = userPhoto;
 
-        $scope.currentUser = {
-            "user_id": {
-            "user_id": userID,
-            "interests": "",
-            "description": "",
-            "location": "",
-            "token": currentToken
-          }
-        };
 
 
   $http.get('https://still-waters-14036.herokuapp.com/users/' + userID + "?token=" + currentToken).success(function(userInfo){
@@ -23,9 +19,10 @@ trind.controller('MeController', [ '$http', '$scope', function($http, $scope){
     console.log(currentToken);
     console.log(userInfo);
 
+    $scope.userphoto = userInfo.photo_url;
     $scope.userName = userInfo.name;
     $scope.userEmail = userInfo.email;
-
+    $scope.userSummary = userInfo.summary;
   });
 
   }]);
