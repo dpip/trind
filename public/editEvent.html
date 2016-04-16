@@ -1,19 +1,22 @@
 <div class= "trind-main-header">
-  <div class= "trind-main-header-create-icon"><a href="#/create"><i class="fa fa-plus"></i></a></div>
-  <div class= "trind-main-header-text">Edit Event</div>
-  <div class= "me-main-header-edit-icon"><i class="fa fa-pencil"></i></div>
+  <div class= "memories-header-icons" id= "memories-back-button"><a href="#/userEvents"><i class="fa fa-arrow-left"></i></a></div>
+  <div class= "trind-main-header-text-edit-event">Edit</div>
+  <!-- <div class= "me-main-header-edit-icon"><i class="fa fa-pencil"></i></div> -->
 
 </div>
 
 <div class="edit-event-container" >
-    <div id="edit-event-interests"><input type="text" placeholder="interests" class="editFields edit-interests" ng-model='interests'></input></div>
-    <div id="edit-event-title"><input type="text" placeholder="short description" class="editFields  edit-title"ng-model='title'></input> </div>
-    <div id="edit-event-description"><input type="text" placeholder="elaborate" class="editFields  edit-description" ng-model='description'></input></div>
-    <div id="edit-event-interests"><input type="text" placeholder="location" class="editFields  edit-location"ng-model='location'></input> </div>
 
-    <div class="edit-event-save-delete-wrap">
-      <!-- <button ng-click="editEventInfo()">Save</button>
-      <button ng-click="deleteEvent()">Delete</button> -->
+    <div class="edit-fields-wrap" ng-controller"UserEventsController">
+        <div id="edit-event-interests"><input type="text" value="" class="editFields edit-interests" ng-model='interests'></input></div>
+        <div id="edit-event-title"><input type="text" placeholder="short description" class="editFields  edit-title"ng-model='title'></input> </div>
+        <div id="edit-event-description"><input type="text" placeholder="elaborate" class="editFields  edit-description" ng-model='description'></input></div>
+        <div id="edit-event-location"><input type="text" placeholder="location" class="editFields  edit-location"ng-model='location'></input> </div>
+
+        <div class="edit-event-save-delete-wrap">
+          <button class="edit-event-button-save" ng-click="editEventInfo()">Save</button>
+          <button class="edit-event-button-delete" ng-click="deleteEvent()">Delete</button>
+        </div>
     </div>
 </div>
 
