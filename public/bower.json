@@ -1,0 +1,22 @@
+{
+  "name": "public",
+  "homepage": "https://github.com/dpip/trind",
+  "authors": [
+    "damianhouse <damianhouse@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "ng-file-model": "*"
+  }
+}
