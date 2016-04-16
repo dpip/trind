@@ -6,8 +6,7 @@
 
 <div class= "memories-container" ng-repeat= "events in userEvents">
   <div class= "home-events-display">
-    <div class= "home-trind-event-information-container" id="event-dilb">
-      <div class= "home-trind-event-information-image" id="event-dilb" ng-click="details($index)"><img src="{{events.photo_url}}" height="200" width="200"></div>
+    <div class= "home-trind-event-information-container" id="event-dilb" ng-controller="UserEventsController" ng-click="editMyEvent(events.id)">
         <div class= "home-trind-event-information" id= "memories-name">{{events.name}}</div>
         <div class= "home-trind-event-information" id= "interests">{{events.interests}}</div>
         <div class= "home-trind-event-information" id= "location">{{events.location}}</div>
