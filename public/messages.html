@@ -10,9 +10,8 @@
 
 <div class="open-messages-container">
 
-      <div ng-repeat= "conversation in conversations.conversations track by $index">
-         <div class="conversation-information-container">
-             <a href="#message">
+      <div ng-repeat= "conversation in conversations.conversations">
+         <div class="conversation-information-container" ng-click="message(conversation.conversation_id)">
                 <div class= "conversation-image" id="event-dilb">
                     <img src="{{conversation.sender_photo_url}} " height="200" width="200">
                 </div>
@@ -23,7 +22,6 @@
 
           <!-- <div class= "conversation-details" id= "description"> {{conversation.message}} </div>
           <div class= "conversation-time-stamp" id= "location"> {{conversation.}} </div> -->
-        </a>
         </div>
      </div>
     </div>

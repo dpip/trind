@@ -1,9 +1,9 @@
 <link rel-"stylesheet" href="assets/css/message.css">
 
 <div class= "trind-main-header">
-  <div class= "trind-main-header-create-icon"><a href="#/create"><i class="fa fa-plus"></i></a></div>
+  <div class= "trind-main-header-create-icon"><a href="#/messages"><i class="fa fa-chevron-left"></i></a></div>
   <div class= "trind-main-header-search-icon"><i class="fa fa-search"></i></div>
-  <div class= "trind-main-header-image"><a href="#/me"><i class="fa fa-camera"></i></a></div>
+  <div class= "trind-main-header-image"><a href="#/me">{{data.sender_id}}</a></div>
 </div>
 
 <div class= "home-drop-search-bar">
@@ -20,10 +20,12 @@
                     </div>
 
                     <div class="chat-body">
-                        <ul id="YM" > USER1 MESSAGES</ul>
+                        <div id="YM" ng-repeat="messages in chat.messages" >
+                            <div ng-repeat="body in chat.messages"> <br>
+                            <div class="message-text">{{messages.body}}</div>
 
-                        <ul id="IM">USER2 MESSAGES</ul>
-
+                            </div>
+                        </div>
                     </div> <!-- This closes the chat body -->
                 </div> <!-- This closes the chat column -->
               </div> <!-- This closes the panel body -->
@@ -37,7 +39,7 @@
                     <label class="you-momma"> YOU:</label>
                     <input id="chatter" type="text" name="chatter" class="form-control chatter" />
                     <span class="input-group-btn">
-                          <button class="btn-submit" type="submit">Send</button>
+                          <button class="btn-submit" type="submit" ng-click="sendmessage">Send</button>
                     </span>
                 </div>
             </form>
