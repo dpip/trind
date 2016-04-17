@@ -9,6 +9,9 @@ trind.controller('UserEventsController', [ '$http', '$scope', function($http, $s
     var editEventID = localStorage.getItem('editEventID')
 
 
+    $scope.topUserPhoto = userPhoto;
+
+
 
     $http.get('https://still-waters-14036.herokuapp.com/my_events?token=' + currentToken) .then(function successCallback(response){
       console.log('user events', response);

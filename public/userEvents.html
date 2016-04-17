@@ -4,14 +4,24 @@
   <!-- <div class= "me-main-header-edit-icon"><a href="#/editEvent"><i class="fa fa-pencil"></i></div> -->
 </div>
 
-<div class= "memories-container" ng-repeat= "events in userEvents">
-  <div class= "home-events-display">
+<div class= "user-events-page-container">
+
+<!-- <div class= "user-events-user-image">
+  <img src="{{topUserPhoto}}"></img>
+  </div> -->
+
+<div class= "events-container" ng-repeat= "events in userEvents">
+  <div class= "user-events-display">
     <div class= "home-trind-event-information-container" id="event-dilb" ng-controller="UserEventsController" ng-click="editMyEvent(events.id)">
-        <div class= "home-trind-event-information" id= "memories-name">{{events.name}}</div>
-        <div class= "home-trind-event-information" id= "interests">{{events.interests}}</div>
-        <div class= "home-trind-event-information" id= "location">{{events.location}}</div>
+        <!-- <div class= "user-events-trind-event-information" id= "memories-name">{{events.name}}</div> -->
+        <div class= "user-events-trind-event-information" id= "title">{{events.title}}</div>
+        <div class= "user-events-trind-event-information" id= "interests">{{events.interests}}</div>
+        <div class= "user-events-trind-event-information" id= "location">{{events.location}}</div>
+        <div class= "user-events-trind-event-information" id= "location">{{events.description}}</div>
     </div>
   </div>
+</div>
+
 </div>
 
 <div class= "trind-main-footer">
