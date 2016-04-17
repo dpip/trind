@@ -29,7 +29,10 @@ trind.controller('MeController', [ '$http', '$location', '$scope', function($htt
   $scope.logOut = function() {
   $http.get('https://still-waters-14036.herokuapp.com/logout?token=' + currentToken).then(function successCallback(logout){
     console.log('log out prompt', logout);
-    localStorage.clearAll();
+    localStorage.setItem('userID', "");
+    localStorage.setItem('tokenToken', "");
+    localStorage.setItem('userPhoto', "");
+    $window.localStorage.clear();
     window.location.replace('#/land');
 
   });
