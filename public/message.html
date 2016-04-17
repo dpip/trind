@@ -15,17 +15,15 @@
                   <div class="chat-column">
 
                     <div class="chat-users">
-                        <div id="YOU" class="user-name">YOU</div>
-                        <div id="THEY" class="user-name"> THEY </div>
+                        <div id="THEY" class="user-name"> Damian</div>
+                        <div id="YOU" class="user-name">Evan</div>
                     </div>
 
                     <div class="chat-body">
-                        <div id="YM" ng-repeat="messages in chat.messages" >
-                            <div ng-repeat="body in chat.messages"> <br>
-                            <div class="message-text">{{messages.body}}</div>
-
+                        <div ng-repeat="messages in chat.messages" ng-class="messages.body === 'I would love to chat over a latte!' ? 'message-out' : 'message-in'">{{messages.body}}
                             </div>
                         </div>
+
                     </div> <!-- This closes the chat body -->
                 </div> <!-- This closes the chat column -->
               </div> <!-- This closes the panel body -->
@@ -36,7 +34,6 @@
         <div class="message-footer">
             <form ng-controller="MessageController">
                 <div class="input-group">
-                    <label class="you-momma"> YOU:</label>
                     <input id="chatter" type="text" name="chatter" class="form-control chatter" />
                     <span class="input-group-btn">
                           <button class="btn-submit" type="submit" ng-click="sendmessage">Send</button>

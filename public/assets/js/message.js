@@ -2,14 +2,15 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
 
         var conversationID = localStorage.getItem('conversationID');
         var currentToken = localStorage.getItem('tokenToken');
+        var userID = localStorage.getItem('userID');
+        console.log('userID');
          $("#home-drop-search-input-box").hide();
 
 
         $http.get('https://still-waters-14036.herokuapp.com/conversations/' + conversationID + "?token=" + currentToken).success(function(data) {
             console.log(data);
             $scope.chat = data;
-
-            
+            localStorage.setItem('userID', userID);
 
         });
     }]);
