@@ -22,15 +22,15 @@
 
     .home-trind-event-information-image {
       background-color: rgba(234, 234, 234, 1);
-      height: 200px;
-      width: 200px;
+      height: 280px;
+      width: 280px;
       float: left;
     }
     .home-trind-event-container {
-      height: 200px;
+      height: 280px;
       width: 100%;
       background-color: white;
-      border: 1px solid black;
+      // border: 1px solid black;
     }
     #event-dilb {
       display: inline-block;
@@ -44,15 +44,23 @@
     .home-trind-event-information {
       background-color: white;
     }
+    #event-information-name {
+      background-color: grey;
+      color: black;
+      font-size: 40px;
+      padding-top: 10px;
+    }
 
     #interests {
       font-size: 40px;
       padding-bottom: 15px;
-      height: 40px;
+      // height: 110px;
       color: rgb(255, 109, 94);
+      vertical-align: top;
 
     }
     #description {
+      margin-top: 10px;
       height: 80px;
       font-size: 30px;
       padding-bottom: 15px;
@@ -63,9 +71,9 @@
       font-size: 30px;
       // margin-bottom: -10px;
       // text-align: right;
-      // position: absolute;
+      vertical-align: bottom;
       // left: 5;
-      // bottom: 14;
+
       // border: 1px solid black;
 
     }

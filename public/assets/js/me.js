@@ -1,4 +1,4 @@
-trind.controller('MeController', [ '$http', '$scope', function($http, $scope){
+trind.controller('MeController', [ '$http', '$location', '$scope', function($http, $location, $scope){
 
 
     var userID = localStorage.getItem('userID');
@@ -24,5 +24,19 @@ trind.controller('MeController', [ '$http', '$scope', function($http, $scope){
     $scope.userEmail = userInfo.email;
     $scope.userSummary = userInfo.summary;
   });
+
+
+  $scope.logOut = function() {
+  $http.get('https://still-waters-14036.herokuapp.com/logout?token=' + currentToken).then(function successCallback(logout){
+    console.log('log out prompt', logout);
+    localStorage.setItem('userID', "");
+    localStorage.setItem('tokenToken', "");
+    localStorage.setItem('userPhoto', "");
+    $window.localStorage.clear();
+    window.location.replace('#/land');
+
+  });
+};
+
 
   }]);

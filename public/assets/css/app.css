@@ -17,7 +17,7 @@
     font-size: 36px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    margin-left: 1em; }
+    margin-left: 0em; }
   .login-page-container .landing-login-container {
     margin-left: 5.5em; }
   .login-page-container .label {
@@ -130,21 +130,24 @@
     font-family: 'Open Sans', sans-serif;
     background-color: white; }
 
-.chat-container {
-  margin-top: 120px;
-  height: 79%;
-  width: 99%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 3px solid #999;
-  border-radius: 3px;
-  font-family: helvetica, sans-serif; }
+.conversation-wrap {
+  height: 100%;
+  margin-top: 0px; }
+
+.message-main-header-name {
+  position: relative;
+  float: left;
+  top: 25px;
+  font-size: 80px;
+  left: 18%;
+  font-family: 'Open Sans', sans-serif; }
 
 .message-footer {
-  border: 2px solid #555;
-  font-size: 2em;
-  margin-top: 5px;
-  border-radius: 3px; }
+  width: 100%;
+  position: absolute;
+  z-index: 60;
+  bottom: 120;
+  box-sizing: border-box; }
 
 .chat-users {
   border: 1px solid #999;
@@ -182,16 +185,19 @@
 
 input {
   width: 78%;
+  height: 100px;
   font-size: 2.5em;
   border: 2px solid #999;
   border-radius: 3px; }
 
 .btn-submit {
   font-size: 2.3em;
-  width: 20%;
-  height: auto;
+  width: 22%;
+  height: 100px;
   border: 2px solid #555;
-  border-radius: 10px; }
+  border-radius: 10px;
+  position: absolute;
+  background-color: blue; }
 
 .trind-main-footer {
   height: 120px; }
@@ -230,32 +236,28 @@ input {
 
 .create-input-field {
   height: 200px;
-  margin-top: 120px; }
+  margin-top: 120px;
+  margin-left: 5em;
+  width: 80%; }
   .create-input-field .create-enter-interests-input {
     width: 100%;
-    height: 60px;
     font-size: 35px;
     position: relative; }
   .create-input-field .user-creator-description {
     padding-top: 1em; }
   .create-input-field .user-creator-description {
     font-size: 35px;
-    height: 60px;
     position: relative; }
   .create-input-field .user-creator-description-field {
     padding-bottom: 80px;
-    width: 100%;
-    height: 60px;
     font-size: 35px;
     position: relative; }
   .create-input-field .create-enter-location-input {
-    width: 100%;
-    height: 60px;
     font-size: 35px; }
   .create-input-field .create-trind-submit-button-text {
     border: none;
-    height: 50px;
-    width: 100%;
+    height: 100px;
+    width: 80%;
     font-size: 40px;
     color: white;
     background-color: #ff6d5e;
@@ -283,14 +285,13 @@ input {
   font-family: 'Open Sans', sans-serif; }
   .home-events-display-wrap .home-events-display .home-trind-event-information-image {
     background-color: #eaeaea;
-    height: 200px;
-    width: 200px;
+    height: 280px;
+    width: 280px;
     float: left; }
   .home-events-display-wrap .home-events-display .home-trind-event-container {
-    height: 200px;
+    height: 280px;
     width: 100%;
-    background-color: white;
-    border: 1px solid black; }
+    background-color: white; }
   .home-events-display-wrap .home-events-display #event-dilb {
     display: inline-block; }
   .home-events-display-wrap .home-events-display .home-trind-event-information-container {
@@ -298,43 +299,84 @@ input {
     border: 1px solid rgba(171, 178, 186, 0.5); }
   .home-events-display-wrap .home-events-display .home-trind-event-information {
     background-color: white; }
+  .home-events-display-wrap .home-events-display #event-information-name {
+    background-color: grey;
+    color: black;
+    font-size: 40px;
+    padding-top: 10px; }
   .home-events-display-wrap .home-events-display #interests {
     font-size: 40px;
     padding-bottom: 15px;
-    height: 40px;
-    color: #ff6d5e; }
+    color: #ff6d5e;
+    vertical-align: top; }
   .home-events-display-wrap .home-events-display #description {
+    margin-top: 10px;
     height: 80px;
     font-size: 30px;
     padding-bottom: 15px; }
   .home-events-display-wrap .home-events-display #location {
     height: 20px;
-    font-size: 30px; }
+    font-size: 30px;
+    vertical-align: bottom; }
 
 .event-details-container {
-  font-size: 60px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 120px;
   position: relative;
   z-index: 1;
   font-family: 'Open Sans', sans-serif; }
+  .event-details-container .details-me-avatar {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 20px;
+    text-align: center; }
   .event-details-container .details-text-wrapper {
-    width: 95%;
-    margin-top: 50px; }
+    width: 90%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 2em; }
   .event-details-container #details-name {
     margin-top: 10px;
     color: rgba(255, 109, 94, 0.8);
     margin-top: 10px;
     color: rgba(255, 109, 94, 0.8);
-    margin-left: 40px; }
+    margin-left: 40px;
+    font-size: 2.5em;
+    text-align: center; }
+  .event-details-container #details-eventDetail-title {
+    font-size: 1.5em;
+    text-align: center; }
+  .event-details-container .details-button-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center; }
   .event-details-container #details-interested-button {
-    float: right;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #a4dbd8;
     border-radius: .3em;
     height: 65px;
-    margin-top: 10px;
-    margin-left: 40px;
+    margin-top: 30px;
     color: white;
-    font-size: 45px; }
+    font-size: 3em; }
+  .event-details-container #details-message-button {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #a4dbd8;
+    border-radius: .3em;
+    height: 65px;
+    margin-top: 30px;
+    color: white;
+    font-size: 3em; }
   .event-details-container #details-eventDetail-title {
     margin-top: 40px;
     margin-left: 40px; }
@@ -368,19 +410,16 @@ input {
   font-size: 80px;
   margin-left: 20px; }
 
-.memories-container {
-  margin-top: 120px; }
-
-#memories-name {
-  font-family: 'Open Sans', sans-serif;
-  margin-top: 20px;
-  font-size: 40px; }
-
-.fa-thumbs-up {
-  color: #ff6d5e;
-  float: right;
-  padding-left: 1em;
-  margin-right: 1em; }
+.memories-container-wrap {
+  margin-top: 120px;
+  height: 100%;
+  border: 1px solid red; }
+  .memories-container-wrap #mem-dilb {
+    display: inline-block; }
+  .memories-container-wrap .fa-thumbs-up {
+    color: #ff6d5e;
+    padding-left: 1em;
+    margin-right: 1em; }
 
 .trind-main-header-text-edit-event {
   position: relative;
@@ -393,44 +432,47 @@ input {
 
 .edit-event-container {
   margin-top: 120px;
+  margin-left: 100px;
   border: 1px solid green;
-  height: 100%; }
+  height: 100%;
+  width: 100%;
+  display: relative; }
 
 .edit-fields-wrap {
-  margin-top: 12em; }
+  margin-top: 12em;
+  border: 1px solid blue; }
 
-.editFields {
-  margin-top: 40px;
-  margin-left: 2.2em; }
+.edit-event-inputs {
+  margin-top: 4em; }
 
 #edit-event-title input {
   height: 200px;
-  width: 80%;
+  width: 100%;
   font-size: 50px;
   border: 4px solid red; }
 
 #edit-event-interests input {
   height: 100px;
-  width: 80%;
+  width: 100%;
   font-size: 50px;
   border: 4px solid red; }
 
 #edit-event-description input {
   height: 500px;
-  width: 80%;
+  width: 100%;
   font-size: 50px;
   border: 4px solid red; }
 
 #edit-event-location input {
   height: 100px;
-  width: 80%;
+  width: 100%;
   font-size: 50px;
   border: 4px solid red; }
 
 .edit-event-save-delete-wrap {
   margin-left: 9em;
   width: 100%;
-  margin-top: 9em; }
+  margin-top: 4em; }
   .edit-event-save-delete-wrap .edit-event-button-save {
     width: 300px;
     height: 100px;
@@ -453,12 +495,40 @@ input {
 .editFields {
   font-size: 50px;
   width: 80%;
-  text-align: center; }
+  text-align: center;
+  margin-left: 0em; }
 
 .user-edit-buttons {
   width: 300px;
   height: 100px;
-  font-size: 30px; }
+  font-size: 30px;
+  margin-top: 2em; }
+
+.user-events-page-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 120px; }
+  .user-events-page-container .user-events-display {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 400px;
+    font-family: 'Open Sans', sans-serif;
+    border: 10px solid grey; }
+  .user-events-page-container .home-trind-event-information-image {
+    background-color: #eaeaea;
+    height: 200px;
+    width: 200px;
+    float: left; }
+  .user-events-page-container .home-trind-event-information-container {
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    font-size: 40px; }
+  .user-events-page-container #event-dilb {
+    display: inline-block; }
+  .user-events-page-container #title {
+    color: #ff6d5e; }
 
 a {
   color: inherit;
