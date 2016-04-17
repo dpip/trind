@@ -12,9 +12,9 @@
 
       <div ng-repeat= "conversation in conversations.conversations">
          <div class="conversation-information-container" ng-click="message(conversation.conversation_id); otherUser(conversation.sender_name)">
-                <div class= "conversation-image" id="event-dilb">
-                    <img src="{{conversation.sender_photo_url}} " height="200" width="200">
-                </div>
+          <div class= "conversation-image" id="event-dilb">
+              <img src="{{conversation.sender_photo_url}} " height="200" width="200">
+          </div>
           <!-- <div class= "conversation-user">{{conversation}}</div> -->
           <div class= "conversation-sender">{{conversation.sender_name}}</div>
           <div class="conversation-last-message">{{conversation.last_message}}</div>
