@@ -26,17 +26,42 @@ trind.controller('MemoriesController', [ '$http', '$scope', function($http, $sco
 
     var hasLiked = false;
     $scope.likeClick = function () {
-        if (!hasLiked) {
-            hasLiked = true;
-            $scope.liked = 'cool';
-            $scope.likeCount += 1;
-        }
-        else {
-            hasLiked = false;
-            $scope.liked = 'Like';
-            $scope.likeCount -= 1;
-        }
+
+      var param = {user:{rating:$(".rating-test").val()}}
+      console.log(param);
+
+      if (!hasLiked) {
+          hasLiked = true;
+          $scope.liked = 'true';
+          $scope.likeCount += 1;
+      }
+      else {
+          hasLiked = false;
+          $scope.liked = 'false';
+          $scope.likeCount -= 1;
+      }
+
+
+      $http.put("https://still-waters-14036.herokuapp.com/users/" + userID + "?token=" + currentToken, param).then(function successCallback(response){
+      console.log('rating', response);
+
+      },function errorCallback(response){
+      console.log('not put', response);
+      });
     };
+
+
+        // if (!hasLiked) {
+        //     hasLiked = true;
+        //     $scope.liked = 'cool';
+        //     $scope.likeCount += 1;
+        // }
+        // else {
+        //     hasLiked = false;
+        //     $scope.liked = 'Like';
+        //     $scope.likeCount -= 1;
+        // }
+
 
 
     $(document).ready(function () {

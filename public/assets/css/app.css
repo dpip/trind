@@ -323,19 +323,16 @@ input {
   font-size: 80px;
   margin-left: 20px; }
 
-.memories-container {
-  margin-top: 120px; }
-
-#memories-name {
-  font-family: 'Open Sans', sans-serif;
-  margin-top: 20px;
-  font-size: 40px; }
-
-.fa-thumbs-up {
-  color: #ff6d5e;
-  float: right;
-  padding-left: 1em;
-  margin-right: 1em; }
+.memories-container-wrap {
+  margin-top: 120px;
+  height: 100%;
+  border: 1px solid red; }
+  .memories-container-wrap #mem-dilb {
+    display: inline-block; }
+  .memories-container-wrap .fa-thumbs-up {
+    color: #ff6d5e;
+    padding-left: 1em;
+    margin-right: 1em; }
 
 .trind-main-header-text-edit-event {
   position: relative;
