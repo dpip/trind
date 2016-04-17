@@ -7,20 +7,24 @@
 <div class= "home-drop-search-bar">
   <input type="text" placeholder="What's Trinding?" class = "expand" id= "home-drop-search-input-box">
 </div>
+<div class= "memories-container-wrap" >
+<div class= "memories-container" ng-controller= "MemoriesController" ng-repeat= "memory in yourMemories" >
+  <div class= "memories-events-display">
+    <div class= "memories-trind-event-information-container" >
 
-<div class= "memories-container" ng-controller= "MemoriesController" ng-repeat= "memory in yourMemories">
-  <div class= "home-events-display">
-    <div class= "home-trind-event-information-container" id="event-dilb">
-      <div class= "home-trind-event-information-image" id="event-dilb" ng-click="details($index)"><img src="{{memory.photo_url}}" height="200" width="200"></div>
-        <div class= "home-trind-event-information" id= "memories-name">{{memory.name}}</div>
-        <div class= "home-trind-event-information" id= "interests">{{memory.interests}}</div>
+      <div class= "memories-trind-event-information-image" id="mem-dilb" ng-click="details($index)"><img src="{{memory.photo_url}}" height="300" width="300"></div>
+        <div id="mem-dilb">
+        <div class= "" >{{memory.name}}</div>
+        <div class= "" >{{memory.interests}}</div>
         <div ng-controller= 'MemoriesController'>
-          <i ng-click="likeClick()"class="fa fa-thumbs-up" id="#reliabilty-rating-button"></i>
-          <a ng-init="liked='Like'; likeCount=0">{{liked}} +{{likeCount}}</a>
+          <i ng-click="likeClick()"class="fa fa-thumbs-up" ></i>
+          <a class="rating-test" ng-init="liked='Like'; likeCount=0">{{liked}} + {{likeCount}}</a>
         </div>
-        <div class= "home-trind-event-information" id= "location">{{memory.location}}</div>
+        <div class= "" >{{memory.location}}</div>
+    </div>
     </div>
   </div>
+</div>
 </div>
 
 <div class= "trind-main-footer">

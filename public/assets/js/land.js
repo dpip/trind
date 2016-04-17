@@ -130,9 +130,9 @@ trind.controller('LandController', [ '$http', '$location', '$scope', function($h
 //            'Thanks for logging in, ' + response.name + '!';
 //        });
 //      }
-
-
-
+//
+//
+//
 
 
   $scope.submitLogin = function() {
