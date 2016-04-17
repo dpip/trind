@@ -1,4 +1,4 @@
-trind.controller('MessagesController', [ '$http', '$scope', function($http, $scope){
+trind.controller('MessagesController', [ '$http', '$scope','$location', function($http, $scope, $location){
 
   $(document).ready(function () {
       $("#home-drop-search-input-box").hide();
@@ -14,7 +14,14 @@ trind.controller('MessagesController', [ '$http', '$scope', function($http, $sco
 
     console.log(data);
     $scope.conversations = data;
+    // $scope.conversations.conversationID = data.conversation.id;
 
-
+    $scope.message = function(conversationID) {
+        console.log(conversationID);
+        localStorage.setItem('conversationID', conversationID);
+        $location.path('/message');
+    };
  });
+
+
  }]);

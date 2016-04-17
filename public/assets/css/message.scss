@@ -1,14 +1,12 @@
 .chat-container {
     margin-top: 120px;
-    height:555px;
-    width: 100%;
+    height:79%;
+    width: 99%;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid #555;
+    border: 3px solid #999;
     border-radius: 3px;
     font-family: helvetica, sans-serif;
-
-
 }
 .message-footer {
     border: 2px solid #555;
@@ -18,7 +16,7 @@
 }
 
 .chat-users {
-    border: 1px solid black;
+    border: 1px solid #999;
     padding: 1em;
     font-size: 3em;
 }
@@ -27,26 +25,56 @@
     font-size: 2.5em;
 }
 
+#YOU {
+    width: 10%;
+}
+
 #THEY {
     float: right;
 }
 
 #YM {
-    float:left;
 
 }
-#IM {
-    color: green;
-    float: right;
+
+
+.message-in {
+  width: 80%;
+  float: left;
+  text-align: left;
+  background-color: rgb(255, 109, 94);
+  padding: .5em;
+  margin: .8em;
+  border-radius: .5em;
+  font-size: 1.2em;
+}
+
+.message-out {
+  width: 80%;
+  text-align: right;
+  float: right;
+  background-color: rgb(164,219,216);
+  padding: .5em;
+  margin: .8em;
+  border-radius: .5em;
+  font-size: 1.2em;
 }
 
 input {
-    width: 60%;
+    width: 78%;
     font-size: 2.5em;
-
+    border:2px solid #999;
+    border-radius: 3px;
 }
 
 .btn-submit {
-    font-size: 1em;
-    padding: .2em;
+    font-size: 2.3em;
+    width: 20%;
+    height: auto;
+    border: 2px solid #555;
+    border-radius: 10px;
+}
+
+.trind-main-footer {
+    height:120px;
 }

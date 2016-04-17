@@ -1,9 +1,9 @@
 <link rel-"stylesheet" href="assets/css/message.css">
 
 <div class= "trind-main-header">
-  <div class= "trind-main-header-create-icon"><a href="#/create"><i class="fa fa-plus"></i></a></div>
+  <div class= "trind-main-header-create-icon"><a href="#/messages"><i class="fa fa-chevron-left"></i></a></div>
   <div class= "trind-main-header-search-icon"><i class="fa fa-search"></i></div>
-  <div class= "trind-main-header-image"><a href="#/me"><i class="fa fa-camera"></i></a></div>
+  <div class= "trind-main-header-image"><a href="#/me">{{data.sender_id}}</a></div>
 </div>
 
 <div class= "home-drop-search-bar">
@@ -15,14 +15,14 @@
                   <div class="chat-column">
 
                     <div class="chat-users">
-                        <div id="YOU" class="user-name">YOU</div>
-                        <div id="THEY" class="user-name"> THEY </div>
+                        <div id="THEY" class="user-name"> Damian</div>
+                        <div id="YOU" class="user-name">Evan</div>
                     </div>
 
                     <div class="chat-body">
-                        <ul id="YM" > USER1 MESSAGES</ul>
-
-                        <ul id="IM">USER2 MESSAGES</ul>
+                        <div ng-repeat="messages in chat.messages" ng-class="messages.body === 'I would love to chat over a latte!' ? 'message-out' : 'message-in'">{{messages.body}}
+                            </div>
+                        </div>
 
                     </div> <!-- This closes the chat body -->
                 </div> <!-- This closes the chat column -->
@@ -34,10 +34,9 @@
         <div class="message-footer">
             <form ng-controller="MessageController">
                 <div class="input-group">
-                    <label class="you-momma"> YOU:</label>
                     <input id="chatter" type="text" name="chatter" class="form-control chatter" />
                     <span class="input-group-btn">
-                          <button class="btn-submit" type="submit">Send</button>
+                          <button class="btn-submit" type="submit" ng-click="sendmessage">Send</button>
                     </span>
                 </div>
             </form>

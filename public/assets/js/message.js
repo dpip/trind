@@ -1,35 +1,38 @@
 trind.controller('MessageController', [ '$http', '$scope', function($http, $scope){
 
-  $(document).ready(function () {
-    $http.get('https://still-waters-14036.herokuapp.com/message'  )
-        .success(function(data)  {
-            console.log("Load Messages");
+        var conversationID = localStorage.getItem('conversationID');
+        var currentToken = localStorage.getItem('tokenToken');
+        var userID = localStorage.getItem('userID');
+        console.log('userID');
+         $("#home-drop-search-input-box").hide();
+
+
+        $http.get('https://still-waters-14036.herokuapp.com/conversations/' + conversationID + "?token=" + currentToken).success(function(data) {
+            console.log(data);
+            $scope.chat = data;
+            localStorage.setItem('userID', userID);
+
         });
-
-      $("#home-drop-search-input-box").hide();
-      $('.trind-main-header-search-icon').click(function () {
-      $("#home-drop-search-input-box").toggle();
-      });
-
-  });
-
-  var userInput = $("input");
-
- $(".btn-submit").click(function() {
-     $("input").each(function(){
-
-     $("#YM").append("<li>" + $(this).val() + "</li>" );
-     event.preventDefault();
-      });
+    }]);
 
 
-    $http.post('https://still-waters-14036.herokuapp.com/message')
-        .success(function (data) {
-            console.log("message sent")
-        })
- });
+ //  var userInput = $("input");
+ // //
+ // // $(".btn-submit").click(function() {
+ // //     $("input").each(function(){
+ //
+ //    $http.post('https://still-waters-14036.herokuapp.com/conversations/' + conversationID+ ''?token='' + currentToken)
+ //            .success(function (data) {
+ //            console.log("message sent")
+ //        });
+ //
+ //     $("#YM").append("<li>" + $(this).val() + "</li>" );
+ //     $http.post('https://still-waters-14036.herokuapp.com/conversations')
+ //     $http.get('https://still-waters-14036.herokuapp.com/conversations/' + conversationID+ “?token=“ + currentToken)​
+ //     event.preventDefault();
+ //        });
+ //    });
 
-  }]);
 
   // Different variation for User Matchinng
 
