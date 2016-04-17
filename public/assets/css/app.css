@@ -231,29 +231,26 @@ input {
     font-size: .8em;
     padding-right: 1em; }
 
-.mutate-interests {
-  color: red; }
-
 .create-input-field {
-  height: 200px;
+  height: 85%;
+  width: 99%;
   margin-top: 120px;
-  margin-left: 5em;
-  width: 80%; }
-  .create-input-field .create-enter-interests-input {
-    width: 100%;
-    font-size: 35px;
-    position: relative; }
-  .create-input-field .user-creator-description {
-    padding-top: 1em; }
-  .create-input-field .user-creator-description {
-    font-size: 35px;
-    position: relative; }
-  .create-input-field .user-creator-description-field {
-    padding-bottom: 80px;
-    font-size: 35px;
-    position: relative; }
-  .create-input-field .create-enter-location-input {
-    font-size: 35px; }
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1em; }
+  .create-input-field input {
+    width: 95%;
+    margin: .2em;
+    font-size: 2.5em; }
+  .create-input-field textarea {
+    width: 95%;
+    height: 20%;
+    margin: .2em;
+    font-size: 2.5em;
+    border: 1px solid #555; }
+  .create-input-field button {
+    text-align: center;
+    margin-left: 10%; }
   .create-input-field .create-trind-submit-button-text {
     border: none;
     height: 100px;
@@ -320,12 +317,13 @@ input {
   position: relative;
   z-index: 1;
   font-family: 'Open Sans', sans-serif; }
-  .event-details-container .details-me-avatar {
-    width: 50%;
-    height: auto;
+  .event-details-container .me-avatar {
+    width: 500px;
+    height: 500px;
     margin-left: 25%;
     margin-top: 20px;
-    text-align: center; }
+    text-align: center;
+    border: 2px solid #a4dbd8; }
   .event-details-container .details-text-wrapper {
     width: 90%;
     margin-top: 50px;
@@ -339,10 +337,11 @@ input {
     margin-top: 10px;
     color: rgba(255, 109, 94, 0.8);
     margin-left: 40px;
-    font-size: 2.5em;
-    text-align: center; }
+    font-size: 1em;
+    text-align: center;
+    font-style: italic; }
   .event-details-container #details-eventDetail-title {
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center; }
   .event-details-container .details-button-container {
     width: 100%;

@@ -7,12 +7,13 @@
     z-index: 1;
     font-family: 'Open Sans', sans-serif;
 
-        .details-me-avatar {
-            width: 50%;
-            height: auto;
+        .me-avatar {
+            width: 500px;
+            height: 500px;
             margin-left: 25%;
             margin-top: 20px;
             text-align: center;
+            border: 2px solid rgb(164, 219, 216);
         }
 
     .details-text-wrapper {
@@ -30,12 +31,13 @@
       margin-top: 10px;
       color:rgba(255, 109, 94, 0.8);
       margin-left: 40px;
-      font-size: 2.5em;
+      font-size: 1em;
       text-align: center;
+      font-style: italic;
     }
 
     #details-eventDetail-title {
-        font-size: 1.5em;
+        font-size: 2em;
         text-align: center;
     }
 

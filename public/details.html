@@ -8,10 +8,10 @@
 
 
     <div class= "event-details-container">
-            <img class="details-me-avatar" src="{{event.user.photo_url}}"</img>
+            <img class="me-avatar" src="{{event.user.photo_url}}"</img>
             <div class= "details-text-wrapper">
-              <div id="details-name">{{event.user.name}}</div>
               <div id="details-eventDetail-title">{{event.event.title}}</div>
+              <div id="details-name">with {{event.user.name}}</div>              
               <div id="details-eventDetail-interest"><strong>Interests:</strong> &nbsp{{event.event.interests}}</div>
               <div id="details-eventDetail-description"><strong>Description:</strong> &nbsp{{event.event.description}}</div>
               <div id="details-eventDetail-location"><strong>Location:</strong>&nbsp{{event.event.location}}</div>

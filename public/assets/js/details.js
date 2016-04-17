@@ -7,7 +7,7 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
       // var eventID = localStorage.getItem('eventID');
       var theEventID = localStorage.getItem('theEventID');
       console.log(theEventID);
-      
+
       $("#home-drop-search-input-box").hide();
       $('.trind-main-header-search-icon').click(function () {
         $("#home-drop-search-input-box").toggle();
@@ -18,18 +18,26 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
 
           $scope.event = response.data;
           console.log($scope.event);
-          $scope.interested = function() {
 
+          $scope.interested = function() {
             var param = {event:{searcherinterested:userID}}
 
           $http.put('https://still-waters-14036.herokuapp.com/events/' + theEventID + "?token=" + currentToken, param).then(function successCallback(response){
             console.log(response);
+            $location.path('/memories');
         });
-        }, function errorCallback(response){
+        },
+        function errorCallback(response){
           console.log('hate', response)
-        };
+      };
+
+      $scope.messagenow = function() {
+          console.log("wurd");
+
+        //   $location.path('/message');
+
+      }
+
+
       });
-
-
-
 }]);
