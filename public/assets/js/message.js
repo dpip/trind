@@ -33,7 +33,6 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
 
         $http.post('https://still-waters-14036.herokuapp.com/messages?token=' + currentToken, param).then(function successCallback(data) {
           console.log("message sent", data);
-
         });
       };
     }]);
