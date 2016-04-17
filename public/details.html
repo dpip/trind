@@ -1,25 +1,26 @@
 <div class= "trind-main-header">
   <div class= "trind-main-header-create-icon"><a href="#/create"><i class="fa fa-plus"></i></a></div>
   <div class= "trind-main-header-search-icon"><i class="fa fa-search"></i></div>
-  <div class= "trind-main-header-image"><a href="#/me"><i class="fa fa-camera"></i></a></div>
 </div>
 <div class= "home-drop-search-bar">
   <input type="text" placeholder="What's Trinding?" class = "expand" id= "home-drop-search-input-box">
 </div>
 
 
-      <div class= "event-details-container">
-<!--  -->
-
-            <img class="me-avatar" src="{{event.user.photo_url}}" height="600" width="100%"></img>
+    <div class= "event-details-container">
+            <img class="details-me-avatar" src="{{event.user.photo_url}}"</img>
             <div class= "details-text-wrapper">
-              <div id="details-name">{{event.user.name}}<input type="button" value="Stash" id= "details-interested-button"  ng-controller="DetailsController" ng-click="interested()"></div>
+              <div id="details-name">{{event.user.name}}</div>
               <div id="details-eventDetail-title">{{event.event.title}}</div>
-              <div id="details-eventDetail-interest">{{event.event.interests}}</div>
-              <div id="details-eventDetail-description">{{event.event.description}}</div>
-              <div id="details-eventDetail-location">{{event.event.location}}</div>
+              <div id="details-eventDetail-interest"><strong>Interests:</strong> &nbsp{{event.event.interests}}</div>
+              <div id="details-eventDetail-description"><strong>Description:</strong> &nbsp{{event.event.description}}</div>
+              <div id="details-eventDetail-location"><strong>Location:</strong>&nbsp{{event.event.location}}</div>
             </div>
+            <div class="details-button-container">
+            <input type="button" value="Message Now" id= "details-message-button"  ng-controller="DetailsController" ng-click="messagenow()">
+            <input type="button" value="Stash" id= "details-interested-button"  ng-controller="DetailsController" ng-click="interested()">
             </div>
+    </div>
 
 
 
