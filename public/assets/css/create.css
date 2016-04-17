@@ -1,26 +1,23 @@
-.mutate-interests {
-  color: red; }
-
 .create-input-field {
-  height: 200px;
+  height: 85%;
+  width: 99%;
   margin-top: 120px;
-  margin-left: 5em;
-  width: 80%; }
-  .create-input-field .create-enter-interests-input {
-    width: 100%;
-    font-size: 35px;
-    position: relative; }
-  .create-input-field .user-creator-description {
-    padding-top: 1em; }
-  .create-input-field .user-creator-description {
-    font-size: 35px;
-    position: relative; }
-  .create-input-field .user-creator-description-field {
-    padding-bottom: 80px;
-    font-size: 35px;
-    position: relative; }
-  .create-input-field .create-enter-location-input {
-    font-size: 35px; }
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1em; }
+  .create-input-field input {
+    width: 95%;
+    margin: .2em;
+    font-size: 2.5em; }
+  .create-input-field textarea {
+    width: 95%;
+    height: 20%;
+    margin: .2em;
+    font-size: 2.5em;
+    border: 1px solid #555; }
+  .create-input-field button {
+    text-align: center;
+    margin-left: 10%; }
   .create-input-field .create-trind-submit-button-text {
     border: none;
     height: 100px;
