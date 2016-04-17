@@ -17,7 +17,7 @@
     font-size: 36px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    margin-left: 1em; }
+    margin-left: 0em; }
   .login-page-container .landing-login-container {
     margin-left: 5.5em; }
   .login-page-container .label {
@@ -130,21 +130,24 @@
     font-family: 'Open Sans', sans-serif;
     background-color: white; }
 
-.chat-container {
-  margin-top: 120px;
-  height: 79%;
-  width: 99%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 3px solid #999;
-  border-radius: 3px;
-  font-family: helvetica, sans-serif; }
+.conversation-wrap {
+  height: 100%;
+  margin-top: 0px; }
+
+.message-main-header-name {
+  position: relative;
+  float: left;
+  top: 25px;
+  font-size: 80px;
+  left: 18%;
+  font-family: 'Open Sans', sans-serif; }
 
 .message-footer {
-  border: 2px solid #555;
-  font-size: 2em;
-  margin-top: 5px;
-  border-radius: 3px; }
+  width: 100%;
+  position: absolute;
+  z-index: 60;
+  bottom: 120;
+  box-sizing: border-box; }
 
 .chat-users {
   border: 1px solid #999;
@@ -182,16 +185,19 @@
 
 input {
   width: 78%;
+  height: 100px;
   font-size: 2.5em;
   border: 2px solid #999;
   border-radius: 3px; }
 
 .btn-submit {
   font-size: 2.3em;
-  width: 20%;
-  height: auto;
+  width: 22%;
+  height: 100px;
   border: 2px solid #555;
-  border-radius: 10px; }
+  border-radius: 10px;
+  position: absolute;
+  background-color: blue; }
 
 .trind-main-footer {
   height: 120px; }
@@ -230,32 +236,28 @@ input {
 
 .create-input-field {
   height: 200px;
-  margin-top: 120px; }
+  margin-top: 120px;
+  margin-left: 5em;
+  width: 80%; }
   .create-input-field .create-enter-interests-input {
     width: 100%;
-    height: 60px;
     font-size: 35px;
     position: relative; }
   .create-input-field .user-creator-description {
     padding-top: 1em; }
   .create-input-field .user-creator-description {
     font-size: 35px;
-    height: 60px;
     position: relative; }
   .create-input-field .user-creator-description-field {
     padding-bottom: 80px;
-    width: 100%;
-    height: 60px;
     font-size: 35px;
     position: relative; }
   .create-input-field .create-enter-location-input {
-    width: 100%;
-    height: 60px;
     font-size: 35px; }
   .create-input-field .create-trind-submit-button-text {
     border: none;
-    height: 50px;
-    width: 100%;
+    height: 100px;
+    width: 80%;
     font-size: 40px;
     color: white;
     background-color: #ff6d5e;
@@ -289,8 +291,7 @@ input {
   .home-events-display-wrap .home-events-display .home-trind-event-container {
     height: 200px;
     width: 100%;
-    background-color: white;
-    border: 1px solid black; }
+    background-color: white; }
   .home-events-display-wrap .home-events-display #event-dilb {
     display: inline-block; }
   .home-events-display-wrap .home-events-display .home-trind-event-information-container {
@@ -450,12 +451,14 @@ input {
 .editFields {
   font-size: 50px;
   width: 80%;
-  text-align: center; }
+  text-align: center;
+  margin-left: 0em; }
 
 .user-edit-buttons {
   width: 300px;
   height: 100px;
-  font-size: 30px; }
+  font-size: 30px;
+  margin-top: 2em; }
 
 a {
   color: inherit;

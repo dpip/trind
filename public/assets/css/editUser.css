@@ -10,11 +10,13 @@
 .editFields {
   font-size: 50px;
   width: 80%;
-  text-align: center; }
+  text-align: center;
+  margin-left: 0em; }
 
 .user-edit-buttons {
   width: 300px;
   height: 100px;
-  font-size: 30px; }
+  font-size: 30px;
+  margin-top: 2em; }
 
 /*# sourceMappingURL=editUser.css.map */

@@ -9,7 +9,7 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
 
 
         console.log('userID');
-         $("#home-drop-search-input-box").hide();
+        //  $("#home-drop-search-input-box").hide();
 
         $scope.whoAmI = function(userPassed) {
           if(userPassed == userID) {
@@ -20,12 +20,22 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
           }
         };
 
+        $(function(){
+          setInterval(oneSecondFunction, 200);
+          console.log
+        });
+
+        function oneSecondFunction() {
         $http.get('https://still-waters-14036.herokuapp.com/conversations/' + conversationID + "?token=" + currentToken).success(function(data) {
-            console.log(data);
+
+            // If you want proof we're refreshing every half-second uncomment the console.log
+            // console.log(data);
             $scope.chat = data;
             localStorage.setItem('userID', userID);
 
+
         });
+      };
 
       $scope.postMessage = function() {
 
@@ -33,7 +43,7 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
 
         $http.post('https://still-waters-14036.herokuapp.com/messages?token=' + currentToken, param).then(function successCallback(data) {
           console.log("message sent", data);
-
+          $('.form-control').val("");
         });
       };
     }]);
