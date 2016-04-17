@@ -6,12 +6,13 @@
   position: relative;
   z-index: 1;
   font-family: 'Open Sans', sans-serif; }
-  .event-details-container .details-me-avatar {
-    width: 50%;
-    height: auto;
+  .event-details-container .me-avatar {
+    width: 500px;
+    height: 500px;
     margin-left: 25%;
     margin-top: 20px;
-    text-align: center; }
+    text-align: center;
+    border: 2px solid #a4dbd8; }
   .event-details-container .details-text-wrapper {
     width: 90%;
     margin-top: 50px;
@@ -25,10 +26,11 @@
     margin-top: 10px;
     color: rgba(255, 109, 94, 0.8);
     margin-left: 40px;
-    font-size: 2.5em;
-    text-align: center; }
+    font-size: 1em;
+    text-align: center;
+    font-style: italic; }
   .event-details-container #details-eventDetail-title {
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center; }
   .event-details-container .details-button-container {
     width: 100%;
