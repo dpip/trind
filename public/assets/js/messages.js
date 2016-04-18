@@ -10,6 +10,8 @@ trind.controller('MessagesController', [ '$http', '$scope','$location', function
 
   var currentToken = localStorage.getItem('tokenToken');
   var otherUserName = localStorage.getItem('otherUserName');
+  var firstTime = localStorage.getItem('firstTime');
+
 
 
   $http.get('https://still-waters-14036.herokuapp.com/conversations?token=' + currentToken ).success(function(data){
@@ -22,6 +24,10 @@ trind.controller('MessagesController', [ '$http', '$scope','$location', function
         console.log(conversationID);
         localStorage.setItem('conversationID', conversationID);
         $location.path('/message');
+    };
+
+    if(firstTime === "yes") {
+      localStorage.setItem('firstTime', "no");
     };
 
   });

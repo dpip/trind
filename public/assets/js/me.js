@@ -4,6 +4,7 @@ trind.controller('MeController', [ '$http', '$location', '$scope', function($htt
     var userID = localStorage.getItem('userID');
     var currentToken = localStorage.getItem('tokenToken');
     var userPhoto = localStorage.getItem('userPhoto');
+    var firstTime = localStorage.getItem('firstTime');
 
     $scope.userID = userID;
     $scope.userName = " ";
@@ -11,7 +12,6 @@ trind.controller('MeController', [ '$http', '$location', '$scope', function($htt
     $scope.userInterests = " ";
     $scope.userSummary = " ";
     $scope.userPhoto = userPhoto;
-
 
 
   $http.get('https://still-waters-14036.herokuapp.com/users/' + userID + "?token=" + currentToken).success(function(userInfo){
@@ -23,6 +23,10 @@ trind.controller('MeController', [ '$http', '$location', '$scope', function($htt
     $scope.userName = userInfo.name;
     $scope.userEmail = userInfo.email;
     $scope.userSummary = userInfo.summary;
+
+    if(firstTime === "yes") {
+      localStorage.setItem('firstTime', "no");
+    };
   });
 
 
@@ -34,6 +38,10 @@ trind.controller('MeController', [ '$http', '$location', '$scope', function($htt
     localStorage.setItem('userPhoto', "");
     $window.localStorage.clear();
     window.location.replace('#/land');
+
+    if(firstTime === "yes") {
+      localStorage.setItem('firstTime', "no");
+    };
 
   });
 };
