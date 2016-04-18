@@ -19,7 +19,7 @@ trind.controller('MeController', [ '$http', '$location', '$scope', function($htt
     console.log(currentToken);
     console.log(userInfo);
 
-    $scope.userphoto = userInfo.photo_url;
+    $scope.userPhoto = userInfo.photo_url;
     $scope.userName = userInfo.name;
     $scope.userEmail = userInfo.email;
     $scope.userSummary = userInfo.summary;
