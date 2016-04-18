@@ -1,4 +1,3 @@
-
 <div class= "trind-main-header">
   <div class= "memories-header-icons" id= "memories-back-button"><a href="#/me"><i class="fa fa-arrow-left"></i></a></div>
   <div class= "memories-header-icons" id= "memories-header-text">Stashed</div>
@@ -8,30 +7,26 @@
   <input type="text" placeholder="What's Trinding?" class = "expand" id= "home-drop-search-input-box">
 </div>
 <div class= "memories-container-wrap" >
-<div class= "memories-container" ng-controller= "MemoriesController" ng-repeat= "memory in yourMemories" >
-  <div class= "memories-events-display">
-    <div class= "memories-trind-event-information-container" >
-
+  <div class= "memories-container" ng-controller= "MemoriesController" ng-repeat= "memory in yourMemories" >
+    <div class= "memories-events-display">
+      <div class= "memories-trind-event-information-container" >
       <div class= "memories-trind-event-information-image" id="mem-dilb" ng-click="details($index)"><img src="{{memory.photo_url}}" height="300" width="300"></div>
         <div id="mem-dilb">
-        <div class= "" >{{memory.name}}</div>
-        <div class= "" >{{memory.interests}}</div>
-        <div ng-controller= 'MemoriesController'>
-          <i ng-click="likeClick()"class="fa fa-thumbs-up" ></i>
-          <a class="rating-test" ng-init="liked='Like'; likeCount=0">{{liked}} + {{likeCount}}</a>
+          <div class= "" >{{memory.name}}</div>
+          <div class= "" >{{memory.interests}}</div>
+          <div ng-controller= 'MemoriesController'>
+            <i ng-click="likeClick()"class="fa fa-thumbs-up" ></i>
+            <a class="rating-test" ng-init="liked='Like'; likeCount=0">{{liked}} + {{likeCount}}</a>
+          </div>
+          <div class= "" >{{memory.location}}</div>
         </div>
-        <div class= "" >{{memory.location}}</div>
-    </div>
+      </div>
     </div>
   </div>
-</div>
 </div>
 
 <div class= "trind-main-footer">
   <div class= "trind-main-footer-me-icon"><a href="#/me"><i class="fa fa-user"></i></a></div>
   <div class= "trind-main-footer-trind-icon"><a href="#/home">T</a></div>
   <div class= "trind-main-footer-message-icon"><a href="#/messages"><i class="fa fa-comment"></i></a></div>
-
-
-
 </div>
