@@ -1,6 +1,6 @@
 "use strict";
 
-var trind = angular.module('trind', ['ngRoute']);
+var trind = angular.module('trind', ['ngRoute', 'ngFileUpload']);
 
 
 trind.config(function($routeProvider) {
