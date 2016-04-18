@@ -29,11 +29,11 @@ trind.controller('editUserController', [ '$http', '$scope', 'Upload','$location'
     console.log(file, $('.edit-user-user-email').val(), $('.edit-user-user-name').val());
 
     var formData = new FormData();
-    if(file != undefined){
-    formData.append('user[uploaded_file]', file);
-  };
-    formData.append('user[email]', $('.edit-user-user-email').val());
-    formData.append('user[name]', $('.edit-user-user-name').val());
+      if(file != undefined){
+      formData.append('user[uploaded_file]', file);
+      };
+      formData.append('user[email]', $('.edit-user-user-email').val());
+      formData.append('user[name]', $('.edit-user-user-name').val());
 
     $http({
       method: 'PUT',

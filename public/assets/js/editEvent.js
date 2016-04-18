@@ -26,15 +26,16 @@ trind.controller('EditEventController', [ '$http', '$scope', function($http, $sc
 
 
   $scope.editEventInfo = function(){
-    var param = {user:{interests:$('#edit-event-interests').val(), title:$('#edit-event-title').val(), description:$('#edit-event-description').val(), location:$('#edit-event-location').val()}}
+    var param = {event:{interests:$('#edit-event-interests').val(), title:$('#edit-event-title').val(), description:$('#edit-event-description').val(), location:$('#edit-event-location').val()}}
     console.log(param);
 
     $http.put('https://still-waters-14036.herokuapp.com/events/' + theEventID + "?token=" + currentToken, param).then(function successCallback(response){
     console.log('put', response);
-  }, function errorCallback(response){
-    console.log('not put', response);
-  });
-};
+    }, function errorCallback(response){
+      console.log('not put', response);
+    });
+    $location.path('/userEvents');
+  };
 
 
 }]);
