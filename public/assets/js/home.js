@@ -6,6 +6,8 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
     var currentToken = localStorage.getItem('tokenToken');
     var facebookToken =  localStorage.getItem('facebookToken');
     var facebookUserID = localStorage.getItem('facebookUserID');
+    var firstTime = localStorage.getItem('firstTime');
+
   // +++++++++++ id in local storage +++++++
     var userID = localStorage.getItem('userID');
     var userPhoto = localStorage.getItem('userPhoto');
