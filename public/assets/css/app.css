@@ -316,6 +316,38 @@ input {
     font-size: 30px;
     vertical-align: bottom; }
 
+.getting-started-background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 130;
+  background-color: black;
+  opacity: 0.4;
+  top: 0; }
+
+.getting-started-modal {
+  height: 55%;
+  width: 85%;
+  background-color: #a4dbd8;
+  position: fixed;
+  top: 25em;
+  z-index: 145;
+  border-radius: 3em;
+  right: 4.5em; }
+
+#getting-started {
+  font-size: 90px;
+  font-family: 'Sniglet', cursive;
+  text-align: center;
+  margin-top: .5em;
+  color: white; }
+
+.getting-started-content {
+  font-size: 50px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 2em; }
+
 .event-details-container {
   width: 90%;
   margin-left: auto;
@@ -506,6 +538,10 @@ input {
   height: 100px;
   font-size: 30px;
   margin-top: 2em; }
+
+#file-input {
+  height: 200px;
+  margin-left: 3em; }
 
 .user-events-page-container {
   width: 100%;
