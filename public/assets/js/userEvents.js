@@ -1,4 +1,4 @@
-trind.controller('UserEventsController', [ '$http', '$scope', function($http, $scope){
+trind.controller('UserEventsController', [ '$http', '$scope', '$location', function($http, $scope, $location){
 
 
 
@@ -30,7 +30,6 @@ trind.controller('UserEventsController', [ '$http', '$scope', function($http, $s
 
       localStorage.setItem('editEventID', editEventID);
 
-    $http.get('https://still-waters-14036.herokuapp.com/events/' + editEventID + "?token=" + currentToken).then(function successCallback(response){
       console.log('get response', response);
 
       $('.edit-interests').val(response.data.event.interests);
@@ -49,7 +48,6 @@ trind.controller('UserEventsController', [ '$http', '$scope', function($http, $s
       // $('#edit-event-description').val(response.data.event.description);
       // $('#edit-event-location').val(response.data.event.location);
 
-    });
     }, function errorCallback(response){
     console.log('hate', response)
     };
@@ -62,6 +60,8 @@ trind.controller('UserEventsController', [ '$http', '$scope', function($http, $s
 
       var param = {event:{interests:$('.edit-interests').val(), title:$('.edit-title').val(), description:$('.edit-description').val(), location:$('.edit-location').val()}}
       console.log(param);
+
+      $location.path('/userEvents');
 
       $http.put('https://still-waters-14036.herokuapp.com/events/' + editEventID + "?token=" + currentToken, param).then(function successCallback(response){
       console.log('put', response);

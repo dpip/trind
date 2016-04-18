@@ -4,8 +4,11 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
         var currentToken = localStorage.getItem('tokenToken');
         var userID = localStorage.getItem('userID');
         var otherUserName = localStorage.getItem('otherUserName');
+        var eventID = localStorage.getItem('eventID');
+        var recipientID = localStorage.getItem('recipientID');
 
-          $scope.otherUserName = otherUserName;
+        $scope.otherUserName = otherUserName;
+
 
 
         console.log(userID);
@@ -20,34 +23,63 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
           }
         };
 
+        $http.get('https://still-waters-14036.herokuapp.com/conversations/' + conversationID + "?token=" + currentToken).success(function(data) {
+
+            $scope.chat = data;
+            console.log(data);
+          var eventID = localStorage.setItem('eventID', data.event_id);
+          var recipientID = localStorage.setItem('recipientID', data.recipient_id);
+
+        });
+
         $(function(){
           setInterval(oneSecondFunction, 200);
           console.log
         });
 
         function oneSecondFunction() {
-        $http.get('https://still-waters-14036.herokuapp.com/conversations/' + conversationID + "?token=" + currentToken).success(function(data) {
+          $http.get('https://still-waters-14036.herokuapp.com/conversations/' + conversationID + "?token=" + currentToken).success(function(data) {
 
-            // If you want proof we're refreshing every half-second uncomment the console.log
-            // console.log(data);
-            $scope.chat = data;
-            localStorage.setItem('userID', userID);
+              // If you want proof we're refreshing every half-second uncomment the console.log
+              // console.log(data);
+              $scope.chat = data;
+              // console.log(data);
 
+          });
+        };
 
-        });
-      };
+        $scope.postMessage = function() {
 
-      $scope.postMessage = function() {
+          var param = {message:{author:userID, conversation_id: conversationID, body: $('.form-control').val()}}
 
-        var param = {message:{author:userID, conversation_id: conversationID, body: $('.form-control').val()}}
+          $http.post('https://still-waters-14036.herokuapp.com/messages?token=' + currentToken, param).then(function successCallback(data) {
+            console.log("message sent", data);
 
-        $http.post('https://still-waters-14036.herokuapp.com/messages?token=' + currentToken, param).then(function successCallback(data) {
-          console.log("message sent", data);
+            $('.form-control').val("");
+          });
+        };
 
-          $('.form-control').val("");
-        });
-      };
-    }]);
+        $scope.letsMeet = function() {
+          var param = {event:{success: true}};
+          console.log(param);
+
+          $http.put('https://still-waters-14036.herokuapp.com/events/' + eventID + "?token=" + currentToken, param).then(function successCallback(response){
+          console.log('put', response);
+          }, function errorCallback(response){
+            console.log('not put', response);
+          });
+        };
+
+        $scope.buttonOrNo = function () {
+          if (userID === recipientID) {
+            return 'lets-meet';
+          }
+          else {
+            return 'lets-meet-hide';
+          };
+        };
+
+}]);
 
 
  //  var userInput = $("input");
