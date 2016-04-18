@@ -13,14 +13,31 @@
   text-align: center;
   margin-left: 0em; }
 
-.user-edit-buttons {
+.user-edit-button {
   width: 300px;
   height: 100px;
   font-size: 30px;
-  margin-top: 2em; }
+  margin-top: 2em;
+  border: 1px solid #555; }
+
+.user-delete-button {
+  width: 300px;
+  height: 100px;
+  font-size: 30px;
+  margin-top: 1em;
+  border: 1px solid #555;
+  background-color: red; }
 
 #file-input {
   height: 200px;
   margin-left: 3em; }
+
+.upload-me-title {
+  text-align: center;
+  font-size: 3em; }
+
+#file-input {
+  text-align: center;
+  padding: 2em; }
 
 /*# sourceMappingURL=editUser.css.map */
