@@ -15,6 +15,7 @@
     padding-bottom: .6em; }
   .login-page-container .land-call-to-action {
     font-size: 40px;
+    font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     margin-left: 0em; }
@@ -29,7 +30,6 @@
     text-align: center;
     border-radius: .5em .5em 0em 0em;
     margin-top: 4em;
-    border-bottom: 1px solid grey;
     color: black; }
   .login-page-container input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset; }
@@ -76,7 +76,7 @@
   position: absolute;
   z-index: 100;
   border-radius: 1em;
-  background-color: #ff6d5e;
+  background-color: #31d4e9;
   height: 80em;
   width: 82%;
   top: 340px; }
@@ -89,8 +89,9 @@
     font-size: 40px;
     border-radius: .5em;
     font-family: 'Open Sans', sans-serif;
+    background-color: inherit;
     border: none;
-    background-color: #ff6d5e; }
+    color: white; }
   .landing-signup-container .sign-up-modal-input {
     width: 90%;
     height: 140px;
@@ -110,7 +111,8 @@
     margin-left: 70px;
     z-index: 120;
     position: absolute;
-    opacity: .95; }
+    opacity: .95;
+    font-family: 'Open Sans', sans-serif; }
   .landing-signup-container .form-column {
     margin-top: 6em; }
   .landing-signup-container .sign-up-pressure {
@@ -122,7 +124,7 @@
   .landing-signup-container #signup-now {
     height: 120px;
     width: 90%;
-    margin-left: 1.2em;
+    margin-left: 1em;
     border-radius: 12px;
     position: absolute;
     bottom: 1em;
@@ -184,7 +186,7 @@
   font-size: 1.2em; }
 
 input {
-  width: 78%;
+  width: 100%;
   height: 100px;
   font-size: 2.5em;
   border: 2px solid #999;
@@ -193,14 +195,25 @@ input {
 .btn-submit {
   font-size: 2.3em;
   width: 22%;
-  height: 100px;
+  height: 100%;
+  border: 2px solid #555;
+  border-radius: 10px;
+  position: absolute;
+  background-color: blue;
+  right: 1; }
+
+.trind-main-footer {
+  height: 120px; }
+
+#meet-button {
+  left: 1;
+  font-size: 2.3em;
+  width: 22%;
+  height: 100%;
   border: 2px solid #555;
   border-radius: 10px;
   position: absolute;
   background-color: blue; }
-
-.trind-main-footer {
-  height: 120px; }
 
 .open-messages-container {
   width: 100%;
@@ -231,6 +244,13 @@ input {
     font-size: .8em;
     padding-right: 1em; }
 
+.create-main-header-text {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 80px;
+  position: absolute;
+  left: 5.5em;
+  top: 18px; }
+
 .create-input-field {
   height: 85%;
   width: 99%;
@@ -253,12 +273,13 @@ input {
     margin-left: 10%; }
   .create-input-field .create-trind-submit-button-text {
     border: none;
-    height: 100px;
+    height: 140px;
     width: 80%;
-    font-size: 40px;
-    color: white;
-    background-color: #ff6d5e;
-    font-family: 'Sniglet', cursive;
+    font-size: 90px;
+    color: #dee6cb;
+    background-color: #00968d;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: bold;
     bottom: 6em;
     border-radius: 1em;
     cursor: pointer;

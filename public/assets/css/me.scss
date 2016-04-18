@@ -46,11 +46,13 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
 
     #me-name {
       margin-top: 2em;
+      font-family: $header-text;
     }
     #me-email {
       margin-top: 1em;
       font-style: italic;
       color: rgb(255, 109, 94);
+      font-family: $header-text;
     }
     ul li {
         margin: 1em;

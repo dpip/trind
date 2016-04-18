@@ -1,3 +1,10 @@
+.create-main-header-text {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 80px;
+  position: absolute;
+  left: 5.5em;
+  top: 18px; }
+
 .create-input-field {
   height: 85%;
   width: 99%;
@@ -20,12 +27,13 @@
     margin-left: 10%; }
   .create-input-field .create-trind-submit-button-text {
     border: none;
-    height: 100px;
+    height: 140px;
     width: 80%;
-    font-size: 40px;
-    color: white;
-    background-color: #ff6d5e;
-    font-family: 'Sniglet', cursive;
+    font-size: 90px;
+    color: #dee6cb;
+    background-color: #00968d;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: bold;
     bottom: 6em;
     border-radius: 1em;
     cursor: pointer;

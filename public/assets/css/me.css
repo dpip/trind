@@ -30,11 +30,13 @@
     margin-right: auto;
     border: 2px solid #a4dbd8; }
   .me-container #me-name {
-    margin-top: 2em; }
+    margin-top: 2em;
+    font-family: "Yanone Kaffeesatz", sans-serif; }
   .me-container #me-email {
     margin-top: 1em;
     font-style: italic;
-    color: #ff6d5e; }
+    color: #ff6d5e;
+    font-family: "Yanone Kaffeesatz", sans-serif; }
   .me-container ul li {
     margin: 1em;
     border: 1px solid #555;

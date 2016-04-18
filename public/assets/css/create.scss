@@ -1,3 +1,19 @@
+$blue: rgba(151, 222, 218, 1);
+$bluetwo: rgba(56, 121, 217, 1);
+$twitter: rgba(49, 212, 233, 1);
+$orange-crush: rgba(255, 89, 0, 1);
+$orange-citrus: rgba(255, 127, 0, 1);
+$creamscicle: rgba(222, 230, 203, 1);
+$awwwards: rgba(0, 150, 141, 1);
+
+.create-main-header-text {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 80px;
+  position: absolute;
+  left: 5.5em;
+  top: 18px;
+}
+
 .create-input-field {
   height: 85%;
   width: 99%;
@@ -27,15 +43,17 @@
 
     .create-trind-submit-button-text {
       border: none;
-      height: 100px;
+      height: 140px;
       width: 80%;
-      font-size: 40px;
-      color: white;
-      background-color: rgb(255, 109, 94);
-      font-family: 'Sniglet', cursive;
+      font-size: 90px;
+      color: $creamscicle;
+      background-color: $awwwards;
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      font-weight: bold;
       bottom: 6em;
       border-radius: 1em;
       cursor: pointer;
       position: absolute;
+
     }
 }
