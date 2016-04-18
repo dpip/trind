@@ -92,12 +92,21 @@
 
 }
 
+.home-modal-welcome {
+  font-size: 90px;
+  font-family: 'Sniglet', cursive;
+  text-align: center;
+  color: white;
+  margin-top: .6em;
+
+}
+
 .getting-started-modal {
-  height: 55%;
+  height: 65%;
   width: 85%;
   background-color: rgba(164, 219, 216, 1);
   position: fixed;
-  top: 25em;
+  top: 20em;
   z-index: 145;
   border-radius: 3em;
   right: 4.5em;
@@ -105,19 +114,53 @@
 
     }
 
-#getting-started {
-  font-size: 90px;
-  font-family: 'Sniglet', cursive;
-  text-align: center;
-  margin-top: .5em;
-  color: white;
 
-}
 
 .getting-started-content {
   font-size: 50px;
   color: white;
   font-family: 'Open Sans', sans-serif;
-  margin-left: 2em;
+  margin-left: 1.5em;
+  margin-top: 1.5em;
 
+}
+
+.home-modal-icon {
+  position: relative;
+  float: right;
+  right: 2em;
+  font-size: 60px;
+
+}
+
+.trind-land-modal-icon {
+  color: rgb(255, 109, 94);
+  position: relative;
+  float: right;
+  // top: 5px;
+  font-size: 90px;
+  right: 1.2em;
+  font-family: 'Sniglet', cursive;
+  transform: rotate(-45deg);
+  margin-top: -15px;
+}
+
+#getting-started {
+  font-size: 75px;
+  font-family: 'Sniglet', cursive;
+  text-align: center;
+  margin-top: .8em;
+  position: relative;
+  color: rgb(255, 109, 94);
+  // background-color: rgba(255, 109, 94, .3);
+  border-radius: 0em 0em .6em .6em;
+  height: 2.4em;
+  vertical-align: middle;
+  bottom: 0;
+
+
+}
+
+#start {
+  margin-top: 2em;
 }

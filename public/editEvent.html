@@ -8,9 +8,13 @@
 <div class="edit-event-container" >
 
     <div class="edit-fields-wrap" ng-controller"UserEventsController">
-        <div class = "edit-event-inputs" id="edit-event-interests"><input type="text" value="" class="editFields edit-interests" ng-model='interests'></input></div>
+        <div class = "edit-input-title" >Interests </div>
+        <div class = "edit-event-inputs" id="edit-event-interests"><input type="text" placeholder="interests" class="editFields edit-interests" ng-model='interests'></input></div>
+        <div class = "edit-input-title">Title </div>
         <div class = "edit-event-inputs" id="edit-event-title"><input type="text" placeholder="short description" class="editFields  edit-title"ng-model='title'></input> </div>
+        <div class = "edit-input-title">Description </div>
         <div class = "edit-event-inputs" id="edit-event-description"><input type="text" placeholder="elaborate" class="editFields  edit-description" ng-model='description'></input></div>
+        <div class = "edit-input-title">Location </div>
         <div class = "edit-event-inputs" id="edit-event-location"><input type="text" placeholder="location" class="editFields  edit-location"ng-model='location'></input> </div>
 
         <div class="edit-event-save-delete-wrap">

@@ -12,6 +12,19 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
     var theEventID = localStorage.getItem('theEventID');
   // ++++++++++++++++++ login ++++++++++++++++++++++
 
+
+  $('.getting-started-background').click(function(e){
+      $(this).hide();
+      $('.getting-started-modal').hide();
+    })
+
+    $('.getting-started-modal').click(function(e){
+        $(this).hide();
+        $('.getting-started-background').hide();
+      })
+
+
+
       // Gets the event json from Damian and repeats through home page
       $http.get('https://still-waters-14036.herokuapp.com/events?token=' + currentToken ).success(function(data){
         console.log(data);
