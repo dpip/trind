@@ -3,9 +3,11 @@
   float: left;
   top: 25px;
   font-size: 80px;
-  left: 21%;
-  color: #ff6d5e;
-  font-family: 'Sniglet', cursive; }
+  left: 30%;
+  color: white;
+  letter-spacing: 4px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold; }
 
 .home-events-display-wrap .home-events-display {
   position: relative;
@@ -15,10 +17,14 @@
   height: 100%;
   font-family: 'Open Sans', sans-serif; }
   .home-events-display-wrap .home-events-display .home-trind-event-information-image {
-    background-color: #eaeaea;
+    background-color: white;
     height: 280px;
     width: 280px;
     float: left; }
+  .home-events-display-wrap .home-events-display .home-trind-event-information-image img {
+    border-radius: 10em 10em 10em 10em;
+    margin-left: 2em;
+    margin-top: 2em; }
   .home-events-display-wrap .home-events-display .home-trind-event-container {
     height: 280px;
     width: 100%;
@@ -31,7 +37,6 @@
   .home-events-display-wrap .home-events-display .home-trind-event-information {
     background-color: white; }
   .home-events-display-wrap .home-events-display #event-information-name {
-    background-color: grey;
     color: black;
     font-size: 40px;
     padding-top: 10px; }
@@ -61,7 +66,7 @@
 
 .home-modal-welcome {
   font-size: 90px;
-  font-family: 'Sniglet', cursive;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   text-align: center;
   color: white;
   margin-top: .6em; }
@@ -69,7 +74,7 @@
 .getting-started-modal {
   height: 65%;
   width: 85%;
-  background-color: #a4dbd8;
+  background-color: #31d4e9;
   position: fixed;
   top: 20em;
   z-index: 145;
@@ -90,7 +95,7 @@
   font-size: 60px; }
 
 .trind-land-modal-icon {
-  color: #ff6d5e;
+  color: white;
   position: relative;
   float: right;
   font-size: 90px;
@@ -100,12 +105,12 @@
   margin-top: -15px; }
 
 #getting-started {
-  font-size: 75px;
-  font-family: 'Sniglet', cursive;
+  font-size: 90px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   text-align: center;
   margin-top: .8em;
   position: relative;
-  color: #ff6d5e;
+  color: #ff5900;
   border-radius: 0em 0em .6em .6em;
   height: 2.4em;
   vertical-align: middle;

@@ -5,7 +5,7 @@
 .login-page-container {
   height: 100%;
   width: 100%;
-  background-color: #a4dbd8; }
+  background-color: #ff5900; }
   .login-page-container .login-page-main-font {
     font-size: 160px;
     font-family: 'Sniglet', cursive;
@@ -14,7 +14,7 @@
     padding-top: .6em;
     padding-bottom: .6em; }
   .login-page-container .land-call-to-action {
-    font-size: 36px;
+    font-size: 40px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     margin-left: 0em; }
@@ -207,14 +207,14 @@ input {
   font-size: 3em;
   margin-top: 100px; }
 
-.trind-main-header-title {
-  color: #ff6d5e;
+.messages-main-header-title {
+  position: absolute;
+  color: white;
   font-size: 4em;
   width: 40%;
-  margin-right: auto;
-  margin-left: auto;
+  left: 36%;
   padding-top: .5em;
-  font-family: 'Sniglet', cursive; }
+  font-family: "Yanone Kaffeesatz", sans-serif; }
 
 .conversation-information-container {
   border: 1px solid #555; }
@@ -269,9 +269,11 @@ input {
   float: left;
   top: 25px;
   font-size: 80px;
-  left: 21%;
-  color: #ff6d5e;
-  font-family: 'Sniglet', cursive; }
+  left: 30%;
+  color: white;
+  letter-spacing: 4px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold; }
 
 .home-events-display-wrap .home-events-display {
   position: relative;
@@ -281,10 +283,14 @@ input {
   height: 100%;
   font-family: 'Open Sans', sans-serif; }
   .home-events-display-wrap .home-events-display .home-trind-event-information-image {
-    background-color: #eaeaea;
+    background-color: white;
     height: 280px;
     width: 280px;
     float: left; }
+  .home-events-display-wrap .home-events-display .home-trind-event-information-image img {
+    border-radius: 10em 10em 10em 10em;
+    margin-left: 2em;
+    margin-top: 2em; }
   .home-events-display-wrap .home-events-display .home-trind-event-container {
     height: 280px;
     width: 100%;
@@ -297,7 +303,6 @@ input {
   .home-events-display-wrap .home-events-display .home-trind-event-information {
     background-color: white; }
   .home-events-display-wrap .home-events-display #event-information-name {
-    background-color: grey;
     color: black;
     font-size: 40px;
     padding-top: 10px; }
@@ -327,7 +332,7 @@ input {
 
 .home-modal-welcome {
   font-size: 90px;
-  font-family: 'Sniglet', cursive;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   text-align: center;
   color: white;
   margin-top: .6em; }
@@ -335,7 +340,7 @@ input {
 .getting-started-modal {
   height: 65%;
   width: 85%;
-  background-color: #a4dbd8;
+  background-color: #31d4e9;
   position: fixed;
   top: 20em;
   z-index: 145;
@@ -356,7 +361,7 @@ input {
   font-size: 60px; }
 
 .trind-land-modal-icon {
-  color: #ff6d5e;
+  color: white;
   position: relative;
   float: right;
   font-size: 90px;
@@ -366,12 +371,12 @@ input {
   margin-top: -15px; }
 
 #getting-started {
-  font-size: 75px;
-  font-family: 'Sniglet', cursive;
+  font-size: 90px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   text-align: center;
   margin-top: .8em;
   position: relative;
-  color: #ff6d5e;
+  color: #ff5900;
   border-radius: 0em 0em .6em .6em;
   height: 2.4em;
   vertical-align: middle;
@@ -461,7 +466,7 @@ input {
   display: inline-block; }
 
 #memories-header-text {
-  color: #ff6d5e;
+  color: #ff5900;
   position: relative;
   float: left;
   top: 20px;
@@ -584,9 +589,9 @@ input {
   float: left;
   top: 25px;
   font-size: 80px;
-  left: 13%;
-  color: #ff6d5e;
-  font-family: 'Sniglet', cursive; }
+  left: 27%;
+  color: white;
+  font-family: "Yanone Kaffeesatz", sans-serif; }
 
 .editFields {
   font-size: 50px;
@@ -642,7 +647,7 @@ a {
   left: 0;
   z-index: 100;
   color: white;
-  background-color: #a4dbd8; }
+  background-color: #ff5900; }
   .trind-main-header .trind-main-header-create-icon {
     position: relative;
     float: left;
@@ -661,16 +666,20 @@ a {
     top: 25px;
     font-size: 80px;
     margin-right: 30px;
-    cursor: inherit; }
+    cursor: inherit;
+    color: white; }
 
 #home-drop-search-input-box {
   position: fixed;
-  height: 50px;
+  box-sizing: border-box;
+  height: 90px;
   width: 100%;
-  font-size: 24px;
+  font-size: 50px;
   color: gray;
   text-align: center;
-  z-index: 90; }
+  z-index: 1;
+  letter-spacing: 2px;
+  font-family: "Yanone Kaffeesatz", sans-serif; }
 
 .trind-main-footer {
   height: 120px;
@@ -679,7 +688,7 @@ a {
   bottom: 0;
   left: 0;
   color: white;
-  background-color: #a4dbd8;
+  background-color: #ff5900;
   z-index: 100; }
   .trind-main-footer .trind-main-footer-me-icon {
     position: relative;
@@ -688,7 +697,7 @@ a {
     font-size: 80px;
     left: 30px; }
   .trind-main-footer .trind-main-footer-trind-icon {
-    color: #ff6d5e;
+    color: white;
     position: relative;
     float: left;
     top: 5px;
@@ -697,7 +706,7 @@ a {
     font-family: 'Sniglet', cursive;
     transform: rotate(-45deg); }
   .trind-main-footer .dot-dot-dot {
-    color: rgba(255, 109, 94, 0.6);
+    color: #ff5900;
     z-index: 10;
     position: absolute;
     top: -6px;

@@ -6,17 +6,17 @@
 </div>
 
   <div class= "home-drop-search-bar">
-
+    </div>
     <input type="text" placeholder="What Interests You?" class = "expand" id= "home-drop-search-input-box" ng-model="search">
 
-  </div>
+
 
 <div class="home-events-display-wrap">
   <div class= "home-events-display">
     <div class= "home-trind-event-container" ng-repeat="things in stuff" >
       <div ng-repeat= "thing in things | limitTo:60 | filter:search">
         <div class= "home-trind-event-information-container" id="event-dilb">
-          <div class= "home-trind-event-information-image" id="event-dilb" ng-click="details(thing.id)"><img src="{{thing.user.photo_url}}" height="280" width="280"></div>
+          <div class= "home-trind-event-information-image" id="event-dilb" ng-click="details(thing.id)"><img src="{{thing.user.photo_url}}" height="220" width="220"></div>
             <div class= "home-trind-event-information" id="event-information-name">{{thing.user.name}} wants to</div>
               <div class= "home-trind-event-information" id= "description">{{thing.title}} </div>
             <div class= "home-trind-event-information" id= "interests">{{thing.interests}}</div>
@@ -40,7 +40,7 @@
     <div id = "see-your-messages" class = "getting-started-content">Your messages <span class = "home-modal-icon"><i class="fa fa-comment"></i></span></div>
     <div id = "see-your-profile" class = "getting-started-content">Edit things <span class = "home-modal-icon"><i class="fa fa-pencil"></i></span></div>
 
-    <div id = "getting-started" class = ""><span id = "start">Start Trinding</span></div>
+    <!-- <div id = "getting-started" class = ""><span id = "start">Start Trinding</span></div> -->
 </div>
 
 <div class= "trind-main-footer">

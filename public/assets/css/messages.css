@@ -3,14 +3,14 @@
   font-size: 3em;
   margin-top: 100px; }
 
-.trind-main-header-title {
-  color: #ff6d5e;
+.messages-main-header-title {
+  position: absolute;
+  color: white;
   font-size: 4em;
   width: 40%;
-  margin-right: auto;
-  margin-left: auto;
+  left: 36%;
   padding-top: .5em;
-  font-family: 'Sniglet', cursive; }
+  font-family: "Yanone Kaffeesatz", sans-serif; }
 
 .conversation-information-container {
   border: 1px solid #555; }

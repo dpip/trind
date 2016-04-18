@@ -4,16 +4,17 @@
   top: 25px;
   font-size: 80px;
   right: 30px;
-  color: #ff6d5e; }
+  color: white; }
 
 .me-main-header-text {
   position: relative;
   float: left;
-  top: 25px;
-  font-size: 80px;
+  top: 15px;
+  font-size: 100px;
   left: 36%;
-  color: #ff6d5e;
-  font-family: 'Sniglet', cursive; }
+  color: white;
+  letter-spacing: 4px;
+  font-family: "Yanone Kaffeesatz", sans-serif; }
 
 .me-container {
   padding: 2em;

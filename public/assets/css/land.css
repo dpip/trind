@@ -5,7 +5,7 @@
 .login-page-container {
   height: 100%;
   width: 100%;
-  background-color: #a4dbd8; }
+  background-color: #ff5900; }
   .login-page-container .login-page-main-font {
     font-size: 160px;
     font-family: 'Sniglet', cursive;
@@ -14,7 +14,7 @@
     padding-top: .6em;
     padding-bottom: .6em; }
   .login-page-container .land-call-to-action {
-    font-size: 36px;
+    font-size: 40px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     margin-left: 0em; }

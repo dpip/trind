@@ -1,12 +1,23 @@
+$blue: rgba(151, 222, 218, 1);
+$twitter: rgba(49, 212, 233, 1);
+$orange-crush: rgba(255, 89, 0, 1);
+$orange-citrus: rgba(255, 127, 0, 1);
+$awwwards: rgba(0, 150, 141, 1);
+
+
 
 .trind-main-header-text {
   position: relative;
   float: left;
   top: 25px;
   font-size: 80px;
-  left: 21%;
-  color: rgb(255, 109, 94);
-  font-family: 'Sniglet', cursive;
+  left: 30%;
+  color: white;
+  // font-family: 'Sniglet', cursive;
+  // font-family: 'Open Sans', sans-serif;
+  letter-spacing: 4px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
 }
 
 .home-events-display-wrap {
@@ -21,11 +32,18 @@
   font-family: 'Open Sans', sans-serif;
 
     .home-trind-event-information-image {
-      background-color: rgba(234, 234, 234, 1);
+      background-color: white;
       height: 280px;
       width: 280px;
       float: left;
+
     }
+  .home-trind-event-information-image img {
+    border-radius: 10em 10em 10em 10em;
+    margin-left: 2em;
+    margin-top: 2em;
+  }
+
     .home-trind-event-container {
       height: 280px;
       width: 100%;
@@ -45,7 +63,6 @@
       background-color: white;
     }
     #event-information-name {
-      background-color: grey;
       color: black;
       font-size: 40px;
       padding-top: 10px;
@@ -94,7 +111,7 @@
 
 .home-modal-welcome {
   font-size: 90px;
-  font-family: 'Sniglet', cursive;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   text-align: center;
   color: white;
   margin-top: .6em;
@@ -104,7 +121,7 @@
 .getting-started-modal {
   height: 65%;
   width: 85%;
-  background-color: rgba(164, 219, 216, 1);
+  background-color: $twitter;
   position: fixed;
   top: 20em;
   z-index: 145;
@@ -134,10 +151,9 @@
 }
 
 .trind-land-modal-icon {
-  color: rgb(255, 109, 94);
+  color: white;
   position: relative;
   float: right;
-  // top: 5px;
   font-size: 90px;
   right: 1.2em;
   font-family: 'Sniglet', cursive;
@@ -146,18 +162,17 @@
 }
 
 #getting-started {
-  font-size: 75px;
-  font-family: 'Sniglet', cursive;
+  font-size: 90px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   text-align: center;
   margin-top: .8em;
   position: relative;
-  color: rgb(255, 109, 94);
+  color: $orange-crush;
   // background-color: rgba(255, 109, 94, .3);
   border-radius: 0em 0em .6em .6em;
   height: 2.4em;
   vertical-align: middle;
   bottom: 0;
-
 
 }
 

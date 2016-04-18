@@ -1,11 +1,19 @@
+
+$blue: rgba(151, 222, 218, 1);
+$twitter: rgba(49, 212, 233, 1);
+$orange-crush: rgba(255, 89, 0, 1);
+$orange-citrus: rgba(255, 127, 0, 1);
+$awwwards: rgba(0, 150, 141, 1);
+$header-text: 'Yanone Kaffeesatz', sans-serif;
+
 .editUser-main-header-edit {
   position: relative;
   float: left;
   top: 25px;
   font-size: 80px;
-  left: 13%;
-  color: rgb(255, 109, 94);
-  font-family: 'Sniglet', cursive;
+  left: 27%;
+  color: white;
+  font-family: $header-text;
 }
 
 .editFields {

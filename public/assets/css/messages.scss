@@ -1,3 +1,13 @@
+$blue: rgba(151, 222, 218, 1);
+$bluetwo: rgba(56, 121, 217, 1);
+$twitter: rgba(49, 212, 233, 1);
+$orange-crush: rgba(255, 89, 0, 1);
+$orange-citrus: rgba(255, 127, 0, 1);
+$creamscicle: rgba(222, 230, 203, 1);
+$awwwards: rgba(0, 150, 141, 1);
+$header-text: 'Yanone Kaffeesatz', sans-serif;
+
+
 .open-messages-container {
     width: 100%;
     font-size: 3em;
@@ -5,14 +15,14 @@
 }
 
 
-    .trind-main-header-title {
-        color: rgb(255, 109, 94);
+    .messages-main-header-title {
+        position: absolute;
+        color: white;
         font-size: 4em;
         width: 40%;
-        margin-right: auto;
-        margin-left: auto;
+        left: 36%;
         padding-top: .5em;
-        font-family: 'Sniglet', cursive;
+        font-family: $header-text;
     }
 
 
