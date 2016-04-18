@@ -72,10 +72,10 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
 
         $scope.buttonOrNo = function () {
           if (userID === recipientID) {
-            return 'lets-meet'
+            return 'lets-meet';
           }
           else {
-            return 'lets-meet-hide'
+            return 'lets-meet-hide';
           };
         };
 
