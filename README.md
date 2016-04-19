@@ -5,7 +5,7 @@ Front End - Evan <br>
 Back End - Damian <br>
 
 Technologies Used
-HTML, SCSS, JavaScript, jQuery, Angular, Firebase, Google Maps API
+HTML, SCSS, JavaScript, jQuery, Angular, Firebase, Google Maps API <br>
 Ruby, Rails, Heroku 
 
 
