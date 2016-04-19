@@ -18,7 +18,7 @@ $awwwards: rgba(0, 150, 141, 1);
   height: 100%;
   width: 100%;
   // background-color: rgba(164, 219, 216, 1);
-  background-color: $orange-crush;
+  background-color: $orange-citrus;
 
 
     .login-page-main-font {
@@ -81,7 +81,7 @@ $awwwards: rgba(0, 150, 141, 1);
       border: none;
     }
     .havent-created-an-account-yet {
-      color: grey;
+      color: $creamscicle;
       font-size: 34px;
       margin-top: 2em;
       margin-left: 30%;
@@ -100,7 +100,7 @@ $awwwards: rgba(0, 150, 141, 1);
     }
     .create-account {
       margin-top: 1em;
-      // color: rgb(255, 109, 94);
+      font-weight: bold;
       color: black;
       margin-left: 14.5%;
       font-size: 56px;

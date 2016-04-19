@@ -14,8 +14,10 @@
               <div id="details-name">with {{event.user.name}}</div>
               <div id="details-eventDetail-interest"><strong>Interests:</strong> &nbsp{{event.event.interests}}</div>
               <div id="details-eventDetail-description"><strong>Description:</strong> &nbsp{{event.event.description}}</div>
-              <div id="details-eventDetail-location"><strong>Location:</strong>&nbsp{{event.event.location}}</div>
+              <div id="details-eventDetail-location">Location:{{event.event.location}}</div>          
+              <!-- <div id="details-eventDetail-location">Location:{{detailLocation}}</div> -->
             </div>
+            <!-- </strong>&nbsp -->
             <div class="details-button-container">
             <input type="button" value="Message Now" id= "details-message-button"  ng-controller="DetailsController" ng-click="messageNow()">
             <input type="button" value="Stash" id= "details-interested-button"  ng-controller="DetailsController" ng-click="stash(event.event.id)">

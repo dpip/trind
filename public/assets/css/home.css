@@ -37,18 +37,18 @@
   .home-events-display-wrap .home-events-display .home-trind-event-information {
     background-color: white; }
   .home-events-display-wrap .home-events-display #event-information-name {
-    color: black;
-    font-size: 40px;
+    color: #888;
+    font-size: 30px;
     padding-top: 10px; }
   .home-events-display-wrap .home-events-display #interests {
-    font-size: 40px;
+    font-size: 30px;
     padding-bottom: 15px;
     color: #ff6d5e;
     vertical-align: top; }
   .home-events-display-wrap .home-events-display #description {
     margin-top: 10px;
     height: 80px;
-    font-size: 30px;
+    font-size: 45px;
     padding-bottom: 15px; }
   .home-events-display-wrap .home-events-display #location {
     height: 20px;
