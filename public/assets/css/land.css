@@ -52,7 +52,7 @@
     background-color: white;
     border: none; }
   .login-page-container .havent-created-an-account-yet {
-    color: grey;
+    color: #dee6cb;
     font-size: 34px;
     margin-top: 2em;
     margin-left: 30%;
@@ -67,6 +67,7 @@
     font-family: 'Open Sans', sans-serif; }
   .login-page-container .create-account {
     margin-top: 1em;
+    font-weight: bold;
     color: black;
     margin-left: 14.5%;
     font-size: 56px;
