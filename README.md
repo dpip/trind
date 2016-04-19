@@ -8,7 +8,7 @@ Technologies Used
 HTML, SCSS, JavaScript, jQuery, Angular, Firebase, Google Maps API <br>
 Ruby, Rails, Heroku <br>
 
-<a href="https://vivid-fire-1635.firebaseapp.com/#/land>"> Trind App </a>
+[Trind App](https://vivid-fire-1635.firebaseapp.com/#/land)
 Best viewed from a mobile device or tablet
 
 
