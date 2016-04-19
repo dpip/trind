@@ -10,7 +10,6 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
         $scope.otherUserName = otherUserName;
 
 
-
         console.log(userID);
         //  $("#home-drop-search-input-box").hide();
 
