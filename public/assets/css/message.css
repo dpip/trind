@@ -1,6 +1,11 @@
 .conversation-wrap {
-  height: 100%;
-  margin-top: 0px; }
+  height: auto;
+  margin-top: 150px; }
+
+.chat-body {
+  font-size: 2.5em;
+  padding: 1em;
+  height: auto; }
 
 .message-main-header-name {
   position: relative;
@@ -16,20 +21,6 @@
   z-index: 60;
   bottom: 120;
   box-sizing: border-box; }
-
-.chat-users {
-  border: 1px solid #999;
-  padding: 1em;
-  font-size: 3em; }
-
-.chat-body {
-  font-size: 2.5em; }
-
-#YOU {
-  width: 10%; }
-
-#THEY {
-  float: right; }
 
 .message-in {
   width: 80%;
@@ -59,7 +50,8 @@ input {
   border-radius: 3px; }
 
 .trind-main-footer {
-  height: 120px; }
+  height: 120px;
+  border: 1px solid #888; }
 
 #meet-button {
   left: 1;
@@ -80,5 +72,8 @@ input {
   background-color: #999;
   right: 1;
   color: #fff; }
+
+#chatter {
+  padding-left: .5em; }
 
 /*# sourceMappingURL=message.css.map */

@@ -28,18 +28,20 @@
   </div>
 </div>
 
-  <div class="message-footer">
-    <form ng-controller="MessageController">
-      <div class="input-group">
-        <input id="chatter" type="text" name="chatter" class="form-control chatter" />
 
-      </div>
-  </div>
 
 </div>
 
 <div class= "trind-main-footer">
+    <div class="message-footer">
+      <form ng-controller="MessageController">
+        <div class="input-group">
+          <input id="chatter" type="text" name="chatter" placeholder="type message here... "class="form-control chatter" />
+
+        </div>
+    </div>
   <button id = "meet-button" ng-class="buttonOrNo()" ng-click="letsMeet()"> Let's Meet Up!</button>
+  <div class= "trind-main-footer-trind-icon"><a href="#/home">T</a></div>
   <span class="input-group-btn">
     <button id="send-button" type="submit" ng-click="postMessage()">Send Message</button>
   </span>

@@ -133,8 +133,13 @@
     background-color: white; }
 
 .conversation-wrap {
-  height: 100%;
-  margin-top: 0px; }
+  height: auto;
+  margin-top: 150px; }
+
+.chat-body {
+  font-size: 2.5em;
+  padding: 1em;
+  height: auto; }
 
 .message-main-header-name {
   position: relative;
@@ -150,20 +155,6 @@
   z-index: 60;
   bottom: 120;
   box-sizing: border-box; }
-
-.chat-users {
-  border: 1px solid #999;
-  padding: 1em;
-  font-size: 3em; }
-
-.chat-body {
-  font-size: 2.5em; }
-
-#YOU {
-  width: 10%; }
-
-#THEY {
-  float: right; }
 
 .message-in {
   width: 80%;
@@ -193,7 +184,8 @@ input {
   border-radius: 3px; }
 
 .trind-main-footer {
-  height: 120px; }
+  height: 120px;
+  border: 1px solid #888; }
 
 #meet-button {
   left: 1;
@@ -215,10 +207,14 @@ input {
   right: 1;
   color: #fff; }
 
+#chatter {
+  padding-left: .5em; }
+
 .open-messages-container {
   width: 100%;
   font-size: 3em;
-  margin-top: 100px; }
+  margin-top: 80px;
+  font-family: sans-serif; }
 
 .messages-main-header-title {
   position: absolute;
@@ -230,19 +226,35 @@ input {
   font-family: "Yanone Kaffeesatz", sans-serif; }
 
 .conversation-information-container {
-  border: 1px solid #555; }
+  border-top: 2px solid #999;
+  border-bottom: 2px solid #999; }
+  .conversation-information-container .conversation-image img {
+    border-radius: 10em 10em 10em 10em;
+    margin: 1em .5em 1.5em .5em; }
+  .conversation-information-container .conversation-text-container {
+    margin-left: 90%;
+    margin-top: -100px; }
+    .conversation-information-container .conversation-text-container .fa-chevron-right {
+      color: #888;
+      margin-bottom: 10px; }
   .conversation-information-container .conversation-sender {
-    width: 40%;
-    margin-top: -150px;
+    width: 65%;
+    margin-top: -250px;
     float: right;
-    text-align: right;
+    text-align: left;
     padding-right: 1em;
     color: #ff6d5e; }
   .conversation-information-container .conversation-last-message {
     float: right;
-    margin-top: -100px;
-    font-size: .8em;
-    padding-right: 1em; }
+    text-align: left;
+    margin-top: -190px;
+    padding-right: 1em;
+    color: #888;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 65%;
+    width: 65%; }
 
 .create-main-header-text {
   font-family: 'Yanone Kaffeesatz', sans-serif;
