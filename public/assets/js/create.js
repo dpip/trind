@@ -5,8 +5,8 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
   var currentToken = localStorage.getItem('tokenToken');
   var userID = localStorage.getItem('userID');
   var address = localStorage.getItem('location');
-  var lat = localStorage.getItem('latitude', lat);
-  var lng = localStorage.getItem('longitude', lng);
+  var lat = localStorage.getItem('latitude');
+  var lng = localStorage.getItem('longitude');
   var inputFrom = document.getElementById('create-map-input');
   var autocompleteFrom = new google.maps.places.Autocomplete(inputFrom);
 
@@ -43,8 +43,11 @@ console.log($('#create-map-input').val());
        var address = place.formatted_address;
        var lng = place.geometry.location.lng();
        var lat = place.geometry.location.lat();
-       console.log(place.geometry.location.lat());
-       console.log(place.geometry.location.lng());
+       localStorage.setItem('location', address);
+       localStorage.setItem('latitude', lat);
+       localStorage.setItem('longitude', lng);
+       console.log(lat);
+       console.log(lng);
          // console.log(lat, lng, address)
    });
 
@@ -66,9 +69,9 @@ console.log($('#create-map-input').val());
 
   $scope.submitTrind = function() {
 
-    localStorage.setItem('location', address);
-    localStorage.setItem('latitude', lat);
-    localStorage.setItem('longitude', lng);
+    // localStorage.setItem('location', address);
+    // localStorage.setItem('latitude', lat);
+    // localStorage.setItem('longitude', lng);
     // console.log(lat);
     // console.log(lng);
     console.log(address);
