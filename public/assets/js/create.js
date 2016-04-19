@@ -5,20 +5,23 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
   var currentToken = localStorage.getItem('tokenToken');
   var userID = localStorage.getItem('userID');
   var address = localStorage.getItem('location');
+  var lat = localStorage.getItem('latitude', lat);
+  var lng = localStorage.getItem('longitude', lng);
   var inputFrom = document.getElementById('create-map-input');
   var autocompleteFrom = new google.maps.places.Autocomplete(inputFrom);
+
 // $('#create-map-input').val(),
-  // $scope.testTrind = {
-  //     "event": {
-  //     "user_id": userID,
-  //     "interests": "",
-  //     "description": "",
-  //     "location": $('inputFrom').val(),
-  //     "title": "",
-  //     "token": currentToken
-  //
-  //   }
-  // };
+//   $scope.testTrind = {
+//       "event": {
+//       "user_id": userID,
+//       "interests": "",
+//       "description": "",
+//       "location": $('inputFrom').val(),
+//       "title": "",
+//       "token": currentToken
+//
+//     }
+//   };
 
 $scope.location = address;
 
@@ -37,10 +40,11 @@ console.log($('#create-map-input').val());
 
    google.maps.event.addListener(autocompleteFrom, 'place_changed', function() {
        var place = autocompleteFrom.getPlace();
-       //set lat/lng/addy
-       lat = place.geometry.location.lat();
-       lng = place.geometry.location.lng();
-       address = place.formatted_address;
+       var address = place.formatted_address;
+       var lng = place.geometry.location.lng();
+       var lat = place.geometry.location.lat();
+       console.log(place.geometry.location.lat());
+       console.log(place.geometry.location.lng());
          // console.log(lat, lng, address)
    });
 
@@ -50,6 +54,7 @@ console.log($('#create-map-input').val());
        "interests": "",
        "description": "",
        "location": address,
+      //  "location": "",
        "title": "",
        "token": currentToken
 
@@ -62,15 +67,22 @@ console.log($('#create-map-input').val());
   $scope.submitTrind = function() {
 
     localStorage.setItem('location', address);
-    console.log(address)
+    localStorage.setItem('latitude', lat);
+    localStorage.setItem('longitude', lng);
+    // console.log(lat);
+    // console.log(lng);
+    console.log(address);
+    console.log(lat);
+    console.log(lng);
     console.log("Hello, little Hobbit!");
     console.log($scope.testTrind);
     $http.post('https://still-waters-14036.herokuapp.com/events?token=' + currentToken, $scope.testTrind)
-    .success(function (data) {
-      console.log(data);
+    .then(function successCallback(response){
+      console.log(response);
       window.location.replace('#/home')
-
-    })
+ }, function errorCallback(response){
+   console.log(response)
+ });
 
   };
 

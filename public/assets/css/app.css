@@ -5,7 +5,7 @@
 .login-page-container {
   height: 100%;
   width: 100%;
-  background-color: #ff5900; }
+  background-color: #ff7f00; }
   .login-page-container .login-page-main-font {
     font-size: 160px;
     font-family: 'Sniglet', cursive;
@@ -692,7 +692,7 @@ a {
   left: 0;
   z-index: 100;
   color: white;
-  background-color: #ff5900; }
+  background-color: #ff7f00; }
   .trind-main-header .trind-main-header-create-icon {
     position: relative;
     float: left;
@@ -733,7 +733,7 @@ a {
   bottom: 0;
   left: 0;
   color: white;
-  background-color: #ff5900;
+  background-color: #ff7f00;
   z-index: 100; }
   .trind-main-footer .trind-main-footer-me-icon {
     position: relative;
@@ -751,7 +751,7 @@ a {
     font-family: 'Sniglet', cursive;
     transform: rotate(-45deg); }
   .trind-main-footer .dot-dot-dot {
-    color: #ff5900;
+    color: #ff7f00;
     z-index: 10;
     position: absolute;
     top: -6px;

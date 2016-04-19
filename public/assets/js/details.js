@@ -9,12 +9,17 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
       var otherUserID = localStorage.getItem('otherUserID');
       var otherUserName = localStorage.getItem('otherUserName');
       var address = localStorage.getItem('location');
+      var latitude = localStorage.getItem('latitude');
+      var longitude = localStorage.getItem('longitude');
 
       console.log(theEventID);
       console.log(otherUserID);
-
+      console.log(latitude);
+      console.log(longitude);
 
         $scope.detailLocation = address;
+        // $scope.latitude = lat;
+        // $scope.longitude =  lng;
 
 
 
@@ -30,7 +35,7 @@ function success(position) {
 
   document.querySelector('article').appendChild(mapcanvas);
 
-  var coords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+  var coords = new google.maps.LatLng(latitude, longitude);
 
   var options = {
     zoom: 15,
