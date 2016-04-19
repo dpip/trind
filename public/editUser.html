@@ -5,20 +5,22 @@
 </div>
 
 <div class="me-container" >
-    <img class="me-avatar" src="{{editUserImage}}" height="500px" width="700px">  </img>
+    <img class="me-avatar" src="{{editUserImage}}">  </img>
     <!-- <div id="me-photo-upload"><input type="file" ng-file-model="image" name="image" /></input></div> -->
     <div id="me-name"><input type="text" class="editFields edit-user-user-name" ng-model='userName'></input></div>
     <div id="me-email"><input type="text" class="editFields  edit-user-user-email" ng-model='userEmail'></input></div>
     <!-- <div id="me-interests"><input type="text" class="editFields  edit-user-user-interests"ng-model='userInterests'></input> </div>
     <div id="me-summary"><input type="body" class="editFields  edit-user-user-summary" ng-model='userSummary'></input></div> -->
     <div class="me-things">
-      <button class="user-edit-buttons" ng-click="editUserInfo(file)">Save</button>
-      <button class="user-edit-buttons" ng-click="deleteUser()">Delete</button>
+      <button class="user-edit-button" ng-click="editUserInfo(file)">Save</button>
+      <button class="user-delete-button" ng-click="deleteUser()">Delete</button>
     </div>
 </div>
 
+<div class="upload-photo">
+    <div class="upload-me-title">Upload a New Photo Here</div>
 <input id='file-input' name='file' type='file' ngf-select ng-model='file' ngf-pattern="'image/*'" ngf-capture="'other'" accept="image/*" ngf-max-size="20MB" ngf-min-height="100">
-
+</div>
 
 
 <!-- {{data}} -->
