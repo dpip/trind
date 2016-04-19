@@ -8,9 +8,15 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
       var theEventID = localStorage.getItem('theEventID');
       var otherUserID = localStorage.getItem('otherUserID');
       var otherUserName = localStorage.getItem('otherUserName');
+      var address = localStorage.getItem('location');
 
       console.log(theEventID);
       console.log(otherUserID);
+
+
+        $scope.detailLocation = address;
+
+
 
 //////google maps
 
