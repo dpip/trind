@@ -12,6 +12,11 @@
   margin-left: auto;
   margin-right: auto;
   font-size: 1em; }
+  .create-input-field .create-subtitle {
+    font-size: 4em;
+    text-align: center;
+    padding: .5em;
+    font-family: 'Yanone Kaffeesatz', sans-serif; }
   .create-input-field input {
     width: 95%;
     margin: .2em;
