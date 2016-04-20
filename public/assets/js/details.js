@@ -88,7 +88,10 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
         var eventLatitude = response.data.event.latitude;
         var eventLongitude = response.data.event.longitude;
         var location = response.data.event.location;
-
+        localStorage.setItem('otherUserID', otherUserID);
+        localStorage.setItem('otherUserName', otherUserName);
+        console.log(otherUserName);
+        console.log(otherUserID);
 
         navigator.geolocation.getCurrentPosition(success);
 

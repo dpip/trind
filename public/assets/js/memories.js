@@ -1,7 +1,6 @@
 trind.controller('MemoriesController', [ '$http', '$scope', function($http, $scope){
 
 
-<<<<<<< HEAD
     var hasLiked = false;
     $scope.likeClick = function () {
         if (!hasLiked) {
@@ -14,7 +13,6 @@ trind.controller('MemoriesController', [ '$http', '$scope', function($http, $sco
             $scope.liked = 'Like';
             $scope.likeCount -= 1;
         }
-=======
     $(document).ready(function () {
         $("#home-drop-search-input-box").hide();
         $('.trind-main-header-search-icon').click(function () {
@@ -62,9 +60,8 @@ trind.controller('MemoriesController', [ '$http', '$scope', function($http, $sco
       },function errorCallback(response){
       console.log('not put', response);
       });
->>>>>>> 3370d659f0da2aa76904b9365ecb8995cb475c46
     };
-    
+
     $http.get('https://still-waters-14036.herokuapp.com/memories?token=' + currentToken ).success(function(data){
       console.log(data);
       $scope.stuff = data;
@@ -85,23 +82,10 @@ trind.controller('MemoriesController', [ '$http', '$scope', function($http, $sco
         };
 
 
-<<<<<<< HEAD
         // scope displayind details of user!!!!!!
         $scope.eventDetail = data.events;
 
 
       });
-=======
-        // if (!hasLiked) {
-        //     hasLiked = true;
-        //     $scope.liked = 'cool';
-        //     $scope.likeCount += 1;
-        // }
-        // else {
-        //     hasLiked = false;
-        //     $scope.liked = 'Like';
-        //     $scope.likeCount -= 1;
-        // }
->>>>>>> 3370d659f0da2aa76904b9365ecb8995cb475c46
 
 }]);
