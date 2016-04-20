@@ -14,6 +14,26 @@ trind.controller('MeController', [ '$http', '$location', '$scope', function($htt
     $scope.userPhoto = userPhoto;
 
 
+$(function(){
+  setInterval(unseen, 1000);
+});
+
+function unseen() {
+  $http.get('https://still-waters-14036.herokuapp.com/total_messages_not_viewed?token=' + currentToken ).success(function(data) {
+
+    //   console.log(data);
+
+      if (data.not_viewed === 0 ) {
+          $scope.unseen = "...";
+      }
+
+      else if(data.not_viewed > 0) {
+          $scope.unseen = data.not_viewed;
+
+      }
+            });
+    };
+
   $http.get('https://still-waters-14036.herokuapp.com/users/' + userID + "?token=" + currentToken).success(function(userInfo){
     console.log(userID);
     console.log(currentToken);

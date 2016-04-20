@@ -122,13 +122,15 @@ a {
       }
 
       .dot-dot-dot {
-        color: $orange-citrus;
+        color: rgb(49,212,235);
         z-index: 10;
         position: absolute;
-        top: -6px;
-        right: 19px;
-        font-size: 60px;
+        top: 25px;
+        right: 30px;
+        font-size: .4em;
+        font-family: sans-serif;
       }
+
 
       .trind-main-footer-message-icon {
         position: relative;
