@@ -4,7 +4,8 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
 
   var currentToken = localStorage.getItem('tokenToken');
   var userID = localStorage.getItem('userID');
-  var address = localStorage.getItem('location');
+  var location = localStorage.getItem('location');
+  console.log("here's what you have in local after google autofill", lat);
   var lat = localStorage.getItem('latitude');
   var lng = localStorage.getItem('longitude');
   var inputFrom = document.getElementById('create-map-input');
@@ -23,7 +24,7 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
 //     }
 //   };
 
-$scope.location = address;
+$scope.location = location;
 
 console.log($('#create-map-input').val());
 
@@ -40,14 +41,16 @@ console.log($('#create-map-input').val());
 
    google.maps.event.addListener(autocompleteFrom, 'place_changed', function() {
        var place = autocompleteFrom.getPlace();
-       var address = place.formatted_address;
+       var location = place.formatted_address;
        var lng = place.geometry.location.lng();
        var lat = place.geometry.location.lat();
-       localStorage.setItem('location', address);
+       localStorage.setItem('location', location);
        localStorage.setItem('latitude', lat);
        localStorage.setItem('longitude', lng);
        console.log(lat);
        console.log(lng);
+       console.log(location);
+
          // console.log(lat, lng, address)
    });
 
@@ -56,8 +59,9 @@ console.log($('#create-map-input').val());
        "user_id": userID,
        "interests": "",
        "description": "",
-       "location": address,
-      //  "location": "",
+       "location": location,
+       "latitude": lat,
+       "longitude": lng,
        "title": "",
        "token": currentToken
 
@@ -69,12 +73,9 @@ console.log($('#create-map-input').val());
 
   $scope.submitTrind = function() {
 
-    // localStorage.setItem('location', address);
-    // localStorage.setItem('latitude', lat);
-    // localStorage.setItem('longitude', lng);
     // console.log(lat);
     // console.log(lng);
-    console.log(address);
+    console.log(location);
     console.log(lat);
     console.log(lng);
     console.log("Hello, little Hobbit!");
@@ -82,7 +83,13 @@ console.log($('#create-map-input').val());
     $http.post('https://still-waters-14036.herokuapp.com/events?token=' + currentToken, $scope.testTrind)
     .then(function successCallback(response){
       console.log(response);
+      $(".pac-container").val('');
       window.location.replace('#/home')
+
+      // document.create-map-input.reset();
+      // $("#create-map-input").trigger('reset');
+      // document.getElementById('create-map-input').value = '';
+      //  autocomplete.set('place',void(0));
  }, function errorCallback(response){
    console.log(response)
  });
