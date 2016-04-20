@@ -17,9 +17,9 @@
       <div ng-repeat= "thing in things | filter:search">
         <div class= "home-trind-event-information-container" id="event-dilb">
           <div class= "home-trind-event-information-image" id="event-dilb" ng-click="details(thing.id)"><img src="{{thing.user.photo_url}}" height="220" width="220"></div>
-            <div class= "home-trind-event-information" id="event-information-name">{{thing.user.name}} wants to</div>
+            <div class= "home-trind-event-information" id="event-information-name">{{thing.user.name}} wants to...</div>
               <div class= "home-trind-event-information" id= "description">{{thing.title}} </div>
-            <div class= "home-trind-event-information" id= "interests">{{thing.interests}}</div>
+            <div class= "home-trind-event-information" id= "interests">#{{thing.interests}}</div>
           <div class= "home-trind-event-information" id= "location">Location: {{thing.location}} </div>
         </div>
       </div>
