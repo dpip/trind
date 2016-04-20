@@ -29,7 +29,7 @@ trind.controller('editUserController', [ '$http', '$scope', 'Upload','$location'
     console.log(file, $('.edit-user-user-email').val(), $('.edit-user-user-name').val());
 
     var formData = new FormData();
-      if(file !== undefined){
+      if(file != undefined){
       formData.append('user[uploaded_file]', file);
       };
       formData.append('user[email]', $('.edit-user-user-email').val());
@@ -56,18 +56,6 @@ trind.controller('editUserController', [ '$http', '$scope', 'Upload','$location'
   }, function errorCallback(response){
     console.log('hate', response);
   });
-    // Upload.upload({
-    //       url: '/projects',
-    //       data: {file: file, 'project[name]': $scope.name, 'project[description]': $scope.description},
-    //   }).then(function (resp) {
-    //       console.log('Success ' + resp.config.data.file.name + 'uploaded. Response: ' + resp.data);
-    //
-    //   }, function (resp) {
-    //       console.log('Error status: ' + resp.status);
-    //   }, function (evt) {
-    //       var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
-    //       console.log('progress: ' + progressPercentage + '% ' + evt.config.data.file.name);
-    // });
 
   };
 
