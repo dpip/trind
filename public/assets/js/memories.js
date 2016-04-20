@@ -1,18 +1,18 @@
 trind.controller('MemoriesController', [ '$http', '$scope', function($http, $scope){
 
-    var hasLiked = false;
-    $scope.likeClick = function () {
-        if (!hasLiked) {
-            hasLiked = true;
-            $scope.liked = 'cool';
-            $scope.likeCount += 1;
-        }
-        else {
-            hasLiked = false;
-            $scope.liked = 'Like';
-            $scope.likeCount -= 1;
-        }
-
+    // var hasLiked = false;
+    // $scope.likeClick = function () {
+    //     if (!hasLiked) {
+    //         hasLiked = true;
+    //         $scope.liked = 'cool';
+    //         $scope.likeCount += 1;
+    //     }
+    //     else {
+    //         hasLiked = false;
+    //         $scope.liked = 'Like';
+    //         $scope.likeCount -= 1;
+    //     }
+    //
 
   // +++++++++++ token in localStorage ++++++++++
     var currentToken = localStorage.getItem('tokenToken');
