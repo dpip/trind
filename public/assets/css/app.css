@@ -228,7 +228,7 @@ input {
 .open-messages-container {
   width: 100%;
   font-size: 3em;
-  margin-top: 80px;
+  margin-top: 120px;
   font-family: sans-serif; }
 
 .messages-main-header-title {
@@ -242,34 +242,39 @@ input {
 
 .conversation-information-container {
   border-top: 2px solid #999;
-  border-bottom: 2px solid #999; }
+  border-bottom: 2px solid #999;
+  padding-top: .2em;
+  padding-bottom: .1em; }
+  .conversation-information-container .conversation-information-direction {
+    width: 69%;
+    float: right;
+    margin-top: -280px; }
+    .conversation-information-container .conversation-information-direction div {
+      display: inline; }
+    .conversation-information-container .conversation-information-direction .chevy {
+      float: right;
+      color: #888; }
+    .conversation-information-container .conversation-information-direction .conversation-sender {
+      text-align: left;
+      padding-right: 2em;
+      color: #ff7f00; }
+    .conversation-information-container .conversation-information-direction .conversation-last-message {
+      float: right;
+      text-align: left;
+      padding: .2em;
+      margin-top: -300px;
+      padding-right: 1em;
+      color: #888;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 99%;
+      width: 92%; }
+  .conversation-information-container .conversation-image {
+    width: 300px; }
   .conversation-information-container .conversation-image img {
     border-radius: 10em 10em 10em 10em;
-    margin: 1em .5em 1.5em .5em; }
-  .conversation-information-container .conversation-text-container {
-    margin-left: 90%;
-    margin-top: -100px; }
-    .conversation-information-container .conversation-text-container .fa-chevron-right {
-      color: #888;
-      margin-bottom: 10px; }
-  .conversation-information-container .conversation-sender {
-    width: 65%;
-    margin-top: -250px;
-    float: right;
-    text-align: left;
-    padding-right: 1em;
-    color: #ff7f00; }
-  .conversation-information-container .conversation-last-message {
-    float: right;
-    text-align: left;
-    margin-top: -190px;
-    padding-right: 1em;
-    color: #888;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 65%;
-    width: 65%; }
+    margin: 1em .5em 1em 1em; }
 
 .create-main-header-text {
   font-family: 'Yanone Kaffeesatz', sans-serif;
