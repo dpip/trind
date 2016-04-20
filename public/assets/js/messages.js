@@ -10,16 +10,9 @@ trind.controller('MessagesController', [ '$http', '$scope','$location', function
 
 //// Notifications
 
-    // var unseen;
-    // $http.get('https://still-waters-14036.herokuapp.com/total_messages_not_viewed?token=' + currentToken ).success(function(data){
-
-
-var unseen;
-
 $(function(){
   setInterval(unseen, 1000);
 });
-
 
 function unseen() {
   $http.get('https://still-waters-14036.herokuapp.com/total_messages_not_viewed?token=' + currentToken ).success(function(data) {

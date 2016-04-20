@@ -43,7 +43,7 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
         };
 
       // Gets the event json from Damian and repeats through home page
-      $http.get('https://still-waters-14036.herokuapp.com/events?token=' + currentToken ).success(function(data){
+      $http.get('https://still-waters-14036.herokuapp.com/events?token=' + currentToken).success(function(data){
         console.log('home page data', data);
         $scope.stuff = data;
           // $scope.eventIDGrab = data.id
@@ -73,22 +73,28 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
             });
 
             // this closes get request
-        }); 
+        });
 
 
-        //  var newMessages = document.getElementByID('dot-dot-dot')  {
-        //               if(unseen = 0) {
-        //                 newMessages..innerhtml() = "...";
-        //               }
-        //               else {
-        //                 newMessages..innerhtml() = $scope.unseen;
-        //               }
-        //             };
+$(function(){
+  setInterval(unseen, 1000);
+});
 
+function unseen() {
+  $http.get('https://still-waters-14036.herokuapp.com/total_messages_not_viewed?token=' + currentToken ).success(function(data) {
 
+    //   console.log(data);
 
+      if (data.not_viewed === 0 ) {
+          $scope.unseen = "...";
+      }
 
-    //   });
+      else if(data.not_viewed > 0) {
+          $scope.unseen = data.not_viewed;
+
+      }
+            });
+    };
 
       // Drops search bar on click.... would love this functionality to happen on scroll
     $(document).ready(function () {

@@ -424,6 +424,18 @@ input {
 #start {
   margin-top: 2em; }
 
+#emptiness {
+  height: 120px; }
+
+#details-header-name {
+  position: relative;
+  float: left;
+  top: 20px;
+  font-size: 80px;
+  left: 33%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  text-align: center; }
+
 .event-details-container {
   width: 90%;
   margin-left: auto;
@@ -433,12 +445,12 @@ input {
   z-index: 1;
   font-family: 'Open Sans', sans-serif; }
   .event-details-container .me-avatar {
-    width: 500px;
-    height: 500px;
-    margin-left: 25%;
-    margin-top: 20px;
+    width: 100%;
+    height: 800px;
+    margin-top: 80px;
     text-align: center;
-    border: 2px solid #a4dbd8; }
+    border: 2px solid #a4dbd8;
+    border-radius: 1em; }
   .event-details-container .details-text-wrapper {
     width: 90%;
     margin-top: 50px;
@@ -448,7 +460,6 @@ input {
     font-size: 2em; }
   .event-details-container #details-name {
     margin-top: 10px;
-    color: rgba(255, 109, 94, 0.8);
     margin-top: 10px;
     color: rgba(255, 109, 94, 0.8);
     margin-left: 40px;
@@ -457,7 +468,8 @@ input {
     font-style: italic; }
   .event-details-container #details-eventDetail-title {
     font-size: 2em;
-    text-align: center; }
+    text-align: center;
+    color: white; }
   .event-details-container .details-button-container {
     width: 100%;
     margin-left: auto;
@@ -468,7 +480,7 @@ input {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #31d4eb;
+    background-color: #31d4e9;
     border-radius: .3em;
     height: 65px;
     margin-top: 30px;
@@ -478,7 +490,7 @@ input {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #31d4eb;
+    background-color: #31d4e9;
     border-radius: .3em;
     height: 65px;
     margin-top: 30px;
@@ -489,16 +501,22 @@ input {
     margin-left: 40px; }
   .event-details-container #details-eventDetail-interest {
     margin-top: 40px;
-    margin-left: 40px; }
+    margin-left: 40px;
+    color: #ff5900; }
   .event-details-container #details-eventDetail-description {
     margin-top: 40px;
-    margin-left: 40px; }
+    margin-left: 40px;
+    font-size: 50px; }
   .event-details-container #details-eventDetail-location {
     margin-top: 40px;
     margin-left: 40px; }
 
+.fa-map-marker {
+  color: #31d4e9;
+  font-size: 40px; }
+
 #mapcontainer {
-  margin-left: 12em;
+  margin-left: 9em;
   margin-top: 6em; }
 
 .memories-header-icons {

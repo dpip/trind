@@ -10,19 +10,23 @@
       <div class= "empty-box"></div>
 
         <div class = "create-input-field">
-            <div class ="create-subtitle"> I want to ... </div>
+            <div class ="create-subtitle">  </div>
           <form ng-submit="submitTrind()" method="post">
           <div class= "user-creator-description-title">
-                <input type="text" ng-model="testTrind.event.title" placeholder="Event Name" class ="create-enter-title-input">
+                <!-- ng-model="testTrind.event.title" -->
+                <input id = "i-want-to" type="text" placeholder=" I want to ..." class ="create-enter-title-input">
            </div>
             <div class= "user-creator-description-interests">
-              <input type="text" ng-model="testTrind.event.interests" placeholder="Interests" class ="create-enter-interests-input">
+                <!-- ng-model="testTrind.event.interests" -->
+              <input id = "create-your-interests" type="text"  placeholder=" Interests" class ="create-enter-interests-input">
             </div>
 
             <div class= "user-creator-description-name"></div>
 
             <div class = "user-creator-description">
-              <textarea class="user-creator-description-field" ng-model="testTrind.event.description" placeholder="Description" max-length="200" ></textarea>
+
+              <!-- ng-model="testTrind.event.description" -->
+              <textarea id = "create-description-field" class="user-creator-description-field"  placeholder=" Description" max-length="200" ></textarea>
               </div>
               <!--
             <div class "create-enable-gps-location">
@@ -34,7 +38,10 @@
             </div> -->
             <!-- GOOGLEMAPS -->
             <!-- {{location}} -->
-              <input ng-model="testTrind.event.location" id="create-map-input" class="controls" type="text" placeholder="Durham, NC">
+
+              <!-- <input ng-model="testTrind.event.location" id="create-map-input" class="controls" type="text" placeholder="Durham, NC"> -->
+
+              <input id="create-map-input" class="controls" type="text" placeholder="Durham, NC">
               <div id="map-canvas"></div>
               <!-- GOOGLEMAPS -->
             <div class= "create-trind-submit-button">
