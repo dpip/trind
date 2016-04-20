@@ -3,17 +3,10 @@ trind.controller('editUserController', [ '$http', '$scope', 'Upload','$location'
   var userID = localStorage.getItem('userID');
   var currentToken = localStorage.getItem('tokenToken');
 
-  // $scope.editUserInfo = {
-  // 	"user": {
-  //   "name": userName,
-  //   "email": userEmail,
-  //   "interests": userInterests,
-  //   "summary": userSummary
-  //     }
-  // };
+
   $http.get('https://still-waters-14036.herokuapp.com/users/' + userID + "?token=" + currentToken).then(function successCallback(response){
     console.log(response.data);
-    $scope.editUserImage = response.data.photo_url;
+
     $('.edit-user-user-name').val(response.data.name);
     $('.edit-user-user-email').val(response.data.email);
     $('.edit-user-user-interests').val(response.data.interests);

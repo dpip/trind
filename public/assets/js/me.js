@@ -52,11 +52,11 @@ function unseen() {
 
   $scope.logOut = function() {
   $http.get('https://still-waters-14036.herokuapp.com/logout?token=' + currentToken).then(function successCallback(logout){
-    console.log('log out prompt', logout);
-    localStorage.setItem('userID', "");
-    localStorage.setItem('tokenToken', "");
-    localStorage.setItem('userPhoto', "");
-    $window.localStorage.clear();
+    // console.log('log out prompt', logout); 
+    localStorage.clear();
+    // localStorage.removeItem('tokenToken');
+    // localStorage.removeItem('userPhoto');
+    // $window.localStorage.clear();
     window.location.replace('#/land');
 
     if(firstTime === "yes") {
