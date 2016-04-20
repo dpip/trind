@@ -126,15 +126,15 @@ a {
         z-index: 10;
         position: absolute;
         top: 20px;
-        right: 20px;
+        right: 25px;
         font-size: .5em;
         font-family: sans-serif;
         font-weight: bold;
       }
 
       .pushup {
-          margin-top:0px;
-          color: red;
+          margin-top:-10px;
+          color: rgba(255, 127, 0, 1);
       }
 
       .trind-main-footer-message-icon {

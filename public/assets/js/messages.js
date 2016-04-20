@@ -20,8 +20,8 @@ function unseen() {
     //   console.log(data);
 
       if (data.not_viewed === 0 ) {
-          $scope.unseen = "";
-        //   $(".dot-dot-dot").addClass('pushup');
+          $scope.unseen = "...";
+          $(".dot-dot-dot").addClass('pushup');
       }
 
       else if(data.not_viewed > 0) {

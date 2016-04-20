@@ -823,10 +823,13 @@ a {
     z-index: 10;
     position: absolute;
     top: 20px;
-    right: 28px;
+    right: 25px;
     font-size: .5em;
     font-family: sans-serif;
     font-weight: bold; }
+  .trind-main-footer .pushup {
+    margin-top: -10px;
+    color: #ff7f00; }
   .trind-main-footer .trind-main-footer-message-icon {
     position: relative;
     float: right;
