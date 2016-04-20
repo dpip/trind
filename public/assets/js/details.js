@@ -106,7 +106,7 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
 
 
           var options = {
-            zoom: 10,
+            zoom: 20,
             center: coords,
             mapTypeControl: false,
             navigationControlOptions: {

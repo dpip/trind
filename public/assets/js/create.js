@@ -62,31 +62,51 @@ console.log($('#create-map-input').val());
          // console.log(lat, lng, address)
 
 
-         $scope.testTrind = {
-             "event": {
-             "user_id": userID,
-             "interests": "",
-             "description": "",
-             "location": location,
-             "latitude": lat,
-             "longitude": lng,
-             "title": "",
-             "token": currentToken
+// The right idea
 
-           }
-         };
+        //  $scope.mapTrind = {
+        //      "event": {
+        //      "user_id": userID,
+        //      "interests": "",
+        //      "description": "",
+        //      "location": location,
+        //      "latitude": lat,
+        //      "longitude": lng,
+        //      "title": "",
+        //      "token": currentToken
+         //
+        //    }
+        //  };
+        $scope.testTrind = {
+            "event": {
+            "user_id": userID,
+            "interests": $('#create-your-interests').val(),
+            "description": $('#create-description-field').val(),
+            "location": location,
+            "latitude": lat,
+            "longitude": lng,
+            "title": $('#i-want-to').val(),
+            "token": currentToken
+
+          }
+        };
+
+
 
 
    });
+
+
+// make this a different scope?
 
   //  $scope.testTrind = {
   //      "event": {
   //      "user_id": userID,
   //      "interests": "",
   //      "description": "",
-  //      "location": location,
-  //      "latitude": lat,
-  //      "longitude": lng,
+  //     //  "location": location,
+  //     //  "latitude": lat,
+  //     //  "longitude": lng,
   //      "title": "",
   //      "token": currentToken
    //
@@ -105,7 +125,7 @@ console.log($('#create-map-input').val());
     // console.log(lng);
     console.log("Hello, little Hobbit!");
     console.log($scope.testTrind);
-    $http.post('https://still-waters-14036.herokuapp.com/events?token=' + currentToken, $scope.testTrind)
+    $http.post('https://still-waters-14036.herokuapp.com/events?token=' + currentToken, $scope.testTrind, $scope.mapTrind)
     .then(function successCallback(response){
       console.log(response);
       window.location.replace('#/home')
@@ -125,12 +145,15 @@ console.log($('#create-map-input').val());
         // ON spacebar, events bubble. 3 max
           // var emptyString = "";
 
+
         $('.create-enter-interests-input').keyup(function(e){
             // var emptyString;
+            var hash = "#";
             var interests = $(this).val();
             if(e.keyCode == 32){
-           // user has pressed space
-           $(interests).addClass("mutate-interests");
+              $(interests).append(hash);
+
+          //  $(interests).addClass("mutate-interests");
            console.log("spacebar");
            console.log(interests);
 
