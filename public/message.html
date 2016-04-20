@@ -10,36 +10,29 @@
   <input type="text" placeholder="What's Trinding?" class = "expand" id= "home-drop-search-input-box">
 </div> -->
 <div class= "conversation-wrap">
-
-<div class="chat-container">
-  <div class="panel-body">
-    <div class="chat-column">
-
-      <div class="chat-users">
-        <div id="THEY" class="user-name"></div>
-      </div>
-      <div class="chat-body">
-          <div ng-repeat="messages in chat.messages">
-            <div ng-class="whoAmI(messages.author)">{{messages.body}}</div>
+    <div class="chat-container">
+      <div class="panel-body">
+        <div class="chat-column">
+          <div class="chat-body">
+              <div ng-repeat="messages in chat.messages">
+                <div ng-class="whoAmI(messages.author)">{{messages.body}}</div>
+              </div>
           </div>
+        </div>
       </div>
-
     </div>
-  </div>
-</div>
-
-  <div class="message-footer">
-    <form ng-controller="MessageController">
-      <div class="input-group">
-        <input id="chatter" type="text" name="chatter" class="form-control chatter" />
-
-      </div>
-  </div>
-
 </div>
 
 <div class= "trind-main-footer">
+    <div class="message-footer">
+      <form ng-controller="MessageController">
+        <div class="input-group">
+          <input id="chatter" type="text" name="chatter" placeholder="type message here... "class="form-control chatter" />
+
+        </div>
+    </div>
   <button id = "meet-button" ng-class="buttonOrNo()" ng-click="letsMeet()"> Let's Meet Up!</button>
+  <div class= "trind-main-footer-trind-icon"><a href="#/home">T</a></div>
   <span class="input-group-btn">
     <button id="send-button" type="submit" ng-click="postMessage()">Send Message</button>
   </span>
