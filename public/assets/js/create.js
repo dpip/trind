@@ -5,7 +5,6 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
   var currentToken = localStorage.getItem('tokenToken');
   var userID = localStorage.getItem('userID');
   var location = localStorage.getItem('location');
-  console.log("here's what you have in local after google autofill", lat);
   var lat = localStorage.getItem('latitude');
   var lng = localStorage.getItem('longitude');
   var inputFrom = document.getElementById('create-map-input');
@@ -83,13 +82,7 @@ console.log($('#create-map-input').val());
     $http.post('https://still-waters-14036.herokuapp.com/events?token=' + currentToken, $scope.testTrind)
     .then(function successCallback(response){
       console.log(response);
-      $(".pac-container").val('');
       window.location.replace('#/home')
-
-      // document.create-map-input.reset();
-      // $("#create-map-input").trigger('reset');
-      // document.getElementById('create-map-input').value = '';
-      //  autocomplete.set('place',void(0));
  }, function errorCallback(response){
    console.log(response)
  });

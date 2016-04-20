@@ -74,6 +74,11 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
 
       $http.get('https://still-waters-14036.herokuapp.com/events/' + theEventID + "?token=" + currentToken).then(function successCallback(response){
 
+
+
+
+
+
         $scope.event = response.data;
         $scope.whatIWant = response.data.event.user_id;
 
@@ -85,6 +90,7 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
 
 
         navigator.geolocation.getCurrentPosition(success);
+
         function success(position) {
           console.log(position);
           var mapcanvas = document.createElement('div');
@@ -161,14 +167,14 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
         console.log('here is the latitude you need', response.data.event.latitude);
 
         // $scope.whatIWant = localStorage.setItem('otherUserID', otherUserID);
-        localStorage.setItem('otherUserID', otherUserID);
-        localStorage.setItem('otherUserName', otherUserName);
-        localStorage.setItem('location', location);
+        // localStorage.setItem('otherUserID', otherUserID);
+        // localStorage.setItem('otherUserName', otherUserName);
+        // localStorage.setItem('location', location);
 
         // stores the latitude and longitude
-        localStorage.setItem('eventLatitude', eventLatitude);
-        localStorage.setItem('eventLongitude', eventLongitude);
-        console.log('the latitude you recieve from damian', eventLatitude);
+        // localStorage.setItem('eventLatitude', eventLatitude);
+        // localStorage.setItem('eventLongitude', eventLongitude);
+        // console.log('the latitude you recieve from damian', eventLatitude);
 
         function errorCallback(response){
           console.log('hate', response)
