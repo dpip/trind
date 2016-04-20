@@ -4,10 +4,14 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
 
   var currentToken = localStorage.getItem('tokenToken');
   var userID = localStorage.getItem('userID');
-  var location = localStorage.getItem('location');
-  var lat = localStorage.getItem('latitude');
-  var lng = localStorage.getItem('longitude');
+  // var location = localStorage.getItem('location');
+  // var lat = localStorage.getItem('latitude');
+  // var lng = localStorage.getItem('longitude');
   var inputFrom = document.getElementById('create-map-input');
+  // var autocompleteFrom = new google.maps.places.Autocomplete(inputFrom);
+  // var newlocation = localStorage.getItem('newlocation');
+  // var newlat = localStorage.getItem('newlatitude');
+  // var newlng = localStorage.getItem('newlongitude');
   var autocompleteFrom = new google.maps.places.Autocomplete(inputFrom);
 
 // $('#create-map-input').val(),
@@ -43,29 +47,51 @@ console.log($('#create-map-input').val());
        var location = place.formatted_address;
        var lng = place.geometry.location.lng();
        var lat = place.geometry.location.lat();
-       localStorage.setItem('location', location);
-       localStorage.setItem('latitude', lat);
-       localStorage.setItem('longitude', lng);
+       localStorage.setItem('newlocation', location);
+       localStorage.setItem('newlatitude', lat);
+       localStorage.setItem('newlongitude', lng);
        console.log(lat);
        console.log(lng);
        console.log(location);
+       console.log('old above new below')
+      //  console.log(newlat);
+      //  console.log(newlng);
+      //  console.log(newlocation);
+
 
          // console.log(lat, lng, address)
+
+
+         $scope.testTrind = {
+             "event": {
+             "user_id": userID,
+             "interests": "",
+             "description": "",
+             "location": location,
+             "latitude": lat,
+             "longitude": lng,
+             "title": "",
+             "token": currentToken
+
+           }
+         };
+
+
    });
 
-   $scope.testTrind = {
-       "event": {
-       "user_id": userID,
-       "interests": "",
-       "description": "",
-       "location": location,
-       "latitude": lat,
-       "longitude": lng,
-       "title": "",
-       "token": currentToken
-
-     }
-   };
+  //  $scope.testTrind = {
+  //      "event": {
+  //      "user_id": userID,
+  //      "interests": "",
+  //      "description": "",
+  //      "location": location,
+  //      "latitude": lat,
+  //      "longitude": lng,
+  //      "title": "",
+  //      "token": currentToken
+   //
+  //    }
+  //  };
 
 
 // ++++++++++ Google maps
@@ -74,9 +100,9 @@ console.log($('#create-map-input').val());
 
     // console.log(lat);
     // console.log(lng);
-    console.log(location);
-    console.log(lat);
-    console.log(lng);
+    // console.log(location);
+    // console.log(lat);
+    // console.log(lng);
     console.log("Hello, little Hobbit!");
     console.log($scope.testTrind);
     $http.post('https://still-waters-14036.herokuapp.com/events?token=' + currentToken, $scope.testTrind)

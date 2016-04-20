@@ -80,6 +80,7 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
 
 
         $scope.event = response.data;
+        console.log($scope.event);
         $scope.whatIWant = response.data.event.user_id;
 
         var otherUserID = response.data.event.user_id;
