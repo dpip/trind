@@ -105,6 +105,13 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
           var coords = new google.maps.LatLng(response.data.event.latitude, response.data.event.longitude);
 
 
+          var trindMapCon = {
+              url: 'assets/img/Trind_4.png',
+              scaledSize: new google.maps.Size(50,50)
+          };
+
+
+
           var options = {
             zoom: 20,
             center: coords,
@@ -120,7 +127,8 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
           var marker = new google.maps.Marker({
               position: coords,
               map: map,
-              title:"You are here!"
+              icon: trindMapCon
+              // title:"You are here!"
           });
         }
 

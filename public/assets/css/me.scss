@@ -20,12 +20,13 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
   position: relative;
   float: left;
   top: 15px;
-  font-size: 100px;
+  font-size: 80px;
   left: 36%;
   color: white;
   letter-spacing: 4px;
   font-family: $header-text;
 }
+
 
 .me-container {
     padding: 2em;
@@ -37,12 +38,14 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
     font-family: sans-serif;
 
     .me-avatar {
-    width: 500px;
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid rgb(164, 219, 216);
-
+        // width: 500px;
+        width: 100%;
+        height: 800px;
+        // margin-left: 22.5%;
+        margin-top: 20px;
+        text-align: center;
+        border: 2px solid rgb(164, 219, 216);
+        border-radius: 1em;
     }
 
     #me-name {
@@ -59,11 +62,13 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
         margin: 1em;
         border: 1px solid #555;
         padding: .4em;
+        border-radius: .4em;
     }
     .logout-button {
       margin-top: 1em;
-      margin-left: 4.5em;
-      width: 40%;
-      border-radius: .5em;
+      margin-left: 7.5em;
+      width: 30%;
+      border-radius: .4em;
+      font-size: 35px
     }
 }

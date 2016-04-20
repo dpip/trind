@@ -1,14 +1,14 @@
 
 <div class= "trind-main-header">
   <div class= "trind-main-header-create-icon"><a href="#/create"><i class="fa fa-plus"></i></a></div>
-  <div class= "me-main-header-text">Me</div>
+  <div class= "me-main-header-text">{{ userName }}</div>
   <div class= "me-main-header-edit-icon"><a href="#/editUser"><i class="fa fa-pencil"></i></div>
 </div>
 
 <div class="me-container"  ng-controller= "MeController" >
     <img class="me-avatar" src="{{userPhoto}}"> </img>
-    <div id="me-name">{{ userName }}  </div>
-    <div id="me-email">{{ userEmail }}</div>
+    <!-- <div id="me-name">{{ userName }}  </div> -->
+    <!-- <div id="me-email">{{ userEmail }}</div> -->
     <div class="me-things">
         <ul>
             <li><a href="#/userEvents"> Posts </li>

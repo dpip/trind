@@ -36,12 +36,19 @@ $awwwards: rgba(0, 150, 141, 1);
       font-family: 'Open Sans', sans-serif;
       text-align: center;
       margin-left: 0em;
+      color: white;
     }
+
+    .land-input-wrap {
+      margin-top: 8em;
+    }
+
     .landing-login-container {
       margin-left: 5.5em;
       // padding-top: 4em;
 
     }
+
     .label {
       margin-left: 100px;
     }
@@ -51,10 +58,10 @@ $awwwards: rgba(0, 150, 141, 1);
       font-size: 38px;
       text-align: center;
       border-radius: .5em .5em 0em 0em;
-      margin-top: 4em;
+      // margin-bottom: 1.25em;
       // border-bottom: 1px solid grey;
       color: black;
-
+      margin-bottom: 2px;
     }
     input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
@@ -71,17 +78,22 @@ $awwwards: rgba(0, 150, 141, 1);
     }
     .login-button {
       margin-left: 0%;
-      color: grey;
+      color: white;
       font-size: 40px;
       margin-top: 3em;
       width: 100%;
       height: 90px;
       border-radius: .5em .5em .5em .5em;
-      background-color: white;
+      // background-color: white;
+      background-color: $twitter;
       border: none;
+      font-weight: bold;
+      letter-spacing: 2.5px;
     }
     .havent-created-an-account-yet {
-      color: $creamscicle;
+      // color: $creamscicle;
+      // color: white;
+      color: white;
       font-size: 34px;
       margin-top: 2em;
       margin-left: 30%;
@@ -90,25 +102,41 @@ $awwwards: rgba(0, 150, 141, 1);
     .land-input-container {
       position: relative;
     }
-    .unit{
+    .unit-email {
       font-size: 34px;
       display: block;
-      margin-top: -82px;
+      // margin-bottom: -90px;
+      z-index: 10;
       margin-left: 18px;
       font-family: 'Open Sans', sans-serif;
 
     }
+    .unit-password {
+      font-size: 34px;
+      display: block;
+      margin-top: -90px;
+      margin-left: 18px;
+      font-family: 'Open Sans', sans-serif;
+    }
     .create-account {
       margin-top: 1em;
       font-weight: bold;
-      color: black;
-      margin-left: 14.5%;
-      font-size: 56px;
-      font-family: 'Open Sans', sans-serif;
+      color: white;
+      // color: $twitter;
+      margin-left: 8%;
+      font-size: 65px;
+      // background-color: $twitter;
+      // font-family: 'Open Sans', sans-serif;
+      font-family: 'Sansita One', cursive;
     }
+    // .twitter-hover {
+    //   color: $twitter;
+    // }
 }
 
-
+.twitter-hover {
+  color: $twitter;
+}
 
 //////the sign up modal/////////
 
@@ -163,10 +191,11 @@ $awwwards: rgba(0, 150, 141, 1);
     margin-top: 6em;
   }
   .sign-up-pressure {
-    font-family: 'Lobster Two', cursive;
-    font-size: 50px;
+    // font-family: 'Lobster Two', cursive;
+    font-family: 'Sansita One', cursive;
+    font-size: 42px;
     margin-left: 3.5em;
-    margin-top: 2.5em;
+    margin-top: 3em;
     color: white;
   }
   #signup-now {

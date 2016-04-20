@@ -16,14 +16,18 @@
                         When and where you choose.
                       </div>
                     <form ng-submit="submitLogin()" autocomplete="off" method="post">
+
+                          <div class = "land-input-wrap">
                               <div class="land-input-container">
+                                <!-- <span class="unit-email">Email</span> -->
                               <input type="text" placeholder="trind@gmail.com" class="input-email" ng-model="landPage.email" style="border:1px solid white"> <br>
-                              <span class=" unit unit-email">Email</span>
+                              <!-- <span class="unit-email">Email</span> -->
                               </div>
                               <div class="land-input-container">
-                              <input type="password" placeholder="required" class="input-password" ng-model="landPage.password" style="border:1px solid white">
-                              <span class=" unit unit-password">Password</span>
+                              <input type="password" placeholder="password" class="input-password" ng-model="landPage.password" style="border:1px solid white">
+                              <!-- <span class="unit-password">Password</span> -->
                               </div>
+                          </div>
                               <div class="button-container">
                               <button class="login-button"> sign in </button>
                               <div class="havent-created-an-account-yet"> Not a member yet? </div>

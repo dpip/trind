@@ -156,6 +156,10 @@ trind.controller('LandController', [ '$http', '$location', '$scope', function($h
   };
 // +++++++++++++++++++ sign in +++++++++++++++++++++
   // submits request to server then stores them in local storage - variables are declared above
+  // $('.create-account').hover(function (){
+  //   $(this).toggleClass('twitter-hover');
+  // });
+
   $scope.submitSignup = function() {
       console.log("Time to get Trinding");
       console.log($scope.newAccount)

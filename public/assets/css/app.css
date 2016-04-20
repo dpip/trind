@@ -18,7 +18,10 @@
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    margin-left: 0em; }
+    margin-left: 0em;
+    color: white; }
+  .login-page-container .land-input-wrap {
+    margin-top: 8em; }
   .login-page-container .landing-login-container {
     margin-left: 5.5em; }
   .login-page-container .label {
@@ -29,8 +32,8 @@
     font-size: 38px;
     text-align: center;
     border-radius: .5em .5em 0em 0em;
-    margin-top: 4em;
-    color: black; }
+    color: black;
+    margin-bottom: 2px; }
   .login-page-container input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset; }
   .login-page-container .input-password {
@@ -43,35 +46,46 @@
     color: black; }
   .login-page-container .login-button {
     margin-left: 0%;
-    color: grey;
+    color: white;
     font-size: 40px;
     margin-top: 3em;
     width: 100%;
     height: 90px;
     border-radius: .5em .5em .5em .5em;
-    background-color: white;
-    border: none; }
+    background-color: #31d4e9;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 2.5px; }
   .login-page-container .havent-created-an-account-yet {
-    color: #dee6cb;
+    color: white;
     font-size: 34px;
     margin-top: 2em;
     margin-left: 30%;
     font-family: 'Open Sans', sans-serif; }
   .login-page-container .land-input-container {
     position: relative; }
-  .login-page-container .unit {
+  .login-page-container .unit-email {
     font-size: 34px;
     display: block;
-    margin-top: -82px;
+    z-index: 10;
+    margin-left: 18px;
+    font-family: 'Open Sans', sans-serif; }
+  .login-page-container .unit-password {
+    font-size: 34px;
+    display: block;
+    margin-top: -90px;
     margin-left: 18px;
     font-family: 'Open Sans', sans-serif; }
   .login-page-container .create-account {
     margin-top: 1em;
     font-weight: bold;
-    color: black;
-    margin-left: 14.5%;
-    font-size: 56px;
-    font-family: 'Open Sans', sans-serif; }
+    color: white;
+    margin-left: 8%;
+    font-size: 65px;
+    font-family: 'Sansita One', cursive; }
+
+.twitter-hover {
+  color: #31d4e9; }
 
 .landing-signup-container {
   position: absolute;
@@ -117,10 +131,10 @@
   .landing-signup-container .form-column {
     margin-top: 6em; }
   .landing-signup-container .sign-up-pressure {
-    font-family: 'Lobster Two', cursive;
-    font-size: 50px;
+    font-family: 'Sansita One', cursive;
+    font-size: 42px;
     margin-left: 3.5em;
-    margin-top: 2.5em;
+    margin-top: 3em;
     color: white; }
   .landing-signup-container #signup-now {
     height: 120px;
@@ -270,7 +284,8 @@ input {
   margin-top: 120px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1em; }
+  font-size: 1em;
+  border-radius: 12px; }
   .create-input-field .create-subtitle {
     font-size: 4em;
     text-align: center;
@@ -278,17 +293,24 @@ input {
     font-family: 'Yanone Kaffeesatz', sans-serif; }
   .create-input-field input {
     width: 95%;
-    margin: .2em;
-    font-size: 2.5em; }
+    margin-top: 1.6em;
+    order-radius: 12px;
+    font-size: 2.5em;
+    margin-left: .6em;
+    border: 2px solid #555;
+    border-radius: .2em; }
   .create-input-field textarea {
     width: 95%;
     height: 20%;
-    margin: .2em;
-    font-size: 2.5em;
-    border: 1px solid #555; }
+    margin-top: 1.6em;
+    font-size: 40px;
+    border: 2px solid #555;
+    margin-left: .6em;
+    border-radius: .2em; }
   .create-input-field button {
     text-align: center;
-    margin-left: 10%; }
+    margin-left: 10%;
+    margin-top: 4em; }
   .create-input-field .create-trind-submit-button-text {
     border: none;
     height: 140px;
@@ -301,7 +323,18 @@ input {
     bottom: 6em;
     border-radius: 1em;
     cursor: pointer;
-    position: absolute; }
+    position: absolute;
+    top: 11.5em; }
+
+.pac-item {
+  font-size: 2em;
+  line-height: 1.5em; }
+
+.pac-item-query {
+  font-size: 1em; }
+
+.pac-icon {
+  display: none; }
 
 .trind-main-header-text {
   position: relative;
@@ -523,13 +556,13 @@ input {
   display: inline-block; }
 
 #memories-header-text {
-  color: #ff5900;
+  color: white;
   position: relative;
   float: left;
   top: 20px;
-  font-size: 70px;
-  left: 15%;
-  font-family: 'Sniglet', cursive; }
+  font-size: 80px;
+  left: 25%;
+  font-family: "Yanone Kaffeesatz", sans-serif; }
 
 #memories-back-button {
   color: white;

@@ -1,14 +1,24 @@
+$blue: rgba(151, 222, 218, 1);
+$bluetwo: rgba(56, 121, 217, 1);
+$twitter: rgba(49, 212, 233, 1);
+$orange-crush: rgba(255, 89, 0, 1);
+$orange-citrus: rgba(255, 127, 0, 1);
+$creamscicle: rgba(222, 230, 203, 1);
+$awwwards: rgba(0, 150, 141, 1);
+$header-text: 'Yanone Kaffeesatz', sans-serif;
+
 .memories-header-icons {
   display: inline-block;
 }
 #memories-header-text {
-  color: $orange-crush;
+  color: white;
   position: relative;
   float: left;
   top: 20px;
-  font-size: 70px;
-  left: 15%;
-  font-family: 'Sniglet', cursive;
+  font-size: 80px;
+  left: 25%;
+  // font-family: 'Sniglet', cursive;
+  font-family: $header-text;
 }
 #memories-back-button {
   color: white;
