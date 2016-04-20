@@ -1,5 +1,13 @@
 trind.controller('MemoriesController', [ '$http', '$scope', function($http, $scope){
 
+  // $(document).ready(function () {
+  //     $("#home-drop-search-input-box").hide();
+  //     $('.trind-main-header-search-icon').click(function () {
+  //         $("#home-drop-search-input-box").toggle();
+  //     });
+  //   });
+
+
 
     var hasLiked = false;
     $scope.likeClick = function () {
@@ -13,12 +21,6 @@ trind.controller('MemoriesController', [ '$http', '$scope', function($http, $sco
             $scope.liked = 'Like';
             $scope.likeCount -= 1;
         }
-    $(document).ready(function () {
-        $("#home-drop-search-input-box").hide();
-        $('.trind-main-header-search-icon').click(function () {
-            $("#home-drop-search-input-box").toggle();
-        });
-
 
         var currentToken = localStorage.getItem('tokenToken');
         var userID = localStorage.getItem('userID');
@@ -33,7 +35,7 @@ trind.controller('MemoriesController', [ '$http', '$scope', function($http, $sco
             console.log($scope.yourMemories);
 
         });
-    });
+    };
 
     var hasLiked = false;
 
