@@ -9,6 +9,18 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
       var otherUserID = localStorage.getItem('otherUserID');
       var otherUserName = localStorage.getItem('otherUserName');
 
+      var longitude;
+      var latitude;
+      console.log(theEventID);
+      console.log(otherUserID);
+      // console.log(latitude);
+      // console.log(longitude);
+
+        // $scope.detailLocation = address;
+        // $scope.latitude = lat;
+        // $scope.longitude =  lng;
+
+
       console.log(theEventID);
       console.log(otherUserID);
 
@@ -25,7 +37,7 @@ function success(position) {
 
   document.querySelector('article').appendChild(mapcanvas);
 
-  var coords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+  var coords = new google.maps.LatLng(latitude, longitude);
 
   var options = {
     zoom: 15,
@@ -43,7 +55,7 @@ function success(position) {
       map: map,
       title:"You are here!"
   });
-}
+};
 
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(success);
@@ -64,11 +76,14 @@ if (navigator.geolocation) {
         $scope.whatIWant = response.data.event.user_id;
         var otherUserID = response.data.event.user_id;
         var otherUserName = response.data.user.name;
-        console.log($scope.event);
+        console.log(response);
         console.log($scope.whatIWant);
         // $scope.whatIWant = localStorage.setItem('otherUserID', otherUserID);
         localStorage.setItem('otherUserID', otherUserID);
         localStorage.setItem('otherUserName', otherUserName);
+        var address = localStorage.setItem('location', response.data.event.location);
+        var latitude = localStorage.setItem('latitude', response.data.event.latitude);
+        var longitude = localStorage.setItem('longitude', response.data.event.longitude);
 
         function errorCallback(response){
           console.log('hate', response)

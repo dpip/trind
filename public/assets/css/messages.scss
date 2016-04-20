@@ -1,36 +1,68 @@
+$blue: rgba(151, 222, 218, 1);
+$bluetwo: rgba(56, 121, 217, 1);
+$twitter: rgba(49, 212, 233, 1);
+$orange-crush: rgba(255, 89, 0, 1);
+$orange-citrus: rgba(255, 127, 0, 1);
+$creamscicle: rgba(222, 230, 203, 1);
+$awwwards: rgba(0, 150, 141, 1);
+$header-text: 'Yanone Kaffeesatz', sans-serif;
+
+
 .open-messages-container {
     width: 100%;
     font-size: 3em;
-    margin-top: 100px;
+    margin-top: 80px;
+    font-family: sans-serif;
 }
 
-
-    .trind-main-header-title {
-        color: rgb(255, 109, 94);
+    .messages-main-header-title {
+        position: absolute;
+        color: white;
         font-size: 4em;
         width: 40%;
-        margin-right: auto;
-        margin-left: auto;
+        left: 36%;
         padding-top: .5em;
-        font-family: 'Sniglet', cursive;
+        font-family: $header-text;
     }
 
 
 .conversation-information-container {
-    border: 1px solid #555;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+
+    .conversation-image img {
+        border-radius: 10em 10em 10em 10em;
+        margin: 1em .5em 1.5em .5em;
+    }
+
+    .conversation-text-container {
+        margin-left: 90%;
+        margin-top: -100px;
+
+    .fa-chevron-right {
+        color: #888;
+        margin-bottom: 10px;
+    }
+    }
 
     .conversation-sender {
-        width: 40%;
-        margin-top: -150px;
+        width: 65%;
+        margin-top: -250px;
         float: right;
-        text-align: right;
+        text-align: left;
         padding-right: 1em;
-        color: rgb(255, 109, 94);
+        color: rgb(255, 127, 0);
     }
     .conversation-last-message {
         float: right;
-        margin-top: -100px;
-        font-size: .8em;
+        text-align: left;
+        margin-top: -190px;
         padding-right: 1em;
+        color: #888;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 65%;
+        width: 65%;
     }
 }

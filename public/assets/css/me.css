@@ -4,16 +4,17 @@
   top: 25px;
   font-size: 80px;
   right: 30px;
-  color: #ff6d5e; }
+  color: white; }
 
 .me-main-header-text {
   position: relative;
   float: left;
-  top: 25px;
-  font-size: 80px;
+  top: 15px;
+  font-size: 100px;
   left: 36%;
-  color: #ff6d5e;
-  font-family: 'Sniglet', cursive; }
+  color: white;
+  letter-spacing: 4px;
+  font-family: "Yanone Kaffeesatz", sans-serif; }
 
 .me-container {
   padding: 2em;
@@ -23,17 +24,19 @@
   color: #555;
   text-align: center; }
   .me-container .me-avatar {
-    width: 50%;
-    height: auto;
+    width: 500px;
+    height: 500px;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #a4dbd8; }
   .me-container #me-name {
-    margin-top: 2em; }
+    margin-top: 2em;
+    font-family: "Yanone Kaffeesatz", sans-serif; }
   .me-container #me-email {
     margin-top: 1em;
     font-style: italic;
-    color: #ff6d5e; }
+    color: #ff6d5e;
+    font-family: "Yanone Kaffeesatz", sans-serif; }
   .me-container ul li {
     margin: 1em;
     border: 1px solid #555;

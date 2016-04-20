@@ -1,7 +1,7 @@
 <div class= "trind-main-header">
   <div class= "trind-main-header-create-icon"><a href="#/create"><i class="fa fa-plus"></i></a></div>
   <div class= "trind-main-header-search-icon"><i class="fa fa-search"></i></div>
-  <div class= "trind-main-header-image"><a href="#/me"><i class="fa fa-camera"></i></a></div>
+  <div class= "create-main-header-text"> Post </i></div>
 </div>
 
     <div class= "home-drop-search-bar">
@@ -10,6 +10,7 @@
       <div class= "empty-box"></div>
 
         <div class = "create-input-field">
+            <div class ="create-subtitle"> I want to ... </div>
           <form ng-submit="submitTrind()" method="post">
           <div class= "user-creator-description-title">
                 <input type="text" ng-model="testTrind.event.title" placeholder="Event Name" class ="create-enter-title-input">
@@ -28,13 +29,13 @@
               Enable Radius <input type="radio" name="enableGps">
               </div> -->
 
-            <div class = "create-enter-location">
-              <input type="text" ng-model="testTrind.event.location" placeholder="Anywhere in particular?" class ="create-enter-location-input">
-            </div>
+            <!-- <div class = "create-enter-location">
+              <input type="text"  placeholder="Anywhere in particular?" class ="create-enter-location-input">
+            </div> -->
             <!-- GOOGLEMAPS -->
-              <!-- <input id="pac-input" class="controls" type="text" placeholder="Search Box" value="Durham, NC">
-              <div id="map-canvas"></div> -->
-              <!-- <button id="trigger-search">Trigger search</button> -->
+            <!-- {{location}} -->
+              <input id="create-map-input" class="controls" type="text" placeholder="Durham, NC">
+              <div id="map-canvas"></div>
               <!-- GOOGLEMAPS -->
             <div class= "create-trind-submit-button">
               <button type="submit" class= "create-trind-submit-button-text">Trind</button>

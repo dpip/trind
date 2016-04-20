@@ -1,37 +1,59 @@
-
 <div class= "trind-main-header">
   <div class= "memories-header-icons" id= "memories-back-button"><a href="#/me"><i class="fa fa-arrow-left"></i></a></div>
-  <div class= "memories-header-icons" id= "memories-header-text">Stashed</div>
+  <div class= "memories-header-icons" id= "memories-header-text">Stashed Events</div>
 </div>
 
 <div class= "home-drop-search-bar">
   <input type="text" placeholder="What's Trinding?" class = "expand" id= "home-drop-search-input-box">
 </div>
-<div class= "memories-container-wrap" >
-<div class= "memories-container" ng-controller= "MemoriesController" ng-repeat= "memory in yourMemories" >
-  <div class= "memories-events-display">
-    <div class= "memories-trind-event-information-container" >
 
-      <div class= "memories-trind-event-information-image" id="mem-dilb" ng-click="details($index)"><img src="{{memory.photo_url}}" height="300" width="300"></div>
-        <div id="mem-dilb">
-        <div class= "" >{{memory.name}}</div>
-        <div class= "" >{{memory.interests}}</div>
-        <div ng-controller= 'MemoriesController'>
-          <i ng-click="likeClick()"class="fa fa-thumbs-up" ></i>
-          <a class="rating-test" ng-init="liked='Like'; likeCount=0">{{liked}} + {{likeCount}}</a>
+
+<!-- <div class="home-events-display-wrap">
+  <div class= "home-events-display">
+    <div class= "home-trind-event-container" ng-repeat="things in stuff" >
+      <div ng-repeat= "thing in things | limitTo:60 | filter:search">
+        <div class= "home-trind-event-information-container" id="event-dilb">
+          <div class= "home-trind-event-information-image" id="event-dilb" ng-click="details(thing.id)"><img src="{{thing.user.photo_url}}" height="280" width="280"></div>
+            <div class= "home-trind-event-information" id="event-information-name">{{memory.title}} wants to</div>
+              <div class= "home-trind-event-information" id= "description">{{memory.interests}} </div>
+            <div class= "home-trind-event-information" id= "interests">{{memory.description}}</div>
+          <div class= "home-trind-event-information" id= "location">Location: {{memory.location}} </div>
         </div>
-        <div class= "" >{{memory.location}}</div>
-    </div>
+      </div>
     </div>
   </div>
 </div>
+ -->
+
+
+
+
+<div class= "memories-container-wrap" >
+  <div class= "memories-container" ng-controller= "MemoriesController" ng-repeat= "memory in yourMemories.events" >
+    <div class= "memories-events-display">
+      <div class= "memories-trind-event-information-container" >
+
+          <div class = "memory-text-container-wrap">
+          <div class= "" ng-click="details($index)" id="stashed-image"><img src="{{memory.user.photo_url}}" height="300" width="300"></div>
+
+          <div class = "memory-text-container">
+          <div class= "stashed-events" id= "stashed-title">{{memory.event.title}}</div>
+          <div class= "stashed-events" id= "stashed-interests">{{memory.event.interests}}</div>
+          <div class= "stashed-events" id= "stashed-description">{{memory.event.description}}</div>
+          <div class= "stashed-events" id= "stashed-location">{{memory.event.location}}</div>
+          <!-- memories-trind-event-information-image
+          <div ng-controller= 'MemoriesController'>
+            <i ng-click="likeClick()"class="fa fa-thumbs-up" ></i>
+            <a class="rating-test" ng-init="liked='Like'; likeCount=0">{{liked}} + {{likeCount}}</a>
+          </div> -->
+        </div>
+        </div>
+    </div>
+  </div>
 </div>
 
 <div class= "trind-main-footer">
   <div class= "trind-main-footer-me-icon"><a href="#/me"><i class="fa fa-user"></i></a></div>
   <div class= "trind-main-footer-trind-icon"><a href="#/home">T</a></div>
-  <div class= "trind-main-footer-message-icon"><a href="#/messages"><i class="fa fa-comment"></i></a></div>
-
-
-
+  <div class= "trind-main-footer-message-icon"><a href="#/messages"><div class= "dot-dot-dot">...</div><i class="fa fa-comment"></i></a></div>
 </div>

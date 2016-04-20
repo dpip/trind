@@ -5,7 +5,7 @@
 .login-page-container {
   height: 100%;
   width: 100%;
-  background-color: #a4dbd8; }
+  background-color: #ff7f00; }
   .login-page-container .login-page-main-font {
     font-size: 160px;
     font-family: 'Sniglet', cursive;
@@ -14,7 +14,8 @@
     padding-top: .6em;
     padding-bottom: .6em; }
   .login-page-container .land-call-to-action {
-    font-size: 36px;
+    font-size: 40px;
+    font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     margin-left: 0em; }
@@ -29,7 +30,6 @@
     text-align: center;
     border-radius: .5em .5em 0em 0em;
     margin-top: 4em;
-    border-bottom: 1px solid grey;
     color: black; }
   .login-page-container input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset; }
@@ -52,7 +52,7 @@
     background-color: white;
     border: none; }
   .login-page-container .havent-created-an-account-yet {
-    color: grey;
+    color: #dee6cb;
     font-size: 34px;
     margin-top: 2em;
     margin-left: 30%;
@@ -67,6 +67,7 @@
     font-family: 'Open Sans', sans-serif; }
   .login-page-container .create-account {
     margin-top: 1em;
+    font-weight: bold;
     color: black;
     margin-left: 14.5%;
     font-size: 56px;
@@ -76,7 +77,7 @@
   position: absolute;
   z-index: 100;
   border-radius: 1em;
-  background-color: #ff6d5e;
+  background-color: #31d4e9;
   height: 80em;
   width: 82%;
   top: 340px; }
@@ -89,8 +90,9 @@
     font-size: 40px;
     border-radius: .5em;
     font-family: 'Open Sans', sans-serif;
+    background-color: inherit;
     border: none;
-    background-color: #ff6d5e; }
+    color: white; }
   .landing-signup-container .sign-up-modal-input {
     width: 90%;
     height: 140px;
@@ -110,7 +112,8 @@
     margin-left: 70px;
     z-index: 120;
     position: absolute;
-    opacity: .95; }
+    opacity: .95;
+    font-family: 'Open Sans', sans-serif; }
   .landing-signup-container .form-column {
     margin-top: 6em; }
   .landing-signup-container .sign-up-pressure {
@@ -122,7 +125,7 @@
   .landing-signup-container #signup-now {
     height: 120px;
     width: 90%;
-    margin-left: 1.2em;
+    margin-left: 1em;
     border-radius: 12px;
     position: absolute;
     bottom: 1em;
@@ -131,8 +134,13 @@
     background-color: white; }
 
 .conversation-wrap {
-  height: 100%;
-  margin-top: 0px; }
+  height: auto;
+  margin-top: 150px; }
+
+.chat-body {
+  font-size: 2.5em;
+  padding: 1em;
+  height: auto; }
 
 .message-main-header-name {
   position: relative;
@@ -149,25 +157,11 @@
   bottom: 120;
   box-sizing: border-box; }
 
-.chat-users {
-  border: 1px solid #999;
-  padding: 1em;
-  font-size: 3em; }
-
-.chat-body {
-  font-size: 2.5em; }
-
-#YOU {
-  width: 10%; }
-
-#THEY {
-  float: right; }
-
 .message-in {
   width: 80%;
   float: left;
   text-align: left;
-  background-color: #ff6d5e;
+  background-color: #e6e6e6;
   padding: .5em;
   margin: .8em;
   border-radius: .5em;
@@ -177,59 +171,98 @@
   width: 80%;
   text-align: right;
   float: right;
-  background-color: #a4dbd8;
+  background-color: #ff7f00;
   padding: .5em;
   margin: .8em;
   border-radius: .5em;
   font-size: 1.2em; }
 
 input {
-  width: 78%;
+  width: 100%;
   height: 100px;
   font-size: 2.5em;
   border: 2px solid #999;
   border-radius: 3px; }
 
-.btn-submit {
-  font-size: 2.3em;
-  width: 22%;
-  height: 100px;
-  border: 2px solid #555;
-  border-radius: 10px;
-  position: absolute;
-  background-color: blue; }
-
 .trind-main-footer {
-  height: 120px; }
+  height: 120px;
+  border: 1px solid #888; }
+
+#meet-button {
+  left: 1;
+  font-size: 2.3em;
+  width: 30%;
+  height: 100%;
+  border: 2px solid #555;
+  position: absolute;
+  background-color: #999;
+  color: #fff; }
+
+#send-button {
+  font-size: 2.3em;
+  width: 30%;
+  height: 100%;
+  border: 2px solid #555;
+  position: absolute;
+  background-color: #999;
+  right: 1;
+  color: #fff; }
+
+#chatter {
+  padding-left: .5em; }
 
 .open-messages-container {
   width: 100%;
   font-size: 3em;
-  margin-top: 100px; }
+  margin-top: 80px;
+  font-family: sans-serif; }
 
-.trind-main-header-title {
-  color: #ff6d5e;
+.messages-main-header-title {
+  position: absolute;
+  color: white;
   font-size: 4em;
   width: 40%;
-  margin-right: auto;
-  margin-left: auto;
+  left: 36%;
   padding-top: .5em;
-  font-family: 'Sniglet', cursive; }
+  font-family: "Yanone Kaffeesatz", sans-serif; }
 
 .conversation-information-container {
-  border: 1px solid #555; }
+  border-top: 2px solid #999;
+  border-bottom: 2px solid #999; }
+  .conversation-information-container .conversation-image img {
+    border-radius: 10em 10em 10em 10em;
+    margin: 1em .5em 1.5em .5em; }
+  .conversation-information-container .conversation-text-container {
+    margin-left: 90%;
+    margin-top: -100px; }
+    .conversation-information-container .conversation-text-container .fa-chevron-right {
+      color: #888;
+      margin-bottom: 10px; }
   .conversation-information-container .conversation-sender {
-    width: 40%;
-    margin-top: -150px;
+    width: 65%;
+    margin-top: -250px;
     float: right;
-    text-align: right;
+    text-align: left;
     padding-right: 1em;
-    color: #ff6d5e; }
+    color: #ff7f00; }
   .conversation-information-container .conversation-last-message {
     float: right;
-    margin-top: -100px;
-    font-size: .8em;
-    padding-right: 1em; }
+    text-align: left;
+    margin-top: -190px;
+    padding-right: 1em;
+    color: #888;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 65%;
+    width: 65%; }
+
+.create-main-header-text {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 80px;
+  position: absolute;
+  left: 5.5em;
+  top: 18px; }
 
 .create-input-field {
   height: 85%;
@@ -238,6 +271,11 @@ input {
   margin-left: auto;
   margin-right: auto;
   font-size: 1em; }
+  .create-input-field .create-subtitle {
+    font-size: 4em;
+    text-align: center;
+    padding: .5em;
+    font-family: 'Yanone Kaffeesatz', sans-serif; }
   .create-input-field input {
     width: 95%;
     margin: .2em;
@@ -253,12 +291,13 @@ input {
     margin-left: 10%; }
   .create-input-field .create-trind-submit-button-text {
     border: none;
-    height: 100px;
+    height: 140px;
     width: 80%;
-    font-size: 40px;
-    color: white;
-    background-color: #ff6d5e;
-    font-family: 'Sniglet', cursive;
+    font-size: 90px;
+    color: #dee6cb;
+    background-color: #00968d;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: bold;
     bottom: 6em;
     border-radius: 1em;
     cursor: pointer;
@@ -269,9 +308,11 @@ input {
   float: left;
   top: 25px;
   font-size: 80px;
-  left: 21%;
-  color: #ff6d5e;
-  font-family: 'Sniglet', cursive; }
+  left: 30%;
+  color: white;
+  letter-spacing: 4px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold; }
 
 .home-events-display-wrap .home-events-display {
   position: relative;
@@ -281,10 +322,14 @@ input {
   height: 100%;
   font-family: 'Open Sans', sans-serif; }
   .home-events-display-wrap .home-events-display .home-trind-event-information-image {
-    background-color: #eaeaea;
+    background-color: white;
     height: 280px;
     width: 280px;
     float: left; }
+  .home-events-display-wrap .home-events-display .home-trind-event-information-image img {
+    border-radius: 10em 10em 10em 10em;
+    margin-left: 2em;
+    margin-top: 2em; }
   .home-events-display-wrap .home-events-display .home-trind-event-container {
     height: 280px;
     width: 100%;
@@ -297,24 +342,87 @@ input {
   .home-events-display-wrap .home-events-display .home-trind-event-information {
     background-color: white; }
   .home-events-display-wrap .home-events-display #event-information-name {
-    background-color: grey;
-    color: black;
-    font-size: 40px;
+    color: #888;
+    font-size: 30px;
     padding-top: 10px; }
   .home-events-display-wrap .home-events-display #interests {
-    font-size: 40px;
+    font-size: 30px;
     padding-bottom: 15px;
     color: #ff6d5e;
     vertical-align: top; }
   .home-events-display-wrap .home-events-display #description {
     margin-top: 10px;
     height: 80px;
-    font-size: 30px;
+    font-size: 45px;
     padding-bottom: 15px; }
   .home-events-display-wrap .home-events-display #location {
     height: 20px;
     font-size: 30px;
     vertical-align: bottom; }
+
+.getting-started-background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 130;
+  background-color: black;
+  opacity: 0.4;
+  top: 0; }
+
+.home-modal-welcome {
+  font-size: 90px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: center;
+  color: white;
+  margin-top: .6em; }
+
+.getting-started-modal {
+  height: 65%;
+  width: 85%;
+  background-color: #31d4e9;
+  position: fixed;
+  top: 20em;
+  z-index: 145;
+  border-radius: 3em;
+  right: 4.5em; }
+
+.getting-started-content {
+  font-size: 50px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 1.5em;
+  margin-top: 1.5em; }
+
+.home-modal-icon {
+  position: relative;
+  float: right;
+  right: 2em;
+  font-size: 60px; }
+
+.trind-land-modal-icon {
+  color: white;
+  position: relative;
+  float: right;
+  font-size: 90px;
+  right: 1.2em;
+  font-family: 'Sniglet', cursive;
+  transform: rotate(-45deg);
+  margin-top: -15px; }
+
+#getting-started {
+  font-size: 90px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: center;
+  margin-top: .8em;
+  position: relative;
+  color: #ff5900;
+  border-radius: 0em 0em .6em .6em;
+  height: 2.4em;
+  vertical-align: middle;
+  bottom: 0; }
+
+#start {
+  margin-top: 2em; }
 
 .event-details-container {
   width: 90%;
@@ -397,12 +505,12 @@ input {
   display: inline-block; }
 
 #memories-header-text {
-  color: #ff6d5e;
+  color: #ff5900;
   position: relative;
   float: left;
-  top: 5px;
-  font-size: 100px;
-  left: 10%;
+  top: 20px;
+  font-size: 70px;
+  left: 15%;
   font-family: 'Sniglet', cursive; }
 
 #memories-back-button {
@@ -415,14 +523,39 @@ input {
 
 .memories-container-wrap {
   margin-top: 120px;
+  position: absolute;
   height: 100%;
-  border: 1px solid red; }
+  font-size: 50px;
+  font-family: 'Open Sans', sans-serif; }
   .memories-container-wrap #mem-dilb {
     display: inline-block; }
   .memories-container-wrap .fa-thumbs-up {
     color: #ff6d5e;
     padding-left: 1em;
     margin-right: 1em; }
+
+.memories-trind-event-information-container {
+  height: 300px;
+  font-size: 25px; }
+
+.memory-text-container {
+  font-size: 40px;
+  display: inline-block;
+  border: 1px solid grey;
+  width: 678px;
+  box-sizing: border-box;
+  vertical-align: top;
+  height: 100%;
+  float: right; }
+
+#stashed-image {
+  float: left; }
+
+#stashed-interests {
+  color: #ff6d5e; }
+
+#stashed-description {
+  height: 80px; }
 
 .trind-main-header-text-edit-event {
   position: relative;
@@ -436,14 +569,12 @@ input {
 .edit-event-container {
   margin-top: 120px;
   margin-left: 100px;
-  border: 1px solid green;
   height: 100%;
   width: 100%;
   display: relative; }
 
 .edit-fields-wrap {
-  margin-top: 12em;
-  border: 1px solid blue; }
+  margin-top: 12em; }
 
 .edit-event-inputs {
   margin-top: 4em; }
@@ -486,14 +617,20 @@ input {
     font-size: 50px;
     margin-left: 2em; }
 
+.edit-input-title {
+  margin-top: 2em;
+  font-size: 35px;
+  vertical-align: bottom;
+  font-family: 'Open Sans', sans-serif; }
+
 .editUser-main-header-edit {
   position: relative;
   float: left;
   top: 25px;
   font-size: 80px;
-  left: 13%;
-  color: #ff6d5e;
-  font-family: 'Sniglet', cursive; }
+  left: 27%;
+  color: white;
+  font-family: "Yanone Kaffeesatz", sans-serif; }
 
 .editFields {
   font-size: 50px;
@@ -501,11 +638,33 @@ input {
   text-align: center;
   margin-left: 0em; }
 
-.user-edit-buttons {
+.user-edit-button {
   width: 300px;
   height: 100px;
   font-size: 30px;
-  margin-top: 2em; }
+  margin-top: 2em;
+  border: 1px solid #555; }
+
+.user-delete-button {
+  width: 300px;
+  height: 100px;
+  font-size: 30px;
+  margin-top: 1em;
+  border: 1px solid #555;
+  background-color: red; }
+
+#file-input {
+  height: 200px;
+  width: 80%;
+  margin-left: 10%; }
+
+.upload-me-title {
+  text-align: center;
+  font-size: 3em; }
+
+#file-input {
+  text-align: center;
+  padding: 2em; }
 
 .user-events-page-container {
   width: 100%;
@@ -545,7 +704,7 @@ a {
   left: 0;
   z-index: 100;
   color: white;
-  background-color: #a4dbd8; }
+  background-color: #ff7f00; }
   .trind-main-header .trind-main-header-create-icon {
     position: relative;
     float: left;
@@ -564,16 +723,20 @@ a {
     top: 25px;
     font-size: 80px;
     margin-right: 30px;
-    cursor: inherit; }
+    cursor: inherit;
+    color: white; }
 
 #home-drop-search-input-box {
   position: fixed;
-  height: 50px;
+  box-sizing: border-box;
+  height: 90px;
   width: 100%;
-  font-size: 24px;
+  font-size: 50px;
   color: gray;
   text-align: center;
-  z-index: 90; }
+  z-index: 1;
+  letter-spacing: 2px;
+  font-family: "Yanone Kaffeesatz", sans-serif; }
 
 .trind-main-footer {
   height: 120px;
@@ -582,7 +745,7 @@ a {
   bottom: 0;
   left: 0;
   color: white;
-  background-color: #a4dbd8;
+  background-color: #ff7f00;
   z-index: 100; }
   .trind-main-footer .trind-main-footer-me-icon {
     position: relative;
@@ -591,7 +754,7 @@ a {
     font-size: 80px;
     left: 30px; }
   .trind-main-footer .trind-main-footer-trind-icon {
-    color: #ff6d5e;
+    color: white;
     position: relative;
     float: left;
     top: 5px;
@@ -600,7 +763,7 @@ a {
     font-family: 'Sniglet', cursive;
     transform: rotate(-45deg); }
   .trind-main-footer .dot-dot-dot {
-    color: rgba(255, 109, 94, 0.6);
+    color: #ff7f00;
     z-index: 10;
     position: absolute;
     top: -6px;

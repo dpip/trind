@@ -1,7 +1,7 @@
 
 <div class= "trind-main-header">
-  <div class= "trind-main-header-create-icon"><a href="#/create"><i class="fa fa-plus"></a></i></div>
-  <div class= "trind-main-header-title"><a href="#/messages">Conversations</a></div>
+  <div class= "trind-main-header-create-icon"><a href="#/me"><i class="fa fa-arrow-left"></a></i></div>
+  <div class= "messages-main-header-title"><a href="#/messages">Conversations</a></div>
 </div>
 
 <div class= "home-drop-search-bar">
@@ -15,10 +15,12 @@
           <div class= "conversation-image" id="event-dilb">
               <img src="{{conversation.sender_photo_url}} " height="200" width="200">
           </div>
-          <!-- <div class= "conversation-user">{{conversation}}</div> -->
+
           <div class= "conversation-sender">{{conversation.sender_name}}</div>
-          <div class="conversation-last-message">{{conversation.last_message}}</div>
-          <!-- <div class="all-data">{{conversation}}</div> -->
+          <div class="conversation-last-message" max-length="50">{{conversation.last_message}}</div>
+          <div class= "conversation-text-container">
+          <div class="fa fa-chevron-right" </div>
+          </div>
 
           <!-- <div class= "conversation-details" id= "description"> {{conversation.message}} </div>
           <div class= "conversation-time-stamp" id= "location"> {{conversation.}} </div> -->
