@@ -11,7 +11,7 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
 .open-messages-container {
     width: 100%;
     font-size: 3em;
-    margin-top: 80px;
+    margin-top: 120px;
     font-family: sans-serif;
 }
 
@@ -29,41 +29,48 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
 .conversation-information-container {
     border-top: 2px solid #999;
     border-bottom: 2px solid #999;
+    padding-top: .2em;
+    padding-bottom: .1em;
 
+    .conversation-information-direction {
+        width: 69%;
+        float: right;
+        margin-top: -280px;
+        div {
+            display: inline;
+        }
+        .chevy {
+            float: right;
+            color: #888;
+        }
 
+            .conversation-sender {
+                text-align: left;
+                padding-right: 2em;
+                color: rgb(255, 127, 0);
+            }
+
+            .conversation-last-message {
+                float: right;
+                text-align: left;
+                padding: .2em;
+                margin-top: -300px;
+                padding-right: 1em;
+                color: #888;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 99%;
+                width: 92%;
+            }
+    }
+
+    .conversation-image {
+        width: 300px;
+    }
     .conversation-image img {
         border-radius: 10em 10em 10em 10em;
-        margin: 1em .5em 1.5em .5em;
+        margin: 1em .5em 1em 1em;
     }
 
-    .conversation-text-container {
-        margin-left: 90%;
-        margin-top: -100px;
-
-    .fa-chevron-right {
-        color: #888;
-        margin-bottom: 10px;
-    }
-    }
-
-    .conversation-sender {
-        width: 65%;
-        margin-top: -250px;
-        float: right;
-        text-align: left;
-        padding-right: 1em;
-        color: rgb(255, 127, 0);
-    }
-    .conversation-last-message {
-        float: right;
-        text-align: left;
-        margin-top: -190px;
-        padding-right: 1em;
-        color: #888;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 65%;
-        width: 65%;
-    }
 }
