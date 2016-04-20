@@ -1,5 +1,5 @@
 trind.controller('MessagesController', [ '$http', '$scope','$location', function($http, $scope, $location){
-
+// On Page load
       $(document).ready(function () {
           $("#home-drop-search-input-box").hide();
           $('.trind-main-header-search-icon').click(function () {
@@ -8,9 +8,37 @@ trind.controller('MessagesController', [ '$http', '$scope','$location', function
           });
       });
 
+//// Notifications
+
+    // var unseen;
+    // $http.get('https://still-waters-14036.herokuapp.com/total_messages_not_viewed?token=' + currentToken ).success(function(data){
+
+
+var unseen;
+
+$(function(){
+  setInterval(unseen, 1000);
+  console.log
+});
+
+
+function unseen() {
+  $http.get('https://still-waters-14036.herokuapp.com/total_messages_not_viewed?token=' + currentToken ).success(function(data) {
+
+    //   console.log(data);
+      $scope.unseen = data.not_viewed;
+    //   console.log(unseen);
+            });
+    };
+
+
+      //++++++ Conversations
+
       var currentToken = localStorage.getItem('tokenToken');
       var otherUserName = localStorage.getItem('otherUserName');
       var firstTime = localStorage.getItem('firstTime');
+
+
 
 
 

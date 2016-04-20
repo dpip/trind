@@ -294,8 +294,8 @@ input {
     height: 140px;
     width: 80%;
     font-size: 90px;
-    color: #dee6cb;
-    background-color: #00968d;
+    color: #fff;
+    background-color: #31d4eb;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: bold;
     bottom: 6em;
@@ -468,7 +468,7 @@ input {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #a4dbd8;
+    background-color: #31d4eb;
     border-radius: .3em;
     height: 65px;
     margin-top: 30px;
@@ -478,7 +478,7 @@ input {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #a4dbd8;
+    background-color: #31d4eb;
     border-radius: .3em;
     height: 65px;
     margin-top: 30px;
@@ -763,12 +763,13 @@ a {
     font-family: 'Sniglet', cursive;
     transform: rotate(-45deg); }
   .trind-main-footer .dot-dot-dot {
-    color: #ff7f00;
+    color: #31d4eb;
     z-index: 10;
     position: absolute;
-    top: -6px;
-    right: 19px;
-    font-size: 60px; }
+    top: 25px;
+    right: 30px;
+    font-size: .4em;
+    font-family: sans-serif; }
   .trind-main-footer .trind-main-footer-message-icon {
     position: relative;
     float: right;

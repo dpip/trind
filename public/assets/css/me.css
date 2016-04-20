@@ -22,7 +22,8 @@
   margin-top: 2em;
   margin-bottom: 150px;
   color: #555;
-  text-align: center; }
+  text-align: center;
+  font-family: sans-serif; }
   .me-container .me-avatar {
     width: 500px;
     height: 500px;

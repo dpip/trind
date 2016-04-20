@@ -13,6 +13,13 @@ trind.controller('MeController', [ '$http', '$location', '$scope', function($htt
     $scope.userSummary = " ";
     $scope.userPhoto = userPhoto;
 
+    var unseen;
+    $http.get('https://still-waters-14036.herokuapp.com/total_messages_not_viewed?token=' + currentToken ).success(function(data){
+     console.log(data);
+     $scope.unseen = data.not_viewed;
+     console.log(unseen);
+     });
+
 
   $http.get('https://still-waters-14036.herokuapp.com/users/' + userID + "?token=" + currentToken).success(function(userInfo){
     console.log(userID);
