@@ -5,7 +5,7 @@
 .login-page-container {
   height: 100%;
   width: 100%;
-  background-color: #ff5900; }
+  background-color: #ff7f00; }
   .login-page-container .login-page-main-font {
     font-size: 160px;
     font-family: 'Sniglet', cursive;
@@ -52,7 +52,7 @@
     background-color: white;
     border: none; }
   .login-page-container .havent-created-an-account-yet {
-    color: grey;
+    color: #dee6cb;
     font-size: 34px;
     margin-top: 2em;
     margin-left: 30%;
@@ -67,6 +67,7 @@
     font-family: 'Open Sans', sans-serif; }
   .login-page-container .create-account {
     margin-top: 1em;
+    font-weight: bold;
     color: black;
     margin-left: 14.5%;
     font-size: 56px;
@@ -133,8 +134,13 @@
     background-color: white; }
 
 .conversation-wrap {
-  height: 100%;
-  margin-top: 0px; }
+  height: auto;
+  margin-top: 150px; }
+
+.chat-body {
+  font-size: 2.5em;
+  padding: 1em;
+  height: auto; }
 
 .message-main-header-name {
   position: relative;
@@ -151,25 +157,11 @@
   bottom: 120;
   box-sizing: border-box; }
 
-.chat-users {
-  border: 1px solid #999;
-  padding: 1em;
-  font-size: 3em; }
-
-.chat-body {
-  font-size: 2.5em; }
-
-#YOU {
-  width: 10%; }
-
-#THEY {
-  float: right; }
-
 .message-in {
   width: 80%;
   float: left;
   text-align: left;
-  background-color: #ff6d5e;
+  background-color: #e6e6e6;
   padding: .5em;
   margin: .8em;
   border-radius: .5em;
@@ -179,7 +171,7 @@
   width: 80%;
   text-align: right;
   float: right;
-  background-color: #a4dbd8;
+  background-color: #ff7f00;
   padding: .5em;
   margin: .8em;
   border-radius: .5em;
@@ -193,7 +185,8 @@ input {
   border-radius: 3px; }
 
 .trind-main-footer {
-  height: 120px; }
+  height: 120px;
+  border: 1px solid #888; }
 
 #meet-button {
   left: 1;
@@ -215,10 +208,14 @@ input {
   right: 1;
   color: #fff; }
 
+#chatter {
+  padding-left: .5em; }
+
 .open-messages-container {
   width: 100%;
   font-size: 3em;
-  margin-top: 100px; }
+  margin-top: 80px;
+  font-family: sans-serif; }
 
 .messages-main-header-title {
   position: absolute;
@@ -230,19 +227,35 @@ input {
   font-family: "Yanone Kaffeesatz", sans-serif; }
 
 .conversation-information-container {
-  border: 1px solid #555; }
+  border-top: 2px solid #999;
+  border-bottom: 2px solid #999; }
+  .conversation-information-container .conversation-image img {
+    border-radius: 10em 10em 10em 10em;
+    margin: 1em .5em 1.5em .5em; }
+  .conversation-information-container .conversation-text-container {
+    margin-left: 90%;
+    margin-top: -100px; }
+    .conversation-information-container .conversation-text-container .fa-chevron-right {
+      color: #888;
+      margin-bottom: 10px; }
   .conversation-information-container .conversation-sender {
-    width: 40%;
-    margin-top: -150px;
+    width: 65%;
+    margin-top: -250px;
     float: right;
-    text-align: right;
+    text-align: left;
     padding-right: 1em;
-    color: #ff6d5e; }
+    color: #ff7f00; }
   .conversation-information-container .conversation-last-message {
     float: right;
-    margin-top: -100px;
-    font-size: .8em;
-    padding-right: 1em; }
+    text-align: left;
+    margin-top: -190px;
+    padding-right: 1em;
+    color: #888;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 65%;
+    width: 65%; }
 
 .create-main-header-text {
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -329,18 +342,18 @@ input {
   .home-events-display-wrap .home-events-display .home-trind-event-information {
     background-color: white; }
   .home-events-display-wrap .home-events-display #event-information-name {
-    color: black;
-    font-size: 40px;
+    color: #888;
+    font-size: 30px;
     padding-top: 10px; }
   .home-events-display-wrap .home-events-display #interests {
-    font-size: 40px;
+    font-size: 30px;
     padding-bottom: 15px;
     color: #ff6d5e;
     vertical-align: top; }
   .home-events-display-wrap .home-events-display #description {
     margin-top: 10px;
     height: 80px;
-    font-size: 30px;
+    font-size: 45px;
     padding-bottom: 15px; }
   .home-events-display-wrap .home-events-display #location {
     height: 20px;
@@ -411,6 +424,15 @@ input {
 #start {
   margin-top: 2em; }
 
+#details-header-name {
+  position: relative;
+  float: left;
+  top: 20px;
+  font-size: 80px;
+  left: 40%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  text-align: center; }
+
 .event-details-container {
   width: 90%;
   margin-left: auto;
@@ -435,7 +457,6 @@ input {
     font-size: 2em; }
   .event-details-container #details-name {
     margin-top: 10px;
-    color: rgba(255, 109, 94, 0.8);
     margin-top: 10px;
     color: rgba(255, 109, 94, 0.8);
     margin-left: 40px;
@@ -444,7 +465,8 @@ input {
     font-style: italic; }
   .event-details-container #details-eventDetail-title {
     font-size: 2em;
-    text-align: center; }
+    text-align: center;
+    color: #ff5900; }
   .event-details-container .details-button-container {
     width: 100%;
     margin-left: auto;
@@ -455,7 +477,7 @@ input {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #a4dbd8;
+    background-color: #31d4e9;
     border-radius: .3em;
     height: 65px;
     margin-top: 30px;
@@ -465,7 +487,7 @@ input {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #a4dbd8;
+    background-color: #31d4e9;
     border-radius: .3em;
     height: 65px;
     margin-top: 30px;
@@ -485,7 +507,7 @@ input {
     margin-left: 40px; }
 
 #mapcontainer {
-  margin-left: 12em;
+  margin-left: 9em;
   margin-top: 6em; }
 
 .memories-header-icons {
@@ -691,7 +713,7 @@ a {
   left: 0;
   z-index: 100;
   color: white;
-  background-color: #ff5900; }
+  background-color: #ff7f00; }
   .trind-main-header .trind-main-header-create-icon {
     position: relative;
     float: left;
@@ -732,7 +754,7 @@ a {
   bottom: 0;
   left: 0;
   color: white;
-  background-color: #ff5900;
+  background-color: #ff7f00;
   z-index: 100; }
   .trind-main-footer .trind-main-footer-me-icon {
     position: relative;
@@ -750,7 +772,7 @@ a {
     font-family: 'Sniglet', cursive;
     transform: rotate(-45deg); }
   .trind-main-footer .dot-dot-dot {
-    color: #ff5900;
+    color: #ff7f00;
     z-index: 10;
     position: absolute;
     top: -6px;

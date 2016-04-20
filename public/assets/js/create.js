@@ -4,37 +4,98 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
 
   var currentToken = localStorage.getItem('tokenToken');
   var userID = localStorage.getItem('userID');
+  var location = localStorage.getItem('location');
+  console.log("here's what you have in local after google autofill", lat);
+  var lat = localStorage.getItem('latitude');
+  var lng = localStorage.getItem('longitude');
+  var inputFrom = document.getElementById('create-map-input');
+  var autocompleteFrom = new google.maps.places.Autocomplete(inputFrom);
 
+// $('#create-map-input').val(),
+//   $scope.testTrind = {
+//       "event": {
+//       "user_id": userID,
+//       "interests": "",
+//       "description": "",
+//       "location": $('inputFrom').val(),
+//       "title": "",
+//       "token": currentToken
+//
+//     }
+//   };
 
-  $scope.testTrind = {
-      "event": {
-      "user_id": userID,
-      "interests": "",
-      "description": "",
-      "location": "",
-      "title": "",
-      "token": currentToken
+$scope.location = location;
 
-    }
-  };
+console.log($('#create-map-input').val());
 
 
 // +++++++ GOOGLE MAPS SEARCH ++++++++++
 
+//point google places autocomplete to proper field
+ // var autocompleteFrom = new google.maps.places.Autocomplete(inputFrom);
+ // var inputFrom = document.getElementById('create-map-input');
+
+ //use google places autocomplete to input location addy & lat/long
+ // var autocompleteFrom = new google.maps.places.Autocomplete(inputFrom);
+      // $(autocompleteFrom).css("font-size", "30px");
+
+   google.maps.event.addListener(autocompleteFrom, 'place_changed', function() {
+       var place = autocompleteFrom.getPlace();
+       var location = place.formatted_address;
+       var lng = place.geometry.location.lng();
+       var lat = place.geometry.location.lat();
+       localStorage.setItem('location', location);
+       localStorage.setItem('latitude', lat);
+       localStorage.setItem('longitude', lng);
+       console.log(lat);
+       console.log(lng);
+       console.log(location);
+
+         // console.log(lat, lng, address)
+   });
+
+   $scope.testTrind = {
+       "event": {
+       "user_id": userID,
+       "interests": "",
+       "description": "",
+       "location": location,
+       "latitude": lat,
+       "longitude": lng,
+       "title": "",
+       "token": currentToken
+
+     }
+   };
 
 
+// ++++++++++ Google maps
 
   $scope.submitTrind = function() {
+
+    // console.log(lat);
+    // console.log(lng);
+    console.log(location);
+    console.log(lat);
+    console.log(lng);
     console.log("Hello, little Hobbit!");
     console.log($scope.testTrind);
     $http.post('https://still-waters-14036.herokuapp.com/events?token=' + currentToken, $scope.testTrind)
-    .success(function (data) {
-      console.log(data);
+    .then(function successCallback(response){
+      console.log(response);
+      $(".pac-container").val('');
       window.location.replace('#/home')
 
-    })
+      // document.create-map-input.reset();
+      // $("#create-map-input").trigger('reset');
+      // document.getElementById('create-map-input').value = '';
+      //  autocomplete.set('place',void(0));
+ }, function errorCallback(response){
+   console.log(response)
+ });
 
   };
+
 
     $(document).ready(function () {
         $("#home-drop-search-input-box").hide();

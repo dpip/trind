@@ -24,8 +24,8 @@
   color: #555;
   text-align: center; }
   .me-container .me-avatar {
-    width: 50%;
-    height: auto;
+    width: 500px;
+    height: 500px;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #a4dbd8; }

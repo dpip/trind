@@ -10,30 +10,31 @@
       <div class= "empty-box"></div>
 
         <div class = "create-input-field">
-            <div class ="create-subtitle"> I want to ... </div>
+            <div class ="create-subtitle">  </div>
           <form ng-submit="submitTrind()" method="post">
           <div class= "user-creator-description-title">
-                <input type="text" ng-model="testTrind.event.title" placeholder="Event Name" class ="create-enter-title-input">
+                <input type="text" ng-model="testTrind.event.title" placeholder=" I want to ..." class ="create-enter-title-input">
            </div>
             <div class= "user-creator-description-interests">
-              <input type="text" ng-model="testTrind.event.interests" placeholder="Interests" class ="create-enter-interests-input">
+              <input type="text" ng-model="testTrind.event.interests" placeholder=" Interests" class ="create-enter-interests-input">
             </div>
 
             <div class= "user-creator-description-name"></div>
 
             <div class = "user-creator-description">
-              <textarea class="user-creator-description-field" ng-model="testTrind.event.description" placeholder="Description" max-length="200" ></textarea>
+              <textarea class="user-creator-description-field" ng-model="testTrind.event.description" placeholder=" Description" max-length="200" ></textarea>
               </div>
               <!--
             <div class "create-enable-gps-location">
               Enable Radius <input type="radio" name="enableGps">
               </div> -->
 
-            <div class = "create-enter-location">
-              <input type="text" ng-model="testTrind.event.location" placeholder="Anywhere in particular?" class ="create-enter-location-input">
-            </div>
+            <!-- <div class = "create-enter-location">
+              <input type="text"  placeholder="Anywhere in particular?" class ="create-enter-location-input">
+            </div> -->
             <!-- GOOGLEMAPS -->
-              <input id="create-map-input" class="controls" type="text" placeholder="Search Box" value="Durham, NC">
+            <!-- {{location}} -->
+              <input ng-model="testTrind.event.location" id="create-map-input" class="controls" type="text" placeholder="Durham, NC">
               <div id="map-canvas"></div>
               <!-- GOOGLEMAPS -->
             <div class= "create-trind-submit-button">
