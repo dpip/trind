@@ -18,7 +18,6 @@ var unseen;
 
 $(function(){
   setInterval(unseen, 1000);
-  console.log
 });
 
 
@@ -26,8 +25,15 @@ function unseen() {
   $http.get('https://still-waters-14036.herokuapp.com/total_messages_not_viewed?token=' + currentToken ).success(function(data) {
 
     //   console.log(data);
-      $scope.unseen = data.not_viewed;
-    //   console.log(unseen);
+
+      if (data.not_viewed === 0 ) {
+          $scope.unseen = "...";
+      }
+
+      else if(data.not_viewed > 0) {
+          $scope.unseen = data.not_viewed;
+
+      }
             });
     };
 
