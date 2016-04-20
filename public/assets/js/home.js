@@ -86,7 +86,7 @@ function unseen() {
     //   console.log(data);
 
       if (data.not_viewed === 0 ) {
-          $scope.unseen = "...";
+          $scope.unseen = "";
       }
 
       else if(data.not_viewed > 0) {

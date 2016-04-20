@@ -1,14 +1,5 @@
 trind.controller('MemoriesController', [ '$http', '$scope', function($http, $scope){
 
-  // $(document).ready(function () {
-  //     $("#home-drop-search-input-box").hide();
-  //     $('.trind-main-header-search-icon').click(function () {
-  //         $("#home-drop-search-input-box").toggle();
-  //     });
-  //   });
-
-
-
     var hasLiked = false;
     $scope.likeClick = function () {
         if (!hasLiked) {
@@ -24,7 +15,6 @@ trind.controller('MemoriesController', [ '$http', '$scope', function($http, $sco
 
         var currentToken = localStorage.getItem('tokenToken');
         var userID = localStorage.getItem('userID');
-        // var eventID = localStorage.getItem('eventID');
         var theEventID = localStorage.getItem('theEventID');
         console.log(theEventID);
 
@@ -83,10 +73,8 @@ trind.controller('MemoriesController', [ '$http', '$scope', function($http, $sco
           // localStorage.setItem('theEventID', .id );
         };
 
-
         // scope displayind details of user!!!!!!
         $scope.eventDetail = data.events;
-
 
       });
 

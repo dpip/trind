@@ -175,7 +175,8 @@ trind.controller('LandController', [ '$http', '$location', '$scope', function($h
   };
   $scope.goHome = function() {
       console.log(go);
-      $location.url('#/home')
+      $location.path('#/home');
+      window.location.replace('#/home');
     };
 
 }]);

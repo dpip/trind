@@ -822,10 +822,11 @@ a {
     color: #31d4eb;
     z-index: 10;
     position: absolute;
-    top: 25px;
-    right: 30px;
-    font-size: .4em;
-    font-family: sans-serif; }
+    top: 20px;
+    right: 28px;
+    font-size: .5em;
+    font-family: sans-serif;
+    font-weight: bold; }
   .trind-main-footer .trind-main-footer-message-icon {
     position: relative;
     float: right;

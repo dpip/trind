@@ -24,7 +24,7 @@ function unseen() {
     //   console.log(data);
 
       if (data.not_viewed === 0 ) {
-          $scope.unseen = "...";
+          $scope.unseen = "";
       }
 
       else if(data.not_viewed > 0) {
@@ -52,7 +52,7 @@ function unseen() {
 
   $scope.logOut = function() {
   $http.get('https://still-waters-14036.herokuapp.com/logout?token=' + currentToken).then(function successCallback(logout){
-    // console.log('log out prompt', logout); 
+    // console.log('log out prompt', logout);
     localStorage.clear();
     // localStorage.removeItem('tokenToken');
     // localStorage.removeItem('userPhoto');
