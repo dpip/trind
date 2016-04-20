@@ -1,3 +1,13 @@
+$blue: rgba(151, 222, 218, 1);
+$bluetwo: rgba(56, 121, 217, 1);
+$twitter: rgba(49, 212, 233, 1);
+$orange-crush: rgba(255, 89, 0, 1);
+$orange-citrus: rgba(255, 127, 0, 1);
+$creamscicle: rgba(222, 230, 203, 1);
+$awwwards: rgba(0, 150, 141, 1);
+$header-text: 'Yanone Kaffeesatz', sans-serif;
+
+
 
 .conversation-wrap {
   height: auto;
@@ -15,8 +25,13 @@
   float: left;
   top: 25px;
   font-size: 80px;
-  left: 18%;
-  font-family: 'Open Sans', sans-serif;
+  left: 3%;
+  font-family: $header-text;
+  // font-family: 'Open Sans', sans-serif;
+  // border: 1px solid black;
+  width: 76%;
+  text-align: center;
+
 }
 
 
@@ -39,6 +54,7 @@
   margin: .8em;
   border-radius: .5em;
   font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .message-out {
@@ -50,6 +66,7 @@
   margin: .8em;
   border-radius: .5em;
   font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 input {
@@ -90,4 +107,8 @@ input {
 }
 #chatter {
     padding-left: .5em;
+}
+
+#message-t-footer-icon {
+  margin-left: 75px;
 }
