@@ -23,7 +23,7 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
 //     }
 //   };
 
-$scope.location = address;
+// $scope.location = address;
 
 console.log($('#create-map-input').val());
 
@@ -43,6 +43,11 @@ console.log($('#create-map-input').val());
        var address = place.formatted_address;
        var lng = place.geometry.location.lng();
        var lat = place.geometry.location.lat();
+       localStorage.setItem('location', address);
+       localStorage.setItem('latitude', lat);
+       localStorage.setItem('longitude', lng);
+       console.log(lat);
+       console.log(place);
        console.log(place.geometry.location.lat());
        console.log(place.geometry.location.lng());
          // console.log(lat, lng, address)
@@ -53,11 +58,10 @@ console.log($('#create-map-input').val());
        "user_id": userID,
        "interests": "",
        "description": "",
-       "location": address,
-      //  "location": "",
-       "title": "",
-       "token": currentToken
-
+       "location": location,
+      "latitude": lat,
+      "longitude": lng,
+       "title": ""
      }
    };
 
@@ -66,9 +70,9 @@ console.log($('#create-map-input').val());
 
   $scope.submitTrind = function() {
 
-    localStorage.setItem('location', address);
-    localStorage.setItem('latitude', lat);
-    localStorage.setItem('longitude', lng);
+    // localStorage.setItem('location', address);
+    // localStorage.setItem('latitude', lat);
+    // localStorage.setItem('longitude', lng);
     // console.log(lat);
     // console.log(lng);
     console.log(address);
