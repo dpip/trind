@@ -161,8 +161,10 @@
   float: left;
   top: 25px;
   font-size: 80px;
-  left: 18%;
-  font-family: 'Open Sans', sans-serif; }
+  left: 3%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  width: 76%;
+  text-align: center; }
 
 .message-footer {
   width: 100%;
@@ -179,7 +181,8 @@
   padding: .5em;
   margin: .8em;
   border-radius: .5em;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif; }
 
 .message-out {
   width: 80%;
@@ -189,7 +192,8 @@
   padding: .5em;
   margin: .8em;
   border-radius: .5em;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif; }
 
 input {
   width: 100%;
@@ -225,6 +229,9 @@ input {
 #chatter {
   padding-left: .5em; }
 
+#message-t-footer-icon {
+  margin-left: 75px; }
+
 .open-messages-container {
   width: 100%;
   font-size: 3em;
@@ -253,7 +260,8 @@ input {
       display: inline; }
     .conversation-information-container .conversation-information-direction .chevy {
       float: right;
-      color: #888; }
+      color: #888;
+      opacity: 0.5; }
     .conversation-information-container .conversation-information-direction .conversation-sender {
       text-align: left;
       padding-right: 2em;
@@ -470,9 +478,11 @@ input {
   float: left;
   top: 20px;
   font-size: 80px;
-  left: 33%;
+  left: 3%;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  text-align: center; }
+  text-align: center;
+  text-align: center;
+  width: 76%; }
 
 .event-details-container {
   width: 90%;
@@ -810,7 +820,7 @@ a {
     font-size: 80px;
     left: 30px; }
   .trind-main-footer .trind-main-footer-trind-icon {
-    color: white;
+    color: #31d4e9;
     position: relative;
     float: left;
     top: 5px;

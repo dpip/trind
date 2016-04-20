@@ -40,6 +40,7 @@ a {
         top: 25px;
         font-size: 80px;
         margin-left: 30px;
+        // color: $twitter;
       }
 
       .trind-main-header-image {
@@ -109,7 +110,7 @@ a {
       }
 
       .trind-main-footer-trind-icon {
-        color: white;
+        color: $twitter;
         position: relative;
         float: left;
         top: 5px;

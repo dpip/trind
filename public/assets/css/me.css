@@ -11,12 +11,13 @@
   float: left;
   top: 15px;
   font-size: 80px;
-  width: 50%;
-  margin-left: 22%;
+  width: 76%;
+  margin-left: 2%;
   margin-right: auto;
   color: white;
   letter-spacing: 4px;
-  font-family: "Yanone Kaffeesatz", sans-serif; }
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  text-align: center; }
 
 .me-container {
   padding: 2em;
@@ -45,12 +46,15 @@
     margin: 1em;
     border: 1px solid #555;
     padding: .4em;
-    border-radius: .4em; }
+    border-radius: .4em;
+    color: #31d4e9; }
   .me-container .logout-button {
-    margin-top: 1em;
+    margin-top: 2em;
     margin-left: 7.5em;
     width: 30%;
     border-radius: .4em;
-    font-size: 35px; }
+    font-size: 35px;
+    background-color: white;
+    color: #555; }
 
 /*# sourceMappingURL=me.css.map */

@@ -12,8 +12,10 @@
   float: left;
   top: 25px;
   font-size: 80px;
-  left: 18%;
-  font-family: 'Open Sans', sans-serif; }
+  left: 3%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  width: 76%;
+  text-align: center; }
 
 .message-footer {
   width: 100%;
@@ -30,7 +32,8 @@
   padding: .5em;
   margin: .8em;
   border-radius: .5em;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif; }
 
 .message-out {
   width: 80%;
@@ -40,7 +43,8 @@
   padding: .5em;
   margin: .8em;
   border-radius: .5em;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif; }
 
 input {
   width: 100%;
@@ -75,5 +79,8 @@ input {
 
 #chatter {
   padding-left: .5em; }
+
+#message-t-footer-icon {
+  margin-left: 75px; }
 
 /*# sourceMappingURL=message.css.map */

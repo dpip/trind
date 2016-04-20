@@ -13,6 +13,42 @@ trind.controller('MemoriesController', [ '$http', '$scope', function($http, $sco
             $scope.likeCount -= 1;
         }
 
+
+  // +++++++++++ token in localStorage ++++++++++
+    var currentToken = localStorage.getItem('tokenToken');
+    var facebookToken =  localStorage.getItem('facebookToken');
+    var facebookUserID = localStorage.getItem('facebookUserID');
+    var firstTime = localStorage.getItem('firstTime');
+
+  // +++++++++++ id in local storage +++++++
+    var userID = localStorage.getItem('userID');
+    var userPhoto = localStorage.getItem('userPhoto');
+    var theEventID = localStorage.getItem('theEventID');
+  // ++++++++++++++++++ login ++++++++++++++++++++++
+
+
+
+    // var hasLiked = false;
+    // $scope.likeClick = function () {
+    //     if (!hasLiked) {
+    //         hasLiked = true;
+    //         $scope.liked = 'cool';
+    //         $scope.likeCount += 1;
+    //     }
+    //     else {
+    //         hasLiked = false;
+    //         $scope.liked = 'Like';
+    //         $scope.likeCount -= 1;
+    //
+    //     }
+    $(document).ready(function () {
+        $("#home-drop-search-input-box").hide();
+        $('.trind-main-header-search-icon').click(function () {
+            $("#home-drop-search-input-box").toggle();
+        });
+
+
+
         var currentToken = localStorage.getItem('tokenToken');
         var userID = localStorage.getItem('userID');
         var theEventID = localStorage.getItem('theEventID');

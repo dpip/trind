@@ -26,7 +26,8 @@
       display: inline; }
     .conversation-information-container .conversation-information-direction .chevy {
       float: right;
-      color: #888; }
+      color: #888;
+      opacity: 0.5; }
     .conversation-information-container .conversation-information-direction .conversation-sender {
       text-align: left;
       padding-right: 2em;

@@ -3,9 +3,11 @@
   float: left;
   top: 20px;
   font-size: 80px;
-  left: 33%;
+  left: 3%;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  text-align: center; }
+  text-align: center;
+  text-align: center;
+  width: 76%; }
 
 .event-details-container {
   width: 90%;
