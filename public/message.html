@@ -27,7 +27,7 @@
     <div class="message-footer">
       <form ng-controller="MessageController">
         <div class="input-group">
-          <input id="chatter" type="text" name="chatter" placeholder="type message here... "class="form-control chatter" />
+          <input id="chatter" ng-keyup="$event.keyCode == 13 && postMessage()" type="text" name="chatter" placeholder="type message here... "class="form-control chatter" />
 
         </div>
     </div>
