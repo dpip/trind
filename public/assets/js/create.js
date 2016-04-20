@@ -151,7 +151,8 @@ console.log($('#create-map-input').val());
             var hash = "#";
             var interests = $(this).val();
             if(e.keyCode == 32){
-              $(interests).append(hash);
+              $(this).val('#' + interests);
+
 
           //  $(interests).addClass("mutate-interests");
            console.log("spacebar");
