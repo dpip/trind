@@ -1,22 +1,61 @@
+
+$blue: rgba(151, 222, 218, 1);
+$twitter: rgba(49, 212, 233, 1);
+$orange-crush: rgba(255, 89, 0, 1);
+$orange-citrus: rgba(255, 127, 0, 1);
+$awwwards: rgba(0, 150, 141, 1);
+$header-text: 'Yanone Kaffeesatz', sans-serif;
+
 .editUser-main-header-edit {
   position: relative;
   float: left;
   top: 25px;
   font-size: 80px;
-  left: 13%;
-  color: rgb(255, 109, 94);
-  font-family: 'Sniglet', cursive;
+  left: 27%;
+  color: white;
+  font-family: $header-text;
 }
 
 .editFields {
   font-size: 50px;
   width: 80%;
   text-align: center;
+  margin-left: 0em;
 
 }
 
-.user-edit-buttons {
+.user-edit-button {
   width: 300px;
   height: 100px;
   font-size: 30px;
+  margin-top: 2em;
+  border: 1px solid #555;
+}
+
+.user-delete-button {
+  width: 300px;
+  height: 100px;
+  font-size: 30px;
+  margin-top: 1em;
+  border: 1px solid #555;
+  background-color: red;
+}
+
+#file-input {
+  height: 200px;
+  width: 80%;
+ margin-left: 10%;
+
+}
+.upload-me-title {
+    text-align: center;
+    font-size:  3em;
+}
+
+.me-things {
+    // border: 1px solid red;
+}
+#file-input {
+    text-align: center;
+    padding: 2em;
 }

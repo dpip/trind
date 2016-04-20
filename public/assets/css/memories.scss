@@ -1,17 +1,15 @@
 .memories-header-icons {
   display: inline-block;
 }
-
 #memories-header-text {
-  color: rgb(255, 109, 94);
+  color: $orange-crush;
   position: relative;
   float: left;
-  top: 5px;
-  font-size: 100px;
-  left: 10%;
+  top: 20px;
+  font-size: 70px;
+  left: 15%;
   font-family: 'Sniglet', cursive;
 }
-
 #memories-back-button {
   color: white;
   position: relative;
@@ -21,23 +19,69 @@
   margin-left: 20px;
 }
 
-.memories-container {
+.memories-container-wrap {
   margin-top: 120px;
-}
-
-#memories-name {
+  position: absolute;
+  height: 100%;
+  // border: 1px solid red;
+  font-size: 50px;
   font-family: 'Open Sans', sans-serif;
-  margin-top: 20px;
+  // border: 1px solid red;
+    #mem-dilb {
+      display:inline-block;
+    }
+    .fa-thumbs-up {
+    color: rgb(255, 109, 94);
+    padding-left: 1em;
+    margin-right: 1em;
+    }
+
+}
+
+
+.memories-events-display {
+
+}
+
+
+.memories-trind-event-information-container {
+  height: 300px;
+  font-size: 25px;
+
+}
+
+.memory-text-container-wrap {
+  // border: 1px solid green;
+
+}
+
+.memory-text-container {
   font-size: 40px;
+  display: inline-block;
+  border: 1px solid grey;
+  width: 678px;
+  box-sizing: border-box;
+  vertical-align: top;
+  height: 100%;
+  float: right;
+
+
 }
 
-.fa-thumbs-up {
+
+#stashed-image {
+  float: left;
+}
+
+#stashed-title {
+
+}
+#stashed-interests {
 color: rgb(255, 109, 94);
-float: right;
-padding-left: 1em;
-margin-right: 1em;
 }
-
-#reliabilty-rating-button {
+#stashed-description {
+height: 80px;
+}
+#stashed-location {
 
 }

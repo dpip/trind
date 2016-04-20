@@ -1,6 +1,6 @@
 "use strict";
 
-var trind = angular.module('trind', ['ngRoute']);
+var trind = angular.module('trind', ['ngRoute', 'ngFileUpload']);
 
 
 trind.config(function($routeProvider) {
@@ -40,7 +40,7 @@ trind.config(function($routeProvider) {
             })
             .when('/editEvent', {
               templateUrl: 'editEvent.html',
-              controller: 'EditEventController'
+              controller: 'UserEventsController'
             })
             .when('/userEvents', {
               templateUrl: 'userEvents.html',

@@ -3,9 +3,11 @@
   float: left;
   top: 25px;
   font-size: 80px;
-  left: 21%;
-  color: #ff6d5e;
-  font-family: 'Sniglet', cursive; }
+  left: 30%;
+  color: white;
+  letter-spacing: 4px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold; }
 
 .home-events-display-wrap .home-events-display {
   position: relative;
@@ -15,15 +17,18 @@
   height: 100%;
   font-family: 'Open Sans', sans-serif; }
   .home-events-display-wrap .home-events-display .home-trind-event-information-image {
-    background-color: #eaeaea;
-    height: 200px;
-    width: 200px;
-    float: left; }
-  .home-events-display-wrap .home-events-display .home-trind-event-container {
-    height: 200px;
-    width: 100%;
     background-color: white;
-    border: 1px solid black; }
+    height: 280px;
+    width: 280px;
+    float: left; }
+  .home-events-display-wrap .home-events-display .home-trind-event-information-image img {
+    border-radius: 10em 10em 10em 10em;
+    margin-left: 2em;
+    margin-top: 2em; }
+  .home-events-display-wrap .home-events-display .home-trind-event-container {
+    height: 280px;
+    width: 100%;
+    background-color: white; }
   .home-events-display-wrap .home-events-display #event-dilb {
     display: inline-block; }
   .home-events-display-wrap .home-events-display .home-trind-event-information-container {
@@ -31,17 +36,90 @@
     border: 1px solid rgba(171, 178, 186, 0.5); }
   .home-events-display-wrap .home-events-display .home-trind-event-information {
     background-color: white; }
-  .home-events-display-wrap .home-events-display #interests {
-    font-size: 40px;
-    padding-bottom: 15px;
-    height: 40px;
-    color: #ff6d5e; }
-  .home-events-display-wrap .home-events-display #description {
-    height: 80px;
+  .home-events-display-wrap .home-events-display #event-information-name {
+    color: #888;
     font-size: 30px;
+    padding-top: 10px; }
+  .home-events-display-wrap .home-events-display #interests {
+    font-size: 30px;
+    padding-bottom: 15px;
+    color: #ff6d5e;
+    vertical-align: top; }
+  .home-events-display-wrap .home-events-display #description {
+    margin-top: 10px;
+    height: 80px;
+    font-size: 45px;
     padding-bottom: 15px; }
   .home-events-display-wrap .home-events-display #location {
     height: 20px;
-    font-size: 30px; }
+    font-size: 30px;
+    vertical-align: bottom; }
+
+.getting-started-background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 130;
+  background-color: black;
+  opacity: 0.4;
+  top: 0; }
+
+.home-modal-welcome {
+  font-size: 90px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: center;
+  color: white;
+  margin-top: .6em; }
+
+.getting-started-modal {
+  height: 65%;
+  width: 85%;
+  background-color: #31d4e9;
+  position: fixed;
+  top: 20em;
+  z-index: 145;
+  border-radius: 3em;
+  right: 4.5em; }
+
+.getting-started-content {
+  font-size: 50px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 1.5em;
+  margin-top: 1.5em; }
+
+.home-modal-icon {
+  position: relative;
+  float: right;
+  right: 2em;
+  font-size: 60px; }
+
+.trind-land-modal-icon {
+  color: white;
+  position: relative;
+  float: right;
+  font-size: 90px;
+  right: 1.2em;
+  font-family: 'Sniglet', cursive;
+  transform: rotate(-45deg);
+  margin-top: -15px; }
+
+#getting-started {
+  font-size: 90px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: center;
+  margin-top: .8em;
+  position: relative;
+  color: #ff5900;
+  border-radius: 0em 0em .6em .6em;
+  height: 2.4em;
+  vertical-align: middle;
+  bottom: 0; }
+
+#start {
+  margin-top: 2em; }
+
+#emptiness {
+  height: 120px; }
 
 /*# sourceMappingURL=home.css.map */

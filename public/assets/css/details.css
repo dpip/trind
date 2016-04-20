@@ -1,38 +1,93 @@
+#details-header-name {
+  position: relative;
+  float: left;
+  top: 20px;
+  font-size: 80px;
+  left: 33%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  text-align: center; }
+
 .event-details-container {
-  font-size: 60px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 120px;
   position: relative;
   z-index: 1;
   font-family: 'Open Sans', sans-serif; }
+  .event-details-container .me-avatar {
+    width: 100%;
+    height: 800px;
+    margin-top: 80px;
+    text-align: center;
+    border: 2px solid #a4dbd8;
+    border-radius: 1em; }
   .event-details-container .details-text-wrapper {
-    width: 95%;
-    margin-top: 50px; }
+    width: 90%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 2em; }
   .event-details-container #details-name {
     margin-top: 10px;
-    color: rgba(255, 109, 94, 0.8);
     margin-top: 10px;
     color: rgba(255, 109, 94, 0.8);
-    margin-left: 40px; }
+    margin-left: 40px;
+    font-size: 1em;
+    text-align: center;
+    font-style: italic; }
+  .event-details-container #details-eventDetail-title {
+    font-size: 2em;
+    text-align: center;
+    color: white; }
+  .event-details-container .details-button-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center; }
   .event-details-container #details-interested-button {
-    float: right;
-    background-color: #a4dbd8;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #31d4e9;
     border-radius: .3em;
     height: 65px;
-    margin-top: 10px;
-    margin-left: 40px;
+    margin-top: 30px;
     color: white;
-    font-size: 45px; }
+    font-size: 3em; }
+  .event-details-container #details-message-button {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #31d4e9;
+    border-radius: .3em;
+    height: 65px;
+    margin-top: 30px;
+    color: white;
+    font-size: 3em; }
   .event-details-container #details-eventDetail-title {
     margin-top: 40px;
     margin-left: 40px; }
   .event-details-container #details-eventDetail-interest {
     margin-top: 40px;
-    margin-left: 40px; }
+    margin-left: 40px;
+    color: #ff5900; }
   .event-details-container #details-eventDetail-description {
     margin-top: 40px;
-    margin-left: 40px; }
+    margin-left: 40px;
+    font-size: 50px; }
   .event-details-container #details-eventDetail-location {
     margin-top: 40px;
     margin-left: 40px; }
+
+.fa-map-marker {
+  color: #31d4e9;
+  font-size: 40px; }
+
+#mapcontainer {
+  margin-left: 9em;
+  margin-top: 6em; }
 
 /*# sourceMappingURL=details.css.map */

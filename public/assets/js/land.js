@@ -130,9 +130,9 @@ trind.controller('LandController', [ '$http', '$location', '$scope', function($h
 //            'Thanks for logging in, ' + response.name + '!';
 //        });
 //      }
-
-
-
+//
+//
+//
 
 
   $scope.submitLogin = function() {
@@ -163,6 +163,7 @@ trind.controller('LandController', [ '$http', '$location', '$scope', function($h
       .success(function(data) {
       localStorage.setItem('tokenToken', data.token);
       localStorage.setItem('userID', data.id);
+      localStorage.setItem('firstTime', data.first_time);
           console.log("new account created");
           window.location.replace('#/home');
           console.log(data);

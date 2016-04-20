@@ -1,31 +1,67 @@
+.trind-main-header-text-edit-event {
+  position: relative;
+  float: left;
+  top: 25px;
+  font-size: 80px;
+  left: 30%;
+  color: #ff6d5e;
+  font-family: 'Sniglet', cursive; }
+
 .edit-event-container {
-  margin-top: 160px; }
+  margin-top: 120px;
+  margin-left: 100px;
+  height: 100%;
+  width: 100%;
+  display: relative; }
 
-.editFields {
-  margin-top: 40px; }
+.edit-fields-wrap {
+  margin-top: 12em; }
 
-#edit-event-title {
-  height: 100px;
-  width: 80%;
+.edit-event-inputs {
+  margin-top: 4em; }
+
+#edit-event-title input {
+  height: 200px;
+  width: 100%;
   font-size: 50px;
   border: 4px solid red; }
 
-#edit-event-interests {
+#edit-event-interests input {
   height: 100px;
-  width: 80%;
+  width: 100%;
   font-size: 50px;
   border: 4px solid red; }
 
-#edit-event-description {
-  height: 100px;
-  width: 80%;
+#edit-event-description input {
+  height: 500px;
+  width: 100%;
   font-size: 50px;
   border: 4px solid red; }
 
-#edit-event-interests {
+#edit-event-location input {
   height: 100px;
-  width: 80%;
+  width: 100%;
   font-size: 50px;
   border: 4px solid red; }
+
+.edit-event-save-delete-wrap {
+  margin-left: 9em;
+  width: 100%;
+  margin-top: 4em; }
+  .edit-event-save-delete-wrap .edit-event-button-save {
+    width: 300px;
+    height: 100px;
+    font-size: 50px; }
+  .edit-event-save-delete-wrap .edit-event-button-delete {
+    width: 300px;
+    height: 100px;
+    font-size: 50px;
+    margin-left: 2em; }
+
+.edit-input-title {
+  margin-top: 2em;
+  font-size: 35px;
+  vertical-align: bottom;
+  font-family: 'Open Sans', sans-serif; }
 
 /*# sourceMappingURL=editevents.css.map */

@@ -1,27 +1,38 @@
 <div class= "trind-main-header">
   <div class= "trind-main-header-create-icon"><a href="#/create"><i class="fa fa-plus"></i></a></div>
-  <div class= "trind-main-header-search-icon"><i class="fa fa-search"></i></div>
-  <div class= "trind-main-header-image"><a href="#/me"><i class="fa fa-camera"></i></a></div>
+  <!-- <div class= "trind-main-header-search-icon"><i class="fa fa-search"></i></div> -->
+  <div id="details-header-name">{{event.user.name}}</div>
 </div>
 <div class= "home-drop-search-bar">
   <input type="text" placeholder="What's Trinding?" class = "expand" id= "home-drop-search-input-box">
 </div>
 
-
-      <div class= "event-details-container">
-<!--  -->
-
-            <img class="me-avatar" src="{{event.user.photo_url}}" height="600" width="100%"></img>
+<!-- <img class="me-avatar" src="{{event.user.photo_url}}"</img> -->
+    <div class= "event-details-container">
+            <!-- <img class="me-avatar" src="{{event.user.photo_url}}"</img> -->
             <div class= "details-text-wrapper">
-              <div id="details-name">{{event.user.name}}<input type="button" value="Interested" id= "details-interested-button"   ng-click="interested()"></div>
-              <!-- <div id="details-summary">{{event.user.summary}}</div> -->
-              <div id="details-eventDetail-title">{{event.event.title}}</div>
-              <div id="details-eventDetail-interest">{{event.event.interests}}</div>
-              <div id="details-eventDetail-description">{{event.event.description}}</div>
-              <div id="details-eventDetail-location">{{event.event.location}}</div>
+              <img class="me-avatar" src="{{event.user.photo_url}}"</img>
+              <!-- <div id="details-eventDetail-title">{{event.event.title}}</div> -->
+              <!-- <div id="details-name">with {{event.user.name}}</div> -->
+              <div id="details-eventDetail-interest"> {{event.event.interests}}</div>
+              <div id="details-eventDetail-description"> {{event.event.description}}</div>
+              <div id="details-eventDetail-location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{event.event.location}}</div>
+              <!-- <div id="details-eventDetail-location">Location:{{detailLocation}}</div> -->
             </div>
+            <!-- </strong>&nbsp -->
+            <div class="details-button-container">
+            <input type="button" value="Message" id= "details-message-button"  ng-controller="DetailsController" ng-click="messageNow()">
+            <input type="button" value="Stash" id= "details-interested-button"  ng-controller="DetailsController" ng-click="stash(event.event.id)">
             </div>
+    </div>
 
+
+
+    <section id="wrapper">
+              <article>
+      <!-- +++GOOGLE MAPS DISPLAYS HERE+++ -->
+              </article>
+    </section>
 
 
 <div class= "trind-main-footer">

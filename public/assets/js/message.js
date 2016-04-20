@@ -1,35 +1,104 @@
 trind.controller('MessageController', [ '$http', '$scope', function($http, $scope){
 
-  $(document).ready(function () {
-    $http.get('https://still-waters-14036.herokuapp.com/message'  )
-        .success(function(data)  {
-            console.log("Load Messages");
+        var conversationID = localStorage.getItem('conversationID');
+        var currentToken = localStorage.getItem('tokenToken');
+        var userID = localStorage.getItem('userID');
+        var otherUserName = localStorage.getItem('otherUserName');
+        var eventID = localStorage.getItem('eventID');
+        var recipientID = localStorage.getItem('recipientID');
+
+        $scope.otherUserName = otherUserName;
+
+
+
+        console.log(userID);
+        //  $("#home-drop-search-input-box").hide();
+
+        $scope.whoAmI = function(userPassed) {
+          if(userPassed == userID) {
+            return 'message-out';
+          }
+          else {
+            return 'message-in';
+          }
+        };
+
+        $http.get('https://still-waters-14036.herokuapp.com/conversations/' + conversationID + "?token=" + currentToken).success(function(data) {
+
+            $scope.chat = data;
+            console.log(data);
+          var eventID = localStorage.setItem('eventID', data.event_id);
+          var recipientID = localStorage.setItem('recipientID', data.recipient_id);
+
         });
 
-      $("#home-drop-search-input-box").hide();
-      $('.trind-main-header-search-icon').click(function () {
-      $("#home-drop-search-input-box").toggle();
-      });
+        $(function(){
+          setInterval(oneSecondFunction, 200);
+          console.log
+        });
 
-  });
+        function oneSecondFunction() {
+          $http.get('https://still-waters-14036.herokuapp.com/conversations/' + conversationID + "?token=" + currentToken).success(function(data) {
 
-  var userInput = $("input");
+              // If you want proof we're refreshing every half-second uncomment the console.log
+              // console.log(data);
+              $scope.chat = data;
+              // console.log(data);
 
- $(".btn-submit").click(function() {
-     $("input").each(function(){
+          });
+        };
 
-     $("#YM").append("<li>" + $(this).val() + "</li>" );
-     event.preventDefault();
-      });
+        $scope.postMessage = function() {
+
+          var param = {message:{author:userID, conversation_id: conversationID, body: $('.form-control').val()}}
+
+          $http.post('https://still-waters-14036.herokuapp.com/messages?token=' + currentToken, param).then(function successCallback(data) {
+            console.log("message sent", data);
+
+            $('.form-control').val("");
+          });
+        };
+
+        $scope.letsMeet = function() {
+          var param = {event:{success: true}};
+          console.log(param);
+
+          $http.put('https://still-waters-14036.herokuapp.com/events/' + eventID + "?token=" + currentToken, param).then(function successCallback(response){
+          console.log('put', response);
+          }, function errorCallback(response){
+            console.log('not put', response);
+          });
+        };
+
+        $scope.buttonOrNo = function () {
+          if (userID === recipientID) {
+            return 'lets-meet';
+          }
+          else {
+            return 'lets-meet-hide';
+          };
+        };
+
+}]);
 
 
-    $http.post('https://still-waters-14036.herokuapp.com/message')
-        .success(function (data) {
-            console.log("message sent")
-        })
- });
+ //  var userInput = $("input");
+ // //
+ // // $(".btn-submit").click(function() {
+ // //     $("input").each(function(){
+ //
+ //    $http.post('https://still-waters-14036.herokuapp.com/conversations/' + conversationID+ ''?token='' + currentToken)
+ //            .success(function (data) {
+ //            console.log("message sent")
+ //        });
+ //
+ //     $("#YM").append("<li>" + $(this).val() + "</li>" );
+ //     $http.post('https://still-waters-14036.herokuapp.com/conversations')
+ //     $http.get('https://still-waters-14036.herokuapp.com/conversations/' + conversationID+ “?token=“ + currentToken)​
+ //     event.preventDefault();
+ //        });
+ //    });
 
-  }]);
 
   // Different variation for User Matchinng
 

@@ -1,38 +1,44 @@
-.mutate-interests {
-  color: red; }
+.create-main-header-text {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 80px;
+  position: absolute;
+  left: 5.5em;
+  top: 18px; }
 
 .create-input-field {
-  height: 200px;
-  margin-top: 120px; }
-  .create-input-field .create-enter-interests-input {
-    width: 100%;
-    height: 60px;
-    font-size: 35px;
-    position: relative; }
-  .create-input-field .user-creator-description {
-    padding-top: 1em; }
-  .create-input-field .user-creator-description {
-    font-size: 35px;
-    height: 60px;
-    position: relative; }
-  .create-input-field .user-creator-description-field {
-    padding-bottom: 80px;
-    width: 100%;
-    height: 60px;
-    font-size: 35px;
-    position: relative; }
-  .create-input-field .create-enter-location-input {
-    width: 100%;
-    height: 60px;
-    font-size: 35px; }
+  height: 85%;
+  width: 99%;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1em; }
+  .create-input-field .create-subtitle {
+    font-size: 4em;
+    text-align: center;
+    padding: .5em;
+    font-family: 'Yanone Kaffeesatz', sans-serif; }
+  .create-input-field input {
+    width: 95%;
+    margin: .2em;
+    font-size: 2.5em; }
+  .create-input-field textarea {
+    width: 95%;
+    height: 20%;
+    margin: .2em;
+    font-size: 2.5em;
+    border: 1px solid #555; }
+  .create-input-field button {
+    text-align: center;
+    margin-left: 10%; }
   .create-input-field .create-trind-submit-button-text {
     border: none;
-    height: 50px;
-    width: 100%;
-    font-size: 40px;
-    color: white;
-    background-color: #ff6d5e;
-    font-family: 'Sniglet', cursive;
+    height: 140px;
+    width: 80%;
+    font-size: 90px;
+    color: #fff;
+    background-color: #31d4eb;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: bold;
     bottom: 6em;
     border-radius: 1em;
     cursor: pointer;

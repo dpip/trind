@@ -1,20 +1,30 @@
+$blue: rgba(151, 222, 218, 1);
+$twitter: rgba(49, 212, 233, 1);
+$orange-crush: rgba(255, 89, 0, 1);
+$orange-citrus: rgba(255, 127, 0, 1);
+$creamscicle: rgba(222, 230, 203, 1);
+$header-text: 'Yanone Kaffeesatz', sans-serif;
+
+
+
 .me-main-header-edit-icon {
   position: relative;
   float: right;
   top: 25px;
   font-size: 80px;
   right: 30px;
-  color: rgb(255, 109, 94);
+  color: white;
 }
 
 .me-main-header-text {
   position: relative;
   float: left;
-  top: 25px;
-  font-size: 80px;
+  top: 15px;
+  font-size: 100px;
   left: 36%;
-  color: rgb(255, 109, 94);
-  font-family: 'Sniglet', cursive;
+  color: white;
+  letter-spacing: 4px;
+  font-family: $header-text;
 }
 
 .me-container {
@@ -24,17 +34,36 @@
     margin-bottom: 150px;
     color: #555;
     text-align: center;
+    font-family: sans-serif;
+
+    .me-avatar {
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(164, 219, 216);
+
+    }
+
     #me-name {
       margin-top: 2em;
+      font-family: $header-text;
     }
     #me-email {
       margin-top: 1em;
       font-style: italic;
       color: rgb(255, 109, 94);
+      font-family: $header-text;
     }
     ul li {
         margin: 1em;
         border: 1px solid #555;
         padding: .4em;
+    }
+    .logout-button {
+      margin-top: 1em;
+      margin-left: 4.5em;
+      width: 40%;
+      border-radius: .5em;
     }
 }

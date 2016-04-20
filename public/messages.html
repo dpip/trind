@@ -1,8 +1,7 @@
 
 <div class= "trind-main-header">
-  <div class= "trind-main-header-create-icon"><a href="#/create"><i class="fa fa-plus"></a></i></div>
-  <div class= "trind-main-header-search-icon"><i class="fa fa-search"></i></div>
-  <div class= "trind-main-header-image"><a href="#/me"><i class="fa fa-camera"></i></a></div>
+  <div class= "trind-main-header-create-icon"><a href="#/me"><i class="fa fa-arrow-left"></a></i></div>
+  <div class= "messages-main-header-title"><a href="#/messages">Conversations</a></div>
 </div>
 
 <div class= "home-drop-search-bar">
@@ -11,19 +10,20 @@
 
 <div class="open-messages-container">
 
-      <div ng-repeat= "conversation in conversations.conversations track by $index">
-         <div class="conversation-information-container">
-             <a href="#message">
-                <div class= "conversation-image" id="event-dilb">
-                    <img src="{{conversation.sender_photo_url}} " height="200" width="200">
-                </div>
-          <!-- <div class= "conversation-user">{{conversation}}</div> -->
+      <div ng-repeat= "conversation in conversations.conversations">
+         <div class="conversation-information-container" ng-click="message(conversation.conversation_id); otherUser(conversation.sender_name)">
+          <div class= "conversation-image" id="event-dilb">
+              <img src="{{conversation.sender_photo_url}} " height="200" width="200">
+          </div>
+
           <div class= "conversation-sender">{{conversation.sender_name}}</div>
-          <!-- <div class="all-data">{{conversation}}</div> -->
+          <div class="conversation-last-message" max-length="50">{{conversation.last_message}}</div>
+          <div class= "conversation-text-container">
+          <div class="fa fa-chevron-right" </div>
+          </div>
 
           <!-- <div class= "conversation-details" id= "description"> {{conversation.message}} </div>
           <div class= "conversation-time-stamp" id= "location"> {{conversation.}} </div> -->
-        </a>
         </div>
      </div>
     </div>
@@ -35,7 +35,8 @@
 <div class= "trind-main-footer">
   <div class= "trind-main-footer-me-icon"><a href="#/me"><i class="fa fa-user"></i></a></div>
   <div class= "trind-main-footer-trind-icon"><a href="#/home">T</a></div>
-  <div class= "trind-main-footer-message-icon"><a href="#/messages"><i class="fa fa-comment"></i></a></div>
+  <div class= "trind-main-footer-message-icon"><a href="#/messages"><div class= "dot-dot-dot">{{unseen}}</div><i class="fa fa-comment"></i></a></div>
+
 
 
 
