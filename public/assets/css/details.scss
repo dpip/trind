@@ -1,3 +1,23 @@
+$blue: rgba(151, 222, 218, 1);
+$bluetwo: rgba(56, 121, 217, 1);
+$twitter: rgba(49, 212, 233, 1);
+$orange-crush: rgba(255, 89, 0, 1);
+$orange-citrus: rgba(255, 127, 0, 1);
+$creamscicle: rgba(222, 230, 203, 1);
+$awwwards: rgba(0, 150, 141, 1);
+$header-text: 'Yanone Kaffeesatz', sans-serif;
+
+
+#details-header-name {
+  position: relative;
+  float: left;
+  top: 20px;
+  font-size: 80px;
+  left: 33%;
+  font-family: $header-text;
+  text-align: center;
+}
+
 .event-details-container {
     width: 90%;
     margin-left: auto;
@@ -7,13 +27,16 @@
     z-index: 1;
     font-family: 'Open Sans', sans-serif;
 
+
         .me-avatar {
-            width: 500px;
-            height: 500px;
-            margin-left: 25%;
-            margin-top: 20px;
+            // width: 500px;
+            width: 100%;
+            height: 800px;
+            // margin-left: 22.5%;
+            margin-top: 80px;
             text-align: center;
             border: 2px solid rgb(164, 219, 216);
+            border-radius: 1em;
         }
 
     .details-text-wrapper {
@@ -27,7 +50,6 @@
 
     #details-name {
       margin-top: 10px;
-      color:rgba(255, 109, 94, 0.8);
       margin-top: 10px;
       color:rgba(255, 109, 94, 0.8);
       margin-left: 40px;
@@ -39,6 +61,7 @@
     #details-eventDetail-title {
         font-size: 2em;
         text-align: center;
+        color: white;
     }
 
 .details-button-container {
@@ -54,7 +77,7 @@
       width: 80%;
       margin-left: auto;
       margin-right:auto;
-      background-color: rgba(164, 219, 216, 1);
+      background-color: $twitter;
       border-radius: .3em;
       height: 65px;
       margin-top: 30px;
@@ -66,7 +89,7 @@
          width: 80%;
          margin-left: auto;
          margin-right: auto;
-         background-color: rgba(164, 219, 216, 1);
+         background-color: $twitter;
          border-radius: .3em;
          height: 65px;
          margin-top: 30px;
@@ -82,11 +105,13 @@
     #details-eventDetail-interest {
       margin-top: 40px;
       margin-left: 40px;
+      color: $orange-crush;
 
     }
     #details-eventDetail-description {
       margin-top: 40px;
       margin-left: 40px;
+      font-size: 50px;
 
     }
     #details-eventDetail-location {
@@ -96,7 +121,12 @@
     }
 }
 
+.fa-map-marker {
+  color: $twitter;
+  font-size: 40px;
+}
+
 #mapcontainer {
-  margin-left: 12em;
+  margin-left: 9em;
   margin-top: 6em;
 }

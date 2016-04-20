@@ -42,7 +42,7 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
         };
 
       // Gets the event json from Damian and repeats through home page
-      $http.get('https://still-waters-14036.herokuapp.com/events?token=' + currentToken ).success(function(data){
+      $http.get('https://still-waters-14036.herokuapp.com/events?token=' + currentToken).success(function(data){
         console.log('home page data', data);
         $scope.stuff = data;
           // $scope.eventIDGrab = data.id

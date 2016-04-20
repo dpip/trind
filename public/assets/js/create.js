@@ -4,10 +4,14 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
 
   var currentToken = localStorage.getItem('tokenToken');
   var userID = localStorage.getItem('userID');
-  var address = localStorage.getItem('location');
-  var lat = localStorage.getItem('latitude', lat);
-  var lng = localStorage.getItem('longitude', lng);
+  // var location = localStorage.getItem('location');
+  // var lat = localStorage.getItem('latitude');
+  // var lng = localStorage.getItem('longitude');
   var inputFrom = document.getElementById('create-map-input');
+  // var autocompleteFrom = new google.maps.places.Autocomplete(inputFrom);
+  // var newlocation = localStorage.getItem('newlocation');
+  // var newlat = localStorage.getItem('newlatitude');
+  // var newlng = localStorage.getItem('newlongitude');
   var autocompleteFrom = new google.maps.places.Autocomplete(inputFrom);
 
 // $('#create-map-input').val(),
@@ -24,6 +28,8 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
 //   };
 
 // $scope.location = address;
+$scope.location = location;
+
 
 console.log($('#create-map-input').val());
 
@@ -40,17 +46,64 @@ console.log($('#create-map-input').val());
 
    google.maps.event.addListener(autocompleteFrom, 'place_changed', function() {
        var place = autocompleteFrom.getPlace();
-       var address = place.formatted_address;
+       var location = place.formatted_address;
        var lng = place.geometry.location.lng();
        var lat = place.geometry.location.lat();
-       localStorage.setItem('location', address);
-       localStorage.setItem('latitude', lat);
-       localStorage.setItem('longitude', lng);
+
+      //  localStorage.setItem('location', address);
+      //  localStorage.setItem('latitude', lat);
+      //  localStorage.setItem('longitude', lng);
+      //  console.log(lat);
+      //  console.log(place);
+      //  console.log(place.geometry.location.lat());
+      //  console.log(place.geometry.location.lng());
+
+       localStorage.setItem('newlocation', location);
+       localStorage.setItem('newlatitude', lat);
+       localStorage.setItem('newlongitude', lng);
        console.log(lat);
-       console.log(place);
-       console.log(place.geometry.location.lat());
-       console.log(place.geometry.location.lng());
+       console.log(lng);
+       console.log(location);
+       console.log('old above new below')
+      //  console.log(newlat);
+      //  console.log(newlng);
+      //  console.log(newlocation);
+
          // console.log(lat, lng, address)
+
+
+// The right idea
+
+        //  $scope.mapTrind = {
+        //      "event": {
+        //      "user_id": userID,
+        //      "interests": "",
+        //      "description": "",
+        //      "location": location,
+        //      "latitude": lat,
+        //      "longitude": lng,
+        //      "title": "",
+        //      "token": currentToken
+         //
+        //    }
+        //  };
+        $scope.testTrind = {
+            "event": {
+            "user_id": userID,
+            "interests": $('#create-your-interests').val(),
+            "description": $('#create-description-field').val(),
+            "location": location,
+            "latitude": lat,
+            "longitude": lng,
+            "title": $('#i-want-to').val(),
+            "token": currentToken
+
+          }
+        };
+
+
+
+
    });
 
    $scope.testTrind = {
@@ -58,12 +111,28 @@ console.log($('#create-map-input').val());
        "user_id": userID,
        "interests": "",
        "description": "",
-       "location": location,
-      "latitude": lat,
-      "longitude": lng,
+       
        "title": ""
      }
    };
+
+
+// make this a different scope?
+
+  //  $scope.testTrind = {
+  //      "event": {
+  //      "user_id": userID,
+  //      "interests": "",
+  //      "description": "",
+  //     //  "location": location,
+  //     //  "latitude": lat,
+  //     //  "longitude": lng,
+  //      "title": "",
+  //      "token": currentToken
+   //
+  //    }
+  //  };
+
 
 
 // ++++++++++ Google maps
@@ -75,12 +144,12 @@ console.log($('#create-map-input').val());
     // localStorage.setItem('longitude', lng);
     // console.log(lat);
     // console.log(lng);
-    console.log(address);
-    console.log(lat);
-    console.log(lng);
+    // console.log(location);
+    // console.log(lat);
+    // console.log(lng);
     console.log("Hello, little Hobbit!");
     console.log($scope.testTrind);
-    $http.post('https://still-waters-14036.herokuapp.com/events?token=' + currentToken, $scope.testTrind)
+    $http.post('https://still-waters-14036.herokuapp.com/events?token=' + currentToken, $scope.testTrind, $scope.mapTrind)
     .then(function successCallback(response){
       console.log(response);
       window.location.replace('#/home')
@@ -100,12 +169,16 @@ console.log($('#create-map-input').val());
         // ON spacebar, events bubble. 3 max
           // var emptyString = "";
 
+
         $('.create-enter-interests-input').keyup(function(e){
             // var emptyString;
+            var hash = "#";
             var interests = $(this).val();
             if(e.keyCode == 32){
-           // user has pressed space
-           $(interests).addClass("mutate-interests");
+              $(this).val('#' + interests);
+
+
+          //  $(interests).addClass("mutate-interests");
            console.log("spacebar");
            console.log(interests);
 

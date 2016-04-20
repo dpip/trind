@@ -28,6 +28,7 @@ $awwwards: rgba(0, 150, 141, 1);
   width: 100%;
   height: 100%;
   font-family: 'Open Sans', sans-serif;
+  // bottom: 200;
 
     .home-trind-event-information-image {
       background-color: white;
@@ -175,4 +176,10 @@ $awwwards: rgba(0, 150, 141, 1);
 
 #start {
   margin-top: 2em;
+}
+
+#emptiness {
+  height: 120px;
+
+  // border: 1px solid green;
 }
