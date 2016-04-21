@@ -52,6 +52,10 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
           // var coords = new google.maps.LatLng(eventLatitude, eventLongitude);
           var coords = new google.maps.LatLng(response.data.event.latitude, response.data.event.longitude);
 
+          var trindMapIcon = {
+            url: 'assets/img/Artboard 1.png',
+            scaledSize: new google.maps.Size(140, 160)
+          }
 
           var options = {
             zoom: 20,
@@ -67,8 +71,9 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
 
           var marker = new google.maps.Marker({
               position: coords,
-              map: map,
-              title:"You are here!"
+              icon: trindMapIcon,
+              map: map
+
           });
         }
 
