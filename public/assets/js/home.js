@@ -102,6 +102,8 @@ function unseen() {
         $("#home-drop-search-input-box").hide();
         $('.trind-main-header-search-icon').click(function () {
             $("#home-drop-search-input-box").toggle();
+            $(".home-events-display").css("padding-top", "90px");
+
         });
     });
 
