@@ -54,11 +54,11 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
 
           var trindMapIcon = {
             url: 'assets/img/Artboard 1.png',
-            scaledSize: new google.maps.Size(140, 160)
+            scaledSize: new google.maps.Size(90, 110)
           }
 
           var options = {
-            zoom: 20,
+            zoom: 15,
             center: coords,
             mapTypeControl: false,
             navigationControlOptions: {

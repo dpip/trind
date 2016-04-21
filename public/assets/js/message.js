@@ -60,6 +60,9 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
         };
 
         $scope.letsMeet = function() {
+
+          $("#meet-button").val("Meeting!");
+          $("#meet-button").css("background-color", "rgba(49, 212, 233, 1)");
           var param = {event:{success: true}};
           console.log(param);
 
