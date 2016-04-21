@@ -15,7 +15,8 @@
   margin-top: 120px;
   width: 100%;
   height: 100%;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 120px; }
   .home-events-display-wrap .home-events-display .home-trind-event-information-image {
     background-color: white;
     height: 280px;
@@ -118,8 +119,5 @@
 
 #start {
   margin-top: 2em; }
-
-#emptiness {
-  height: 120px; }
 
 /*# sourceMappingURL=home.css.map */

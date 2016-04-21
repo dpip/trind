@@ -28,6 +28,7 @@ $awwwards: rgba(0, 150, 141, 1);
   width: 100%;
   height: 100%;
   font-family: 'Open Sans', sans-serif;
+  padding-bottom: 120px;
   // bottom: 200;
 
     .home-trind-event-information-image {
@@ -57,6 +58,10 @@ $awwwards: rgba(0, 150, 141, 1);
       width: 100%;
       border: 1px solid rgba(171, 178, 186, 0.5);
     }
+
+    // .home-trind-event-container {
+    //   padding-bottom: 120px;
+    // }
 
     .home-trind-event-information {
       background-color: white;
@@ -178,8 +183,11 @@ $awwwards: rgba(0, 150, 141, 1);
   margin-top: 2em;
 }
 
-#emptiness {
-  height: 120px;
-
-  // border: 1px solid green;
-}
+// .emptiness {
+//   height: 120px;
+//   width: 100%;
+//   position: absolute;
+//   bottom: 0;
+//   left:0;
+//   border: 1px solid green;
+// }
