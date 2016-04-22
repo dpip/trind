@@ -148,7 +148,7 @@
     background-color: white; }
 
 .conversation-wrap {
-  height: auto;
+  height: 4000px;
   margin-top: 150px; }
 
 .chat-body {
@@ -270,7 +270,7 @@ input {
       float: right;
       text-align: left;
       padding: .2em;
-      margin-top: -300px;
+      margin-top: 20px;
       padding-right: 1em;
       color: #888;
       white-space: nowrap;

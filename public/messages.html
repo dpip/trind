@@ -9,7 +9,7 @@
 </div>
 
 <div class="open-messages-container">
-      <div ng-repeat= "conversation in conversations.conversations">
+      <div ng-repeat= "conversation in conversations.conversations | orderBy: 'created_at':true">
          <div class="conversation-information-container" ng-click="message(conversation.conversation_id); otherUser(conversation.sender_name)">
 
           <div class= "conversation-image" id="event-dilb">
