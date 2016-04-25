@@ -3,7 +3,8 @@
   font-size: 80px;
   position: absolute;
   left: 5.5em;
-  top: 18px; }
+  top: 18px;
+  color: #fa4c06; }
 
 .create-input-field {
   height: 100%;
