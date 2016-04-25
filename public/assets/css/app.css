@@ -5,7 +5,7 @@
 .login-page-container {
   height: 100%;
   width: 100%;
-  background-color: #004fa4; }
+  background-color: #3498db; }
   .login-page-container .login-page-main-font {
     font-size: 160px;
     font-family: 'Sniglet', cursive;
@@ -46,13 +46,13 @@
     color: black; }
   .login-page-container .login-button {
     margin-left: 0%;
-    color: white;
+    color: #3498db;
     font-size: 40px;
     margin-top: 3em;
     width: 100%;
     height: 90px;
     border-radius: .5em .5em .5em .5em;
-    background-color: #fa4c06;
+    background-color: white;
     border: none;
     font-weight: bold;
     letter-spacing: 2.5px; }
@@ -356,7 +356,7 @@ input {
   top: 25px;
   font-size: 80px;
   left: 30%;
-  color: #004fa4;
+  color: white;
   letter-spacing: 4px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: bold; }
@@ -488,7 +488,7 @@ input {
   left: 3%;
   font-family: "Yanone Kaffeesatz", sans-serif;
   text-align: center;
-  color: #004fa4;
+  color: white;
   text-align: center;
   width: 76%; }
 
@@ -731,7 +731,7 @@ input {
   font-size: 30px;
   margin-top: 2em;
   border: 1px solid #555;
-  background-color: #31d4e9;
+  background-color: #3498db;
   color: white; }
 
 .user-delete-button {
@@ -801,7 +801,7 @@ a {
   left: 0;
   z-index: 100;
   color: white;
-  background-color: #ecf0f1;
+  background-color: #fa4c06;
   border: 1px solid grey; }
   .trind-main-header .trind-main-header-create-icon {
     position: relative;
@@ -809,14 +809,14 @@ a {
     top: 25px;
     font-size: 80px;
     margin-left: 30px;
-    color: #004fa4; }
+    color: white; }
   .trind-main-header .trind-main-header-image {
     position: relative;
     float: left;
     top: 25px;
     font-size: 80px;
     left: 36%;
-    color: #004fa4; }
+    color: white; }
   .trind-main-header .trind-main-header-search-icon {
     position: relative;
     float: right;
@@ -824,7 +824,7 @@ a {
     font-size: 80px;
     margin-right: 30px;
     cursor: inherit;
-    color: #004fa4; }
+    color: white; }
 
 #home-drop-search-input-box {
   position: fixed;
@@ -845,7 +845,7 @@ a {
   bottom: 0;
   left: 0;
   color: white;
-  background-color: #ecf0f1;
+  background-color: #fa4c06;
   z-index: 100; }
   .trind-main-footer .trind-main-footer-me-icon {
     position: relative;
@@ -853,9 +853,9 @@ a {
     top: 25px;
     font-size: 80px;
     left: 30px;
-    color: #004fa4; }
+    color: white; }
   .trind-main-footer .trind-main-footer-trind-icon {
-    color: #fa4c06;
+    color: white;
     position: relative;
     float: left;
     top: 5px;
@@ -881,6 +881,6 @@ a {
     top: 20px;
     font-size: 80px;
     right: 30px;
-    color: #004fa4; }
+    color: white; }
 
 /*# sourceMappingURL=app.css.map */

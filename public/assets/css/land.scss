@@ -6,6 +6,7 @@ $creamscicle: rgba(222, 230, 203, 1);
 $awwwards: rgba(0, 150, 141, 1);
 $bulls-o: rgba(250, 76, 6, 1);
 $bulls-blue: rgba(0, 79, 164, 1);
+$odd-blue: rgba(52, 152, 219, 1);
 
 
 
@@ -19,7 +20,7 @@ $bulls-blue: rgba(0, 79, 164, 1);
   height: 100%;
   width: 100%;
   // background-color: rgba(164, 219, 216, 1);
-  background-color: $bulls-blue;
+  background-color: $odd-blue;
 
 
     .login-page-main-font {
@@ -79,13 +80,13 @@ $bulls-blue: rgba(0, 79, 164, 1);
     }
     .login-button {
       margin-left: 0%;
-      color: white;
+      color: $odd-blue;
       font-size: 40px;
       margin-top: 3em;
       width: 100%;
       height: 90px;
       border-radius: .5em .5em .5em .5em;
-      background-color: $bulls-o;
+      background-color: white;
       border: none;
       font-weight: bold;
       letter-spacing: 2.5px;

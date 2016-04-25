@@ -8,6 +8,7 @@ $awwwards: rgba(0, 150, 141, 1);
 $header-text: 'Yanone Kaffeesatz', sans-serif;
 $bulls-o: rgba(250, 76, 6, 1);
 $bulls-blue: rgba(0, 79, 164, 1);
+$odd-blue: rgba(52, 152, 219, 1);
 
 #details-header-name {
   position: relative;
@@ -17,7 +18,7 @@ $bulls-blue: rgba(0, 79, 164, 1);
   left: 3%;
   font-family: $header-text;
   text-align: center;
-  color: $bulls-blue;
+  color: white;
   // border: 1px solid black;
   text-align: center;
   width: 76%;

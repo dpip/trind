@@ -5,6 +5,11 @@ $orange-crush: rgba(255, 89, 0, 1);
 $orange-citrus: rgba(255, 127, 0, 1);
 $awwwards: rgba(0, 150, 141, 1);
 $header-text: 'Yanone Kaffeesatz', sans-serif;
+$bulls-o: rgba(250, 76, 6, 1);
+$bulls-blue: rgba(0, 79, 164, 1);
+$castrol-green: rgba(93, 125, 78, 1);
+$castrol-red: rgba(186, 20, 14, 1);
+$odd-blue: rgba(52, 152, 219, 1);
 
 .editUser-main-header-edit {
   position: relative;
@@ -30,7 +35,7 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
   font-size: 30px;
   margin-top: 2em;
   border: 1px solid #555;
-  background-color: $twitter;
+  background-color: $odd-blue;
   color: white;
 }
 

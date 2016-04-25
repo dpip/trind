@@ -20,6 +20,7 @@ $bulls-o: rgba(250, 76, 6, 1);
 $bulls-blue: rgba(0, 79, 164, 1);
 $castrol-green: rgba(93, 125, 78, 1);
 $castrol-red: rgba(186, 20, 14, 1);
+$odd-blue: rgba(52, 152, 219, 1);
 
 body {
   // background-color: $creamscicle;
@@ -40,7 +41,7 @@ a {
   color: white;
   // background-color: rgba(164, 219, 216, 1);
   // background-color: $bulls-blue;
-  background-color: rgba(236, 240, 241, 1);
+  background-color: $bulls-o;
   // background-color: $blue;
   // border: 1px solid $bulls-blue;
   border: 1px solid grey;
@@ -51,7 +52,7 @@ a {
         top: 25px;
         font-size: 80px;
         margin-left: 30px;
-        color: $bulls-blue;
+        color: white;
         // color: $twitter;
       }
 
@@ -61,7 +62,7 @@ a {
         top: 25px;
         font-size: 80px;
         left: 36%;
-        color: $bulls-blue;
+        color: white;
       }
 
       .trind-main-header-search-icon {
@@ -72,7 +73,7 @@ a {
         margin-right: 30px;
         cursor: inherit;
         // color: white;
-        color: $bulls-blue
+        color: white;
       }
 }
 
@@ -113,7 +114,7 @@ a {
   color: white;
   // background-color: $awwwards;
   // background-color: rgba(39, 39, 39, 0.2);
-    background-color: rgba(236, 240, 241, 1);
+  background-color: $bulls-o;
   z-index: 100;
 
       .trind-main-footer-me-icon {
@@ -122,11 +123,11 @@ a {
         top: 25px;
         font-size: 80px;
         left: 30px;
-        color: $bulls-blue;
+        color: white;
       }
 
       .trind-main-footer-trind-icon {
-        color: $bulls-o;
+        color: white;
         position: relative;
         float: left;
         top: 5px;
@@ -160,6 +161,6 @@ a {
         top: 20px;
         font-size: 80px;
         right: 30px;
-        color: $bulls-blue;
+        color: white;
       }
 }
