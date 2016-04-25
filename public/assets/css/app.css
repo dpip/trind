@@ -82,7 +82,8 @@
     color: white;
     margin-left: 14%;
     font-size: 55px;
-    font-family: 'Sansita One', cursive; }
+    font-family: 'Sansita One', cursive;
+    width: 100%; }
 
 .twitter-hover {
   color: #31d4e9; }
