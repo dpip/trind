@@ -7,6 +7,7 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
 $bulls-o: rgba(250, 76, 6, 1);
 $bulls-blue: rgba(0, 79, 164, 1);
 $odd-blue: rgba(52, 152, 219, 1);
+$comfy: rgba(204, 204, 204, 1);
 
 .me-main-header-edit-icon {
   position: relative;
@@ -14,7 +15,7 @@ $odd-blue: rgba(52, 152, 219, 1);
   top: 25px;
   font-size: 80px;
   right: 30px;
-  color: $bulls-o;
+  color: $comfy;
 }
 
 .me-main-header-text {
@@ -25,7 +26,7 @@ $odd-blue: rgba(52, 152, 219, 1);
   width: 76%;
   margin-left: 2%;
   margin-right: auto;
-  color: white;
+  color: $bulls-o;
   letter-spacing: 4px;
   font-family: $header-text;
   // border: 1px solid black;
@@ -68,8 +69,9 @@ $odd-blue: rgba(52, 152, 219, 1);
         border: 1px solid #555;
         padding: .4em;
         border-radius: .4em;
-        color: white;
-        background-color: $odd-blue;
+        color: $odd-blue;
+        background-color: white;
+        border-color: none;
         // color: white;
     }
     .logout-button {

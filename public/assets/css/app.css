@@ -58,9 +58,9 @@
     letter-spacing: 2.5px; }
   .login-page-container .havent-created-an-account-yet {
     color: white;
-    font-size: 34px;
+    font-size: 30px;
     margin-top: 2em;
-    margin-left: 30%;
+    margin-left: 32%;
     font-family: 'Open Sans', sans-serif; }
   .login-page-container .land-input-container {
     position: relative; }
@@ -74,14 +74,14 @@
     font-size: 34px;
     display: block;
     margin-top: -90px;
-    margin-left: 18px;
+    margin-left: 16px;
     font-family: 'Open Sans', sans-serif; }
   .login-page-container .create-account {
     margin-top: 1em;
     font-weight: bold;
     color: white;
-    margin-left: 8%;
-    font-size: 65px;
+    margin-left: 14%;
+    font-size: 55px;
     font-family: 'Sansita One', cursive; }
 
 .twitter-hover {
@@ -291,7 +291,7 @@ input {
   position: absolute;
   left: 5.5em;
   top: 18px;
-  color: #fa4c06; }
+  color: #3498db; }
 
 .create-input-field {
   height: 100%;
@@ -579,7 +579,7 @@ input {
   display: inline-block; }
 
 #memories-header-text {
-  color: white;
+  color: #3498db;
   position: relative;
   float: left;
   top: 20px;
@@ -588,7 +588,7 @@ input {
   font-family: "Yanone Kaffeesatz", sans-serif; }
 
 #memories-back-button {
-  color: white;
+  color: #3498db;
   position: relative;
   float: left;
   top: 25px;
@@ -714,8 +714,8 @@ input {
   float: left;
   top: 25px;
   font-size: 80px;
-  left: 27%;
-  color: white;
+  left: 25%;
+  color: #3498db;
   font-family: "Yanone Kaffeesatz", sans-serif; }
 
 .editFields {
@@ -881,6 +881,6 @@ a {
     top: 20px;
     font-size: 80px;
     right: 30px;
-    color: #cccccc; }
+    color: #3498db; }
 
 /*# sourceMappingURL=app.css.map */

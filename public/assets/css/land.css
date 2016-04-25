@@ -58,9 +58,9 @@
     letter-spacing: 2.5px; }
   .login-page-container .havent-created-an-account-yet {
     color: white;
-    font-size: 34px;
+    font-size: 30px;
     margin-top: 2em;
-    margin-left: 30%;
+    margin-left: 32%;
     font-family: 'Open Sans', sans-serif; }
   .login-page-container .land-input-container {
     position: relative; }
@@ -74,14 +74,14 @@
     font-size: 34px;
     display: block;
     margin-top: -90px;
-    margin-left: 18px;
+    margin-left: 16px;
     font-family: 'Open Sans', sans-serif; }
   .login-page-container .create-account {
     margin-top: 1em;
     font-weight: bold;
     color: white;
-    margin-left: 8%;
-    font-size: 65px;
+    margin-left: 14%;
+    font-size: 55px;
     font-family: 'Sansita One', cursive; }
 
 .twitter-hover {

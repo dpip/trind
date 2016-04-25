@@ -2,7 +2,7 @@
   display: inline-block; }
 
 #memories-header-text {
-  color: white;
+  color: #3498db;
   position: relative;
   float: left;
   top: 20px;
@@ -11,7 +11,7 @@
   font-family: "Yanone Kaffeesatz", sans-serif; }
 
 #memories-back-button {
-  color: white;
+  color: #3498db;
   position: relative;
   float: left;
   top: 25px;
