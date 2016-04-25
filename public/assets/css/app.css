@@ -864,7 +864,7 @@ a {
     font-family: 'Sniglet', cursive;
     transform: rotate(-45deg); }
   .trind-main-footer .dot-dot-dot {
-    color: white;
+    color: #fa4c06;
     z-index: 10;
     position: absolute;
     top: 20px;
@@ -881,6 +881,6 @@ a {
     top: 20px;
     font-size: 80px;
     right: 30px;
-    color: #3498db; }
+    color: #cccccc; }
 
 /*# sourceMappingURL=app.css.map */

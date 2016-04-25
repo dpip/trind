@@ -145,7 +145,7 @@ a {
       }
 
       .dot-dot-dot {
-        color: white;
+        color: $bulls-o;
         z-index: 10;
         position: absolute;
         top: 20px;
@@ -166,6 +166,6 @@ a {
         top: 20px;
         font-size: 80px;
         right: 30px;
-        color: $odd-blue;
+        color: $comfy;
       }
 }
