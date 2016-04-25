@@ -356,7 +356,7 @@ input {
   top: 25px;
   font-size: 80px;
   left: 30%;
-  color: white;
+  color: #fa4c06;
   letter-spacing: 4px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: bold; }
@@ -801,7 +801,7 @@ a {
   left: 0;
   z-index: 100;
   color: white;
-  background-color: #fa4c06;
+  background-color: white;
   border: 1px solid grey; }
   .trind-main-header .trind-main-header-create-icon {
     position: relative;
@@ -809,14 +809,15 @@ a {
     top: 25px;
     font-size: 80px;
     margin-left: 30px;
-    color: white; }
+    color: white;
+    color: #cccccc; }
   .trind-main-header .trind-main-header-image {
     position: relative;
     float: left;
     top: 25px;
     font-size: 80px;
     left: 36%;
-    color: white; }
+    color: #fa4c06; }
   .trind-main-header .trind-main-header-search-icon {
     position: relative;
     float: right;
@@ -824,7 +825,7 @@ a {
     font-size: 80px;
     margin-right: 30px;
     cursor: inherit;
-    color: white; }
+    color: #cccccc; }
 
 #home-drop-search-input-box {
   position: fixed;
@@ -845,7 +846,7 @@ a {
   bottom: 0;
   left: 0;
   color: white;
-  background-color: #fa4c06;
+  background-color: white;
   z-index: 100; }
   .trind-main-footer .trind-main-footer-me-icon {
     position: relative;
@@ -853,9 +854,9 @@ a {
     top: 25px;
     font-size: 80px;
     left: 30px;
-    color: white; }
+    color: #cccccc; }
   .trind-main-footer .trind-main-footer-trind-icon {
-    color: white;
+    color: #fa4c06;
     position: relative;
     float: left;
     top: 5px;
@@ -874,13 +875,13 @@ a {
     font-weight: bold; }
   .trind-main-footer .pushup {
     margin-top: -10px;
-    color: white; }
+    color: #fa4c06; }
   .trind-main-footer .trind-main-footer-message-icon {
     position: relative;
     float: right;
     top: 20px;
     font-size: 80px;
     right: 30px;
-    color: white; }
+    color: #cccccc; }
 
 /*# sourceMappingURL=app.css.map */
