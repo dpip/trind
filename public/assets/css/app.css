@@ -80,7 +80,7 @@
     margin-top: 1em;
     font-weight: bold;
     color: white;
-    margin-left: 14%;
+    margin-left: 11.5%;
     font-size: 55px;
     font-family: 'Sansita One', cursive;
     width: 100%; }
@@ -242,10 +242,10 @@ input {
 
 .messages-main-header-title {
   position: absolute;
-  color: white;
+  color: #3498db;
   font-size: 4em;
   width: 40%;
-  left: 36%;
+  left: 38%;
   padding-top: .5em;
   font-family: "Yanone Kaffeesatz", sans-serif; }
 
@@ -266,7 +266,6 @@ input {
       opacity: 0.5; }
     .conversation-information-container .conversation-information-direction .conversation-sender {
       text-align: left;
-      padding-right: 2em;
       color: #ff7f00; }
     .conversation-information-container .conversation-information-direction .conversation-last-message {
       float: right;
@@ -402,7 +401,7 @@ input {
     position: relative;
     background: inherit;
     right: 0em;
-    margin-top: 80px; }
+    margin-top: 70px; }
   .home-events-display-wrap .home-events-display #description {
     margin-top: 10px;
     height: 80px;
@@ -429,9 +428,9 @@ input {
   margin-top: .6em; }
 
 .getting-started-modal {
-  height: 65%;
+  height: 70%;
   width: 85%;
-  background-color: #fa4c06;
+  background-color: #3498db;
   position: fixed;
   top: 20em;
   z-index: 145;

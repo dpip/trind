@@ -6,10 +6,10 @@
 
 .messages-main-header-title {
   position: absolute;
-  color: white;
+  color: #3498db;
   font-size: 4em;
   width: 40%;
-  left: 36%;
+  left: 38%;
   padding-top: .5em;
   font-family: "Yanone Kaffeesatz", sans-serif; }
 
@@ -30,7 +30,6 @@
       opacity: 0.5; }
     .conversation-information-container .conversation-information-direction .conversation-sender {
       text-align: left;
-      padding-right: 2em;
       color: #ff7f00; }
     .conversation-information-container .conversation-information-direction .conversation-last-message {
       float: right;

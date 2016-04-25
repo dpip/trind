@@ -92,7 +92,7 @@ $castrol-red: rgba(186, 20, 14, 1);
       position: relative;
       background: inherit;
       right: 0em;
-      margin-top: 80px;
+      margin-top: 70px;
       // bottom: 0;
 
     }
@@ -139,9 +139,9 @@ $castrol-red: rgba(186, 20, 14, 1);
 }
 
 .getting-started-modal {
-  height: 65%;
+  height: 70%;
   width: 85%;
-  background-color: $bulls-o;
+  background-color: $odd-blue;
   position: fixed;
   top: 20em;
   z-index: 145;

@@ -6,6 +6,12 @@ $orange-citrus: rgba(255, 127, 0, 1);
 $creamscicle: rgba(222, 230, 203, 1);
 $awwwards: rgba(0, 150, 141, 1);
 $header-text: 'Yanone Kaffeesatz', sans-serif;
+$bulls-o: rgba(250, 76, 6, 1);
+$bulls-blue: rgba(0, 79, 164, 1);
+$castrol-green: rgba(93, 125, 78, 1);
+$castrol-red: rgba(186, 20, 14, 1);
+$odd-blue: rgba(52, 152, 219, 1);
+$comfy: rgba(204, 204, 204, 1);
 
 
 .open-messages-container {
@@ -17,10 +23,10 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
 
     .messages-main-header-title {
         position: absolute;
-        color: white;
+        color: $odd-blue;
         font-size: 4em;
         width: 40%;
-        left: 36%;
+        left: 38%;
         padding-top: .5em;
         font-family: $header-text;
     }
@@ -47,7 +53,7 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
 
             .conversation-sender {
                 text-align: left;
-                padding-right: 2em;
+                // padding-right: 2em;
                 color: rgb(255, 127, 0);
             }
 
