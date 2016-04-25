@@ -4,57 +4,61 @@
   top: 25px;
   font-size: 80px;
   left: 30%;
-  color: white;
+  color: #004fa4;
   letter-spacing: 4px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: bold; }
 
-.home-events-display-wrap .home-events-display {
-  position: relative;
-  box-sizing: border-box;
-  margin-top: 120px;
-  width: 100%;
-  height: 100%;
-  font-family: 'Open Sans', sans-serif;
-  padding-bottom: 120px; }
-  .home-events-display-wrap .home-events-display .home-trind-event-information-image {
-    background-color: white;
-    height: 280px;
-    width: 280px;
-    float: left; }
-  .home-events-display-wrap .home-events-display .home-trind-event-information-image img {
-    border-radius: 10em 10em 10em 10em;
-    margin-left: 2em;
-    margin-top: 2em; }
-  .home-events-display-wrap .home-events-display .home-trind-event-container {
-    height: 280px;
+.home-events-display-wrap {
+  background-position: #004fa4; }
+  .home-events-display-wrap .home-events-display {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 120px;
     width: 100%;
-    background-color: white; }
-  .home-events-display-wrap .home-events-display #event-dilb {
-    display: inline-block; }
-  .home-events-display-wrap .home-events-display .home-trind-event-information-container {
-    width: 100%;
-    border: 1px solid rgba(171, 178, 186, 0.5); }
-  .home-events-display-wrap .home-events-display .home-trind-event-information {
-    background-color: white; }
-  .home-events-display-wrap .home-events-display #event-information-name {
-    color: #888;
-    font-size: 30px;
-    padding-top: 10px; }
-  .home-events-display-wrap .home-events-display #interests {
-    font-size: 30px;
-    padding-bottom: 15px;
-    color: #ff6d5e;
-    vertical-align: top; }
-  .home-events-display-wrap .home-events-display #description {
-    margin-top: 10px;
-    height: 80px;
-    font-size: 45px;
-    padding-bottom: 15px; }
-  .home-events-display-wrap .home-events-display #location {
-    height: 20px;
-    font-size: 30px;
-    vertical-align: bottom; }
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 120px; }
+    .home-events-display-wrap .home-events-display .home-trind-event-information-image {
+      background-color: white;
+      height: 280px;
+      width: 280px;
+      float: left; }
+    .home-events-display-wrap .home-events-display .home-trind-event-information-image img {
+      border-radius: 9em 9em 9em 9em;
+      margin-left: 2em;
+      margin-top: 2em; }
+    .home-events-display-wrap .home-events-display .home-trind-event-container {
+      height: 280px;
+      width: 100%;
+      background-color: white; }
+    .home-events-display-wrap .home-events-display #event-dilb {
+      display: inline-block; }
+    .home-events-display-wrap .home-events-display .home-trind-event-information-container {
+      width: 100%;
+      border: 1px solid rgba(171, 178, 186, 0.5); }
+    .home-events-display-wrap .home-events-display .home-trind-event-information {
+      background-color: white; }
+    .home-events-display-wrap .home-events-display #event-information-name {
+      color: #888;
+      font-size: 30px;
+      padding-top: 10px; }
+    .home-events-display-wrap .home-events-display #interests {
+      font-size: 30px;
+      color: #ff6d5e;
+      vertical-align: bottom;
+      position: relative;
+      background: inherit;
+      right: 0em;
+      margin-top: 80px; }
+    .home-events-display-wrap .home-events-display #description {
+      margin-top: 10px;
+      height: 80px;
+      font-size: 45px;
+      padding-bottom: 15px; }
+    .home-events-display-wrap .home-events-display #location {
+      height: 20px;
+      font-size: 30px; }
 
 .getting-started-background {
   height: 100%;
@@ -75,7 +79,7 @@
 .getting-started-modal {
   height: 65%;
   width: 85%;
-  background-color: #31d4e9;
+  background-color: #fa4c06;
   position: fixed;
   top: 20em;
   z-index: 145;
@@ -119,5 +123,9 @@
 
 #start {
   margin-top: 2em; }
+
+#where {
+  color: #004fa4;
+  opacity: 0.7; }
 
 /*# sourceMappingURL=home.css.map */

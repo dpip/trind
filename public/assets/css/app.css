@@ -5,7 +5,7 @@
 .login-page-container {
   height: 100%;
   width: 100%;
-  background-color: #31d4e9; }
+  background-color: #004fa4; }
   .login-page-container .login-page-main-font {
     font-size: 160px;
     font-family: 'Sniglet', cursive;
@@ -52,7 +52,7 @@
     width: 100%;
     height: 90px;
     border-radius: .5em .5em .5em .5em;
-    background-color: #31d4e9;
+    background-color: #fa4c06;
     border: none;
     font-weight: bold;
     letter-spacing: 2.5px; }
@@ -91,16 +91,17 @@
   position: absolute;
   z-index: 100;
   border-radius: 1em;
-  background-color: #31d4e9;
+  background-color: #004fa4;
   height: 80em;
-  width: 82%;
-  top: 340px; }
+  width: 90%;
+  top: 340px;
+  left: 3.5em; }
   .landing-signup-container .btn-signup-close {
     height: 80px;
     width: 80px;
     float: right;
     margin-top: 5px;
-    margin-right: 5px;
+    margin-right: 30px;
     font-size: 40px;
     border-radius: .5em;
     font-family: 'Open Sans', sans-serif;
@@ -132,9 +133,9 @@
     margin-top: 6em; }
   .landing-signup-container .sign-up-pressure {
     font-family: 'Sansita One', cursive;
-    font-size: 42px;
-    margin-left: 3.5em;
-    margin-top: 3em;
+    font-size: 46px;
+    margin-left: 4em;
+    margin-top: 2em;
     color: white; }
   .landing-signup-container #signup-now {
     height: 120px;
@@ -292,8 +293,8 @@ input {
   top: 18px; }
 
 .create-input-field {
-  height: 85%;
-  width: 99%;
+  height: 100%;
+  width: 100%;
   margin-top: 120px;
   margin-left: auto;
   margin-right: auto;
@@ -323,14 +324,14 @@ input {
   .create-input-field button {
     text-align: center;
     margin-left: 10%;
-    margin-top: 4em; }
+    margin-top: 2em; }
   .create-input-field .create-trind-submit-button-text {
     border: none;
     height: 140px;
     width: 80%;
     font-size: 90px;
     color: #fff;
-    background-color: #31d4eb;
+    background-color: #fa4c06;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: bold;
     bottom: 6em;
@@ -355,57 +356,61 @@ input {
   top: 25px;
   font-size: 80px;
   left: 30%;
-  color: white;
+  color: #004fa4;
   letter-spacing: 4px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: bold; }
 
-.home-events-display-wrap .home-events-display {
-  position: relative;
-  box-sizing: border-box;
-  margin-top: 120px;
-  width: 100%;
-  height: 100%;
-  font-family: 'Open Sans', sans-serif;
-  padding-bottom: 120px; }
-  .home-events-display-wrap .home-events-display .home-trind-event-information-image {
-    background-color: white;
-    height: 280px;
-    width: 280px;
-    float: left; }
-  .home-events-display-wrap .home-events-display .home-trind-event-information-image img {
-    border-radius: 10em 10em 10em 10em;
-    margin-left: 2em;
-    margin-top: 2em; }
-  .home-events-display-wrap .home-events-display .home-trind-event-container {
-    height: 280px;
+.home-events-display-wrap {
+  background-position: #004fa4; }
+  .home-events-display-wrap .home-events-display {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 120px;
     width: 100%;
-    background-color: white; }
-  .home-events-display-wrap .home-events-display #event-dilb {
-    display: inline-block; }
-  .home-events-display-wrap .home-events-display .home-trind-event-information-container {
-    width: 100%;
-    border: 1px solid rgba(171, 178, 186, 0.5); }
-  .home-events-display-wrap .home-events-display .home-trind-event-information {
-    background-color: white; }
-  .home-events-display-wrap .home-events-display #event-information-name {
-    color: #888;
-    font-size: 30px;
-    padding-top: 10px; }
-  .home-events-display-wrap .home-events-display #interests {
-    font-size: 30px;
-    padding-bottom: 15px;
-    color: #ff6d5e;
-    vertical-align: top; }
-  .home-events-display-wrap .home-events-display #description {
-    margin-top: 10px;
-    height: 80px;
-    font-size: 45px;
-    padding-bottom: 15px; }
-  .home-events-display-wrap .home-events-display #location {
-    height: 20px;
-    font-size: 30px;
-    vertical-align: bottom; }
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 120px; }
+    .home-events-display-wrap .home-events-display .home-trind-event-information-image {
+      background-color: white;
+      height: 280px;
+      width: 280px;
+      float: left; }
+    .home-events-display-wrap .home-events-display .home-trind-event-information-image img {
+      border-radius: 9em 9em 9em 9em;
+      margin-left: 2em;
+      margin-top: 2em; }
+    .home-events-display-wrap .home-events-display .home-trind-event-container {
+      height: 280px;
+      width: 100%;
+      background-color: white; }
+    .home-events-display-wrap .home-events-display #event-dilb {
+      display: inline-block; }
+    .home-events-display-wrap .home-events-display .home-trind-event-information-container {
+      width: 100%;
+      border: 1px solid rgba(171, 178, 186, 0.5); }
+    .home-events-display-wrap .home-events-display .home-trind-event-information {
+      background-color: white; }
+    .home-events-display-wrap .home-events-display #event-information-name {
+      color: #888;
+      font-size: 30px;
+      padding-top: 10px; }
+    .home-events-display-wrap .home-events-display #interests {
+      font-size: 30px;
+      color: #ff6d5e;
+      vertical-align: bottom;
+      position: relative;
+      background: inherit;
+      right: 0em;
+      margin-top: 80px; }
+    .home-events-display-wrap .home-events-display #description {
+      margin-top: 10px;
+      height: 80px;
+      font-size: 45px;
+      padding-bottom: 15px; }
+    .home-events-display-wrap .home-events-display #location {
+      height: 20px;
+      font-size: 30px; }
 
 .getting-started-background {
   height: 100%;
@@ -426,7 +431,7 @@ input {
 .getting-started-modal {
   height: 65%;
   width: 85%;
-  background-color: #31d4e9;
+  background-color: #fa4c06;
   position: fixed;
   top: 20em;
   z-index: 145;
@@ -471,6 +476,10 @@ input {
 #start {
   margin-top: 2em; }
 
+#where {
+  color: #004fa4;
+  opacity: 0.7; }
+
 #details-header-name {
   position: relative;
   float: left;
@@ -479,10 +488,12 @@ input {
   left: 3%;
   font-family: "Yanone Kaffeesatz", sans-serif;
   text-align: center;
+  color: #004fa4;
   text-align: center;
   width: 76%; }
 
 .event-details-container {
+  background-color: rgba(40, 44, 52, 0.03);
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -525,29 +536,30 @@ input {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #31d4e9;
+    background-color: #004fa4;
     border-radius: .3em;
     height: 65px;
     margin-top: 30px;
     color: white;
-    font-size: 3em; }
+    font-size: 3em;
+    border: none; }
   .event-details-container #details-message-button {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #31d4e9;
+    background-color: #fa4c06;
     border-radius: .3em;
     height: 65px;
     margin-top: 30px;
     color: white;
-    font-size: 3em; }
+    font-size: 3em;
+    border: none; }
   .event-details-container #details-eventDetail-title {
     margin-top: 40px;
     margin-left: 40px; }
   .event-details-container #details-eventDetail-interest {
     margin-top: 40px;
-    margin-left: 40px;
-    color: #ff5900; }
+    margin-left: 40px; }
   .event-details-container #details-eventDetail-description {
     margin-top: 40px;
     margin-left: 40px;
@@ -556,7 +568,7 @@ input {
     margin-top: 40px;
     margin-left: 40px; }
 
-.fa-map-marker {
+#details-marker {
   color: #31d4e9;
   font-size: 40px; }
 
@@ -789,19 +801,22 @@ a {
   left: 0;
   z-index: 100;
   color: white;
-  background-color: #ff7f00; }
+  background-color: #ecf0f1;
+  border: 1px solid grey; }
   .trind-main-header .trind-main-header-create-icon {
     position: relative;
     float: left;
     top: 25px;
     font-size: 80px;
-    margin-left: 30px; }
+    margin-left: 30px;
+    color: #004fa4; }
   .trind-main-header .trind-main-header-image {
     position: relative;
     float: left;
     top: 25px;
     font-size: 80px;
-    left: 36%; }
+    left: 36%;
+    color: #004fa4; }
   .trind-main-header .trind-main-header-search-icon {
     position: relative;
     float: right;
@@ -809,7 +824,7 @@ a {
     font-size: 80px;
     margin-right: 30px;
     cursor: inherit;
-    color: white; }
+    color: #004fa4; }
 
 #home-drop-search-input-box {
   position: fixed;
@@ -830,16 +845,17 @@ a {
   bottom: 0;
   left: 0;
   color: white;
-  background-color: #ff7f00;
+  background-color: #ecf0f1;
   z-index: 100; }
   .trind-main-footer .trind-main-footer-me-icon {
     position: relative;
     float: left;
     top: 25px;
     font-size: 80px;
-    left: 30px; }
+    left: 30px;
+    color: #004fa4; }
   .trind-main-footer .trind-main-footer-trind-icon {
-    color: #31d4e9;
+    color: #fa4c06;
     position: relative;
     float: left;
     top: 5px;
@@ -848,7 +864,7 @@ a {
     font-family: 'Sniglet', cursive;
     transform: rotate(-45deg); }
   .trind-main-footer .dot-dot-dot {
-    color: #31d4eb;
+    color: white;
     z-index: 10;
     position: absolute;
     top: 20px;
@@ -858,12 +874,13 @@ a {
     font-weight: bold; }
   .trind-main-footer .pushup {
     margin-top: -10px;
-    color: #ff7f00; }
+    color: white; }
   .trind-main-footer .trind-main-footer-message-icon {
     position: relative;
     float: right;
     top: 20px;
     font-size: 80px;
-    right: 30px; }
+    right: 30px;
+    color: #004fa4; }
 
 /*# sourceMappingURL=app.css.map */

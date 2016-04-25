@@ -6,7 +6,8 @@ $orange-citrus: rgba(255, 127, 0, 1);
 $creamscicle: rgba(222, 230, 203, 1);
 $awwwards: rgba(0, 150, 141, 1);
 $header-text: 'Yanone Kaffeesatz', sans-serif;
-
+$bulls-o: rgba(250, 76, 6, 1);
+$bulls-blue: rgba(0, 79, 164, 1);
 
 #details-header-name {
   position: relative;
@@ -16,6 +17,7 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
   left: 3%;
   font-family: $header-text;
   text-align: center;
+  color: $bulls-blue;
   // border: 1px solid black;
   text-align: center;
   width: 76%;
@@ -23,6 +25,7 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .event-details-container {
+    background-color: rgba(40, 44, 52, 0.03);
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -81,24 +84,26 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
       width: 80%;
       margin-left: auto;
       margin-right:auto;
-      background-color: $twitter;
+      background-color: $bulls-blue;
       border-radius: .3em;
       height: 65px;
       margin-top: 30px;
       color: white;
       font-size: 3em;
+      border: none;
     }
 
     #details-message-button {
          width: 80%;
          margin-left: auto;
          margin-right: auto;
-         background-color: $twitter;
+         background-color: $bulls-o;
          border-radius: .3em;
          height: 65px;
          margin-top: 30px;
          color: white;
          font-size: 3em;
+         border: none;
     }
 
     #details-eventDetail-title {
@@ -109,7 +114,7 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
     #details-eventDetail-interest {
       margin-top: 40px;
       margin-left: 40px;
-      color: $orange-crush;
+      // color: $orange-crush;
 
     }
     #details-eventDetail-description {
@@ -125,7 +130,7 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
     }
 }
 
-.fa-map-marker {
+#details-marker {
   color: $twitter;
   font-size: 40px;
 }

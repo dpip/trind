@@ -6,10 +6,12 @@
   left: 3%;
   font-family: "Yanone Kaffeesatz", sans-serif;
   text-align: center;
+  color: #004fa4;
   text-align: center;
   width: 76%; }
 
 .event-details-container {
+  background-color: rgba(40, 44, 52, 0.03);
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -52,29 +54,30 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #31d4e9;
+    background-color: #004fa4;
     border-radius: .3em;
     height: 65px;
     margin-top: 30px;
     color: white;
-    font-size: 3em; }
+    font-size: 3em;
+    border: none; }
   .event-details-container #details-message-button {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #31d4e9;
+    background-color: #fa4c06;
     border-radius: .3em;
     height: 65px;
     margin-top: 30px;
     color: white;
-    font-size: 3em; }
+    font-size: 3em;
+    border: none; }
   .event-details-container #details-eventDetail-title {
     margin-top: 40px;
     margin-left: 40px; }
   .event-details-container #details-eventDetail-interest {
     margin-top: 40px;
-    margin-left: 40px;
-    color: #ff5900; }
+    margin-left: 40px; }
   .event-details-container #details-eventDetail-description {
     margin-top: 40px;
     margin-left: 40px;
@@ -83,7 +86,7 @@
     margin-top: 40px;
     margin-left: 40px; }
 
-.fa-map-marker {
+#details-marker {
   color: #31d4e9;
   font-size: 40px; }
 

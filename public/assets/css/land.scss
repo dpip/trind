@@ -4,7 +4,8 @@ $orange-crush: rgba(255, 89, 0, 1);
 $orange-citrus: rgba(255, 127, 0, 1);
 $creamscicle: rgba(222, 230, 203, 1);
 $awwwards: rgba(0, 150, 141, 1);
-
+$bulls-o: rgba(250, 76, 6, 1);
+$bulls-blue: rgba(0, 79, 164, 1);
 
 
 
@@ -18,7 +19,7 @@ $awwwards: rgba(0, 150, 141, 1);
   height: 100%;
   width: 100%;
   // background-color: rgba(164, 219, 216, 1);
-  background-color: $twitter;
+  background-color: $bulls-blue;
 
 
     .login-page-main-font {
@@ -84,8 +85,7 @@ $awwwards: rgba(0, 150, 141, 1);
       width: 100%;
       height: 90px;
       border-radius: .5em .5em .5em .5em;
-      // background-color: white;
-      background-color: $twitter;
+      background-color: $bulls-o;
       border: none;
       font-weight: bold;
       letter-spacing: 2.5px;
@@ -121,12 +121,10 @@ $awwwards: rgba(0, 150, 141, 1);
     .create-account {
       margin-top: 1em;
       font-weight: bold;
+      // color: $bulls-o;
       color: white;
-      // color: $twitter;
       margin-left: 8%;
       font-size: 65px;
-      // background-color: $twitter;
-      // font-family: 'Open Sans', sans-serif;
       font-family: 'Sansita One', cursive;
     }
     // .twitter-hover {
@@ -144,17 +142,18 @@ $awwwards: rgba(0, 150, 141, 1);
   position: absolute;
   z-index: 100;
   border-radius: 1em;
-  background-color: $twitter;
+  background-color: $bulls-blue;
   height: 80em;
-  width: 82%;
+  width: 90%;
   top: 340px;
+  left: 3.5em;
 
   .btn-signup-close {
   height: 80px;
   width: 80px;
   float: right;
   margin-top: 5px;
-  margin-right: 5px;
+  margin-right: 30px;
   font-size: 40px;
   border-radius: .5em;
   font-family: 'Open Sans', sans-serif;
@@ -193,9 +192,9 @@ $awwwards: rgba(0, 150, 141, 1);
   .sign-up-pressure {
     // font-family: 'Lobster Two', cursive;
     font-family: 'Sansita One', cursive;
-    font-size: 42px;
-    margin-left: 3.5em;
-    margin-top: 3em;
+    font-size: 46px;
+    margin-left: 4em;
+    margin-top: 2em;
     color: white;
   }
   #signup-now {

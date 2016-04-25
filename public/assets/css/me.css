@@ -4,7 +4,7 @@
   top: 25px;
   font-size: 80px;
   right: 30px;
-  color: white; }
+  color: #004fa4; }
 
 .me-main-header-text {
   position: relative;
@@ -14,7 +14,7 @@
   width: 76%;
   margin-left: 2%;
   margin-right: auto;
-  color: white;
+  color: #004fa4;
   letter-spacing: 4px;
   font-family: "Yanone Kaffeesatz", sans-serif;
   text-align: center; }
@@ -47,7 +47,8 @@
     border: 1px solid #555;
     padding: .4em;
     border-radius: .4em;
-    color: #31d4e9; }
+    color: white;
+    background-color: #004fa4; }
   .me-container .logout-button {
     margin-top: 2em;
     margin-left: 7.5em;
