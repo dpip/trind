@@ -7,21 +7,25 @@
 
   <div class= "home-drop-search-bar">
     </div>
-    <input type="text" placeholder="What would you like to do?" class = "expand" id= "home-drop-search-input-box" ng-model="search">
+    <input type="text" placeholder="What would you like to do?" class = "expand" id= "home-drop-search-input-box" ng-model="search" >
 
-
+<style>
+  .lastRepeat {
+    margin-bottom: 120px;
+  }
+</style>
 
 <div class="home-events-display-wrap">
   <div class= "home-events-display">
     <div class= "home-trind-event-container" ng-repeat="things in stuff" >
-      <div ng-repeat= "thing in things | filter:search | orderBy: 'created_at':true">
+      <div ng-repeat= "thing in things | filter:search | orderBy: 'created_at':true" ng-class="{'lastRepeat': $last}">
         <div class= "home-trind-event-information-container" id="event-dilb" ng-click="details(thing.id)">
           <div class= "home-trind-event-information-image" id="event-dilb" ><img src="{{thing.user.photo_url}}" height="220" width="220"></div>
             <div class= "home-trind-event-information" id="event-information-name">{{thing.user.name}} wants to...</div>
               <div class= "home-trind-event-information" id= "description">{{thing.title}} </div>
               <div class= "home-trind-event-information" id= "location"><span id = "where" >{{thing.location}}</span> </div>
             <div class= "home-trind-event-information" id= "interests">{{thing.interests}}</div>
-            
+
         </div>
       </div>
     </div>

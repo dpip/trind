@@ -72,20 +72,23 @@ $odd-blue: rgba(52, 152, 219, 1);
         color: white;
     }
 
-.details-button-container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    text-align:center;
-}
+    .details-button-container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        text-align:center;
+    }
 
+    #details-eventDetail-interest {
+      color: $bulls-o;
+    }
 
     #details-interested-button {
       width: 80%;
       margin-left: auto;
       margin-right:auto;
-      background-color: $bulls-blue;
+      background-color: $odd-blue;
       border-radius: .3em;
       height: 65px;
       margin-top: 30px;
@@ -132,7 +135,7 @@ $odd-blue: rgba(52, 152, 219, 1);
 }
 
 #details-marker {
-  color: $twitter;
+  color: $odd-blue;
   font-size: 40px;
 }
 

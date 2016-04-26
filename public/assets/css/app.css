@@ -531,11 +531,13 @@ input {
     margin-right: auto;
     margin-top: 50px;
     text-align: center; }
+  .event-details-container #details-eventDetail-interest {
+    color: #fa4c06; }
   .event-details-container #details-interested-button {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #004fa4;
+    background-color: #3498db;
     border-radius: .3em;
     height: 65px;
     margin-top: 30px;
@@ -568,7 +570,7 @@ input {
     margin-left: 40px; }
 
 #details-marker {
-  color: #31d4e9;
+  color: #3498db;
   font-size: 40px; }
 
 #mapcontainer {
