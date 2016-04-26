@@ -238,7 +238,15 @@
   border-color: none; }
 
 #chatter {
-  padding-left: .5em; }
+  width: 76%;
+  height: 90px;
+  font-size: 2.5em;
+  border: 2px solid #999;
+  border-radius: 1em;
+  margin-left: 40px; }
+
+input {
+  text-align: center; }
 
 #message-t-footer-icon {
   margin-left: 75px; }

@@ -14,11 +14,9 @@
             <div class ="create-subtitle">  </div>
           <form ng-submit="submitTrind()" method="post">
           <div class= "user-creator-description-title">
-                <!-- ng-model="testTrind.event.title" -->
-                <input id = "i-want-to" type="text" placeholder=" I want to ..." class ="create-enter-title-input">
+                <input id = "i-want-to" type="text" placeholder=" I want to" class ="create-enter-title-input">
            </div>
             <div class= "user-creator-description-interests">
-                <!-- ng-model="testTrind.event.interests" -->
               <input id = "create-your-interests" type="text"  placeholder=" Interests" class ="create-enter-interests-input">
             </div>
 
@@ -26,25 +24,11 @@
 
             <div class = "user-creator-description">
 
-              <!-- ng-model="testTrind.event.description" -->
               <textarea id = "create-description-field" class="user-creator-description-field"  placeholder=" Description" max-length="200" ></textarea>
               </div>
-              <!--
-            <div class "create-enable-gps-location">
-              Enable Radius <input type="radio" name="enableGps">
-              </div> -->
-
-            <!-- <div class = "create-enter-location">
-              <input type="text"  placeholder="Anywhere in particular?" class ="create-enter-location-input">
-            </div> -->
-            <!-- GOOGLEMAPS -->
-            <!-- {{location}} -->
-
-              <!-- <input ng-model="testTrind.event.location" id="create-map-input" class="controls" type="text" placeholder="Durham, NC"> -->
 
               <input id="create-map-input" class="controls" type="text" placeholder=" Location">
               <div id="map-canvas"></div>
-              <!-- GOOGLEMAPS -->
             <div class= "create-trind-submit-button">
               <button type="submit" class= "create-trind-submit-button-text">Trind</button>
             </div>
