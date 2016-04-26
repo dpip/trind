@@ -15,7 +15,7 @@
       <div class="panel-body">
         <div class="chat-column">
           <div class="chat-body">
-              <div ng-repeat="messages in chat.messages">
+              <div ng-repeat="messages in chat.messages | orderBy: 'created_at':true">
                 <div ng-class="whoAmI(messages.author)">{{messages.body}}</div>
               </div>
           </div>
