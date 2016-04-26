@@ -30,7 +30,7 @@ $comfy: rgba(204, 204, 204, 1);
 .message-main-header-name {
   position: relative;
   float: left;
-  top: 25px;
+  top: 10px;
   font-size: 80px;
   left: 3%;
   font-family: $header-text;
@@ -95,15 +95,16 @@ $comfy: rgba(204, 204, 204, 1);
 }
 
 #meet-button {
-  right: 2px;
-  top: 8px;
-  font-size: 2.3em;
+  right: 30px;
+  top: 18px;
+  font-size: 50px;
   width: 20%;
-  border-radius: .5em .5em .5em .5em;
-  height: 90%;
+  border-radius: .2em .2em .2em .2em;
+  height: 70%;
   background-color: white;
   color: $bulls-o;
   position: absolute;
+  // border: none;
   // background-color: #999;
   // color: #fff;
 }
