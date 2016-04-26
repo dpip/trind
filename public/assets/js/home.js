@@ -1,7 +1,12 @@
 var showDetails;
 var toMemories;
 var unseen;
+
+
 trind.controller('HomeController',  [ '$http', '$location', '$scope', function($http, $location, $scope){
+
+
+
 
   // +++++++++++ token in localStorage ++++++++++
     var currentToken = localStorage.getItem('tokenToken');
@@ -42,15 +47,28 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
 
         };
 
+        // Attempting to add margin to last repeated item
+
+
+        // $('.home-trind-event-information-container').last()[0].style["margin-bottom"] = "120px";
+
+
       // Gets the event json from Damian and repeats through home page
       $http.get('https://still-waters-14036.herokuapp.com/events?token=' + currentToken).success(function(data){
         console.log('home page data', data);
         $scope.stuff = data;
-          // $scope.eventIDGrab = data.id
+          $scope.eventIDGrab = data.id
+
+          // $('.home-trind-event-information-container').last()[0].style["margin-bottom"] = "120px";
+
+          // var lastEvent = $scope.stuff.length-1;
+          // console.log(lastEvent);
+
           $scope.details = function(thingId) {
             console.log("ya there?");
             showID = thingId;
             console.log(showID);
+
 
             localStorage.setItem('theEventID', showID);
 
@@ -64,6 +82,8 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
 
           // scope displaying details of user!
           $scope.eventDetail = data.events;
+
+
 
           var unseen;
           $http.get('https://still-waters-14036.herokuapp.com/total_messages_not_viewed?token=' + currentToken ).success(function(data){
@@ -105,6 +125,9 @@ function unseen() {
             $(".home-events-display").css("padding-top", "90px");
 
         });
+        
     });
+
+
 
 }]);
