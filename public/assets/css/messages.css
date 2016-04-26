@@ -9,7 +9,7 @@
   color: #3498db;
   font-size: 4em;
   width: 40%;
-  left: 38%;
+  left: 36%;
   padding-top: .5em;
   font-family: "Yanone Kaffeesatz", sans-serif; }
 
@@ -19,7 +19,7 @@
   padding-top: .2em;
   padding-bottom: .1em; }
   .conversation-information-container .conversation-information-direction {
-    width: 69%;
+    width: 100%;
     float: right;
     margin-top: -280px; }
     .conversation-information-container .conversation-information-direction div {
@@ -27,9 +27,12 @@
     .conversation-information-container .conversation-information-direction .chevy {
       float: right;
       color: #888;
-      opacity: 0.5; }
+      opacity: 0.5;
+      margin-right: 30px; }
     .conversation-information-container .conversation-information-direction .conversation-sender {
-      text-align: left;
+      text-align: center;
+      float: right;
+      width: 100%;
       color: #ff7f00; }
     .conversation-information-container .conversation-information-direction .conversation-last-message {
       float: right;
@@ -37,7 +40,6 @@
       padding: .2em;
       margin-top: 20px;
       padding-right: 1em;
-      color: #888;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;

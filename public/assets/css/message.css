@@ -1,5 +1,5 @@
 .conversation-wrap {
-  height: 4000px;
+  height: auto;
   margin-top: 150px; }
 
 .chat-body {
@@ -15,67 +15,76 @@
   left: 3%;
   font-family: "Yanone Kaffeesatz", sans-serif;
   width: 76%;
-  text-align: center; }
+  text-align: center;
+  color: #3498db; }
 
 .message-footer {
   width: 100%;
   position: absolute;
   z-index: 60;
-  bottom: 120;
+  bottom: 15px;
   box-sizing: border-box; }
 
 .message-in {
   width: 80%;
   float: left;
   text-align: left;
-  background-color: #e6e6e6;
+  background-color: #3498db;
   padding: .5em;
   margin: .8em;
   border-radius: .5em;
   font-size: 1.2em;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  color: white; }
 
 .message-out {
   width: 80%;
   text-align: right;
   float: right;
-  background-color: #ff7f00;
+  background-color: #cccccc;
+  opacity: .7;
   padding: .5em;
   margin: .8em;
   border-radius: .5em;
   font-size: 1.2em;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  color: black; }
 
-input {
-  width: 100%;
-  height: 100px;
+.message-input {
+  width: 76%;
+  height: 90px;
   font-size: 2.5em;
   border: 2px solid #999;
-  border-radius: 3px; }
+  border-radius: 1em;
+  margin-left: 40px; }
 
 .trind-main-footer {
   height: 120px;
   border: 1px solid #888; }
 
 #meet-button {
-  left: 1;
+  right: 2px;
+  top: 8px;
   font-size: 2.3em;
-  width: 30%;
-  height: 100%;
-  border: 2px solid #555;
-  position: absolute;
-  background-color: #999;
-  color: #fff; }
+  width: 20%;
+  border-radius: .5em .5em .5em .5em;
+  height: 90%;
+  background-color: white;
+  color: #fa4c06;
+  position: absolute; }
 
 #send-button {
   font-size: 2.3em;
-  width: 30%;
-  height: 100%;
-  border: 2px solid #555;
+  width: 14%;
+  top: 10px;
+  border-radius: 1.2em 0em 1.2em 1.2em;
+  height: 80%;
   position: absolute;
   background-color: #999;
-  right: 1;
-  color: #fff; }
+  right: 20px;
+  color: white;
+  background-color: #3498db;
+  border-color: none; }
 
 #chatter {
   padding-left: .5em; }
