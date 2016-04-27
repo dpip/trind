@@ -39,6 +39,10 @@ $comfy: rgba(204, 204, 204, 1);
   color: $odd-blue;
 }
 
+.message-body {
+  height: auto;
+  // width: 80%;
+}
 
 .message-footer {
     width: 100%;

@@ -19,6 +19,7 @@ $comfy: rgba(204, 204, 204, 1);
     font-size: 3em;
     margin-top: 120px;
     font-family: sans-serif;
+    height: 360px;
 }
 
     .messages-main-header-title {
@@ -31,17 +32,24 @@ $comfy: rgba(204, 204, 204, 1);
         font-family: $header-text;
     }
 
+    .conversation-sender {
+        // width: 100%;
+        color: rgb(255, 127, 0);
+        // float: right;
+        margin-left: 7em;
+    }
 
 .conversation-information-container {
     border-top: 2px solid #999;
     border-bottom: 2px solid #999;
     padding-top: .2em;
     padding-bottom: .1em;
+    height: 300px;
 
     .conversation-information-direction {
         width: 100%;
         float: right;
-        margin-top: -280px;
+        margin-top: -180px;
         div {
             display: inline;
         }
@@ -52,35 +60,27 @@ $comfy: rgba(204, 204, 204, 1);
             margin-right: 30px;
         }
 
-            .conversation-sender {
-                text-align: center;
-                float: right;
-                width: 100%;
-                // padding-right: 2em;
-                color: rgb(255, 127, 0);
-            }
+    }
+    .last-message-wrap {
+      height: 100px;
+      width: 500px;
+      margin-left: 7em;
+      margin-top: 3em;
+    }
 
-            .conversation-last-message {
-                float: right;
-                text-align: left;
-                padding: .2em;
-                margin-top: 20px;
-                padding-right: 1em;
-                // color: #888;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                max-width: 99%;
-                width: 92%;
-            }
+    .conversation-last-message {
+        font-size: 40px;
+        width: 100%;
     }
 
     .conversation-image {
-        width: 300px;
+        // width: 300px;
     }
     .conversation-image img {
+        position: absolute;
         border-radius: 10em 10em 10em 10em;
         margin: 1em .5em 1em 1em;
+
     }
 
 }

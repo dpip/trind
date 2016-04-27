@@ -18,6 +18,9 @@
   text-align: center;
   color: #3498db; }
 
+.message-body {
+  height: auto; }
+
 .message-footer {
   width: 100%;
   position: absolute;

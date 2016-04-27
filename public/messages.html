@@ -9,32 +9,24 @@
 </div>
 
 <div class="open-messages-container">
-      <div ng-repeat= "conversation in conversations.conversations | orderBy: 'created_at':true">
-         <div class="conversation-information-container" ng-click="message(conversation.conversation_id); otherUser(conversation.sender_name)">
-
+    <div ng-repeat= "conversation in conversations.conversations | orderBy: 'created_at':true">
+      <div class="conversation-information-container" ng-click="message(conversation.conversation_id); otherUser(conversation.sender_name)">
           <div class= "conversation-image" id="event-dilb">
-              <img src="{{conversation.sender_photo_url}} " height="200" width="200">
-          </div>
-          <div class="conversation-information-direction">
+            <img src="{{conversation.sender_photo_url}} " height="220" width="220">
+              </div>
+                <div class="last-message-wrap">
+                  <div class="conversation-last-message" >{{conversation.last_message | limitTo:28}}</div>
+                </div>
+              <div class="conversation-information-direction">
             <div class= "conversation-sender">{{conversation.sender_name}}</div>
-            <div class="chevy fa fa-chevron-right"> </div> <br>
+          <div class="chevy fa fa-chevron-right"> </div>
         </div>
-        <div class="conversation-last-message" max-length="50">{{conversation.last_message}}</div>
-
-          </div>
-        </div>
-     </div>
-
-
-<!-- {{data}} -->
-
+      </div>
+    </div>
+</div>
 
 <div class= "trind-main-footer">
   <div class= "trind-main-footer-me-icon"><a href="#/me"><i class="fa fa-user"></i></a></div>
   <div class= "trind-main-footer-trind-icon"><a href="#/home">T</a></div>
   <div class= "trind-main-footer-message-icon"><a href="#/messages"><div class= "dot-dot-dot">{{unseen}}</div><i class="fa fa-comment"></i></a></div>
-
-
-
-
 </div>

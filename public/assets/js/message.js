@@ -7,6 +7,9 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
         var eventID = localStorage.getItem('eventID');
         var recipientID = localStorage.getItem('recipientID');
 
+        // $(".message-body").elastic();
+
+
         $scope.otherUserName = otherUserName;
 
 
