@@ -7,15 +7,8 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
         var eventID = localStorage.getItem('eventID');
         var recipientID = localStorage.getItem('recipientID');
 
-        // $(".message-body").elastic();
-
 
         $scope.otherUserName = otherUserName;
-
-
-
-        console.log(userID);
-        //  $("#home-drop-search-input-box").hide();
 
         $scope.whoAmI = function(userPassed) {
           if(userPassed == userID) {

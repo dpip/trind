@@ -36,27 +36,13 @@ console.log($('#create-map-input').val());
 
 // +++++++ GOOGLE MAPS SEARCH ++++++++++
 
-//point google places autocomplete to proper field
- // var autocompleteFrom = new google.maps.places.Autocomplete(inputFrom);
- // var inputFrom = document.getElementById('create-map-input');
 
- //use google places autocomplete to input location addy & lat/long
- // var autocompleteFrom = new google.maps.places.Autocomplete(inputFrom);
-      // $(autocompleteFrom).css("font-size", "30px");
 
    google.maps.event.addListener(autocompleteFrom, 'place_changed', function() {
        var place = autocompleteFrom.getPlace();
        var location = place.formatted_address;
        var lng = place.geometry.location.lng();
        var lat = place.geometry.location.lat();
-
-      //  localStorage.setItem('location', address);
-      //  localStorage.setItem('latitude', lat);
-      //  localStorage.setItem('longitude', lng);
-      //  console.log(lat);
-      //  console.log(place);
-      //  console.log(place.geometry.location.lat());
-      //  console.log(place.geometry.location.lng());
 
        localStorage.setItem('newlocation', location);
        localStorage.setItem('newlatitude', lat);
@@ -65,28 +51,7 @@ console.log($('#create-map-input').val());
        console.log(lng);
        console.log(location);
        console.log('old above new below')
-      //  console.log(newlat);
-      //  console.log(newlng);
-      //  console.log(newlocation);
 
-         // console.log(lat, lng, address)
-
-
-// The right idea
-
-        //  $scope.mapTrind = {
-        //      "event": {
-        //      "user_id": userID,
-        //      "interests": "",
-        //      "description": "",
-        //      "location": location,
-        //      "latitude": lat,
-        //      "longitude": lng,
-        //      "title": "",
-        //      "token": currentToken
-         //
-        //    }
-        //  };
         $scope.testTrind = {
             "event": {
             "user_id": userID,
@@ -111,42 +76,15 @@ console.log($('#create-map-input').val());
        "user_id": userID,
        "interests": "",
        "description": "",
-       
+
        "title": ""
      }
    };
 
 
-// make this a different scope?
-
-  //  $scope.testTrind = {
-  //      "event": {
-  //      "user_id": userID,
-  //      "interests": "",
-  //      "description": "",
-  //     //  "location": location,
-  //     //  "latitude": lat,
-  //     //  "longitude": lng,
-  //      "title": "",
-  //      "token": currentToken
-   //
-  //    }
-  //  };
-
-
-
-// ++++++++++ Google maps
 
   $scope.submitTrind = function() {
 
-    // localStorage.setItem('location', address);
-    // localStorage.setItem('latitude', lat);
-    // localStorage.setItem('longitude', lng);
-    // console.log(lat);
-    // console.log(lng);
-    // console.log(location);
-    // console.log(lat);
-    // console.log(lng);
     console.log("Hello, little Hobbit!");
     console.log($scope.testTrind);
     $http.post('https://still-waters-14036.herokuapp.com/events?token=' + currentToken, $scope.testTrind, $scope.mapTrind)
@@ -185,14 +123,6 @@ console.log($('#create-map-input').val());
          }
         });
 
-
-        // $("#test").keyup(function() {
-        //                 var input = $(this);
-        //
-        //                 if( input.val() == "" ) {
-        //                   input.css( "border", "1px solid #000" );
-        //                 }
-        //             });
 
 
     });

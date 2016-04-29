@@ -33,9 +33,7 @@ $comfy: rgba(204, 204, 204, 1);
     }
 
     .conversation-sender {
-        // width: 100%;
         color: rgb(255, 127, 0);
-        // float: right;
         margin-left: 7em;
     }
 
@@ -73,9 +71,6 @@ $comfy: rgba(204, 204, 204, 1);
         width: 100%;
     }
 
-    .conversation-image {
-        // width: 300px;
-    }
     .conversation-image img {
         position: absolute;
         border-radius: 10em 10em 10em 10em;

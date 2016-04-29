@@ -94,8 +94,6 @@ $comfy: rgba(204, 204, 204, 1);
 .trind-main-footer {
     height:120px;
     border: 1px solid #888;
-    // background-color: $bulls-o;
-
 }
 
 #meet-button {
@@ -108,10 +106,8 @@ $comfy: rgba(204, 204, 204, 1);
   background-color: white;
   color: $bulls-o;
   position: absolute;
-  // border: none;
-  // background-color: #999;
-  // color: #fff;
 }
+
 #send-button{
     font-size: 2.3em;
     width: 14%;
@@ -121,11 +117,11 @@ $comfy: rgba(204, 204, 204, 1);
     position: absolute;
     background-color: #999;
     right: 20px;
-    // color: #fff;
     color: white;
     background-color: $odd-blue;
     border-color: none;
 }
+
 #chatter {
   width: 76%;
   height:90px;
