@@ -7,11 +7,9 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
         var eventID = localStorage.getItem('eventID');
         var recipientID = localStorage.getItem('recipientID');
 
+
         $scope.otherUserName = otherUserName;
 
-
-        console.log(userID);
-        //  $("#home-drop-search-input-box").hide();
 
         $scope.whoAmI = function(userPassed) {
           if(userPassed == userID) {
@@ -59,6 +57,10 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
         };
 
         $scope.letsMeet = function() {
+
+          $("#meet-button").val("Meeting!");
+          $("#meet-button").css("background-color", "rgba(250, 76, 6, 1)");
+          $("#meet-button").css("color", "white");
           var param = {event:{success: true}};
           console.log(param);
 

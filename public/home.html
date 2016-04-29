@@ -7,23 +7,34 @@
 
   <div class= "home-drop-search-bar">
     </div>
-    <input type="text" placeholder="What Interests You?" class = "expand" id= "home-drop-search-input-box" ng-model="search">
+
+    <input type="text" placeholder="What would you like to do?" class = "expand" id= "home-drop-search-input-box" ng-model="search" >
+
+<style>
+  .lastRepeat {
+    margin-bottom: 120px;
+  }
+</style>
 
 <div class="home-events-display-wrap">
   <div class= "home-events-display">
     <div class= "home-trind-event-container" ng-repeat="things in stuff" >
-      <div ng-repeat= "thing in things | filter:search">
-        <div class= "home-trind-event-information-container" id="event-dilb">
-          <div class= "home-trind-event-information-image" id="event-dilb" ng-click="details(thing.id)"><img src="{{thing.user.photo_url}}" height="220" width="220"></div>
+      <div ng-repeat= "thing in things | filter:search | orderBy: 'created_at':true" ng-class="{'lastRepeat': $last}">
+        <div class= "home-trind-event-information-container" id="event-dilb" ng-click="details(thing.id)">
+          <div class= "home-trind-event-information-image" id="event-dilb" ><img src="{{thing.user.photo_url}}" height="220" width="220"></div>
             <div class= "home-trind-event-information" id="event-information-name">{{thing.user.name}} wants to...</div>
               <div class= "home-trind-event-information" id= "description">{{thing.title}} </div>
-            <div class= "home-trind-event-information" id= "interests">#{{thing.interests}}</div>
-          <div class= "home-trind-event-information" id= "location">Location: {{thing.location}} </div>
+              <div class= "home-trind-event-information" id= "location"><span id = "where" >{{thing.location}}</span> </div>
+            <div class= "home-trind-event-information" id= "interests">{{thing.interests}}</div>
+
         </div>
       </div>
     </div>
+
   </div>
 </div>
+
+
 
 <div class = "getting-started-background">
 
@@ -32,21 +43,23 @@
     <!-- <div id = "getting-started" class = "">Start Trinding</div> -->
     <div class = "home-modal-welcome">Starting Out</div>
     <div id = "see-your-messages" class = "getting-started-content">See what's trinding <span class= "trind-land-modal-icon">T</span></span></div>
-    <div id = "create-a-post" class = "getting-started-content">Create a post <span class = "home-modal-icon"><i class="fa fa-plus"></i></span></div>
-    <div id = "search-your-interests" class = "getting-started-content">Search <span class = "home-modal-icon"><i class="fa fa-search"></i></span></div>
+    <div id = "search-your-interests" class = "getting-started-content">Search posts<span class = "home-modal-icon"><i class="fa fa-search"></i></span></div>
+    <div id = "create-a-post" class = "getting-started-content">Create a trind <span class = "home-modal-icon"><i class="fa fa-plus"></i></span></div>
     <div id = "see-your-profile" class = "getting-started-content">Your profile <span class = "home-modal-icon"><i class="fa fa-user"></i></span></div>
     <div id = "see-your-messages" class = "getting-started-content">Your messages <span class = "home-modal-icon"><i class="fa fa-comment"></i></span></div>
-    <div id = "see-your-profile" class = "getting-started-content">Edit things <span class = "home-modal-icon"><i class="fa fa-pencil"></i></span></div>
+    <div id = "see-your-profile" class = "getting-started-content">Edit<span class = "home-modal-icon"><i class="fa fa-pencil"></i></span></div>
 
     <!-- <div id = "getting-started" class = ""><span id = "start">Start Trinding</span></div> -->
 </div>
-
+<div class = "emptiness"></div>
 <div class= "trind-main-footer">
   <div class= "trind-main-footer-me-icon"><a href="#/me"><i class="fa fa-user"></i></a></div>
   <div class= "trind-main-footer-trind-icon"><a href="#/home">T</a></div>
-  <div class= "trind-main-footer-message-icon"><a href="#/messages"><div class= "dot-dot-dot">...</div><i class="fa fa-comment"></i></a></div>
+  <div class= "trind-main-footer-message-icon"><a href="#/messages"><div class="dot-dot-dot">{{unseen}}</div><i class="fa fa-comment"></i></a></div>
 
 </div>
+
+
 
 
 <!-- <input type="button" ng-click="details($index)"> -->

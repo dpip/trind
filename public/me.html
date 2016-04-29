@@ -1,19 +1,19 @@
 
 <div class= "trind-main-header">
   <div class= "trind-main-header-create-icon"><a href="#/create"><i class="fa fa-plus"></i></a></div>
-  <div class= "me-main-header-text">Me</div>
+  <div class= "me-main-header-text">{{ userName }}</div>
   <div class= "me-main-header-edit-icon"><a href="#/editUser"><i class="fa fa-pencil"></i></div>
 </div>
 
 <div class="me-container"  ng-controller= "MeController" >
     <img class="me-avatar" src="{{userPhoto}}"> </img>
-    <div id="me-name">{{ userName }}  </div>
-    <div id="me-email">{{ userEmail }}</div>
+    <!-- <div id="me-name">{{ userName }}  </div> -->
+    <!-- <div id="me-email">{{ userEmail }}</div> -->
     <div class="me-things">
         <ul>
             <li><a href="#/userEvents"> Posts </li>
             <li><a href="#/memories"> Stashed </li>
-            <li><a href="#/experiences"> Experiences </li>
+            <!-- <li><a href="#/experiences"> Experiences </li> -->
             <li class= "logout-button" ng-click="logOut()"><a href="#/land"> Log out </li>
         </ul>
     </div>
@@ -27,8 +27,7 @@
 <div class= "trind-main-footer">
   <div class= "trind-main-footer-me-icon"><a href="#/me"><i class="fa fa-user"></i></a></div>
   <div class= "trind-main-footer-trind-icon"><a href="#/home">T</a></div>
-  <div class= "trind-main-footer-message-icon"><a href="#/messages"><div class= "dot-dot-dot">...</div><i class="fa fa-comment"></i></a></div>
-
+ <div class= "trind-main-footer-message-icon"><a href="#/messages"><div class= "dot-dot-dot">{{unseen}}</div><i class="fa fa-comment"></i></a></div>
 
 
 </div>

@@ -5,14 +5,19 @@ $orange-crush: rgba(255, 89, 0, 1);
 $orange-citrus: rgba(255, 127, 0, 1);
 $awwwards: rgba(0, 150, 141, 1);
 $header-text: 'Yanone Kaffeesatz', sans-serif;
+$bulls-o: rgba(250, 76, 6, 1);
+$bulls-blue: rgba(0, 79, 164, 1);
+$castrol-green: rgba(93, 125, 78, 1);
+$castrol-red: rgba(186, 20, 14, 1);
+$odd-blue: rgba(52, 152, 219, 1);
 
 .editUser-main-header-edit {
   position: relative;
   float: left;
   top: 25px;
   font-size: 80px;
-  left: 27%;
-  color: white;
+  left: 25%;
+  color: $odd-blue;
   font-family: $header-text;
 }
 
@@ -30,6 +35,8 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
   font-size: 30px;
   margin-top: 2em;
   border: 1px solid #555;
+  background-color: $odd-blue;
+  color: white;
 }
 
 .user-delete-button {
@@ -39,17 +46,18 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
   margin-top: 1em;
   border: 1px solid #555;
   background-color: red;
+  color: white;
 }
 
-#file-input {
-  height: 200px;
-  width: 80%;
- margin-left: 10%;
-
-}
+// #file-input {
+//   height: 200px;
+//   width: 80%;
+//  margin-left: 10%;
+//
+// }
 .upload-me-title {
     text-align: center;
-    font-size:  3em;
+    font-size:  1em;
 }
 
 .me-things {
@@ -58,4 +66,21 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
 #file-input {
     text-align: center;
     padding: 2em;
+    height: 10%;
+    width: 25%;
+    margin-top: -2em;
+
+
+}
+
+.edit-user-user-name {
+  margin-top: 4em;
+}
+
+.upload-photo {
+  margin-top: -10.5em;
+}
+
+.upload-me-title {
+  margin-bottom: 1em;
 }

@@ -1,17 +1,33 @@
+$blue: rgba(151, 222, 218, 1);
+$bluetwo: rgba(56, 121, 217, 1);
+$twitter: rgba(49, 212, 233, 1);
+$orange-crush: rgba(255, 89, 0, 1);
+$orange-citrus: rgba(255, 127, 0, 1);
+$creamscicle: rgba(222, 230, 203, 1);
+$awwwards: rgba(0, 150, 141, 1);
+$header-text: 'Yanone Kaffeesatz', sans-serif;
+$bulls-o: rgba(250, 76, 6, 1);
+$bulls-blue: rgba(0, 79, 164, 1);
+$castrol-green: rgba(93, 125, 78, 1);
+$castrol-red: rgba(186, 20, 14, 1);
+$odd-blue: rgba(52, 152, 219, 1);
+$comfy: rgba(204, 204, 204, 1);
+
 .memories-header-icons {
   display: inline-block;
 }
 #memories-header-text {
-  color: $orange-crush;
+  color: $odd-blue;
   position: relative;
   float: left;
   top: 20px;
-  font-size: 70px;
-  left: 15%;
-  font-family: 'Sniglet', cursive;
+  font-size: 80px;
+  left: 25%;
+  // font-family: 'Sniglet', cursive;
+  font-family: $header-text;
 }
 #memories-back-button {
-  color: white;
+  color: $odd-blue;
   position: relative;
   float: left;
   top: 25px;

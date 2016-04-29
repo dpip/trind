@@ -3,9 +3,9 @@
   float: left;
   top: 25px;
   font-size: 80px;
-  left: 30%;
-  color: #ff6d5e;
-  font-family: 'Sniglet', cursive; }
+  left: 37%;
+  color: white;
+  font-family: "Yanone Kaffeesatz", sans-serif; }
 
 .edit-event-container {
   margin-top: 120px;
@@ -24,25 +24,29 @@
   height: 200px;
   width: 100%;
   font-size: 50px;
-  border: 4px solid red; }
+  border: 4px solid grey;
+  border-radius: .5em; }
 
 #edit-event-interests input {
   height: 100px;
   width: 100%;
   font-size: 50px;
-  border: 4px solid red; }
+  border: 4px solid grey;
+  border-radius: .5em; }
 
 #edit-event-description input {
   height: 500px;
   width: 100%;
   font-size: 50px;
-  border: 4px solid red; }
+  border: 4px solid grey;
+  border-radius: .5em; }
 
 #edit-event-location input {
   height: 100px;
   width: 100%;
   font-size: 50px;
-  border: 4px solid red; }
+  border: 4px solid grey;
+  border-radius: .5em; }
 
 .edit-event-save-delete-wrap {
   margin-left: 9em;
@@ -63,5 +67,13 @@
   font-size: 35px;
   vertical-align: bottom;
   font-family: 'Open Sans', sans-serif; }
+
+.edit-event-button-save {
+  background-color: #31d4e9;
+  color: white; }
+
+.edit-event-button-delete {
+  background-color: red;
+  color: white; }
 
 /*# sourceMappingURL=editevents.css.map */

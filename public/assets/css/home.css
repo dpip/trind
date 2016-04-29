@@ -1,122 +1,71 @@
-.trind-main-header-text {
-  position: relative;
-  float: left;
-  top: 25px;
-  font-size: 80px;
-  left: 30%;
-  color: white;
-  letter-spacing: 4px;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-weight: bold; }
+/*
+Error: Undefined variable: "$odd-blue".
+        on line 122 of ./assets/css/home.scss
 
-.home-events-display-wrap .home-events-display {
-  position: relative;
-  box-sizing: border-box;
-  margin-top: 120px;
-  width: 100%;
-  height: 100%;
-  font-family: 'Open Sans', sans-serif; }
-  .home-events-display-wrap .home-events-display .home-trind-event-information-image {
-    background-color: white;
-    height: 280px;
-    width: 280px;
-    float: left; }
-  .home-events-display-wrap .home-events-display .home-trind-event-information-image img {
-    border-radius: 10em 10em 10em 10em;
-    margin-left: 2em;
-    margin-top: 2em; }
-  .home-events-display-wrap .home-events-display .home-trind-event-container {
-    height: 280px;
-    width: 100%;
-    background-color: white; }
-  .home-events-display-wrap .home-events-display #event-dilb {
-    display: inline-block; }
-  .home-events-display-wrap .home-events-display .home-trind-event-information-container {
-    width: 100%;
-    border: 1px solid rgba(171, 178, 186, 0.5); }
-  .home-events-display-wrap .home-events-display .home-trind-event-information {
-    background-color: white; }
-  .home-events-display-wrap .home-events-display #event-information-name {
-    color: #888;
-    font-size: 30px;
-    padding-top: 10px; }
-  .home-events-display-wrap .home-events-display #interests {
-    font-size: 30px;
-    padding-bottom: 15px;
-    color: #ff6d5e;
-    vertical-align: top; }
-  .home-events-display-wrap .home-events-display #description {
-    margin-top: 10px;
-    height: 80px;
-    font-size: 45px;
-    padding-bottom: 15px; }
-  .home-events-display-wrap .home-events-display #location {
-    height: 20px;
-    font-size: 30px;
-    vertical-align: bottom; }
+117: }
+118: 
+119: .getting-started-modal {
+120:   height: 60%;
+121:   width: 85%;
+122:   background-color: $odd-blue;
+123:   position: fixed;
+124:   top: 20em;
+125:   z-index: 145;
+126:   border-radius: 3em;
+127:   right: 4.5em;
 
-.getting-started-background {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 130;
-  background-color: black;
-  opacity: 0.4;
-  top: 0; }
-
-.home-modal-welcome {
-  font-size: 90px;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  text-align: center;
-  color: white;
-  margin-top: .6em; }
-
-.getting-started-modal {
-  height: 65%;
-  width: 85%;
-  background-color: #31d4e9;
-  position: fixed;
-  top: 20em;
-  z-index: 145;
-  border-radius: 3em;
-  right: 4.5em; }
-
-.getting-started-content {
-  font-size: 50px;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  margin-left: 1.5em;
-  margin-top: 1.5em; }
-
-.home-modal-icon {
-  position: relative;
-  float: right;
-  right: 2em;
-  font-size: 60px; }
-
-.trind-land-modal-icon {
-  color: white;
-  position: relative;
-  float: right;
-  font-size: 90px;
-  right: 1.2em;
-  font-family: 'Sniglet', cursive;
-  transform: rotate(-45deg);
-  margin-top: -15px; }
-
-#getting-started {
-  font-size: 90px;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  text-align: center;
-  margin-top: .8em;
-  position: relative;
-  color: #ff5900;
-  border-radius: 0em 0em .6em .6em;
-  height: 2.4em;
-  vertical-align: middle;
-  bottom: 0; }
-
-#start {
-  margin-top: 2em; }
-
-/*# sourceMappingURL=home.css.map */
+Backtrace:
+./assets/css/home.scss:122
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/script/tree/variable.rb:49:in `_perform'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/script/tree/node.rb:50:in `perform'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:431:in `map'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:293:in `watch'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/plugin.rb:109:in `method_missing'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:383:in `watch_or_update'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.21/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$odd-blue\".\A         on line 122 of ./assets/css/home.scss\A \A 117: }\A 118: \A 119: .getting-started-modal {\A 120:   height: 60%;\A 121:   width: 85%;\A 122:   background-color: $odd-blue;\A 123:   position: fixed;\A 124:   top: 20em;\A 125:   z-index: 145;\A 126:   border-radius: 3em;\A 127:   right: 4.5em;"; }

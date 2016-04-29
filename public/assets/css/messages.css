@@ -1,47 +1,51 @@
 .open-messages-container {
   width: 100%;
   font-size: 3em;
-  margin-top: 80px;
-  font-family: sans-serif; }
+  margin-top: 120px;
+  font-family: sans-serif;
+  height: 360px; }
 
 .messages-main-header-title {
   position: absolute;
-  color: white;
+  color: #3498db;
   font-size: 4em;
   width: 40%;
   left: 36%;
   padding-top: .5em;
   font-family: "Yanone Kaffeesatz", sans-serif; }
 
+.conversation-sender {
+  color: #ff7f00;
+  margin-left: 7em; }
+
 .conversation-information-container {
   border-top: 2px solid #999;
-  border-bottom: 2px solid #999; }
-  .conversation-information-container .conversation-image img {
-    border-radius: 10em 10em 10em 10em;
-    margin: 1em .5em 1.5em .5em; }
-  .conversation-information-container .conversation-text-container {
-    margin-left: 90%;
-    margin-top: -100px; }
-    .conversation-information-container .conversation-text-container .fa-chevron-right {
+  border-bottom: 2px solid #999;
+  padding-top: .2em;
+  padding-bottom: .1em;
+  height: 300px; }
+  .conversation-information-container .conversation-information-direction {
+    width: 100%;
+    float: right;
+    margin-top: -180px; }
+    .conversation-information-container .conversation-information-direction div {
+      display: inline; }
+    .conversation-information-container .conversation-information-direction .chevy {
+      float: right;
       color: #888;
-      margin-bottom: 10px; }
-  .conversation-information-container .conversation-sender {
-    width: 65%;
-    margin-top: -250px;
-    float: right;
-    text-align: left;
-    padding-right: 1em;
-    color: #ff7f00; }
+      opacity: 0.5;
+      margin-right: 30px; }
+  .conversation-information-container .last-message-wrap {
+    height: 100px;
+    width: 500px;
+    margin-left: 7em;
+    margin-top: 3em; }
   .conversation-information-container .conversation-last-message {
-    float: right;
-    text-align: left;
-    margin-top: -190px;
-    padding-right: 1em;
-    color: #888;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 65%;
-    width: 65%; }
+    font-size: 40px;
+    width: 100%; }
+  .conversation-information-container .conversation-image img {
+    position: absolute;
+    border-radius: 10em 10em 10em 10em;
+    margin: 1em .5em 1em 1em; }
 
 /*# sourceMappingURL=messages.css.map */

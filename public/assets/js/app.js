@@ -53,4 +53,6 @@ trind.config(function($routeProvider) {
     .otherwise({
       redirectTo: '/land'
     });
+
+    
 });

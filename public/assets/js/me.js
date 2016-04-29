@@ -14,6 +14,27 @@ trind.controller('MeController', [ '$http', '$location', '$scope', function($htt
     $scope.userPhoto = userPhoto;
 
 
+$(function(){
+  setInterval(unseen, 1000);
+});
+
+function unseen() {
+  $http.get('https://still-waters-14036.herokuapp.com/total_messages_not_viewed?token=' + currentToken ).success(function(data) {
+
+    //   console.log(data);
+
+      if (data.not_viewed === 0 ) {
+          $scope.unseen = "...";
+          $(".dot-dot-dot").addClass('pushup');
+      }
+
+      else if(data.not_viewed > 0) {
+          $scope.unseen = data.not_viewed;
+
+      }
+            });
+    };
+
   $http.get('https://still-waters-14036.herokuapp.com/users/' + userID + "?token=" + currentToken).success(function(userInfo){
     console.log(userID);
     console.log(currentToken);
@@ -32,11 +53,11 @@ trind.controller('MeController', [ '$http', '$location', '$scope', function($htt
 
   $scope.logOut = function() {
   $http.get('https://still-waters-14036.herokuapp.com/logout?token=' + currentToken).then(function successCallback(logout){
-    console.log('log out prompt', logout);
-    localStorage.setItem('userID', "");
-    localStorage.setItem('tokenToken', "");
-    localStorage.setItem('userPhoto', "");
-    $window.localStorage.clear();
+    // console.log('log out prompt', logout);
+    localStorage.clear();
+    // localStorage.removeItem('tokenToken');
+    // localStorage.removeItem('userPhoto');
+    // $window.localStorage.clear();
     window.location.replace('#/land');
 
     if(firstTime === "yes") {

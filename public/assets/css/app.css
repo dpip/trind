@@ -5,7 +5,7 @@
 .login-page-container {
   height: 100%;
   width: 100%;
-  background-color: #ff7f00; }
+  background-color: #3498db; }
   .login-page-container .login-page-main-font {
     font-size: 160px;
     font-family: 'Sniglet', cursive;
@@ -18,7 +18,10 @@
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    margin-left: 0em; }
+    margin-left: 0em;
+    color: white; }
+  .login-page-container .land-input-wrap {
+    margin-top: 8em; }
   .login-page-container .landing-login-container {
     margin-left: 5.5em; }
   .login-page-container .label {
@@ -29,8 +32,8 @@
     font-size: 38px;
     text-align: center;
     border-radius: .5em .5em 0em 0em;
-    margin-top: 4em;
-    color: black; }
+    color: black;
+    margin-bottom: 2px; }
   .login-page-container input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset; }
   .login-page-container .input-password {
@@ -43,50 +46,63 @@
     color: black; }
   .login-page-container .login-button {
     margin-left: 0%;
-    color: grey;
+    color: #3498db;
     font-size: 40px;
     margin-top: 3em;
     width: 100%;
     height: 90px;
     border-radius: .5em .5em .5em .5em;
     background-color: white;
-    border: none; }
+    border: none;
+    font-weight: bold;
+    letter-spacing: 2.5px; }
   .login-page-container .havent-created-an-account-yet {
-    color: #dee6cb;
-    font-size: 34px;
+    color: white;
+    font-size: 30px;
     margin-top: 2em;
-    margin-left: 30%;
+    margin-left: 32%;
     font-family: 'Open Sans', sans-serif; }
   .login-page-container .land-input-container {
     position: relative; }
-  .login-page-container .unit {
+  .login-page-container .unit-email {
     font-size: 34px;
     display: block;
-    margin-top: -82px;
+    z-index: 10;
     margin-left: 18px;
+    font-family: 'Open Sans', sans-serif; }
+  .login-page-container .unit-password {
+    font-size: 34px;
+    display: block;
+    margin-top: -90px;
+    margin-left: 16px;
     font-family: 'Open Sans', sans-serif; }
   .login-page-container .create-account {
     margin-top: 1em;
     font-weight: bold;
-    color: black;
-    margin-left: 14.5%;
-    font-size: 56px;
-    font-family: 'Open Sans', sans-serif; }
+    color: white;
+    margin-left: 11.5%;
+    font-size: 55px;
+    font-family: 'Sansita One', cursive;
+    width: 100%; }
+
+.twitter-hover {
+  color: #31d4e9; }
 
 .landing-signup-container {
   position: absolute;
   z-index: 100;
   border-radius: 1em;
-  background-color: #31d4e9;
+  background-color: #3498db;
   height: 80em;
-  width: 82%;
-  top: 340px; }
+  width: 90%;
+  top: 340px;
+  left: 3.5em; }
   .landing-signup-container .btn-signup-close {
     height: 80px;
     width: 80px;
     float: right;
     margin-top: 5px;
-    margin-right: 5px;
+    margin-right: 30px;
     font-size: 40px;
     border-radius: .5em;
     font-family: 'Open Sans', sans-serif;
@@ -117,10 +133,10 @@
   .landing-signup-container .form-column {
     margin-top: 6em; }
   .landing-signup-container .sign-up-pressure {
-    font-family: 'Lobster Two', cursive;
-    font-size: 50px;
-    margin-left: 3.5em;
-    margin-top: 2.5em;
+    font-family: 'Sansita One', cursive;
+    font-size: 46px;
+    margin-left: 4em;
+    margin-top: 2em;
     color: white; }
   .landing-signup-container #signup-now {
     height: 120px;
@@ -145,132 +161,165 @@
 .message-main-header-name {
   position: relative;
   float: left;
-  top: 25px;
+  top: 10px;
   font-size: 80px;
-  left: 18%;
-  font-family: 'Open Sans', sans-serif; }
+  left: 3%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  width: 76%;
+  text-align: center;
+  color: #3498db; }
+
+.message-body {
+  height: auto; }
 
 .message-footer {
   width: 100%;
   position: absolute;
   z-index: 60;
-  bottom: 120;
+  bottom: 15px;
   box-sizing: border-box; }
 
 .message-in {
   width: 80%;
   float: left;
   text-align: left;
-  background-color: #e6e6e6;
+  background-color: #3498db;
   padding: .5em;
   margin: .8em;
   border-radius: .5em;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
+  color: white; }
 
 .message-out {
   width: 80%;
   text-align: right;
   float: right;
-  background-color: #ff7f00;
+  background-color: #cccccc;
+  opacity: .7;
   padding: .5em;
   margin: .8em;
   border-radius: .5em;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
+  color: black; }
 
-input {
-  width: 100%;
-  height: 100px;
+.message-input {
+  width: 76%;
+  height: 90px;
   font-size: 2.5em;
   border: 2px solid #999;
-  border-radius: 3px; }
+  border-radius: 1em;
+  margin-left: 40px; }
 
 .trind-main-footer {
   height: 120px;
   border: 1px solid #888; }
 
 #meet-button {
-  left: 1;
-  font-size: 2.3em;
-  width: 30%;
-  height: 100%;
-  border: 2px solid #555;
-  position: absolute;
-  background-color: #999;
-  color: #fff; }
+  right: 30px;
+  top: 18px;
+  font-size: 50px;
+  width: 20%;
+  border-radius: .2em .2em .2em .2em;
+  height: 70%;
+  background-color: white;
+  color: #fa4c06;
+  position: absolute; }
 
 #send-button {
   font-size: 2.3em;
-  width: 30%;
-  height: 100%;
-  border: 2px solid #555;
+  width: 14%;
+  top: 10px;
+  border-radius: 1.2em 0em 1.2em 1.2em;
+  height: 80%;
   position: absolute;
   background-color: #999;
-  right: 1;
-  color: #fff; }
+  right: 20px;
+  color: white;
+  background-color: #3498db;
+  border-color: none; }
 
 #chatter {
-  padding-left: .5em; }
+  width: 76%;
+  height: 90px;
+  font-size: 2.5em;
+  border: 2px solid #999;
+  border-radius: 1em;
+  margin-left: 40px; }
+
+input {
+  text-align: center; }
+
+#message-t-footer-icon {
+  margin-left: 75px; }
 
 .open-messages-container {
   width: 100%;
   font-size: 3em;
-  margin-top: 80px;
-  font-family: sans-serif; }
+  margin-top: 120px;
+  font-family: sans-serif;
+  height: 360px; }
 
 .messages-main-header-title {
   position: absolute;
-  color: white;
+  color: #3498db;
   font-size: 4em;
   width: 40%;
   left: 36%;
   padding-top: .5em;
   font-family: "Yanone Kaffeesatz", sans-serif; }
 
+.conversation-sender {
+  color: #ff7f00;
+  margin-left: 7em; }
+
 .conversation-information-container {
   border-top: 2px solid #999;
-  border-bottom: 2px solid #999; }
-  .conversation-information-container .conversation-image img {
-    border-radius: 10em 10em 10em 10em;
-    margin: 1em .5em 1.5em .5em; }
-  .conversation-information-container .conversation-text-container {
-    margin-left: 90%;
-    margin-top: -100px; }
-    .conversation-information-container .conversation-text-container .fa-chevron-right {
+  border-bottom: 2px solid #999;
+  padding-top: .2em;
+  padding-bottom: .1em;
+  height: 300px; }
+  .conversation-information-container .conversation-information-direction {
+    width: 100%;
+    float: right;
+    margin-top: -180px; }
+    .conversation-information-container .conversation-information-direction div {
+      display: inline; }
+    .conversation-information-container .conversation-information-direction .chevy {
+      float: right;
       color: #888;
-      margin-bottom: 10px; }
-  .conversation-information-container .conversation-sender {
-    width: 65%;
-    margin-top: -250px;
-    float: right;
-    text-align: left;
-    padding-right: 1em;
-    color: #ff7f00; }
+      opacity: 0.5;
+      margin-right: 30px; }
+  .conversation-information-container .last-message-wrap {
+    height: 100px;
+    width: 500px;
+    margin-left: 7em;
+    margin-top: 3em; }
   .conversation-information-container .conversation-last-message {
-    float: right;
-    text-align: left;
-    margin-top: -190px;
-    padding-right: 1em;
-    color: #888;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 65%;
-    width: 65%; }
+    font-size: 40px;
+    width: 100%; }
+  .conversation-information-container .conversation-image img {
+    position: absolute;
+    border-radius: 10em 10em 10em 10em;
+    margin: 1em .5em 1em 1em; }
 
 .create-main-header-text {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 80px;
   position: absolute;
   left: 5.5em;
-  top: 18px; }
+  top: 18px;
+  color: #3498db; }
 
 .create-input-field {
-  height: 85%;
-  width: 99%;
+  height: 100%;
+  width: 100%;
   margin-top: 120px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1em; }
+  font-size: 1em;
+  border-radius: 12px; }
   .create-input-field .create-subtitle {
     font-size: 4em;
     text-align: center;
@@ -278,30 +327,48 @@ input {
     font-family: 'Yanone Kaffeesatz', sans-serif; }
   .create-input-field input {
     width: 95%;
-    margin: .2em;
-    font-size: 2.5em; }
+    margin-top: 1.6em;
+    order-radius: 12px;
+    font-size: 2.5em;
+    margin-left: .6em;
+    border: 2px solid #555;
+    border-radius: .2em; }
   .create-input-field textarea {
     width: 95%;
     height: 20%;
-    margin: .2em;
-    font-size: 2.5em;
-    border: 1px solid #555; }
+    margin-top: 1.6em;
+    font-size: 40px;
+    border: 2px solid #555;
+    margin-left: .6em;
+    border-radius: .2em; }
   .create-input-field button {
     text-align: center;
-    margin-left: 10%; }
+    margin-left: 10%;
+    margin-top: 2em; }
   .create-input-field .create-trind-submit-button-text {
     border: none;
     height: 140px;
     width: 80%;
     font-size: 90px;
-    color: #dee6cb;
-    background-color: #00968d;
+    color: #fff;
+    background-color: #fa4c06;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: bold;
     bottom: 6em;
     border-radius: 1em;
     cursor: pointer;
-    position: absolute; }
+    position: absolute;
+    top: 11.5em; }
+
+.pac-item {
+  font-size: 2em;
+  line-height: 1.5em; }
+
+.pac-item-query {
+  font-size: 1em; }
+
+.pac-icon {
+  display: none; }
 
 .trind-main-header-text {
   position: relative;
@@ -309,7 +376,7 @@ input {
   top: 25px;
   font-size: 80px;
   left: 30%;
-  color: white;
+  color: #fa4c06;
   letter-spacing: 4px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: bold; }
@@ -320,14 +387,15 @@ input {
   margin-top: 120px;
   width: 100%;
   height: 100%;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 120px; }
   .home-events-display-wrap .home-events-display .home-trind-event-information-image {
     background-color: white;
     height: 280px;
     width: 280px;
     float: left; }
   .home-events-display-wrap .home-events-display .home-trind-event-information-image img {
-    border-radius: 10em 10em 10em 10em;
+    border-radius: 9em 9em 9em 9em;
     margin-left: 2em;
     margin-top: 2em; }
   .home-events-display-wrap .home-events-display .home-trind-event-container {
@@ -347,18 +415,20 @@ input {
     padding-top: 10px; }
   .home-events-display-wrap .home-events-display #interests {
     font-size: 30px;
-    padding-bottom: 15px;
     color: #ff6d5e;
-    vertical-align: top; }
+    vertical-align: bottom;
+    position: relative;
+    background: inherit;
+    right: 0em;
+    margin-top: 70px; }
   .home-events-display-wrap .home-events-display #description {
     margin-top: 10px;
     height: 80px;
-    font-size: 45px;
+    font-size: 40px;
     padding-bottom: 15px; }
   .home-events-display-wrap .home-events-display #location {
     height: 20px;
-    font-size: 30px;
-    vertical-align: bottom; }
+    font-size: 30px; }
 
 .getting-started-background {
   height: 100%;
@@ -377,9 +447,9 @@ input {
   margin-top: .6em; }
 
 .getting-started-modal {
-  height: 65%;
+  height: 60%;
   width: 85%;
-  background-color: #31d4e9;
+  background-color: #3498db;
   position: fixed;
   top: 20em;
   z-index: 145;
@@ -424,16 +494,24 @@ input {
 #start {
   margin-top: 2em; }
 
+#where {
+  color: #004fa4;
+  opacity: 0.7; }
+
 #details-header-name {
   position: relative;
   float: left;
   top: 20px;
   font-size: 80px;
-  left: 40%;
+  left: 3%;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  text-align: center; }
+  text-align: center;
+  color: #fa4c06;
+  text-align: center;
+  width: 76%; }
 
 .event-details-container {
+  background-color: rgba(40, 44, 52, 0.03);
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -442,12 +520,11 @@ input {
   z-index: 1;
   font-family: 'Open Sans', sans-serif; }
   .event-details-container .me-avatar {
-    width: 500px;
-    height: 500px;
-    margin-left: 25%;
-    margin-top: 20px;
+    width: 100%;
+    height: 800px;
+    margin-top: 80px;
     text-align: center;
-    border: 2px solid #a4dbd8; }
+    border-radius: 1em; }
   .event-details-container .details-text-wrapper {
     width: 90%;
     margin-top: 50px;
@@ -466,33 +543,37 @@ input {
   .event-details-container #details-eventDetail-title {
     font-size: 2em;
     text-align: center;
-    color: #ff5900; }
+    color: white; }
   .event-details-container .details-button-container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     text-align: center; }
+  .event-details-container #details-eventDetail-interest {
+    color: #fa4c06; }
   .event-details-container #details-interested-button {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #31d4e9;
+    background-color: #3498db;
     border-radius: .3em;
     height: 65px;
     margin-top: 30px;
     color: white;
-    font-size: 3em; }
+    font-size: 3em;
+    border: none; }
   .event-details-container #details-message-button {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #31d4e9;
+    background-color: #fa4c06;
     border-radius: .3em;
     height: 65px;
     margin-top: 30px;
     color: white;
-    font-size: 3em; }
+    font-size: 3em;
+    border: none; }
   .event-details-container #details-eventDetail-title {
     margin-top: 40px;
     margin-left: 40px; }
@@ -501,10 +582,15 @@ input {
     margin-left: 40px; }
   .event-details-container #details-eventDetail-description {
     margin-top: 40px;
-    margin-left: 40px; }
+    margin-left: 40px;
+    font-size: 50px; }
   .event-details-container #details-eventDetail-location {
     margin-top: 40px;
     margin-left: 40px; }
+
+#details-marker {
+  color: #3498db;
+  font-size: 40px; }
 
 #mapcontainer {
   margin-left: 9em;
@@ -514,16 +600,16 @@ input {
   display: inline-block; }
 
 #memories-header-text {
-  color: #ff5900;
+  color: #3498db;
   position: relative;
   float: left;
   top: 20px;
-  font-size: 70px;
-  left: 15%;
-  font-family: 'Sniglet', cursive; }
+  font-size: 80px;
+  left: 25%;
+  font-family: "Yanone Kaffeesatz", sans-serif; }
 
 #memories-back-button {
-  color: white;
+  color: #3498db;
   position: relative;
   float: left;
   top: 25px;
@@ -571,9 +657,9 @@ input {
   float: left;
   top: 25px;
   font-size: 80px;
-  left: 30%;
-  color: #ff6d5e;
-  font-family: 'Sniglet', cursive; }
+  left: 37%;
+  color: white;
+  font-family: "Yanone Kaffeesatz", sans-serif; }
 
 .edit-event-container {
   margin-top: 120px;
@@ -592,25 +678,29 @@ input {
   height: 200px;
   width: 100%;
   font-size: 50px;
-  border: 4px solid red; }
+  border: 4px solid grey;
+  border-radius: .5em; }
 
 #edit-event-interests input {
   height: 100px;
   width: 100%;
   font-size: 50px;
-  border: 4px solid red; }
+  border: 4px solid grey;
+  border-radius: .5em; }
 
 #edit-event-description input {
   height: 500px;
   width: 100%;
   font-size: 50px;
-  border: 4px solid red; }
+  border: 4px solid grey;
+  border-radius: .5em; }
 
 #edit-event-location input {
   height: 100px;
   width: 100%;
   font-size: 50px;
-  border: 4px solid red; }
+  border: 4px solid grey;
+  border-radius: .5em; }
 
 .edit-event-save-delete-wrap {
   margin-left: 9em;
@@ -632,13 +722,21 @@ input {
   vertical-align: bottom;
   font-family: 'Open Sans', sans-serif; }
 
+.edit-event-button-save {
+  background-color: #31d4e9;
+  color: white; }
+
+.edit-event-button-delete {
+  background-color: red;
+  color: white; }
+
 .editUser-main-header-edit {
   position: relative;
   float: left;
   top: 25px;
   font-size: 80px;
-  left: 27%;
-  color: white;
+  left: 25%;
+  color: #3498db;
   font-family: "Yanone Kaffeesatz", sans-serif; }
 
 .editFields {
@@ -652,7 +750,9 @@ input {
   height: 100px;
   font-size: 30px;
   margin-top: 2em;
-  border: 1px solid #555; }
+  border: 1px solid #555;
+  background-color: #3498db;
+  color: white; }
 
 .user-delete-button {
   width: 300px;
@@ -660,20 +760,28 @@ input {
   font-size: 30px;
   margin-top: 1em;
   border: 1px solid #555;
-  background-color: red; }
-
-#file-input {
-  height: 200px;
-  width: 80%;
-  margin-left: 10%; }
+  background-color: red;
+  color: white; }
 
 .upload-me-title {
   text-align: center;
-  font-size: 3em; }
+  font-size: 1em; }
 
 #file-input {
   text-align: center;
-  padding: 2em; }
+  padding: 2em;
+  height: 10%;
+  width: 25%;
+  margin-top: -2em; }
+
+.edit-user-user-name {
+  margin-top: 4em; }
+
+.upload-photo {
+  margin-top: -10.5em; }
+
+.upload-me-title {
+  margin-bottom: 1em; }
 
 .user-events-page-container {
   width: 100%;
@@ -683,9 +791,9 @@ input {
     position: relative;
     box-sizing: border-box;
     width: 100%;
-    height: 400px;
+    height: 300px;
     font-family: 'Open Sans', sans-serif;
-    border: 10px solid grey; }
+    border: 5px solid grey; }
   .user-events-page-container .home-trind-event-information-image {
     background-color: #eaeaea;
     height: 200px;
@@ -713,19 +821,23 @@ a {
   left: 0;
   z-index: 100;
   color: white;
-  background-color: #ff7f00; }
+  background-color: white;
+  border: 1px solid grey; }
   .trind-main-header .trind-main-header-create-icon {
     position: relative;
     float: left;
     top: 25px;
     font-size: 80px;
-    margin-left: 30px; }
+    margin-left: 30px;
+    color: white;
+    color: #3498db; }
   .trind-main-header .trind-main-header-image {
     position: relative;
     float: left;
     top: 25px;
     font-size: 80px;
-    left: 36%; }
+    left: 36%;
+    color: #fa4c06; }
   .trind-main-header .trind-main-header-search-icon {
     position: relative;
     float: right;
@@ -733,7 +845,7 @@ a {
     font-size: 80px;
     margin-right: 30px;
     cursor: inherit;
-    color: white; }
+    color: #3498db; }
 
 #home-drop-search-input-box {
   position: fixed;
@@ -754,16 +866,17 @@ a {
   bottom: 0;
   left: 0;
   color: white;
-  background-color: #ff7f00;
+  background-color: white;
   z-index: 100; }
   .trind-main-footer .trind-main-footer-me-icon {
     position: relative;
     float: left;
     top: 25px;
     font-size: 80px;
-    left: 30px; }
+    left: 30px;
+    color: #3498db; }
   .trind-main-footer .trind-main-footer-trind-icon {
-    color: white;
+    color: #fa4c06;
     position: relative;
     float: left;
     top: 5px;
@@ -772,17 +885,23 @@ a {
     font-family: 'Sniglet', cursive;
     transform: rotate(-45deg); }
   .trind-main-footer .dot-dot-dot {
-    color: #ff7f00;
+    color: #fa4c06;
     z-index: 10;
     position: absolute;
-    top: -6px;
-    right: 19px;
-    font-size: 60px; }
+    top: 20px;
+    right: 25px;
+    font-size: .5em;
+    font-family: sans-serif;
+    font-weight: bold; }
+  .trind-main-footer .pushup {
+    margin-top: -10px;
+    color: white; }
   .trind-main-footer .trind-main-footer-message-icon {
     position: relative;
     float: right;
     top: 20px;
     font-size: 80px;
-    right: 30px; }
+    right: 30px;
+    color: #3498db; }
 
 /*# sourceMappingURL=app.css.map */

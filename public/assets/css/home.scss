@@ -3,7 +3,10 @@ $twitter: rgba(49, 212, 233, 1);
 $orange-crush: rgba(255, 89, 0, 1);
 $orange-citrus: rgba(255, 127, 0, 1);
 $awwwards: rgba(0, 150, 141, 1);
-
+$bulls-o: rgba(250, 76, 6, 1);
+$bulls-blue: rgba(0, 79, 164, 1);
+$castrol-green: rgba(93, 125, 78, 1);
+$castrol-red: rgba(186, 20, 14, 1);
 
 
 .trind-main-header-text {
@@ -12,7 +15,7 @@ $awwwards: rgba(0, 150, 141, 1);
   top: 25px;
   font-size: 80px;
   left: 30%;
-  color: white;
+  color: $bulls-o;
   letter-spacing: 4px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: bold;
@@ -20,78 +23,76 @@ $awwwards: rgba(0, 150, 141, 1);
 
 .home-events-display-wrap {
 
+  .home-events-display {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 120px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 120px;
 
-.home-events-display {
-  position: relative;
-  box-sizing: border-box;
-  margin-top: 120px;
-  width: 100%;
-  height: 100%;
-  font-family: 'Open Sans', sans-serif;
+        .home-trind-event-information-image {
+          background-color: white;
+          height: 280px;
+          width: 280px;
+          float: left;
+        }
 
-    .home-trind-event-information-image {
-      background-color: white;
-      height: 280px;
-      width: 280px;
-      float: left;
+        .home-trind-event-information-image img {
+          border-radius: 9em 9em 9em 9em;
+          margin-left: 2em;
+          margin-top: 2em;
+        }
+
+        .home-trind-event-container {
+          height: 280px;
+          width: 100%;
+          background-color: white;
+        }
+
+        #event-dilb {
+          display: inline-block;
+        }
+
+        .home-trind-event-information-container {
+          width: 100%;
+          border: 1px solid rgba(171, 178, 186, 0.5);
+        }
+
+        .home-trind-event-information {
+          background-color: white;
+        }
+
+        #event-information-name {
+          color: #888;
+          font-size: 30px;
+          padding-top: 10px;
+        }
+
+        #interests {
+          font-size: 30px;
+          color: rgb(255, 109, 94);
+          vertical-align: bottom;
+          position: relative;
+          background: inherit;
+          right: 0em;
+          margin-top: 70px;
+        }
+
+        #description {
+          margin-top: 10px;
+          height: 80px;
+          font-size: 40px;
+          padding-bottom: 15px;
+        }
+
+        #location {
+          height: 20px;
+          font-size: 30px;
+        }
 
     }
-  .home-trind-event-information-image img {
-    border-radius: 10em 10em 10em 10em;
-    margin-left: 2em;
-    margin-top: 2em;
-  }
-
-    .home-trind-event-container {
-      height: 280px;
-      width: 100%;
-      background-color: white;
-      // border: 1px solid black;
-    }
-    #event-dilb {
-      display: inline-block;
-    }
-
-    .home-trind-event-information-container {
-      width: 100%;
-      border: 1px solid rgba(171, 178, 186, 0.5);
-    }
-
-    .home-trind-event-information {
-      background-color: white;
-    }
-    #event-information-name {
-      color: #888;
-      font-size: 30px;
-      padding-top: 10px;
-    }
-
-    #interests {
-      font-size: 30px;
-      padding-bottom: 15px;
-      color: rgb(255, 109, 94);
-      vertical-align: top;
-
-    }
-    #description {
-      margin-top: 10px;
-      height: 80px;
-      font-size: 45px;
-      padding-bottom: 15px;
-
-    }
-    #location {
-      height: 20px;
-      font-size: 30px;
-      // margin-bottom: -10px;
-      // text-align: right;
-      vertical-align: bottom;
-      // left: 5;
-
-      // border: 1px solid black;
-
-    }
-  }
 
 }
 
@@ -116,16 +117,14 @@ $awwwards: rgba(0, 150, 141, 1);
 }
 
 .getting-started-modal {
-  height: 65%;
+  height: 60%;
   width: 85%;
-  background-color: $twitter;
+  background-color: $odd-blue;
   position: fixed;
   top: 20em;
   z-index: 145;
   border-radius: 3em;
   right: 4.5em;
-
-
     }
 
 
@@ -165,7 +164,6 @@ $awwwards: rgba(0, 150, 141, 1);
   margin-top: .8em;
   position: relative;
   color: $orange-crush;
-  // background-color: rgba(255, 109, 94, .3);
   border-radius: 0em 0em .6em .6em;
   height: 2.4em;
   vertical-align: middle;
@@ -175,4 +173,9 @@ $awwwards: rgba(0, 150, 141, 1);
 
 #start {
   margin-top: 2em;
+}
+
+#where {
+  color: $bulls-blue;
+  opacity: 0.7;
 }

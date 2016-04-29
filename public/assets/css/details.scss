@@ -6,19 +6,27 @@ $orange-citrus: rgba(255, 127, 0, 1);
 $creamscicle: rgba(222, 230, 203, 1);
 $awwwards: rgba(0, 150, 141, 1);
 $header-text: 'Yanone Kaffeesatz', sans-serif;
-
+$bulls-o: rgba(250, 76, 6, 1);
+$bulls-blue: rgba(0, 79, 164, 1);
+$odd-blue: rgba(52, 152, 219, 1);
 
 #details-header-name {
   position: relative;
   float: left;
   top: 20px;
   font-size: 80px;
-  left: 40%;
+  left: 3%;
   font-family: $header-text;
   text-align: center;
+  color: $bulls-o;
+  // border: 1px solid black;
+  text-align: center;
+  width: 76%;
+
 }
 
 .event-details-container {
+    background-color: rgba(40, 44, 52, 0.03);
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -27,13 +35,16 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
     z-index: 1;
     font-family: 'Open Sans', sans-serif;
 
+
         .me-avatar {
-            width: 500px;
-            height: 500px;
-            margin-left: 25%;
-            margin-top: 20px;
+            // width: 500px;
+            width: 100%;
+            height: 800px;
+            // margin-left: 22.5%;
+            margin-top: 80px;
             text-align: center;
-            border: 2px solid rgb(164, 219, 216);
+            // border: 2px solid rgb(164, 219, 216);
+            border-radius: 1em;
         }
 
     .details-text-wrapper {
@@ -58,40 +69,45 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
     #details-eventDetail-title {
         font-size: 2em;
         text-align: center;
-        color: $orange-crush;
+        color: white;
     }
 
-.details-button-container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    text-align:center;
-}
+    .details-button-container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        text-align:center;
+    }
 
+    #details-eventDetail-interest {
+      color: $bulls-o;
+    }
 
     #details-interested-button {
       width: 80%;
       margin-left: auto;
       margin-right:auto;
-      background-color: $twitter;
+      background-color: $odd-blue;
       border-radius: .3em;
       height: 65px;
       margin-top: 30px;
       color: white;
       font-size: 3em;
+      border: none;
     }
 
     #details-message-button {
          width: 80%;
          margin-left: auto;
          margin-right: auto;
-         background-color: $twitter;
+         background-color: $bulls-o;
          border-radius: .3em;
          height: 65px;
          margin-top: 30px;
          color: white;
          font-size: 3em;
+         border: none;
     }
 
     #details-eventDetail-title {
@@ -102,11 +118,13 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
     #details-eventDetail-interest {
       margin-top: 40px;
       margin-left: 40px;
+      // color: $orange-crush;
 
     }
     #details-eventDetail-description {
       margin-top: 40px;
       margin-left: 40px;
+      font-size: 50px;
 
     }
     #details-eventDetail-location {
@@ -116,7 +134,29 @@ $header-text: 'Yanone Kaffeesatz', sans-serif;
     }
 }
 
+#details-marker {
+  color: $odd-blue;
+  font-size: 40px;
+}
+
 #mapcontainer {
   margin-left: 9em;
   margin-top: 6em;
 }
+
+
+  //   img {
+  //   height: 60px;
+  //   width: 60px;
+  // }
+
+
+// .details-foot-image img {
+//   height: 60px;
+//   width: 60px;
+//   position: relative;
+//   float: left;
+//   top: 5px;
+//   font-size: 130px;
+//   left: 38.5%;
+// }

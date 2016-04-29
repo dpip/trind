@@ -16,6 +16,13 @@ $orange-crush: rgba(255, 89, 0, 1);
 $orange-citrus: rgba(255, 127, 0, 1);
 $creamscicle: rgba(222, 230, 203, 1);
 $awwwards: rgba(0, 150, 141, 1);
+$bulls-o: rgba(250, 76, 6, 1);
+$bulls-blue: rgba(0, 79, 164, 1);
+$castrol-green: rgba(93, 125, 78, 1);
+$castrol-red: rgba(186, 20, 14, 1);
+$odd-blue: rgba(52, 152, 219, 1);
+$comfy: rgba(204, 204, 204, 1);
+
 
 a {
   color: inherit;
@@ -30,9 +37,8 @@ a {
   left: 0;
   z-index: 100;
   color: white;
-  // background-color: rgba(164, 219, 216, 1);
-  background-color: $orange-citrus;
-  // background-color: $blue;
+  background-color: white;
+  border: 1px solid grey;
 
       .trind-main-header-create-icon {
         position: relative;
@@ -40,6 +46,8 @@ a {
         top: 25px;
         font-size: 80px;
         margin-left: 30px;
+        color: white;
+        color: $odd-blue;
       }
 
       .trind-main-header-image {
@@ -48,6 +56,7 @@ a {
         top: 25px;
         font-size: 80px;
         left: 36%;
+        color: $bulls-o;
       }
 
       .trind-main-header-search-icon {
@@ -57,15 +66,9 @@ a {
         font-size: 80px;
         margin-right: 30px;
         cursor: inherit;
-        color: white;
+        color: $odd-blue;
       }
 }
-
-// .home-drop-search-bar {
-//   border: 1px solid red;
-//   position: absolute;
-//   height: 100px;
-// }
 
 #home-drop-search-input-box {
   position: fixed;
@@ -75,7 +78,6 @@ a {
   font-size: 50px;
   color: gray;
   text-align: center;
-  // top: 150px;
   z-index: 1;
   letter-spacing: 2px;
   font-family: $header-text;
@@ -96,8 +98,7 @@ a {
   bottom: 0;
   left: 0;
   color: white;
-  background-color: $orange-citrus;
-  // background-color: $blue;
+  background-color: white;
   z-index: 100;
 
       .trind-main-footer-me-icon {
@@ -106,10 +107,11 @@ a {
         top: 25px;
         font-size: 80px;
         left: 30px;
+        color: $odd-blue;
       }
 
       .trind-main-footer-trind-icon {
-        color: white;
+        color: $bulls-o;
         position: relative;
         float: left;
         top: 5px;
@@ -122,12 +124,19 @@ a {
       }
 
       .dot-dot-dot {
-        color: $orange-citrus;
+        color: $bulls-o;
         z-index: 10;
         position: absolute;
-        top: -6px;
-        right: 19px;
-        font-size: 60px;
+        top: 20px;
+        right: 25px;
+        font-size: .5em;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+
+      .pushup {
+          margin-top:-10px;
+          color: white;
       }
 
       .trind-main-footer-message-icon {
@@ -136,5 +145,6 @@ a {
         top: 20px;
         font-size: 80px;
         right: 30px;
+        color: $odd-blue;
       }
 }

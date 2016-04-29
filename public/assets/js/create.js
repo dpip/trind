@@ -4,11 +4,14 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
 
   var currentToken = localStorage.getItem('tokenToken');
   var userID = localStorage.getItem('userID');
-  var location = localStorage.getItem('location');
-  console.log("here's what you have in local after google autofill", lat);
-  var lat = localStorage.getItem('latitude');
-  var lng = localStorage.getItem('longitude');
+  // var location = localStorage.getItem('location');
+  // var lat = localStorage.getItem('latitude');
+  // var lng = localStorage.getItem('longitude');
   var inputFrom = document.getElementById('create-map-input');
+  // var autocompleteFrom = new google.maps.places.Autocomplete(inputFrom);
+  // var newlocation = localStorage.getItem('newlocation');
+  // var newlat = localStorage.getItem('newlatitude');
+  // var newlng = localStorage.getItem('newlongitude');
   var autocompleteFrom = new google.maps.places.Autocomplete(inputFrom);
 
 // $('#create-map-input').val(),
@@ -24,34 +27,48 @@ trind.controller('CreateController', ['$scope', '$http', function($scope, $http)
 //     }
 //   };
 
+// $scope.location = address;
 $scope.location = location;
+
 
 console.log($('#create-map-input').val());
 
 
 // +++++++ GOOGLE MAPS SEARCH ++++++++++
 
-//point google places autocomplete to proper field
- // var autocompleteFrom = new google.maps.places.Autocomplete(inputFrom);
- // var inputFrom = document.getElementById('create-map-input');
 
- //use google places autocomplete to input location addy & lat/long
- // var autocompleteFrom = new google.maps.places.Autocomplete(inputFrom);
-      // $(autocompleteFrom).css("font-size", "30px");
 
    google.maps.event.addListener(autocompleteFrom, 'place_changed', function() {
        var place = autocompleteFrom.getPlace();
        var location = place.formatted_address;
        var lng = place.geometry.location.lng();
        var lat = place.geometry.location.lat();
-       localStorage.setItem('location', location);
-       localStorage.setItem('latitude', lat);
-       localStorage.setItem('longitude', lng);
+
+       localStorage.setItem('newlocation', location);
+       localStorage.setItem('newlatitude', lat);
+       localStorage.setItem('newlongitude', lng);
        console.log(lat);
        console.log(lng);
        console.log(location);
+       console.log('old above new below')
 
-         // console.log(lat, lng, address)
+        $scope.testTrind = {
+            "event": {
+            "user_id": userID,
+            "interests": $('#create-your-interests').val(),
+            "description": $('#create-description-field').val(),
+            "location": location,
+            "latitude": lat,
+            "longitude": lng,
+            "title": $('#i-want-to').val(),
+            "token": currentToken
+
+          }
+        };
+
+
+
+
    });
 
    $scope.testTrind = {
@@ -59,37 +76,21 @@ console.log($('#create-map-input').val());
        "user_id": userID,
        "interests": "",
        "description": "",
-       "location": location,
-       "latitude": lat,
-       "longitude": lng,
-       "title": "",
-       "token": currentToken
 
+       "title": ""
      }
    };
 
 
-// ++++++++++ Google maps
 
   $scope.submitTrind = function() {
 
-    // console.log(lat);
-    // console.log(lng);
-    console.log(location);
-    console.log(lat);
-    console.log(lng);
     console.log("Hello, little Hobbit!");
     console.log($scope.testTrind);
-    $http.post('https://still-waters-14036.herokuapp.com/events?token=' + currentToken, $scope.testTrind)
+    $http.post('https://still-waters-14036.herokuapp.com/events?token=' + currentToken, $scope.testTrind, $scope.mapTrind)
     .then(function successCallback(response){
       console.log(response);
-      $(".pac-container").val('');
       window.location.replace('#/home')
-
-      // document.create-map-input.reset();
-      // $("#create-map-input").trigger('reset');
-      // document.getElementById('create-map-input').value = '';
-      //  autocomplete.set('place',void(0));
  }, function errorCallback(response){
    console.log(response)
  });
@@ -106,26 +107,22 @@ console.log($('#create-map-input').val());
         // ON spacebar, events bubble. 3 max
           // var emptyString = "";
 
+
         $('.create-enter-interests-input').keyup(function(e){
             // var emptyString;
+            var hash = "#";
             var interests = $(this).val();
             if(e.keyCode == 32){
-           // user has pressed space
-           $(interests).addClass("mutate-interests");
+              $(this).val('#' + interests);
+
+
+          //  $(interests).addClass("mutate-interests");
            console.log("spacebar");
            console.log(interests);
 
          }
         });
 
-
-        // $("#test").keyup(function() {
-        //                 var input = $(this);
-        //
-        //                 if( input.val() == "" ) {
-        //                   input.css( "border", "1px solid #000" );
-        //                 }
-        //             });
 
 
     });

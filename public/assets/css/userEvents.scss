@@ -1,3 +1,12 @@
+
+$blue: rgba(151, 222, 218, 1);
+$twitter: rgba(49, 212, 233, 1);
+$orange-crush: rgba(255, 89, 0, 1);
+$orange-citrus: rgba(255, 127, 0, 1);
+$awwwards: rgba(0, 150, 141, 1);
+$header-text: 'Yanone Kaffeesatz', sans-serif;
+
+
 .user-events-page-container {
     width: 100%;
     height: 100%;
@@ -6,9 +15,9 @@
         position: relative;
         box-sizing: border-box;
         width: 100%;
-        height: 400px;;
+        height: 300px;;
         font-family: 'Open Sans', sans-serif;
-        border: 10px solid grey;
+        border: 5px solid grey;
         }
 
           .home-trind-event-information-image {
@@ -30,6 +39,5 @@
           #title {
             color: rgba(255, 109, 94, 1);
           }
-
 
 }
