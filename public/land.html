@@ -7,7 +7,7 @@
 <div class= "login-page-container">
 
 
-                  <div class="landing-login-wrap">
+                <div class="landing-login-wrap">
                     <div class="landing-login-container">
                       <div class = "login-page-main-font" > <div id="login-page-main-font-text">Trind</div> </div>
                       <div class = "land-call-to-action">
@@ -15,60 +15,52 @@
                         Do something new.  </br></br>
                         When and where you choose.
                       </div>
-                    <form ng-submit="submitLogin()" autocomplete="off" method="post">
-
-                          <div class = "land-input-wrap">
-                              <div class="land-input-container">
-                                <!-- <span class="unit-email">Email</span> -->
-                              <input type="text" placeholder="trind@gmail.com" class="input-email" ng-model="landPage.email" style="border:1px solid white"> <br>
-                              <!-- <span class="unit-email">Email</span> -->
-                              </div>
-                              <div class="land-input-container">
-                              <input type="password" placeholder="password" class="input-password" ng-model="landPage.password" style="border:1px solid white">
-                              <!-- <span class="unit-password">Password</span> -->
-                              </div>
-                          </div>
-                              <div class="button-container">
-                              <button class="login-button"> sign in </button>
-                              <div class="havent-created-an-account-yet"> Not a member yet? </div>
-                    </form>
-
-                              <div ng-init="showModal=false">
-                              <div class="havent-created-an-account-yet create-account" ng-click="showModal = !showModal"> Create a free account </div>
-                              <div ng-show="showModal">
-                                <div class="landing-signup-container">
-                                  <div class="modal-footer">
-                                  <button type="button" class="btn-signup-close" ng-click="showModal=false"><i class="fa fa-times" aria-hidden="true"></i></button>
-                                  </div>
-                                      <form ng-submit="submitSignup()" autocomplete="off" method="post">
-                                          <div class="form-column">
-                                            <label for="first-name"></label>
-                                            <input type="text" class="sign-up-modal-input" id="signup-name" placeholder="name" ng-model="newAccount.user.name" /> <br>
-                                            <span class="modal-perm-input-text">Name</span>
-                                            <label for="email-address"></label>
-                                            <input type="text" class="sign-up-modal-input" id="email-address" name="email-address" placeholder="friends@trind.com" ng-model="newAccount.user.email"/> <br>
-                                            <span class="modal-perm-input-text">Email</span>
-                                            <label for="new-password"></label>
-                                            <input type="password" class="sign-up-modal-input" id="new-password" name="new-password" placeholder="******" ng-model="newAccount.user.password"/> <br>
-                                            <span class="modal-perm-input-text">Password</span>
-                                            <label for="confirm-password"></label>
-                                            <input type="password" class="sign-up-modal-input" id="confirm-password" name="confirm-password" placeholder="******" ng-model="newAccount.user.password_confirmation"/>
-                                            <span class="modal-perm-input-text">Confirm</span>
-                                            <br>
-                                            <div class="sign-up-pressure">Explore new experiences...</div>
-                                          <button id="signup-now"> Create Account </button>
-
-                                      </form>
-                                  </div>
-                                </div>
-                            </div>
+                          <form ng-submit="submitLogin()" autocomplete="off" method="post">
+                                    <div class="land-input-container">
+                                    <input type="text" placeholder="trind@gmail.com" class="input-email" ng-model="landPage.email" style="border:1px solid white"> <br>
+                                    <span class=" unit unit-email">Email</span>
+                                    </div>
+                                    <div class="land-input-container">
+                                    <input type="password" placeholder="required" class="input-password" ng-model="landPage.password" style="border:1px solid white">
+                                    <span class=" unit unit-password">Password</span>
+                                    </div>
+                                    <div class="button-container">
+                                    <button class="login-button"> sign in </button>
+                                    <div class="havent-created-an-account-yet"> Not a member yet? </div>
+                                    </div>
+                          </form>
+                    </div>
+                </div>
 
 
+              <div ng-init="showModal=false">
+              <div class="havent-created-an-account-yet create-account" ng-click="showModal = !showModal"> Create a free account </div>
+                  <div ng-show="showModal">
+                      <div class="landing-signup-container">
+                        <div class="modal-footer">
+                        <button type="button" class="btn-signup-close" ng-click="showModal=false"><i class="fa fa-times" aria-hidden="true"></i></button>
+                        </div>
+                        <form ng-submit="submitSignup()" autocomplete="off" method="post">
+                            <div class="form-column">
+                              <label for="first-name"></label>
+                              <input type="text" class="sign-up-modal-input" id="signup-name" placeholder="name" ng-model="newAccount.user.name" /> <br>
+                              <span class="modal-perm-input-text">Name</span>
+                              <label for="email-address"></label>
+                              <input type="text" class="sign-up-modal-input" id="email-address" name="email-address" placeholder="friends@trind.com" ng-model="newAccount.user.email"/> <br>
+                              <span class="modal-perm-input-text">Email</span>
+                              <label for="new-password"></label>
+                              <input type="password" class="sign-up-modal-input" id="new-password" name="new-password" placeholder="******" ng-model="newAccount.user.password"/> <br>
+                              <span class="modal-perm-input-text">Password</span>
+                              <label for="confirm-password"></label>
+                              <input type="password" class="sign-up-modal-input" id="confirm-password" name="confirm-password" placeholder="******" ng-model="newAccount.user.password_confirmation"/>
+                              <span class="modal-perm-input-text">Confirm</span>
+                              <br>
+                              <div class="sign-up-pressure">Explore new experiences...</div>
+                            <button id="signup-now"> Create Account </button>
+                        </form>
+                        </div>
+                      </div>
+                  </div>
+              </div>
 
-
-
-
-
-
-
-                              </div>
+</div>

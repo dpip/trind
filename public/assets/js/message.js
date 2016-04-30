@@ -10,6 +10,7 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
 
         $scope.otherUserName = otherUserName;
 
+
         $scope.whoAmI = function(userPassed) {
           if(userPassed == userID) {
             return 'message-out';

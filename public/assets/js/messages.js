@@ -44,19 +44,19 @@ function unseen() {
 
       $http.get('https://still-waters-14036.herokuapp.com/conversations?token=' + currentToken ).success(function(data){
 
-        console.log(data);
-        $scope.conversations = data;
-        // $scope.conversations.conversationID = data.conversation.id;
+          console.log(data);
+          $scope.conversations = data;
+          // $scope.conversations.conversationID = data.conversation.id;
 
-        $scope.message = function(conversationID) {
-            console.log(conversationID);
-            localStorage.setItem('conversationID', conversationID);
-            $location.path('/message');
-        };
+          $scope.message = function(conversationID) {
+              console.log(conversationID);
+              localStorage.setItem('conversationID', conversationID);
+              $location.path('/message');
+          };
 
-        if(firstTime === "yes") {
-          localStorage.setItem('firstTime', "no");
-        };
+          if(firstTime === "yes") {
+            localStorage.setItem('firstTime', "no");
+          };
 
       });
 
