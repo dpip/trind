@@ -19,7 +19,8 @@
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     margin-left: 0em;
-    color: white; }
+    color: white;
+    padding-bottom: 120px; }
   .login-page-container .land-input-wrap {
     margin-top: 8em; }
   .login-page-container .landing-login-container {
@@ -80,7 +81,7 @@
     margin-top: 1em;
     font-weight: bold;
     color: white;
-    margin-left: 11.5%;
+    margin-left: 20%;
     font-size: 55px;
     font-family: 'Sansita One', cursive;
     width: 100%; }
@@ -277,7 +278,6 @@ input {
 .conversation-information-container {
   border-top: 2px solid #999;
   border-bottom: 2px solid #999;
-  padding-top: .2em;
   padding-bottom: .1em;
   height: 300px; }
   .conversation-information-container .conversation-information-direction {
@@ -301,8 +301,7 @@ input {
     width: 100%; }
   .conversation-information-container .conversation-image img {
     position: absolute;
-    border-radius: 10em 10em 10em 10em;
-    margin: 1em .5em 1em 1em; }
+    border-radius: 0em 9em 9em 0em; }
 
 .create-main-header-text {
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -396,8 +395,8 @@ input {
     float: left; }
   .home-events-display-wrap .home-events-display .home-trind-event-information-image img {
     border-radius: 9em 9em 9em 9em;
-    margin-left: 2em;
-    margin-top: 2em; }
+    margin-left: 1.5em;
+    margin-top: 1.5em; }
   .home-events-display-wrap .home-events-display .home-trind-event-container {
     height: 280px;
     width: 100%;
@@ -631,26 +630,52 @@ input {
 
 .memories-trind-event-information-container {
   height: 300px;
-  font-size: 25px; }
+  font-size: 25px;
+  border: 1px solid rgba(171, 178, 186, 0.5); }
 
-.memory-text-container {
+#stashed-text-container {
   font-size: 40px;
   display: inline-block;
-  border: 1px solid grey;
-  width: 678px;
+  width: 72%;
   box-sizing: border-box;
   vertical-align: top;
   height: 100%;
   float: right; }
 
-#stashed-image {
-  float: left; }
+.stashed-dilb {
+  display: inline-block; }
+
+#stashed-image img {
+  float: left;
+  border-radius: 9em 9em 9em 9em;
+  margin-left: 1em;
+  margin-top: 2em; }
+
+#stashed-name {
+  color: #888;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px; }
 
 #stashed-interests {
-  color: #ff6d5e; }
+  position: relative;
+  font-size: 30px;
+  color: #ff6d5e;
+  vertical-align: bottom;
+  background: inherit;
+  margin-top: 85px; }
 
 #stashed-description {
-  height: 80px; }
+  height: 80px;
+  font-size: 40px;
+  padding-bottom: 15px; }
+
+#stashed-location {
+  height: 20px;
+  font-size: 30px;
+  color: #004fa4;
+  opacity: 0.7;
+  margin-top: 45px; }
 
 .trind-main-header-text-edit-event {
   position: relative;
@@ -743,7 +768,8 @@ input {
   font-size: 50px;
   width: 80%;
   text-align: center;
-  margin-left: 0em; }
+  margin-left: 0em;
+  border: 2px solid #cccccc; }
 
 .user-edit-button {
   width: 300px;
@@ -774,14 +800,42 @@ input {
   width: 25%;
   margin-top: -2em; }
 
+.me-avatar-edit {
+  color: blue; }
+
 .edit-user-user-name {
   margin-top: 4em; }
 
 .upload-photo {
-  margin-top: -10.5em; }
+  margin-top: -15em; }
+
+#photo-upload-selector {
+  color: #3498db;
+  font-size: 400px; }
 
 .upload-me-title {
   margin-bottom: 1em; }
+
+#image-uploaded-modal {
+  height: 50%;
+  width: 85%;
+  background-color: #3498db;
+  position: absolute;
+  top: 3.5em;
+  z-index: 145;
+  border-radius: 1em;
+  right: 1.5em;
+  color: white; }
+
+.check {
+  margin-top: 4.5em;
+  font-size: 60px; }
+
+.fa-check:before {
+  font-size: 5em; }
+
+.fa-check:after {
+  font-size: 5em; }
 
 .user-events-page-container {
   width: 100%;

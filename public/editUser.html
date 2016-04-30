@@ -9,7 +9,9 @@
     <img class="me-avatar" src="{{editUserImage}}">  </img>
     <div class="upload-photo">
         <div class="upload-me-title">Upload Photo</div>
+        <i id="photo-upload-selector" class="fa fa-camera"></i>
     <input id='file-input' name='file' type='file' ngf-select ng-model='file' ngf-pattern="'image/*'" ngf-capture="'other'" accept="image/*" ngf-max-size="20MB" ngf-min-height="100" value = "upload image">
+
     </div>
     <!-- <div id="me-photo-upload"><input type="file" ng-file-model="image" name="image" /></input></div> -->
     <div class = "edit-field-">
@@ -25,6 +27,10 @@
     </div>
 </div>
 
+
+  <div id= "image-uploaded-modal">
+    <div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>
+  </div>
 <!-- <div class="upload-photo">
     <div class="upload-me-title">Upload Photo</div>
 <input id='file-input' name='file' type='file' ngf-select ng-model='file' ngf-pattern="'image/*'" ngf-capture="'other'" accept="image/*" ngf-max-size="20MB" ngf-min-height="100" value = "upload image">

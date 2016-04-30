@@ -12,7 +12,7 @@
     <div ng-repeat= "conversation in conversations.conversations | orderBy: 'created_at':true">
       <div class="conversation-information-container" ng-click="message(conversation.conversation_id); otherUser(conversation.sender_name)">
           <div class= "conversation-image" id="event-dilb">
-            <img src="{{conversation.sender_photo_url}} " height="220" width="220">
+            <img src="{{conversation.sender_photo_url}} " height="300" width="300">
               </div>
                 <div class="last-message-wrap">
                   <div class="conversation-last-message" >{{conversation.last_message | limitTo:28}}</div>

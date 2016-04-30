@@ -10,6 +10,7 @@ $bulls-blue: rgba(0, 79, 164, 1);
 $castrol-green: rgba(93, 125, 78, 1);
 $castrol-red: rgba(186, 20, 14, 1);
 $odd-blue: rgba(52, 152, 219, 1);
+$comfy: rgba(204, 204, 204, 1);
 
 .editUser-main-header-edit {
   position: relative;
@@ -26,7 +27,7 @@ $odd-blue: rgba(52, 152, 219, 1);
   width: 80%;
   text-align: center;
   margin-left: 0em;
-
+  border: 2px solid $comfy;
 }
 
 .user-edit-button {
@@ -49,12 +50,6 @@ $odd-blue: rgba(52, 152, 219, 1);
   color: white;
 }
 
-// #file-input {
-//   height: 200px;
-//   width: 80%;
-//  margin-left: 10%;
-//
-// }
 .upload-me-title {
     text-align: center;
     font-size:  1em;
@@ -70,7 +65,10 @@ $odd-blue: rgba(52, 152, 219, 1);
     width: 25%;
     margin-top: -2em;
 
+}
 
+.me-avatar-edit {
+  color: blue;
 }
 
 .edit-user-user-name {
@@ -78,9 +76,39 @@ $odd-blue: rgba(52, 152, 219, 1);
 }
 
 .upload-photo {
-  margin-top: -10.5em;
+  margin-top: -15em;
+}
+
+
+#photo-upload-selector {
+  color: $odd-blue;
+  font-size: 400px;
 }
 
 .upload-me-title {
   margin-bottom: 1em;
 }
+
+#image-uploaded-modal {
+  height: 50%;
+  width: 85%;
+  background-color: $odd-blue;
+  position: absolute;
+  top: 3.5em;
+  z-index: 145;
+  border-radius: 1em;
+  right: 1.5em;
+  color: white;
+  }
+
+  .check {
+    margin-top: 4.5em;
+    font-size: 60px;
+  }
+
+  .fa-check:before {
+    font-size: 5em;
+  }
+  .fa-check:after {
+    font-size: 5em;
+  }

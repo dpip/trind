@@ -19,7 +19,6 @@ $odd-blue: rgba(52, 152, 219, 1);
 .login-page-container {
   height: 100%;
   width: 100%;
-  // background-color: rgba(164, 219, 216, 1);
   background-color: $odd-blue;
 
 
@@ -30,7 +29,6 @@ $odd-blue: rgba(52, 152, 219, 1);
       margin-left: 18%;
       padding-top: .6em;
       padding-bottom: .6em;
-      // margin-top: 6em;
     }
     .land-call-to-action{
       font-size: 40px;
@@ -39,6 +37,7 @@ $odd-blue: rgba(52, 152, 219, 1);
       text-align: center;
       margin-left: 0em;
       color: white;
+      padding-bottom: 120px;
     }
 
     .land-input-wrap {
@@ -47,7 +46,6 @@ $odd-blue: rgba(52, 152, 219, 1);
 
     .landing-login-container {
       margin-left: 5.5em;
-      // padding-top: 4em;
 
     }
 
@@ -60,8 +58,6 @@ $odd-blue: rgba(52, 152, 219, 1);
       font-size: 38px;
       text-align: center;
       border-radius: .5em .5em 0em 0em;
-      // margin-bottom: 1.25em;
-      // border-bottom: 1px solid grey;
       color: black;
       margin-bottom: 2px;
     }
@@ -76,7 +72,6 @@ $odd-blue: rgba(52, 152, 219, 1);
       border-radius: 0em 0em .5em .5em;
       border-top: 1px solid rgba(164, 219, 216, 1);
       color: black;
-      // -webkit-text-fill-color: yellow !important;
     }
     .login-button {
       margin-left: 0%;
@@ -87,14 +82,11 @@ $odd-blue: rgba(52, 152, 219, 1);
       height: 90px;
       border-radius: .5em .5em .5em .5em;
       background-color: white;
-      // background-color: white;
       border: none;
       font-weight: bold;
       letter-spacing: 2.5px;
     }
     .havent-created-an-account-yet {
-      // color: $creamscicle;
-      // color: white;
       color: white;
       font-size: 30px;
       margin-top: 2em;
@@ -123,9 +115,8 @@ $odd-blue: rgba(52, 152, 219, 1);
     .create-account {
       margin-top: 1em;
       font-weight: bold;
-      // color: $bulls-o;
       color: white;
-      margin-left: 11.5%;
+      margin-left: 20%;
       font-size: 55px;
       font-family: 'Sansita One', cursive;
       width: 100%;

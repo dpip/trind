@@ -19,7 +19,8 @@
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     margin-left: 0em;
-    color: white; }
+    color: white;
+    padding-bottom: 120px; }
   .login-page-container .land-input-wrap {
     margin-top: 8em; }
   .login-page-container .landing-login-container {
@@ -80,7 +81,7 @@
     margin-top: 1em;
     font-weight: bold;
     color: white;
-    margin-left: 11.5%;
+    margin-left: 20%;
     font-size: 55px;
     font-family: 'Sansita One', cursive;
     width: 100%; }

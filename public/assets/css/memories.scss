@@ -63,19 +63,19 @@ $comfy: rgba(204, 204, 204, 1);
 .memories-trind-event-information-container {
   height: 300px;
   font-size: 25px;
-
+  border: 1px solid rgba(171, 178, 186, 0.5);
 }
 
 .memory-text-container-wrap {
-  // border: 1px solid green;
+  // border: 1px solid grey;
 
 }
 
-.memory-text-container {
+#stashed-text-container {
   font-size: 40px;
   display: inline-block;
-  border: 1px solid grey;
-  width: 678px;
+  // border: 1px solid grey;
+  width: 72%;
   box-sizing: border-box;
   vertical-align: top;
   height: 100%;
@@ -84,20 +84,45 @@ $comfy: rgba(204, 204, 204, 1);
 
 }
 
+.stashed-dilb {
+  display: inline-block;
+}
 
-#stashed-image {
+#stashed-image img {
   float: left;
+  border-radius: 9em 9em 9em 9em;
+  margin-left: 1em;
+  margin-top: 2em;
+}
+
+#stashed-name {
+  // margin-left: 1.5em;
+  color: #888;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 #stashed-title {
 
 }
 #stashed-interests {
+position: relative;
+font-size: 30px;
 color: rgb(255, 109, 94);
+vertical-align: bottom;
+background: inherit;
+margin-top: 85px;
 }
 #stashed-description {
-height: 80px;
+  height: 80px;
+  font-size: 40px;
+  padding-bottom: 15px;
 }
 #stashed-location {
-
+  height: 20px;
+  font-size: 30px;
+  color: $bulls-blue;
+  opacity: 0.7;
+  margin-top: 45px
 }

@@ -40,7 +40,7 @@ $comfy: rgba(204, 204, 204, 1);
 .conversation-information-container {
     border-top: 2px solid #999;
     border-bottom: 2px solid #999;
-    padding-top: .2em;
+    // padding-top: .2em;
     padding-bottom: .1em;
     height: 300px;
 
@@ -73,8 +73,8 @@ $comfy: rgba(204, 204, 204, 1);
 
     .conversation-image img {
         position: absolute;
-        border-radius: 10em 10em 10em 10em;
-        margin: 1em .5em 1em 1em;
+        border-radius: 0em 9em 9em 0em;
+        // margin: 1em .5em 1em 1em;
 
     }
 

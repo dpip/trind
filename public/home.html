@@ -21,7 +21,7 @@
     <div class= "home-trind-event-container" ng-repeat="info in trinds" >
       <div ng-repeat= "summary in info | filter:search | orderBy: 'created_at':true" ng-class="{'lastRepeat': $last}">
         <div class= "home-trind-event-information-container" id="event-dilb" ng-click="details(summary.id)">
-          <div class= "home-trind-event-information-image" id="event-dilb" ><img src="{{summary.user.photo_url}}" height="220" width="220"></div>
+          <div class= "home-trind-event-information-image" id="event-dilb" ><img src="{{summary.user.photo_url}}" height="230" width="230"></div>
             <div class= "home-trind-event-information" id="event-information-name">{{summary.user.name}} wants to...</div>
               <div class= "home-trind-event-information" id= "description">{{summary.title}} </div>
               <div class= "home-trind-event-information" id= "location"><span id = "where" >{{summary.location}}</span> </div>

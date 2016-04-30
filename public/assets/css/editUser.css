@@ -11,7 +11,8 @@
   font-size: 50px;
   width: 80%;
   text-align: center;
-  margin-left: 0em; }
+  margin-left: 0em;
+  border: 2px solid #cccccc; }
 
 .user-edit-button {
   width: 300px;
@@ -42,13 +43,41 @@
   width: 25%;
   margin-top: -2em; }
 
+.me-avatar-edit {
+  color: blue; }
+
 .edit-user-user-name {
   margin-top: 4em; }
 
 .upload-photo {
-  margin-top: -10.5em; }
+  margin-top: -15em; }
+
+#photo-upload-selector {
+  color: #3498db;
+  font-size: 400px; }
 
 .upload-me-title {
   margin-bottom: 1em; }
+
+#image-uploaded-modal {
+  height: 50%;
+  width: 85%;
+  background-color: #3498db;
+  position: absolute;
+  top: 3.5em;
+  z-index: 145;
+  border-radius: 1em;
+  right: 1.5em;
+  color: white; }
+
+.check {
+  margin-top: 4.5em;
+  font-size: 60px; }
+
+.fa-check:before {
+  font-size: 5em; }
+
+.fa-check:after {
+  font-size: 5em; }
 
 /*# sourceMappingURL=editUser.css.map */

@@ -14,12 +14,13 @@
       <div class= "memories-trind-event-information-container" >
 
           <div class = "memory-text-container-wrap" ng-click="stashedDetails(memory.event.id)">
-          <div class= "" ng-click="details($index)" id="stashed-image"><img src="{{memory.user.photo_url}}" height="300" width="300"></div>
+          <div class= "stashed-dilb" ng-click="details($index)" id="stashed-image"><img src="{{memory.user.photo_url}}" height="220" width="220"></div>
 
-          <div class = "memory-text-container">
+          <div class= "stashed-dilb" id = "stashed-text-container">
+          <div class= "stashed-events" id= "stashed-name">{{memory.user.name}} wants to...</div>  
           <div class= "stashed-events" id= "stashed-title">{{memory.event.title}}</div>
-          <div class= "stashed-events" id= "stashed-interests">{{memory.event.interests}}</div>
           <div class= "stashed-events" id= "stashed-location">{{memory.event.location}}</div>
+          <div class= "stashed-events" id= "stashed-interests">{{memory.event.interests}}</div>
           <!-- memories-trind-event-information-image
           <div ng-controller= 'MemoriesController'>
             <i ng-click="likeClick()"class="fa fa-thumbs-up" ></i>

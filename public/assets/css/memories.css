@@ -33,25 +33,51 @@
 
 .memories-trind-event-information-container {
   height: 300px;
-  font-size: 25px; }
+  font-size: 25px;
+  border: 1px solid rgba(171, 178, 186, 0.5); }
 
-.memory-text-container {
+#stashed-text-container {
   font-size: 40px;
   display: inline-block;
-  border: 1px solid grey;
-  width: 678px;
+  width: 72%;
   box-sizing: border-box;
   vertical-align: top;
   height: 100%;
   float: right; }
 
-#stashed-image {
-  float: left; }
+.stashed-dilb {
+  display: inline-block; }
+
+#stashed-image img {
+  float: left;
+  border-radius: 9em 9em 9em 9em;
+  margin-left: 1em;
+  margin-top: 2em; }
+
+#stashed-name {
+  color: #888;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px; }
 
 #stashed-interests {
-  color: #ff6d5e; }
+  position: relative;
+  font-size: 30px;
+  color: #ff6d5e;
+  vertical-align: bottom;
+  background: inherit;
+  margin-top: 85px; }
 
 #stashed-description {
-  height: 80px; }
+  height: 80px;
+  font-size: 40px;
+  padding-bottom: 15px; }
+
+#stashed-location {
+  height: 20px;
+  font-size: 30px;
+  color: #004fa4;
+  opacity: 0.7;
+  margin-top: 45px; }
 
 /*# sourceMappingURL=memories.css.map */
