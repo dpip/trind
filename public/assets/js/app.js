@@ -22,9 +22,9 @@ trind.config(function($routeProvider) {
       templateUrl: 'me.html',
       controller: 'MeController'
     })
-     .when('/memories', {
-     templateUrl: 'memories.html',
-     controller: 'MemoriesController'
+     .when('/stashed', {
+     templateUrl: 'stashed.html',
+     controller: 'StashedController'
             })
     .when('/messages', {
      templateUrl: 'messages.html',
@@ -54,5 +54,5 @@ trind.config(function($routeProvider) {
       redirectTo: '/land'
     });
 
-    
+
 });

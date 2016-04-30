@@ -7,18 +7,17 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
 
 
 
+  // +++++++++++ localStorage ++++++++++
 
-  // +++++++++++ token in localStorage ++++++++++
     var currentToken = localStorage.getItem('tokenToken');
     var facebookToken =  localStorage.getItem('facebookToken');
     var facebookUserID = localStorage.getItem('facebookUserID');
     var firstTime = localStorage.getItem('firstTime');
-
-  // +++++++++++ id in local storage +++++++
     var userID = localStorage.getItem('userID');
     var userPhoto = localStorage.getItem('userPhoto');
     var theEventID = localStorage.getItem('theEventID');
-  // ++++++++++++++++++ login ++++++++++++++++++++++
+
+// ++++++++++++ new account intro modal +++++++++++++++
 
       $('.getting-started-modal').hide();
       $('.getting-started-background').hide();
@@ -47,53 +46,40 @@ trind.controller('HomeController',  [ '$http', '$location', '$scope', function($
 
         };
 
-        // Attempting to add margin to last repeated item
 
+    // Gets the event json from Damian and repeats through home page
+    $http.get('https://still-waters-14036.herokuapp.com/events?token=' + currentToken).success(function(data){
 
-        // $('.home-trind-event-information-container').last()[0].style["margin-bottom"] = "120px";
-
-
-      // Gets the event json from Damian and repeats through home page
-      $http.get('https://still-waters-14036.herokuapp.com/events?token=' + currentToken).success(function(data){
         console.log('home page data', data);
-        $scope.stuff = data;
+          
+          $scope.trinds = data;
           $scope.eventIDGrab = data.id
 
-          // $('.home-trind-event-information-container').last()[0].style["margin-bottom"] = "120px";
+          $scope.details = function(eventId) {
 
-          // var lastEvent = $scope.stuff.length-1;
-          // console.log(lastEvent);
-
-          $scope.details = function(thingId) {
-            console.log("ya there?");
-            showID = thingId;
-            console.log(showID);
-
-
+            showID = eventId;
             localStorage.setItem('theEventID', showID);
-
+            console.log(showID);
             $location.path('/details');
+
           };
 
           $scope.getEvents = function(event) {
-            console.log("we got there");
+            // console.log("we got there");
 
           };
 
           // scope displaying details of user!
           $scope.eventDetail = data.events;
 
-
-
           var unseen;
           $http.get('https://still-waters-14036.herokuapp.com/total_messages_not_viewed?token=' + currentToken ).success(function(data){
-            console.log(data);
+            // console.log(data);
             $scope.unseen = data.not_viewed;
-            console.log(unseen);
+            // console.log(unseen);
             });
 
-            // this closes get request
-        });
+      });
 
 
 $(function(){
@@ -103,19 +89,18 @@ $(function(){
 function unseen() {
   $http.get('https://still-waters-14036.herokuapp.com/total_messages_not_viewed?token=' + currentToken ).success(function(data) {
 
-    //   console.log(data);
-
       if (data.not_viewed === 0 ) {
           $scope.unseen = "...";
           $(".dot-dot-dot").addClass('pushup');
-      }
+          }
 
       else if(data.not_viewed > 0) {
           $scope.unseen = data.not_viewed;
 
-      }
-            });
-    };
+          }
+
+  });
+};
 
       // Drops search bar on click.... would love this functionality to happen on scroll
     $(document).ready(function () {
@@ -125,7 +110,7 @@ function unseen() {
             $(".home-events-display").css("padding-top", "90px");
 
         });
-        
+
     });
 
 

@@ -14,10 +14,10 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
       var eventLatitude = localStorage.getItem('eventLatitude');
       var eventLongitude = localStorage.getItem('eventLongitude');
 
-      console.log(theEventID);
-      console.log(otherUserID);
-      console.log(latitude);
-      console.log(longitude);
+      // console.log(theEventID);
+      // console.log(otherUserID);
+      // console.log(latitude);
+      // console.log(longitude);
 
         $("#home-drop-search-input-box").hide();
         $('.trind-main-header-search-icon').click(function () {
@@ -28,7 +28,6 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
       $http.get('https://still-waters-14036.herokuapp.com/events/' + theEventID + "?token=" + currentToken).then(function successCallback(response){
 
         $scope.event = response.data;
-        console.log($scope.event);
         $scope.whatIWant = response.data.event.user_id;
 
         var otherUserID = response.data.event.user_id;
@@ -42,7 +41,6 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
         navigator.geolocation.getCurrentPosition(success);
 
         function success(position) {
-          console.log(position);
           var mapcanvas = document.createElement('div');
           mapcanvas.id = 'mapcontainer';
           mapcanvas.style.height = '600px';
@@ -90,14 +88,14 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
       });
 
       $scope.messageNow = function() {
-          console.log("wurd");
+          // console.log("wurd");
           var otherUserID = localStorage.getItem('otherUserID');
           var param = {conversation:{event_id: theEventID, recipient_id: otherUserID, sender_id: userID}};
-          console.log(param);
+          // console.log(param);
 
           $http.post('https://still-waters-14036.herokuapp.com/conversations?token=' + currentToken, param).success(function (response) {
-            console.log(response);
-            console.log(response.id)
+            // console.log(response);
+            // console.log(response.id)
             var conversationID = response.id;
             localStorage.setItem('conversationID', conversationID);
             $location.path('/message');
@@ -110,20 +108,15 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
 
         $("#details-interested-button").val("Stashed!");
         $("#details-interested-button").css("background-color", "rgba(255, 127, 0, 1)");
-        // $(document).ready(function () {
-        //     $("#home-drop-search-input-box").hide();
-        //     $('.trind-main-header-search-icon').click(function () {
-        //         $("#home-drop-search-input-box").toggle();
-        //         $(".home-events-display").css("padding-top", "90px");
-        //
-        //     });
-        // });
+
 
         var param = {event:{searcherinterested:userID}};
         console.log(param);
 
           $http.put('https://still-waters-14036.herokuapp.com/events/' + theEventID + "?token=" + currentToken, param).then(function successCallback(response){
             console.log(response);
+
+            // +++++++ need a pop up "added to stashed events" ++++++++++++
             // $location.path('/memories');
           });
       };
