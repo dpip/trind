@@ -14,16 +14,17 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
       var eventLatitude = localStorage.getItem('eventLatitude');
       var eventLongitude = localStorage.getItem('eventLongitude');
 
-      // console.log(theEventID);
-      // console.log(otherUserID);
-      // console.log(latitude);
-      // console.log(longitude);
+        $('#stashed-modal').hide();
+        $('#new-stash-button').click( function () {
+          console.log('stashed');
+          $('#stashed-modal').slideDown(600).slideUp(1000);
+        });
 
-        $("#home-drop-search-input-box").hide();
-        $('.trind-main-header-search-icon').click(function () {
-
-          $("#home-drop-search-input-box").toggle();
-      });
+      //   $("#home-drop-search-input-box").hide();
+      //   $('.trind-main-header-search-icon').click(function () {
+      //
+      //     $("#home-drop-search-input-box").toggle();
+      // });
 
       $http.get('https://still-waters-14036.herokuapp.com/events/' + theEventID + "?token=" + currentToken).then(function successCallback(response){
 
@@ -105,10 +106,7 @@ trind.controller('DetailsController', [ '$http', '$location', '$scope', function
 
       $scope.stash = function() {
 
-
-        $("#details-interested-button").val("Stashed!");
-        $("#details-interested-button").css("background-color", "rgba(255, 127, 0, 1)");
-
+        $("#new-stash-button").css("background-color", "rgba(250, 76, 6, 1)");
 
         var param = {event:{searcherinterested:userID}};
         console.log(param);

@@ -26,7 +26,7 @@ $odd-blue: rgba(52, 152, 219, 1);
 }
 
 .event-details-container {
-    background-color: rgba(40, 44, 52, 0.03);
+    // background-color: rgba(40, 44, 52, 0.03);
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -44,7 +44,7 @@ $odd-blue: rgba(52, 152, 219, 1);
             margin-top: 80px;
             text-align: center;
             // border: 2px solid rgb(164, 219, 216);
-            border-radius: 1em;
+            border-radius: 1em 1em 0em 1em;
         }
 
     .details-text-wrapper {
@@ -82,20 +82,21 @@ $odd-blue: rgba(52, 152, 219, 1);
 
     #details-eventDetail-interest {
       color: $bulls-o;
+      font-size: 16px;
     }
 
-    #details-interested-button {
-      width: 80%;
-      margin-left: auto;
-      margin-right:auto;
-      background-color: $odd-blue;
-      border-radius: .3em;
-      height: 65px;
-      margin-top: 30px;
-      color: white;
-      font-size: 3em;
-      border: none;
-    }
+    // #details-interested-button {
+    //   width: 80%;
+    //   margin-left: auto;
+    //   margin-right:auto;
+    //   background-color: $odd-blue;
+    //   border-radius: .3em;
+    //   height: 65px;
+    //   margin-top: 30px;
+    //   color: white;
+    //   font-size: 3em;
+    //   border: none;
+    // }
 
     #details-message-button {
          width: 80%;
@@ -110,6 +111,7 @@ $odd-blue: rgba(52, 152, 219, 1);
          border: none;
     }
 
+
     #details-eventDetail-title {
       margin-top: 40px;
       margin-left: 40px;
@@ -122,41 +124,98 @@ $odd-blue: rgba(52, 152, 219, 1);
 
     }
     #details-eventDetail-description {
-      margin-top: 40px;
+      margin-top: 60px;
       margin-left: 40px;
-      font-size: 50px;
+      font-size: 40px;
 
     }
     #details-eventDetail-location {
       margin-top: 40px;
       margin-left: 40px;
+      // font-size: 16px;
+      color: $bulls-blue;
 
     }
 }
 
-#details-marker {
-  color: $odd-blue;
-  font-size: 40px;
-}
 
 #mapcontainer {
   margin-left: 9em;
   margin-top: 6em;
 }
 
+#new-stash-button {
+  background-color: $odd-blue;
+  position: absolute;
+  z-index: 1;
+  right: .355em;
+  top: 6.86em;
+  height: 120px;
+  width: 150px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 4em;
+  border-radius: 0em 0em .1em .1em;
+}
+#new-stash-icon {
+  margin-top: -.09em;
+  margin-left: 0em;
+  // transform: scale(1, -1) rotate(315deg) ;
+  transform: rotate(180deg) ;
+}
 
-  //   img {
-  //   height: 60px;
-  //   width: 60px;
-  // }
+#new-message-button {
+  background-color: $bulls-o;
+  position: absolute;
+  z-index: 1;
+  // right: 1em;
+  right: 2.1em;
+  // top: 6.86em;
+  top: 9.15em;
+  height: 120px;
+  width: 150px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  vertical-align: middle;
+  text-align: center;
+  // font-size: 4em;
+  font-size: 3em;
+  border-radius: 0em 0em .1em .1em;
+}
+#new-message-icon {
+  margin-top: .1em;
+  margin-left: 0em;
+  // transform: scale(1, -1) rotate(315deg) ;
+  // transform: rotate(180deg) ;
+}
 
+#stashed-modal {
+  height: 50%;
+  width: 85%;
+  background-color: $bulls-o;
+  position: absolute;
+  top: 8em;
+  z-index: 145;
+  border-radius: 1em;
+  right: 4.5em;
+  color: white;
+  }
 
-// .details-foot-image img {
-//   height: 60px;
-//   width: 60px;
-//   position: relative;
-//   float: left;
-//   top: 5px;
-//   font-size: 130px;
-//   left: 38.5%;
-// }
+  .stash-confirm {
+    margin-top: 2.5em;
+    text-align: center;
+    font-size: 140px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .fa-map-marker {
+    display: inline-block;
+    font-size: 40px;
+  }
+
+  #details-marker {
+    color: $bulls-o;
+    font-size: 40px;
+  }

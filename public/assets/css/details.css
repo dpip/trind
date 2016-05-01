@@ -11,7 +11,6 @@
   width: 76%; }
 
 .event-details-container {
-  background-color: rgba(40, 44, 52, 0.03);
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -24,7 +23,7 @@
     height: 800px;
     margin-top: 80px;
     text-align: center;
-    border-radius: 1em; }
+    border-radius: 1em 1em 0em 1em; }
   .event-details-container .details-text-wrapper {
     width: 90%;
     margin-top: 50px;
@@ -51,18 +50,8 @@
     margin-top: 50px;
     text-align: center; }
   .event-details-container #details-eventDetail-interest {
-    color: #fa4c06; }
-  .event-details-container #details-interested-button {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #3498db;
-    border-radius: .3em;
-    height: 65px;
-    margin-top: 30px;
-    color: white;
-    font-size: 3em;
-    border: none; }
+    color: #fa4c06;
+    font-size: 16px; }
   .event-details-container #details-message-button {
     width: 80%;
     margin-left: auto;
@@ -81,19 +70,80 @@
     margin-top: 40px;
     margin-left: 40px; }
   .event-details-container #details-eventDetail-description {
-    margin-top: 40px;
+    margin-top: 60px;
     margin-left: 40px;
-    font-size: 50px; }
+    font-size: 40px; }
   .event-details-container #details-eventDetail-location {
     margin-top: 40px;
-    margin-left: 40px; }
-
-#details-marker {
-  color: #3498db;
-  font-size: 40px; }
+    margin-left: 40px;
+    color: #004fa4; }
 
 #mapcontainer {
   margin-left: 9em;
   margin-top: 6em; }
+
+#new-stash-button {
+  background-color: #3498db;
+  position: absolute;
+  z-index: 1;
+  right: .355em;
+  top: 6.86em;
+  height: 120px;
+  width: 150px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 4em;
+  border-radius: 0em 0em .1em .1em; }
+
+#new-stash-icon {
+  margin-top: -.09em;
+  margin-left: 0em;
+  transform: rotate(180deg); }
+
+#new-message-button {
+  background-color: #fa4c06;
+  position: absolute;
+  z-index: 1;
+  right: 2.1em;
+  top: 9.15em;
+  height: 120px;
+  width: 150px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 3em;
+  border-radius: 0em 0em .1em .1em; }
+
+#new-message-icon {
+  margin-top: .1em;
+  margin-left: 0em; }
+
+#stashed-modal {
+  height: 50%;
+  width: 85%;
+  background-color: #fa4c06;
+  position: absolute;
+  top: 8em;
+  z-index: 145;
+  border-radius: 1em;
+  right: 4.5em;
+  color: white; }
+
+.stash-confirm {
+  margin-top: 2.5em;
+  text-align: center;
+  font-size: 140px;
+  font-family: 'Open Sans', sans-serif; }
+
+.fa-map-marker {
+  display: inline-block;
+  font-size: 40px; }
+
+#details-marker {
+  color: #fa4c06;
+  font-size: 40px; }
 
 /*# sourceMappingURL=details.css.map */
