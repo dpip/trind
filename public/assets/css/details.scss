@@ -19,14 +19,12 @@ $odd-blue: rgba(52, 152, 219, 1);
   font-family: $header-text;
   text-align: center;
   color: $bulls-o;
-  // border: 1px solid black;
   text-align: center;
   width: 76%;
 
 }
 
 .event-details-container {
-    // background-color: rgba(40, 44, 52, 0.03);
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -120,6 +118,8 @@ $odd-blue: rgba(52, 152, 219, 1);
     #details-eventDetail-interest {
       margin-top: 40px;
       margin-left: 40px;
+      // background-color: $comfy;
+      // height: 40px;
       // color: $orange-crush;
 
     }
