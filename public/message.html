@@ -21,13 +21,11 @@
 
   <div class= "trind-main-footer">
     <div class="message-footer">
+      <button id="send-button" type="submit" ng-click="postMessage()">Ok</button>
       <form ng-controller="MessageController">
           <div class="input-group">
             <input id="chatter" ng-keyup="$event.keyCode == 13 && postMessage()" type="text" name="chatter" placeholder="Message {{otherUserName}}" class="form-control chatter" />
-              </div>
-              </div>
-            <span class="input-group-btn">
-          <button id="send-button" type="submit" ng-click="postMessage()">Ok</button>
-        </span>
+          </div>
       </form>
+    </div>
   </div>

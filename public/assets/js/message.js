@@ -46,7 +46,7 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
         };
 
         $scope.postMessage = function() {
-
+          console.log('hello?');
           var param = {message:{author:userID, conversation_id: conversationID, body: $('.form-control').val()}}
 
           $http.post('https://still-waters-14036.herokuapp.com/messages?token=' + currentToken, param).then(function successCallback(data) {
