@@ -1,5 +1,7 @@
 trind.controller('MessageController', [ '$http', '$scope', function($http, $scope){
 
+
+
         var conversationID = localStorage.getItem('conversationID');
         var currentToken = localStorage.getItem('tokenToken');
         var userID = localStorage.getItem('userID');
@@ -8,8 +10,8 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
         var recipientID = localStorage.getItem('recipientID');
 
 
-        $scope.otherUserName = otherUserName;
 
+        $scope.otherUserName = otherUserName;
 
         $scope.whoAmI = function(userPassed) {
           if(userPassed == userID) {
@@ -53,6 +55,7 @@ trind.controller('MessageController', [ '$http', '$scope', function($http, $scop
             console.log("message sent", data);
 
             $('.form-control').val("");
+            // io.emit('$postMessage', req.body);
           });
         };
 
