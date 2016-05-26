@@ -3,15 +3,15 @@ Error: Undefined variable: "$odd-blue".
         on line 17 of ./assets/css/create.scss
 
 12:   font-family: 'Yanone Kaffeesatz', sans-serif;
-13:   font-size: 80px;
+13:   font-size: 65px;
 14:   position: absolute;
-15:   left: 5.5em;
-16:   top: 18px;
+15:   left: 6.8em;
+16:   top: 25px;
 17:   color: $odd-blue;
 18: }
 19: 
 20: .create-input-field {
-21:   height: 100%;
+21:   height: 2em;
 22:   width: 100%;
 
 Backtrace:
@@ -65,4 +65,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$odd-blue\".\A         on line 17 of ./assets/css/create.scss\A \A 12:   font-family: 'Yanone Kaffeesatz', sans-serif;\A 13:   font-size: 80px;\A 14:   position: absolute;\A 15:   left: 5.5em;\A 16:   top: 18px;\A 17:   color: $odd-blue;\A 18: }\A 19: \A 20: .create-input-field {\A 21:   height: 100%;\A 22:   width: 100%;"; }
+  content: "Error: Undefined variable: \"$odd-blue\".\A         on line 17 of ./assets/css/create.scss\A \A 12:   font-family: 'Yanone Kaffeesatz', sans-serif;\A 13:   font-size: 65px;\A 14:   position: absolute;\A 15:   left: 6.8em;\A 16:   top: 25px;\A 17:   color: $odd-blue;\A 18: }\A 19: \A 20: .create-input-field {\A 21:   height: 2em;\A 22:   width: 100%;"; }

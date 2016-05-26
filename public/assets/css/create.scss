@@ -10,20 +10,20 @@ $bulls-blue: rgba(0, 79, 164, 1);
 
 .create-main-header-text {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 80px;
+  font-size: 65px;
   position: absolute;
-  left: 5.5em;
-  top: 18px;
+  left: 6.8em;
+  top: 25px;
   color: $odd-blue;
 }
 
 .create-input-field {
-  height: 100%;
+  height: 2em;
   width: 100%;
   margin-top: 120px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1em;
+  font-size: 1.7em;
   border-radius: 12px;
   // background-color: rgba(40, 44, 52, 0.03);
 
@@ -34,12 +34,17 @@ $bulls-blue: rgba(0, 79, 164, 1);
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+.user-creator-description-title {
+  margin-top: 1em;
+}
+
   input {
       width: 95%;
-      margin-top: 1.6em;
+      // margin-top: 1.6em;
       order-radius: 12px;
-      font-size: 2.5em;
-      margin-left: .6em;
+      font-size: 2em;
+      margin-left: .35em;
+      text-align: center;
       border: 2px solid #555;
       border-radius: .2em;
   }
@@ -57,26 +62,57 @@ $bulls-blue: rgba(0, 79, 164, 1);
   }
   button {
       text-align: center;
-      margin-left: 10%;
+      // margin-left: 10%;
       margin-top: 2em;
   }
 
     .create-trind-submit-button-text {
-      border: none;
+      border: 1px solid rgba(171, 178, 186, 0.5);
+      // border: 1px  solid $bulls-o;
+
       height: 140px;
-      width: 80%;
-      font-size: 90px;
-      color: #fff;
-      background-color: $bulls-o;
+      // width: 80%;
+      width: 100%;
+      font-size: 105px;
+      color: $bulls-o;
+      background-color: white;
       font-family: 'Yanone Kaffeesatz', sans-serif;
       font-weight: bold;
       bottom: 6em;
-      border-radius: 1em;
+      // border-radius: 1em;
       cursor: pointer;
       position: absolute;
-      top: 11.5em;
+      // top: 14em;
+      bottom: 0;
 
     }
+}
+
+#create-description-field {
+  height: 10em;
+  text-align: center;
+  margin-top: 5em;
+}
+
+#create-tag-icon {
+  font-size: 4.6em;
+  margin-left: 25%;
+  color: $bulls-o;
+}
+
+#create-map-icon {
+  font-size: 5em;
+  margin-top: 1em;
+  margin-left: 25%;
+  color: $odd-blue;
+}
+
+.fa {
+  display: inline-block;
+}
+
+.create-dilb {
+  display:inline-block;
 }
 
 .pac-item {
@@ -90,3 +126,14 @@ $bulls-blue: rgba(0, 79, 164, 1);
 .pac-icon {
   display: none;
 }
+
+// .trind-main-footer-trind-icon {
+//   color: white;
+//   position: relative;
+//   float: left;
+//   top: 5px;
+//   font-size: 130px;
+//   left: 38.5%;
+//   font-family: 'Sniglet', cursive;
+//   transform: rotate(-45deg);
+// }
